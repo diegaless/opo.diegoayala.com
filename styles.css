@@ -11,8 +11,6 @@
   --accent-2: #7c3aed;
   --accent-soft: rgba(15, 118, 110, 0.12);
   --shadow: 0 22px 80px rgba(16, 20, 24, 0.08);
-  --toast-bg: rgba(16, 20, 24, 0.95);
-  --toast-fg: #ffffff;
 }
 
 :root[data-theme="dark"] {
@@ -28,8 +26,6 @@
   --accent-2: #a78bfa;
   --accent-soft: rgba(45, 212, 191, 0.12);
   --shadow: 0 26px 100px rgba(0, 0, 0, 0.34);
-  --toast-bg: rgba(245, 247, 250, 0.96);
-  --toast-fg: #050607;
 }
 
 * {
@@ -362,7 +358,7 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
-.topic-item a {
+.topic-row {
   display: grid;
   grid-template-columns: 42px minmax(0, 1fr);
   gap: 18px;
@@ -371,9 +367,7 @@ h1 {
   padding: 16px 0;
   color: var(--muted);
   line-height: 1.45;
-  transition:
-    color 160ms ease,
-    transform 160ms ease;
+  transition: color 160ms ease;
 }
 
 .topic-number {
@@ -384,12 +378,11 @@ h1 {
   transition: color 160ms ease;
 }
 
-.topic-item a:hover {
+.topic-item:hover .topic-row {
   color: var(--ink);
-  transform: translateX(4px);
 }
 
-.topic-item a:hover .topic-number {
+.topic-item:hover .topic-number {
   color: var(--accent);
 }
 
@@ -426,31 +419,6 @@ h1 {
   border-radius: 999px;
   background: currentColor;
   opacity: 0.7;
-}
-
-.toast {
-  position: fixed;
-  right: 20px;
-  bottom: 22px;
-  z-index: 30;
-  max-width: min(340px, calc(100vw - 40px));
-  padding: 11px 13px;
-  border-radius: 6px;
-  color: var(--toast-fg);
-  background: var(--toast-bg);
-  font-size: 0.94rem;
-  font-weight: 700;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(8px);
-  transition:
-    opacity 160ms ease,
-    transform 160ms ease;
-}
-
-.toast.is-visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 :focus-visible {
@@ -511,7 +479,7 @@ h1 {
     position: static;
   }
 
-  .topic-item a {
+  .topic-row {
     grid-template-columns: 36px minmax(0, 1fr);
     gap: 14px;
     min-height: 64px;
@@ -539,7 +507,7 @@ h1 {
     font-size: 1.45rem;
   }
 
-  .topic-item a {
+  .topic-row {
     grid-template-columns: 1fr;
     gap: 8px;
   }
@@ -555,4 +523,3 @@ h1 {
     scroll-behavior: auto !important;
   }
 }
-
