@@ -51,21 +51,20 @@
     </header>
 
     <main class="page-main" aria-labelledby="page-title">
-      <section class="hero" aria-label="Resumen del temario">
-        <h1 id="page-title" class="sr-only">Temario de Informática</h1>
-        <p>74 epígrafes del temario</p>
-        <a
-          class="source-link"
-          href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-1996-3102"
-          target="_blank"
-          rel="noreferrer"
-        >
-          BOE 13/02/1996
-        </a>
-      </section>
-
       <section class="search-panel" aria-label="Buscar en el temario">
-        <label for="topic-search">Buscar tema</label>
+        <h1 id="page-title" class="sr-only">Temario de Informática</h1>
+        <div class="summary-row">
+          <p>74 epígrafes del temario</p>
+          <a
+            class="source-link"
+            href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-1996-3102"
+            target="_blank"
+            rel="noreferrer"
+          >
+            BOE 13/02/1996
+          </a>
+        </div>
+        <label class="sr-only" for="topic-search">Buscar tema</label>
         <div class="search-row">
           <input
             id="topic-search"
@@ -73,7 +72,7 @@
             name="q"
             autocomplete="off"
             spellcheck="false"
-            placeholder="Bases de datos, redes, C..."
+            placeholder="Buscar tema..."
             data-search
           >
           <output for="topic-search" data-count>74 temas</output>
