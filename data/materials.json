@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T15:12:09Z",
+  "generatedAt": "2026-06-16T18:49:06Z",
   "driveRootUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "access": "restricted-google-drive",
   "topics": {
@@ -36,19 +36,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 01 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -58,20 +45,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 01 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
-          "label": "Teoria adaptada",
-          "type": "teoria",
-          "variant": "teoria-adaptada",
-          "fileName": "teoria-adaptada.pdf",
-          "extension": ".pdf",
-          "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Preparador%20online%20-%20teoria-adaptada.pdf%22",
-          "driveFileName": "Tema 01 - Preparador online - teoria-adaptada.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -108,19 +84,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 02 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -130,33 +93,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 02 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
-          "label": "Teoria adaptada",
-          "type": "teoria",
-          "variant": "teoria-adaptada",
-          "fileName": "teoria-adaptada.pdf",
-          "extension": ".pdf",
-          "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria-adaptada.pdf%22",
-          "driveFileName": "Tema 02 - Preparador online - teoria-adaptada.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
-          "label": "Teoria adaptada mod",
-          "type": "teoria",
-          "variant": "teoria-adaptada-mod",
-          "fileName": "teoria-adaptada-mod.pdf",
-          "extension": ".pdf",
-          "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria-adaptada-mod.pdf%22",
-          "driveFileName": "Tema 02 - Preparador online - teoria-adaptada-mod.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -180,19 +119,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2003%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 03 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -202,7 +128,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2003%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 03 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -226,19 +154,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2004%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 04 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -248,7 +163,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2004%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 04 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -272,19 +189,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 19,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2005%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 05 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -294,7 +198,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2005%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 05 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -331,19 +237,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 22,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 06 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -353,7 +246,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 06 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -390,19 +285,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 07 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -412,7 +294,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 07 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -436,19 +320,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2008%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 08 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -458,7 +329,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2008%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 08 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -495,19 +368,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 09 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -517,7 +377,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 09 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -541,19 +403,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2010%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 10 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -563,7 +412,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2010%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 10 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -600,32 +451,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Muestra",
-          "type": "teoria",
-          "variant": "teoria-muestra",
-          "fileName": "teoria-muestra.pdf",
-          "extension": ".pdf",
-          "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Preparador%20online%20-%20teoria-muestra.pdf%22",
-          "driveFileName": "Tema 11 - Preparador online - teoria-muestra.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 11 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -635,7 +460,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 11 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -672,19 +499,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 12 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -694,7 +508,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 12 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -744,19 +560,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 13 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -766,7 +569,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 13 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -816,19 +621,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 14 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -838,7 +630,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 14 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -875,19 +669,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 15 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -897,7 +678,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 15 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -934,19 +717,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 16 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -956,7 +726,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 16 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -993,19 +765,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 17 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -1015,7 +774,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 17 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -1039,19 +800,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2018%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 18 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -1061,7 +809,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2018%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 18 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -1098,19 +848,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 19 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2",
           "type": "teoria",
           "variant": "teoria-v2",
@@ -1120,7 +857,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
           "driveFileName": "Tema 19 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -1144,19 +883,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2020%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 20 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2 PES",
           "type": "teoria",
           "variant": "teoria-v2-pes",
@@ -1166,7 +892,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2020%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
           "driveFileName": "Tema 20 - Preparador online - teoria-v2-pes.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -1269,19 +997,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 23 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2 PES",
           "type": "teoria",
           "variant": "teoria-v2-pes",
@@ -1291,7 +1006,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
           "driveFileName": "Tema 23 - Preparador online - teoria-v2-pes.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -1328,19 +1045,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Teoria",
-          "type": "teoria",
-          "variant": "teoria",
-          "fileName": "teoria.pdf",
-          "extension": ".pdf",
-          "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Preparador%20online%20-%20teoria.pdf%22",
-          "driveFileName": "Tema 24 - Preparador online - teoria.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria V2 PES",
           "type": "teoria",
           "variant": "teoria-v2-pes",
@@ -1350,7 +1054,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
           "driveFileName": "Tema 24 - Preparador online - teoria-v2-pes.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected latest V2/PES complete theory"
         }
       ]
     },
@@ -1847,19 +1553,6 @@
         },
         {
           "academy": "Preparador online",
-          "label": "Muestra",
-          "type": "teoria",
-          "variant": "teoria-muestra",
-          "fileName": "teoria-muestra.pdf",
-          "extension": ".pdf",
-          "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2035%20-%20Preparador%20online%20-%20teoria-muestra.pdf%22",
-          "driveFileName": "Tema 35 - Preparador online - teoria-muestra.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
           "label": "Teoria",
           "type": "teoria",
           "variant": "teoria",
@@ -1869,7 +1562,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2035%20-%20Preparador%20online%20-%20teoria.pdf%22",
           "driveFileName": "Tema 35 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected complete theory over sample/summary"
         }
       ]
     },
@@ -3132,20 +2827,9 @@
           "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Preparador%20online%20-%20teoria.pdf%22",
           "driveFileName": "Tema 65 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
-        },
-        {
-          "academy": "Preparador online",
-          "label": "Resumen esquema",
-          "type": "resumen",
-          "variant": "resumen-esquema-muestra",
-          "fileName": "resumen-esquema-muestra.pdf",
-          "extension": ".pdf",
-          "pages": 4,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Preparador%20online%20-%20resumen-esquema-muestra.pdf%22",
-          "driveFileName": "Tema 65 - Preparador online - resumen-esquema-muestra.pdf",
-          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-title-search",
+          "selectedByReview": true,
+          "selectionReason": "selected complete theory over sample/summary"
         }
       ]
     },
@@ -3462,5 +3146,11 @@
   },
   "driveFolderId": "1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "linkMode": "drive-title-search",
-  "materialCount": 226
+  "materialCount": 198,
+  "preparadorOnlineReview": {
+    "reviewedAt": "2026-06-16T18:49:06Z",
+    "rule": "Show one Preparador online material per topic: prefer complete V2/PES theory when available; otherwise complete theory over samples or summaries.",
+    "reviewedDuplicateTopics": 24,
+    "hiddenMaterialCount": 28
+  }
 }
