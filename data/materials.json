@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T18:49:06Z",
+  "generatedAt": "2026-06-16T23:01:19Z",
   "driveRootUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "access": "restricted-google-drive",
   "topics": {
@@ -16,10 +16,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 40,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Abacus%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1p2W9Li3hf_iFq7tzNJQAsaMKXdlGCUjf/preview",
           "driveFileName": "Tema 01 - Abacus - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1p2W9Li3hf_iFq7tzNJQAsaMKXdlGCUjf"
         },
         {
           "academy": "Abacus",
@@ -42,12 +43,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1t5QCiccNd3jAH2GmYo1jicoNq9_oyiZ-/preview",
           "driveFileName": "Tema 01 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1t5QCiccNd3jAH2GmYo1jicoNq9_oyiZ-"
         }
       ]
     },
@@ -77,10 +79,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 30,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1BMo0-LUjLoTqp3YYaVZKzeT8EegHRYAu/preview",
           "driveFileName": "Tema 02 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1BMo0-LUjLoTqp3YYaVZKzeT8EegHRYAu"
         },
         {
           "academy": "Preparador online",
@@ -90,12 +93,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1F3JXDYXB8W8ASlmoh34kW62n32ZQd-Xc/preview",
           "driveFileName": "Tema 02 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1F3JXDYXB8W8ASlmoh34kW62n32ZQd-Xc"
         }
       ]
     },
@@ -125,12 +129,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2003%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1wsxqe_SP_sjx6vCjgDLpNKrJXl-9ox2g/preview",
           "driveFileName": "Tema 03 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1wsxqe_SP_sjx6vCjgDLpNKrJXl-9ox2g"
         }
       ]
     },
@@ -160,12 +165,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2004%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1eUUYUT1XO-kI79vCo-Dlq4-lPTT_Rav1/preview",
           "driveFileName": "Tema 04 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1eUUYUT1XO-kI79vCo-Dlq4-lPTT_Rav1"
         }
       ]
     },
@@ -195,12 +201,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 20,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2005%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/188B0hXxX4PqQxyw5zhFvNBPo30DQZ-8e/preview",
           "driveFileName": "Tema 05 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "188B0hXxX4PqQxyw5zhFvNBPo30DQZ-8e"
         }
       ]
     },
@@ -230,10 +237,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 34,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1glXMZKsjEA9lrgVkM6NOOWbPqz6trfHO/preview",
           "driveFileName": "Tema 06 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1glXMZKsjEA9lrgVkM6NOOWbPqz6trfHO"
         },
         {
           "academy": "Preparador online",
@@ -243,12 +251,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 20,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1sZUTsHRmPZ4Lq-p0JXn6ULs3QBL5ao7q/preview",
           "driveFileName": "Tema 06 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1sZUTsHRmPZ4Lq-p0JXn6ULs3QBL5ao7q"
         }
       ]
     },
@@ -265,10 +274,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 64,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Abacus%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1v15wkHTBPG-UOOfoG3SPMy4KJ92BD6o3/preview",
           "driveFileName": "Tema 07 - Abacus - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1v15wkHTBPG-UOOfoG3SPMy4KJ92BD6o3"
         },
         {
           "academy": "Abacus",
@@ -291,12 +301,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/11xOomQU4UMmz4bI-ONXlkDPtLrA2acy7/preview",
           "driveFileName": "Tema 07 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "11xOomQU4UMmz4bI-ONXlkDPtLrA2acy7"
         }
       ]
     },
@@ -326,12 +337,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2008%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1BzvDF13z9hFzLxmmmZJBeKpqot10R7Hg/preview",
           "driveFileName": "Tema 08 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1BzvDF13z9hFzLxmmmZJBeKpqot10R7Hg"
         }
       ]
     },
@@ -374,12 +386,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1Y2XHUB0hqnjN5ZqQyO-aEOOYh1mUgi-W/preview",
           "driveFileName": "Tema 09 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1Y2XHUB0hqnjN5ZqQyO-aEOOYh1mUgi-W"
         }
       ]
     },
@@ -409,12 +422,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2010%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1Rb2oH8spyUcLthzKdbswJCMw1hEQbNHD/preview",
           "driveFileName": "Tema 10 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1Rb2oH8spyUcLthzKdbswJCMw1hEQbNHD"
         }
       ]
     },
@@ -457,12 +471,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1hGWWR9reJNnusKx32p0gnmel3NDxWBUo/preview",
           "driveFileName": "Tema 11 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1hGWWR9reJNnusKx32p0gnmel3NDxWBUo"
         }
       ]
     },
@@ -505,12 +520,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/15vvPhF8AaXlB4NJpWTOja5HbYYYEzYzq/preview",
           "driveFileName": "Tema 12 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "15vvPhF8AaXlB4NJpWTOja5HbYYYEzYzq"
         }
       ]
     },
@@ -540,10 +556,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 44,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1lUZPnp4SxwSrAbMOAuzPJ1m1nFqQYEMY/preview",
           "driveFileName": "Tema 13 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1lUZPnp4SxwSrAbMOAuzPJ1m1nFqQYEMY"
         },
         {
           "academy": "Ecoem",
@@ -566,12 +583,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1Gknz5G1AZA63v8JXKqFXj1Ptw4CVHeCj/preview",
           "driveFileName": "Tema 13 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1Gknz5G1AZA63v8JXKqFXj1Ptw4CVHeCj"
         }
       ]
     },
@@ -601,10 +619,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 30,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1tXPrOS-N37qYFz6i0GvovyCCdrKDkV6X/preview",
           "driveFileName": "Tema 14 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1tXPrOS-N37qYFz6i0GvovyCCdrKDkV6X"
         },
         {
           "academy": "Ecoem",
@@ -627,12 +646,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/18g3pkeoZsnDeig-NA8o2XdU2SAMI7So_/preview",
           "driveFileName": "Tema 14 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "18g3pkeoZsnDeig-NA8o2XdU2SAMI7So_"
         }
       ]
     },
@@ -649,10 +669,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 44,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Abacus%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1gCTGMfROkMDSswIln3DHBTta6kM6EX9M/preview",
           "driveFileName": "Tema 15 - Abacus - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1gCTGMfROkMDSswIln3DHBTta6kM6EX9M"
         },
         {
           "academy": "Abacus",
@@ -675,12 +696,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1fhWa44S1nwG5kXNlUeZJ4OhP4uRfoRc5/preview",
           "driveFileName": "Tema 15 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1fhWa44S1nwG5kXNlUeZJ4OhP4uRfoRc5"
         }
       ]
     },
@@ -723,12 +745,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1EDFc2Ft7-L6tJjyEuXEr0rMRnGj428a8/preview",
           "driveFileName": "Tema 16 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1EDFc2Ft7-L6tJjyEuXEr0rMRnGj428a8"
         }
       ]
     },
@@ -758,10 +781,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 30,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/18frLOlmGbGAM7E-aORWAwt0d9iEo0OTF/preview",
           "driveFileName": "Tema 17 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "18frLOlmGbGAM7E-aORWAwt0d9iEo0OTF"
         },
         {
           "academy": "Preparador online",
@@ -771,12 +795,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/12u68soBwb4TZo42DzSDJwY1BU0pIgCof/preview",
           "driveFileName": "Tema 17 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "12u68soBwb4TZo42DzSDJwY1BU0pIgCof"
         }
       ]
     },
@@ -806,12 +831,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2018%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1Q-2-ReN4-uu0A81OxRCkFq_0fzcHFKCC/preview",
           "driveFileName": "Tema 18 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1Q-2-ReN4-uu0A81OxRCkFq_0fzcHFKCC"
         }
       ]
     },
@@ -841,10 +867,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 34,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1DEqQgfCW0uyr1DewqAjpT7b7e3TdiKRM/preview",
           "driveFileName": "Tema 19 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1DEqQgfCW0uyr1DewqAjpT7b7e3TdiKRM"
         },
         {
           "academy": "Preparador online",
@@ -854,12 +881,13 @@
           "fileName": "teoria-v2.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "url": "https://drive.google.com/file/d/1ZtCuHhRSJldR_6Hbc5wEssP8CGjsfBB9/preview",
           "driveFileName": "Tema 19 - Preparador online - teoria-v2.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1ZtCuHhRSJldR_6Hbc5wEssP8CGjsfBB9"
         }
       ]
     },
@@ -889,12 +917,13 @@
           "fileName": "teoria-v2-pes.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2020%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
+          "url": "https://drive.google.com/file/d/1tYZQl8tbW_6W3_VMit9S8ZiWVV7WeZhM/preview",
           "driveFileName": "Tema 20 - Preparador online - teoria-v2-pes.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1tYZQl8tbW_6W3_VMit9S8ZiWVV7WeZhM"
         }
       ]
     },
@@ -924,10 +953,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2021%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1Qzaw-V2DkWsyN3HQmjMX5F5JPM2Dl5RL/preview",
           "driveFileName": "Tema 21 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Qzaw-V2DkWsyN3HQmjMX5F5JPM2Dl5RL"
         }
       ]
     },
@@ -957,10 +987,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 18,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2022%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1EPaFyXgGTQAg8Pg9UOgyj9pvwchWfjxn/preview",
           "driveFileName": "Tema 22 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1EPaFyXgGTQAg8Pg9UOgyj9pvwchWfjxn"
         }
       ]
     },
@@ -1003,12 +1034,13 @@
           "fileName": "teoria-v2-pes.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
+          "url": "https://drive.google.com/file/d/1RW7ZzkmjVZNyU15pf9pPzpY8Eqs9LooA/preview",
           "driveFileName": "Tema 23 - Preparador online - teoria-v2-pes.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1RW7ZzkmjVZNyU15pf9pPzpY8Eqs9LooA"
         }
       ]
     },
@@ -1051,12 +1083,13 @@
           "fileName": "teoria-v2-pes.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
+          "url": "https://drive.google.com/file/d/1HPuA0UjOyYMpDYEPDH1l5xvl9VkTJOsB/preview",
           "driveFileName": "Tema 24 - Preparador online - teoria-v2-pes.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected latest V2/PES complete theory"
+          "selectionReason": "selected latest V2/PES complete theory",
+          "driveFileId": "1HPuA0UjOyYMpDYEPDH1l5xvl9VkTJOsB"
         }
       ]
     },
@@ -1099,10 +1132,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2025%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/11F8dyjwPFXy-dYlEFCLfeOONhpebcMwR/preview",
           "driveFileName": "Tema 25 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "11F8dyjwPFXy-dYlEFCLfeOONhpebcMwR"
         }
       ]
     },
@@ -1145,10 +1179,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2026%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1Rp_tpYAqmpkAlsNlIT55ysHJ1r7IAePk/preview",
           "driveFileName": "Tema 26 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Rp_tpYAqmpkAlsNlIT55ysHJ1r7IAePk"
         }
       ]
     },
@@ -1191,10 +1226,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2027%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1zy58a0DTCCERz49mxPe9-m-MlAyT42Ev/preview",
           "driveFileName": "Tema 27 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1zy58a0DTCCERz49mxPe9-m-MlAyT42Ev"
         }
       ]
     },
@@ -1224,10 +1260,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2028%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1NFmNIpPoOIGUnZiCRjJIYbZzitUQ6eNS/preview",
           "driveFileName": "Tema 28 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1NFmNIpPoOIGUnZiCRjJIYbZzitUQ6eNS"
         }
       ]
     },
@@ -1270,10 +1307,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2029%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1srw0aKXv3p_EY7g3ZdEW5HqTsg11PJ44/preview",
           "driveFileName": "Tema 29 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1srw0aKXv3p_EY7g3ZdEW5HqTsg11PJ44"
         }
       ]
     },
@@ -1303,10 +1341,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 34,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2030%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1Dg7ImJ_LTs6S_1bgWgvoo3a96wvGi5f3/preview",
           "driveFileName": "Tema 30 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Dg7ImJ_LTs6S_1bgWgvoo3a96wvGi5f3"
         },
         {
           "academy": "Ecoem",
@@ -1329,10 +1368,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2030%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1mTm2Uc3GfhvaMVu_GI2MrwuoAt4Nlc81/preview",
           "driveFileName": "Tema 30 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1mTm2Uc3GfhvaMVu_GI2MrwuoAt4Nlc81"
         }
       ]
     },
@@ -1375,10 +1415,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2031%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1cKVMeZ7G7VvNErx1hyOW-1rB4eFH9jOD/preview",
           "driveFileName": "Tema 31 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1cKVMeZ7G7VvNErx1hyOW-1rB4eFH9jOD"
         }
       ]
     },
@@ -1395,10 +1436,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 56,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2032%20-%20Abacus%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1BtBWjT65JOAnACrRadAhuEZcdQHZ-5Gg/preview",
           "driveFileName": "Tema 32 - Abacus - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1BtBWjT65JOAnACrRadAhuEZcdQHZ-5Gg"
         },
         {
           "academy": "Abacus",
@@ -1434,10 +1476,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2032%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1v0dPtebV3LpaYiei-YE-eyCeWESeok9i/preview",
           "driveFileName": "Tema 32 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1v0dPtebV3LpaYiei-YE-eyCeWESeok9i"
         }
       ]
     },
@@ -1480,10 +1523,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2033%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1_FmMUzUqYz-f7XuCraM8pVHh66oUpE0U/preview",
           "driveFileName": "Tema 33 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1_FmMUzUqYz-f7XuCraM8pVHh66oUpE0U"
         }
       ]
     },
@@ -1526,10 +1570,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2034%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1L58e7F3MqqnnpoXA_5mJp_A0GmBj7Fdy/preview",
           "driveFileName": "Tema 34 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1L58e7F3MqqnnpoXA_5mJp_A0GmBj7Fdy"
         }
       ]
     },
@@ -1559,12 +1604,13 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2035%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1IkWowyB396uPPPQboNrWIEKi_2q5c_jN/preview",
           "driveFileName": "Tema 35 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected complete theory over sample/summary"
+          "selectionReason": "selected complete theory over sample/summary",
+          "driveFileId": "1IkWowyB396uPPPQboNrWIEKi_2q5c_jN"
         }
       ]
     },
@@ -1581,10 +1627,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 48,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2036%20-%20Abacus%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1r2CigMbeQt5O6wZUO-9tW9AzrtyKGNvk/preview",
           "driveFileName": "Tema 36 - Abacus - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1r2CigMbeQt5O6wZUO-9tW9AzrtyKGNvk"
         },
         {
           "academy": "Abacus",
@@ -1607,10 +1654,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2036%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1W0VdXAfCjllIHc29O9oY-V-0Xv13UL4v/preview",
           "driveFileName": "Tema 36 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1W0VdXAfCjllIHc29O9oY-V-0Xv13UL4v"
         }
       ]
     },
@@ -1640,10 +1688,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 12,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2037%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1A-61ZccFU7p-bUGEFI69WEp5Q7P1zAzJ/preview",
           "driveFileName": "Tema 37 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1A-61ZccFU7p-bUGEFI69WEp5Q7P1zAzJ"
         }
       ]
     },
@@ -1673,10 +1722,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2038%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1goMw3fOUaAD4rOv5Flv4Ey75BCbgvejC/preview",
           "driveFileName": "Tema 38 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1goMw3fOUaAD4rOv5Flv4Ey75BCbgvejC"
         }
       ]
     },
@@ -1706,10 +1756,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 36,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2039%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1fQJu1a9o1wTSFkAD9LJK4aDUcN3tdpkW/preview",
           "driveFileName": "Tema 39 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1fQJu1a9o1wTSFkAD9LJK4aDUcN3tdpkW"
         },
         {
           "academy": "Ecoem",
@@ -1732,10 +1783,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 18,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2039%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1G6ITvXcXq-ehvDinTb93QzG6mWkv2-kD/preview",
           "driveFileName": "Tema 39 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1G6ITvXcXq-ehvDinTb93QzG6mWkv2-kD"
         }
       ]
     },
@@ -1778,10 +1830,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2040%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1h10uJy6srss5FTtnKEim54yDA1AIP2yr/preview",
           "driveFileName": "Tema 40 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1h10uJy6srss5FTtnKEim54yDA1AIP2yr"
         }
       ]
     },
@@ -1824,10 +1877,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2041%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1qys4bZ9oHLq9wfGn-xXU3xHu9HMueYQT/preview",
           "driveFileName": "Tema 41 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1qys4bZ9oHLq9wfGn-xXU3xHu9HMueYQT"
         }
       ]
     },
@@ -1857,10 +1911,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2042%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1jz_MYkadsq_1b-Vi0GX5h8BhALcKvKff/preview",
           "driveFileName": "Tema 42 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1jz_MYkadsq_1b-Vi0GX5h8BhALcKvKff"
         }
       ]
     },
@@ -1890,10 +1945,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2043%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/15-6tUKVlJ4kD2klvR1djhIF0UpAcsRYR/preview",
           "driveFileName": "Tema 43 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "15-6tUKVlJ4kD2klvR1djhIF0UpAcsRYR"
         }
       ]
     },
@@ -1923,10 +1979,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2044%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1rwaYmMHgphehs_GTQAgW5nfxy5KA1b_U/preview",
           "driveFileName": "Tema 44 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1rwaYmMHgphehs_GTQAgW5nfxy5KA1b_U"
         }
       ]
     },
@@ -1956,10 +2013,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 32,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2045%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1zwyd8jOqftaui4jWVgF-44wE-11hzyiF/preview",
           "driveFileName": "Tema 45 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1zwyd8jOqftaui4jWVgF-44wE-11hzyiF"
         },
         {
           "academy": "Ecoem",
@@ -1982,10 +2040,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2045%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1kfd-8L0cOnBgsqSQ-9nTFJo0ZAN2zr2j/preview",
           "driveFileName": "Tema 45 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1kfd-8L0cOnBgsqSQ-9nTFJo0ZAN2zr2j"
         }
       ]
     },
@@ -2028,10 +2087,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2046%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1no3wHrLx-z1KIRneNf4QQvw_bpBlp6Xk/preview",
           "driveFileName": "Tema 46 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1no3wHrLx-z1KIRneNf4QQvw_bpBlp6Xk"
         }
       ]
     },
@@ -2074,10 +2134,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2047%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1I9eULdzCJJ_Zq1QqYqOGYO2v1rzLShN3/preview",
           "driveFileName": "Tema 47 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1I9eULdzCJJ_Zq1QqYqOGYO2v1rzLShN3"
         }
       ]
     },
@@ -2120,10 +2181,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2048%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1sEPKarSCKSpRpyiZqgzjBaVwfb7w8Lz6/preview",
           "driveFileName": "Tema 48 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1sEPKarSCKSpRpyiZqgzjBaVwfb7w8Lz6"
         }
       ]
     },
@@ -2153,10 +2215,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2049%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1p8xrEw72XyHZZnmlydekj8n3KdhhPlRH/preview",
           "driveFileName": "Tema 49 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1p8xrEw72XyHZZnmlydekj8n3KdhhPlRH"
         }
       ]
     },
@@ -2199,10 +2262,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2050%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1WhzBGdlH8XLQQ1L2QN1-C1TGq5QMx2No/preview",
           "driveFileName": "Tema 50 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1WhzBGdlH8XLQQ1L2QN1-C1TGq5QMx2No"
         }
       ]
     },
@@ -2245,10 +2309,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 12,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2051%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1woIjqJreHbIYrb6rlTfpBwamE8avuHOn/preview",
           "driveFileName": "Tema 51 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1woIjqJreHbIYrb6rlTfpBwamE8avuHOn"
         }
       ]
     },
@@ -2278,10 +2343,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2052%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1R_zl-VV1ofR2vKU11s0TPxBFv2KK7G8i/preview",
           "driveFileName": "Tema 52 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1R_zl-VV1ofR2vKU11s0TPxBFv2KK7G8i"
         }
       ]
     },
@@ -2324,10 +2390,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2053%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1YatzfuE-XYP-2oxCXIyLkU7dc1dLVQ8A/preview",
           "driveFileName": "Tema 53 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1YatzfuE-XYP-2oxCXIyLkU7dc1dLVQ8A"
         }
       ]
     },
@@ -2370,10 +2437,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2054%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1kt5nEtgdjmAyHFCPyzVq6p9kGzd9PVZ4/preview",
           "driveFileName": "Tema 54 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1kt5nEtgdjmAyHFCPyzVq6p9kGzd9PVZ4"
         }
       ]
     },
@@ -2403,10 +2471,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2055%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1Ah3H3CqYO5393ppIXEnSHsKZBl6BXCkO/preview",
           "driveFileName": "Tema 55 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Ah3H3CqYO5393ppIXEnSHsKZBl6BXCkO"
         }
       ]
     },
@@ -2449,10 +2518,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2056%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1i_1E1VnONys8s9o0Suz4zbWNgS26dVFE/preview",
           "driveFileName": "Tema 56 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1i_1E1VnONys8s9o0Suz4zbWNgS26dVFE"
         }
       ]
     },
@@ -2482,10 +2552,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2057%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1Qu-ETNrXU6lxhBcta_30uQWONbqfkSC0/preview",
           "driveFileName": "Tema 57 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Qu-ETNrXU6lxhBcta_30uQWONbqfkSC0"
         }
       ]
     },
@@ -2515,10 +2586,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2058%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1zadV06aO96R93w2sCWIBmV7pLNOJQJl-/preview",
           "driveFileName": "Tema 58 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1zadV06aO96R93w2sCWIBmV7pLNOJQJl-"
         }
       ]
     },
@@ -2548,10 +2620,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 36,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2059%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1mUnVtwGIlJEPkQaQuvtSLrsnp4au2zWC/preview",
           "driveFileName": "Tema 59 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1mUnVtwGIlJEPkQaQuvtSLrsnp4au2zWC"
         },
         {
           "academy": "Preparador online",
@@ -2561,10 +2634,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2059%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1B9gZdtbQaXYEH2uuZ9VwZoBsr0ltG3p5/preview",
           "driveFileName": "Tema 59 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1B9gZdtbQaXYEH2uuZ9VwZoBsr0ltG3p5"
         }
       ]
     },
@@ -2607,10 +2681,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2060%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/19IIKGB8jfXA9vXeLftblUqgLmyNXW7Zd/preview",
           "driveFileName": "Tema 60 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "19IIKGB8jfXA9vXeLftblUqgLmyNXW7Zd"
         }
       ]
     },
@@ -2653,10 +2728,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2061%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1eYljwxhDSSi1ouFhjq5B1lTmr5cA1A1s/preview",
           "driveFileName": "Tema 61 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1eYljwxhDSSi1ouFhjq5B1lTmr5cA1A1s"
         }
       ]
     },
@@ -2699,10 +2775,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2062%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1HZt0K0-wYmK71pLh0MFmMvENVxHlVoOe/preview",
           "driveFileName": "Tema 62 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1HZt0K0-wYmK71pLh0MFmMvENVxHlVoOe"
         }
       ]
     },
@@ -2732,10 +2809,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 36,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2063%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1hva4uEDzdppY7b9lQVG4CsGeB_tvfCho/preview",
           "driveFileName": "Tema 63 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1hva4uEDzdppY7b9lQVG4CsGeB_tvfCho"
         },
         {
           "academy": "Preparador online",
@@ -2745,10 +2823,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2063%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1Po8a3RIAqvGKFDjonDjCHbIgfKe_-Y6R/preview",
           "driveFileName": "Tema 63 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Po8a3RIAqvGKFDjonDjCHbIgfKe_-Y6R"
         }
       ]
     },
@@ -2778,10 +2857,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2064%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1D3j-HBWAro4EJEQP98i9eLVDM8BUNp_8/preview",
           "driveFileName": "Tema 64 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1D3j-HBWAro4EJEQP98i9eLVDM8BUNp_8"
         }
       ]
     },
@@ -2811,10 +2891,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 38,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Ecoem%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1H_W1Eqk-KeILQjk1TAKCiFInLfsl4VJ_/preview",
           "driveFileName": "Tema 65 - Ecoem - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1H_W1Eqk-KeILQjk1TAKCiFInLfsl4VJ_"
         },
         {
           "academy": "Preparador online",
@@ -2824,12 +2905,13 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1c6U7eNCl1AKr88kqE4s2XFuQjkHtQU-5/preview",
           "driveFileName": "Tema 65 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search",
+          "urlMode": "drive-pdf-preview",
           "selectedByReview": true,
-          "selectionReason": "selected complete theory over sample/summary"
+          "selectionReason": "selected complete theory over sample/summary",
+          "driveFileId": "1c6U7eNCl1AKr88kqE4s2XFuQjkHtQU-5"
         }
       ]
     },
@@ -2859,10 +2941,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 16,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2066%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1DF59XXk-GTcOfCeUgY1iilycGhRms2MR/preview",
           "driveFileName": "Tema 66 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1DF59XXk-GTcOfCeUgY1iilycGhRms2MR"
         }
       ]
     },
@@ -2905,10 +2988,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2067%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1j_Adjxs1krVaYd9uy-m-mIzIIVEKJcnP/preview",
           "driveFileName": "Tema 67 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1j_Adjxs1krVaYd9uy-m-mIzIIVEKJcnP"
         }
       ]
     },
@@ -2938,10 +3022,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2068%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/17WLaePO5Ky0PArn0w64oNRFHtHrzrhiD/preview",
           "driveFileName": "Tema 68 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "17WLaePO5Ky0PArn0w64oNRFHtHrzrhiD"
         }
       ]
     },
@@ -2971,10 +3056,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2069%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1EZLhJs1kaMwL8NFOhvQXIdxTZbye-fsf/preview",
           "driveFileName": "Tema 69 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1EZLhJs1kaMwL8NFOhvQXIdxTZbye-fsf"
         }
       ]
     },
@@ -3004,10 +3090,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2070%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1x1yHnyJS-kJNId6hQKvo_GqC4RyIkwSL/preview",
           "driveFileName": "Tema 70 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1x1yHnyJS-kJNId6hQKvo_GqC4RyIkwSL"
         }
       ]
     },
@@ -3037,10 +3124,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 17,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2071%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1DPBia2Nd7Rnoejsd9KdPYAmmpUGfIcEB/preview",
           "driveFileName": "Tema 71 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1DPBia2Nd7Rnoejsd9KdPYAmmpUGfIcEB"
         }
       ]
     },
@@ -3070,10 +3158,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 14,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2072%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1xYTB1L9YR3n4EJQxJo4Nyj2iDKnBuvzt/preview",
           "driveFileName": "Tema 72 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1xYTB1L9YR3n4EJQxJo4Nyj2iDKnBuvzt"
         }
       ]
     },
@@ -3103,10 +3192,11 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 13,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2073%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1utNTdKEuMpJUAxU_miWrBTNdFp-M7TdN/preview",
           "driveFileName": "Tema 73 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1utNTdKEuMpJUAxU_miWrBTNdFp-M7TdN"
         }
       ]
     },
@@ -3136,21 +3226,23 @@
           "fileName": "teoria.pdf",
           "extension": ".pdf",
           "pages": 15,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2074%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "url": "https://drive.google.com/file/d/1k6Y7NlbnyoOm8hKOhsSCpcnB4OxHdmW1/preview",
           "driveFileName": "Tema 74 - Preparador online - teoria.pdf",
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-          "urlMode": "drive-title-search"
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1k6Y7NlbnyoOm8hKOhsSCpcnB4OxHdmW1"
         }
       ]
     }
   },
   "driveFolderId": "1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
-  "linkMode": "drive-title-search",
+  "linkMode": "drive-pdf-preview-for-pdfs",
   "materialCount": 198,
   "preparadorOnlineReview": {
     "reviewedAt": "2026-06-16T18:49:06Z",
     "rule": "Show one Preparador online material per topic: prefer complete V2/PES theory when available; otherwise complete theory over samples or summaries.",
     "reviewedDuplicateTopics": 24,
     "hiddenMaterialCount": 28
-  }
+  },
+  "pdfLinkMode": "drive-pdf-preview"
 }

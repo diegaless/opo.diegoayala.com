@@ -96,7 +96,11 @@ function buildMaterialControls(topic, topicData) {
     const material = academyMaterials[Number(materialSelect.value) || 0];
     if (material?.url) {
       openLink.href = material.url;
-      openLink.textContent = material.urlMode === "drive-title-search" ? "Drive" : "Abrir";
+      openLink.textContent = material.urlMode === "drive-pdf-preview"
+        ? "PDF"
+        : material.urlMode === "drive-title-search"
+          ? "Drive"
+          : "Abrir";
       openLink.title = material.driveFileName || getMaterialLabel(material);
       openLink.removeAttribute("aria-disabled");
       return;
