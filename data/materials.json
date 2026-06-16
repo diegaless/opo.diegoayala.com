@@ -1,0 +1,3466 @@
+{
+  "generatedAt": "2026-06-16T15:12:09Z",
+  "driveRootUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+  "access": "restricted-google-drive",
+  "topics": {
+    "01": {
+      "number": "01",
+      "title": "Representación y comunicación de la información.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 40,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Abacus%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 01 - Abacus - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 01 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 01 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 01 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria adaptada",
+          "type": "teoria",
+          "variant": "teoria-adaptada",
+          "fileName": "teoria-adaptada.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Preparador%20online%20-%20teoria-adaptada.pdf%22",
+          "driveFileName": "Tema 01 - Preparador online - teoria-adaptada.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "02": {
+      "number": "02",
+      "title": "Elementos funcionales de un ordenador digital.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 02 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 30,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 02 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 02 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 02 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria adaptada",
+          "type": "teoria",
+          "variant": "teoria-adaptada",
+          "fileName": "teoria-adaptada.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria-adaptada.pdf%22",
+          "driveFileName": "Tema 02 - Preparador online - teoria-adaptada.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria adaptada mod",
+          "type": "teoria",
+          "variant": "teoria-adaptada-mod",
+          "fileName": "teoria-adaptada-mod.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Preparador%20online%20-%20teoria-adaptada-mod.pdf%22",
+          "driveFileName": "Tema 02 - Preparador online - teoria-adaptada-mod.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "03": {
+      "number": "03",
+      "title": "Componentes, estructura y funcionamiento de la Unidad Central de Proceso.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2003%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 03 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2003%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 03 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2003%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 03 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "04": {
+      "number": "04",
+      "title": "Memoria interna. Tipos. Direccionamiento. Características y funciones.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2004%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 04 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2004%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 04 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2004%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 04 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "05": {
+      "number": "05",
+      "title": "Microprocesadores. Estructura. Tipos. Comunicación con el exterior.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2005%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 05 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 19,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2005%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 05 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 20,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2005%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 05 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "06": {
+      "number": "06",
+      "title": "Sistemas de almacenamiento externo. Tipos. Características y funcionamiento.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 06 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 34,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 06 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 22,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 06 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 20,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 06 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "07": {
+      "number": "07",
+      "title": "Dispositivos periféricos de entrada/salida. Características y funcionamiento.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 64,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Abacus%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 07 - Abacus - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 07 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 07 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 07 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "08": {
+      "number": "08",
+      "title": "Hardware comercial de un ordenador. Placa base. Tarjetas controladoras de dispositivos y de entrada/salida.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2008%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 08 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2008%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 08 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2008%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 08 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "09": {
+      "number": "09",
+      "title": "Lógica de circuitos. Circuitos combinacionales y secuenciales.",
+      "block": "Arquitectura y hardware",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 09 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 09 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 09 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 09 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "10": {
+      "number": "10",
+      "title": "Representación interna de los datos.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2010%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 10 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2010%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 10 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2010%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 10 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "11": {
+      "number": "11",
+      "title": "Organización lógica de los datos. Estructuras estáticas.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 11 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 11 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Muestra",
+          "type": "teoria",
+          "variant": "teoria-muestra",
+          "fileName": "teoria-muestra.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Preparador%20online%20-%20teoria-muestra.pdf%22",
+          "driveFileName": "Tema 11 - Preparador online - teoria-muestra.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 11 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 11 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "12": {
+      "number": "12",
+      "title": "Organización lógica de los datos. Estructuras dinámicas.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 12 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 12 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 12 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 12 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "13": {
+      "number": "13",
+      "title": "Ficheros. Tipos. Características. Organizaciones.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 13 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 44,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 13 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 13 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 13 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 13 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "14": {
+      "number": "14",
+      "title": "Utilización de ficheros según su organización.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 14 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 30,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 14 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen-igual-que-tema-13.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 14 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 14 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 14 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "15": {
+      "number": "15",
+      "title": "Sistemas operativos. Componentes. Estructura. Funciones. Tipos.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 44,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Abacus%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 15 - Abacus - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 15 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 15 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 15 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "16": {
+      "number": "16",
+      "title": "Sistemas operativos: Gestión de procesos.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 16 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 16 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 16 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 16 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "17": {
+      "number": "17",
+      "title": "Sistemas operativos: Gestión de memoria.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 17 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 30,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 17 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 17 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 17 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "18": {
+      "number": "18",
+      "title": "Sistemas operativos: Gestión de entradas/salidas.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2018%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 18 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2018%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 18 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2018%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 18 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "19": {
+      "number": "19",
+      "title": "Sistemas operativos: Gestión de archivos y dispositivos.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 19 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 34,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 19 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 19 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2",
+          "type": "teoria",
+          "variant": "teoria-v2",
+          "fileName": "teoria-v2.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Preparador%20online%20-%20teoria-v2.pdf%22",
+          "driveFileName": "Tema 19 - Preparador online - teoria-v2.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "20": {
+      "number": "20",
+      "title": "Explotación y administración de sistemas operativos monousuario y multiusuario.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2020%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 20 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2020%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 20 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2 PES",
+          "type": "teoria",
+          "variant": "teoria-v2-pes",
+          "fileName": "teoria-v2-pes.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2020%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
+          "driveFileName": "Tema 20 - Preparador online - teoria-v2-pes.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "21": {
+      "number": "21",
+      "title": "Sistemas informáticos. Estructura física y funcional.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2021%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 21 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2021%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 21 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "22": {
+      "number": "22",
+      "title": "Planificación y explotación de sistemas informáticos. Configuración. Condiciones de instalación. Medidas de seguridad. Procedimientos de uso.",
+      "block": "Datos, ficheros y sistemas",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2022%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 22 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 18,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2022%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 22 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "23": {
+      "number": "23",
+      "title": "Diseño de algoritmos. Técnicas descriptivas.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 23 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 23 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 23 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2 PES",
+          "type": "teoria",
+          "variant": "teoria-v2-pes",
+          "fileName": "teoria-v2-pes.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
+          "driveFileName": "Tema 23 - Preparador online - teoria-v2-pes.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "24": {
+      "number": "24",
+      "title": "Lenguajes de programación. Tipos. Características.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 24 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 24 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 24 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria V2 PES",
+          "type": "teoria",
+          "variant": "teoria-v2-pes",
+          "fileName": "teoria-v2-pes.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Preparador%20online%20-%20teoria-v2-pes.pdf%22",
+          "driveFileName": "Tema 24 - Preparador online - teoria-v2-pes.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "25": {
+      "number": "25",
+      "title": "Programación estructurada. Estructuras básicas. Funciones y procedimientos.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2025%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 25 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2025%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 25 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2025%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 25 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "26": {
+      "number": "26",
+      "title": "Programación modular. Diseño de funciones. Recursividad. Librerías.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2026%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 26 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2026%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 26 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2026%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 26 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "27": {
+      "number": "27",
+      "title": "Programación orientada a objetos. Objetos. Clases. Herencia. Polimorfismo. Lenguajes.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2027%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 27 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2027%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 27 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2027%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 27 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "28": {
+      "number": "28",
+      "title": "Programación en tiempo real. Interrupciones. Sincronización y comunicación entre tareas. Lenguajes.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2028%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 28 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2028%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 28 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "29": {
+      "number": "29",
+      "title": "Utilidades para el desarrollo y prueba de programas. Compiladores. Intérpretes. Depuradores.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2029%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 29 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2029%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 29 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2029%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 29 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "30": {
+      "number": "30",
+      "title": "Prueba y documentación de programas. Técnicas.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2030%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 30 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 34,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2030%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 30 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2030%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 30 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2030%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 30 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "31": {
+      "number": "31",
+      "title": "Lenguaje C: Características generales. Elementos del lenguaje. Estructura de un programa. Funciones de librería y usuario. Entorno de compilación. Herramientas para la elaboración y depuración de programas en lenguaje C.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2031%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 31 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2031%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 31 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2031%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 31 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "32": {
+      "number": "32",
+      "title": "Lenguaje C: Manipulación de estructuras de datos dinámicas y estáticas. Entrada y salida de datos. Gestión de punteros. Punteros a funciones.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 56,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2032%20-%20Abacus%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 32 - Abacus - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2032%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 32 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2032%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 32 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2032%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 32 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "33": {
+      "number": "33",
+      "title": "Programación en lenguaje ensamblador. Instrucciones básicas. Formatos. Direccionamientos.",
+      "block": "Programación",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2033%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 33 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2033%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 33 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2033%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 33 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "34": {
+      "number": "34",
+      "title": "Sistemas gestores de base de datos. Funciones. Componentes. Arquitecturas de referencia y operacionales. Tipos de sistemas.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2034%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 34 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2034%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 34 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2034%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 34 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "35": {
+      "number": "35",
+      "title": "La definición de datos. Niveles de descripción. Lenguajes. Diccionario de datos.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2035%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 35 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Muestra",
+          "type": "teoria",
+          "variant": "teoria-muestra",
+          "fileName": "teoria-muestra.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2035%20-%20Preparador%20online%20-%20teoria-muestra.pdf%22",
+          "driveFileName": "Tema 35 - Preparador online - teoria-muestra.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2035%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 35 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "36": {
+      "number": "36",
+      "title": "La manipulación de datos. Operaciones. Lenguajes. Optimización de consultas.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 48,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2036%20-%20Abacus%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 36 - Abacus - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2036%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 36 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2036%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 36 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "37": {
+      "number": "37",
+      "title": "Modelo de datos jerárquico y en red. Estructuras. Operaciones.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2037%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 37 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 12,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2037%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 37 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "38": {
+      "number": "38",
+      "title": "Modelo de datos relacional. Estructuras. Operaciones. Álgebra relacional.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2038%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 38 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2038%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 38 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "39": {
+      "number": "39",
+      "title": "Lenguajes para la definición y manipulación de datos en sistemas de base de datos relacionales. Tipos. Características. Lenguaje SQL.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2039%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 39 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 36,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2039%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 39 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2039%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 39 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 18,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2039%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 39 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "40": {
+      "number": "40",
+      "title": "Diseño de bases de datos relacionales.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2040%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 40 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2040%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 40 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2040%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 40 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "41": {
+      "number": "41",
+      "title": "Utilidades de los sistemas gestores de base de datos para el desarrollo de aplicaciones. Tipos. Características.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2041%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 41 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2041%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 41 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2041%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 41 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "42": {
+      "number": "42",
+      "title": "Sistemas de base de datos distribuidos.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2042%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 42 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2042%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 42 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "43": {
+      "number": "43",
+      "title": "Administración de sistemas de base de datos.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2043%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 43 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2043%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 43 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "44": {
+      "number": "44",
+      "title": "Técnicas y procedimientos para la seguridad de los datos.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2044%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 44 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2044%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 44 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "45": {
+      "number": "45",
+      "title": "Sistemas de información. Tipos. Características. Sistemas de información en la empresa.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2045%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 45 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 32,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2045%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 45 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2045%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 45 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2045%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 45 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "46": {
+      "number": "46",
+      "title": "Aplicaciones informáticas de propósito general y para la gestión empresarial. Tipos. Funciones. Características.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2046%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 46 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2046%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 46 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2046%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 46 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "47": {
+      "number": "47",
+      "title": "Instalación y explotación de aplicaciones informáticas. Compartición de datos.",
+      "block": "Bases de datos y sistemas de información",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2047%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 47 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2047%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 47 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2047%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 47 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "48": {
+      "number": "48",
+      "title": "Ingeniería del software. Ciclo de desarrollo del software. Tipos de ciclos de desarrollo. Metodologías de desarrollo. Características distintivas de las principales metodologías de desarrollo utilizadas en la Unión Europea.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2048%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 48 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2048%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 48 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2048%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 48 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "49": {
+      "number": "49",
+      "title": "Análisis de sistemas: Modelización de tratamientos. Modelo de flujo de datos y control. Técnicas descriptivas. Documentación.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2049%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 49 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2049%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 49 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "50": {
+      "number": "50",
+      "title": "Análisis de sistemas: Modelización conceptual de datos. Técnicas descriptivas. Documentación.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2050%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 50 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2050%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 50 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2050%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 50 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "51": {
+      "number": "51",
+      "title": "Análisis de sistemas: Especificación funcional del sistema. Búsqueda y descripción de requisitos funcionales. Especificación de soluciones técnicas. Análisis de viabilidad técnica y económica.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2051%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 51 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2051%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 51 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 12,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2051%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 51 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "52": {
+      "number": "52",
+      "title": "Diseño lógico de funciones. Definición de funciones. Descomposición modular. Técnicas descriptivas. Documentación.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2052%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 52 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2052%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 52 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "53": {
+      "number": "53",
+      "title": "Diseño lógico de datos. Transformación del modelo conceptual a modelos lógicos. Análisis relacional de datos. Documentación.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2053%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 53 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2053%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 53 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2053%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 53 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "54": {
+      "number": "54",
+      "title": "Diseño de interfaces de usuario. Criterios de diseño. Descripción de interfaces. Documentación. Herramientas para la construcción de interfaces.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2054%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 54 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2054%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 54 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2054%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 54 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "55": {
+      "number": "55",
+      "title": "Diseño físico de datos y funciones. Criterios de diseño. Documentación.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2055%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 55 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2055%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 55 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "56": {
+      "number": "56",
+      "title": "Análisis y diseño orientado a objetos.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2056%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 56 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2056%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 56 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2056%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 56 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "57": {
+      "number": "57",
+      "title": "Calidad del software. Factores y métricas. Estrategias de prueba.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2057%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 57 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2057%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 57 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "58": {
+      "number": "58",
+      "title": "Ayudas automatizadas para el desarrollo de software (herramientas CASE). Tipos. Estructura. Prestaciones.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2058%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 58 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2058%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 58 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "59": {
+      "number": "59",
+      "title": "Gestión y control de proyectos informáticos. Estimación de recursos. Planificación temporal y organizativa. Seguimiento.",
+      "block": "Ingeniería del software",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2059%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 59 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 36,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2059%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 59 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2059%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 59 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "60": {
+      "number": "60",
+      "title": "Sistemas basados en el conocimiento. Representación del conocimiento. Componentes y arquitectura.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2060%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 60 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2060%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 60 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2060%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 60 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "61": {
+      "number": "61",
+      "title": "Redes y servicios de comunicaciones.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2061%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 61 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2061%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 61 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2061%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 61 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "62": {
+      "number": "62",
+      "title": "Arquitecturas de sistemas de comunicaciones. Arquitecturas basadas en niveles. Estándares.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2062%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 62 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2062%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 62 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2062%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 62 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "63": {
+      "number": "63",
+      "title": "Funciones y servicios del nivel físico. Tipos y medios de transmisión. Adaptación al medio de transmisión. Limitaciones a la transmisión. Estándares.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2063%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 63 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 36,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2063%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 63 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2063%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 63 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "64": {
+      "number": "64",
+      "title": "Funciones y servicios del nivel de enlace. Técnicas. Protocolos.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2064%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 64 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2064%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 64 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "65": {
+      "number": "65",
+      "title": "Funciones y servicios del nivel de red y del nivel de transporte. Técnicas. Protocolos.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 65 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 38,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Ecoem%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 65 - Ecoem - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 65 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Resumen esquema",
+          "type": "resumen",
+          "variant": "resumen-esquema-muestra",
+          "fileName": "resumen-esquema-muestra.pdf",
+          "extension": ".pdf",
+          "pages": 4,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Preparador%20online%20-%20resumen-esquema-muestra.pdf%22",
+          "driveFileName": "Tema 65 - Preparador online - resumen-esquema-muestra.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "66": {
+      "number": "66",
+      "title": "Funciones y servicios en niveles sesión, presentación y aplicación. Protocolos. Estándares.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2066%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 66 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 16,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2066%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 66 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "67": {
+      "number": "67",
+      "title": "Redes de área local. Componentes. Topologías. Estándares. Protocolos.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2067%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 67 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Ecoem",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.docx",
+          "extension": ".docx",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2067%20-%20Ecoem%20-%20resumen.docx%22",
+          "driveFileName": "Tema 67 - Ecoem - resumen.docx",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2067%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 67 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "68": {
+      "number": "68",
+      "title": "Software de sistemas en red. Componentes. Funciones. Estructura.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2068%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 68 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2068%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 68 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "69": {
+      "number": "69",
+      "title": "Integración de sistemas. Medios de interconexión. Estándares. Protocolos de acceso a redes de área extensa.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2069%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 69 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2069%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 69 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "70": {
+      "number": "70",
+      "title": "Diseño de sistemas en red local. Parámetros de diseño. Instalación y configuración de sistemas en red local.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2070%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 70 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2070%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 70 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "71": {
+      "number": "71",
+      "title": "Explotación y administración de sistemas en red local. Facilidades de gestión.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2071%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 71 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 17,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2071%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 71 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "72": {
+      "number": "72",
+      "title": "La seguridad en sistemas en red. Servicios de seguridad. Técnicas y sistemas de protección. Estándares.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2072%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 72 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 14,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2072%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 72 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "73": {
+      "number": "73",
+      "title": "Evaluación y mejora de prestaciones en un sistema en red. Técnicas y procedimientos de medidas.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2073%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 73 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 13,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2073%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 73 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    },
+    "74": {
+      "number": "74",
+      "title": "Sistemas multimedia.",
+      "block": "Conocimiento, redes y multimedia",
+      "materials": [
+        {
+          "academy": "Abacus",
+          "label": "Resumen",
+          "type": "resumen",
+          "variant": "resumen",
+          "fileName": "resumen.doc",
+          "extension": ".doc",
+          "pages": null,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2074%20-%20Abacus%20-%20resumen.doc%22",
+          "driveFileName": "Tema 74 - Abacus - resumen.doc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        },
+        {
+          "academy": "Preparador online",
+          "label": "Teoria",
+          "type": "teoria",
+          "variant": "teoria",
+          "fileName": "teoria.pdf",
+          "extension": ".pdf",
+          "pages": 15,
+          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2074%20-%20Preparador%20online%20-%20teoria.pdf%22",
+          "driveFileName": "Tema 74 - Preparador online - teoria.pdf",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+          "urlMode": "drive-title-search"
+        }
+      ]
+    }
+  },
+  "driveFolderId": "1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
+  "linkMode": "drive-title-search",
+  "materialCount": 226
+}
