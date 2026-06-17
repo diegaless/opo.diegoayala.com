@@ -3,28 +3,16 @@ const themeToggle = document.querySelector("[data-theme-toggle]");
 const searchInput = document.querySelector("[data-search]");
 const countOutput = document.querySelector("[data-count]");
 const emptyState = document.querySelector("[data-empty]");
-const modeButtons = [...document.querySelectorAll("[data-mode-button]")];
+const phaseSelect = document.querySelector("[data-phase-select]");
 const topicView = document.querySelector("[data-topic-view]");
 const phaseView = document.querySelector("[data-phase-view]");
-const phaseTabs = document.querySelector("[data-phase-tabs]");
-const phaseKicker = document.querySelector("[data-phase-kicker]");
-const phaseTitle = document.querySelector("[data-phase-title]");
-const phaseDescription = document.querySelector("[data-phase-description]");
-const phaseResourceCount = document.querySelector("[data-phase-resource-count]");
-const phaseLinkCount = document.querySelector("[data-phase-link-count]");
-const phaseLegal = document.querySelector("[data-phase-legal]");
-const moduleNote = document.querySelector("[data-module-note]");
-const phaseGroups = document.querySelector("[data-phase-groups]");
-const phaseResultCount = document.querySelector("[data-phase-result-count]");
-const phaseResources = document.querySelector("[data-phase-resources]");
 const blocks = [...document.querySelectorAll("[data-block]")];
 const topics = [...document.querySelectorAll("[data-topic]")];
 const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
 
-let currentMode = "topics";
+let currentView = "topics";
 let phasesData = null;
-let selectedPhaseId = "01_Primera_prueba_B_Tema_escrito";
 
 function setTheme(theme) {
   root.dataset.theme = theme;
@@ -42,11 +30,10 @@ function normalize(value) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
-function updateCount(visible) {
+function updateCount(visible, type = "temas") {
   if (!countOutput) return;
-  const unit = currentMode === "phases" ? "recurso" : "tema";
-  const plural = currentMode === "phases" ? "recursos" : "temas";
-  countOutput.textContent = visible === 1 ? `1 ${unit}` : `${visible} ${plural}`;
+  const singular = type === "recursos" ? "recurso" : "tema";
+  countOutput.textContent = visible === 1 ? `1 ${singular}` : `${visible} ${type}`;
 }
 
 function getTopicKey(topic) {
@@ -168,99 +155,23 @@ async function loadPhases() {
     const response = await fetch(phasesUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`No se pudo cargar ${phasesUrl}`);
     phasesData = await response.json();
-    renderPhaseTabs();
-    renderSelectedPhase();
+    renderPhaseOptions();
   } catch (error) {
     console.warn(error);
   }
 }
 
-function getSelectedPhase() {
-  return phasesData?.phases?.find((phase) => phase.id === selectedPhaseId) || phasesData?.phases?.[0];
-}
-
-function renderPhaseTabs() {
-  if (!phaseTabs || !phasesData?.phases) return;
-  const fragment = document.createDocumentFragment();
+function renderPhaseOptions() {
+  if (!phaseSelect || !phasesData?.phases) return;
   phasesData.phases.forEach((phase) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "phase-tab";
-    button.dataset.phaseId = phase.id;
-    button.setAttribute("aria-pressed", String(phase.id === selectedPhaseId));
-    button.innerHTML = `<span>${phase.label}</span><strong>${phase.resourceCount}</strong>`;
-    button.addEventListener("click", () => {
-      selectedPhaseId = phase.id;
-      renderSelectedPhase();
-    });
-    fragment.append(button);
+    phaseSelect.append(createOption(phase.id, phase.title));
   });
-  phaseTabs.replaceChildren(fragment);
 }
 
-function renderModuleNote(phase) {
-  if (!moduleNote || !phasesData?.selectedModule) return;
-  const module = phasesData.selectedModule;
-  const shouldShow = [
-    "00_Normativa_y_orden_legal",
-    "03_Segunda_prueba_Programacion_didactica",
-    "04_Segunda_prueba_Unidad_didactica",
-  ].includes(phase.id);
-
-  if (!shouldShow) {
-    moduleNote.hidden = true;
-    moduleNote.replaceChildren();
-    return;
-  }
-
-  moduleNote.hidden = false;
-  moduleNote.innerHTML = `
-    <p><strong>DAW ${module.code}</strong> · ${module.module}</p>
-    <p>${module.course} · ${module.current_total_hours} · ${module.weekly_hours}</p>
-  `;
-}
-
-function renderPhaseGroups(phase) {
-  if (!phaseGroups) return;
-  const groups = [
-    ["Secciones", phase.sections],
-    ["Academias", phase.academies],
-    ["Tipos", phase.types],
-  ];
-  const fragment = document.createDocumentFragment();
-
-  groups.forEach(([label, items]) => {
-    if (!items?.length) return;
-    const group = createElement("section", "phase-group");
-    group.append(createElement("h3", "", label));
-    const list = createElement("div", "phase-chips");
-    items.slice(0, 10).forEach((item) => {
-      const chip = createElement("span", "phase-chip");
-      chip.innerHTML = `<span>${item.name}</span><strong>${item.count}</strong>`;
-      list.append(chip);
-    });
-    group.append(list);
-    fragment.append(group);
-  });
-
-  if (phase.id === "00_Normativa_y_orden_legal" && phasesData?.legalSources?.length) {
-    const sourceGroup = createElement("section", "phase-group phase-group-wide");
-    sourceGroup.append(createElement("h3", "", "Fuentes oficiales"));
-    const sourceList = createElement("div", "source-grid");
-    phasesData.legalSources.forEach((source) => {
-      const link = document.createElement("a");
-      link.className = "source-card";
-      link.href = source.url;
-      link.target = "_blank";
-      link.rel = "noreferrer";
-      link.innerHTML = `<span>${source.nivel}</span><strong>${source.norma}</strong>`;
-      sourceList.append(link);
-    });
-    sourceGroup.append(sourceList);
-    fragment.append(sourceGroup);
-  }
-
-  phaseGroups.replaceChildren(fragment);
+function formatSectionName(section) {
+  return section
+    .replaceAll("_", " ")
+    .replaceAll("/", " / ");
 }
 
 function resourceMatches(resource, query) {
@@ -277,73 +188,97 @@ function resourceMatches(resource, query) {
   ).includes(query);
 }
 
-function renderPhaseResources(phase) {
-  if (!phaseResources || !phaseResultCount) return;
-  const query = normalize(searchInput?.value.trim() || "");
-  const resources = (phase.resources || []).filter((resource) => resourceMatches(resource, query));
-  const fragment = document.createDocumentFragment();
+function getSelectedPhase() {
+  return phasesData?.phases?.find((phase) => phase.id === currentView);
+}
 
-  resources.forEach((resource) => {
-    const item = createElement("article", "phase-resource");
-    const body = createElement("div", "phase-resource-body");
-    body.append(createElement("h3", "", resource.title));
-    body.append(
-      createElement(
-        "p",
-        "",
-        [resource.section, resource.topic, resource.academy, resource.type]
-          .filter(Boolean)
-          .join(" · "),
-      ),
-    );
+function groupResourcesBySection(resources) {
+  return resources.reduce((groups, resource) => {
+    const section = resource.section || "General";
+    if (!groups.has(section)) groups.set(section, []);
+    groups.get(section).push(resource);
+    return groups;
+  }, new Map());
+}
 
-    if (resource.hasPublicLink && resource.url) {
-      const link = document.createElement("a");
-      link.className = "phase-resource-link";
-      link.href = resource.url;
-      link.target = "_blank";
-      link.rel = "noreferrer";
-      link.textContent = resource.urlMode === "drive-pdf-preview" ? "PDF" : "Drive";
-      item.append(body, link);
-    } else {
-      const badge = createElement("span", "phase-resource-pending", "Pendiente Drive");
-      item.append(body, badge);
-    }
+function buildResourceItem(resource, index) {
+  const item = createElement("li", "topic-item");
+  item.dataset.phaseResource = "";
 
-    fragment.append(item);
-  });
+  const row = createElement("span", "topic-row");
+  const number = createElement("span", "topic-number", String(index).padStart(2, "0"));
+  const title = createElement("span", "", resource.title);
+  row.append(number, title);
 
-  if (!resources.length) {
-    const empty = createElement("p", "phase-empty", "No hay recursos que coincidan con la búsqueda en esta fase.");
-    fragment.append(empty);
+  const panel = createElement("div", "topic-materials phase-materials");
+  const meta = createElement(
+    "span",
+    "phase-meta",
+    [resource.topic, resource.academy, resource.type, resource.area]
+      .filter(Boolean)
+      .join(" · "),
+  );
+
+  const openLink = document.createElement("a");
+  openLink.className = "material-link";
+  openLink.target = "_blank";
+  openLink.rel = "noreferrer";
+
+  if (resource.hasPublicLink && resource.url) {
+    openLink.href = resource.url;
+    openLink.textContent = resource.urlMode === "drive-pdf-preview" ? "PDF" : "Drive";
+    openLink.title = resource.title;
+  } else {
+    openLink.textContent = "Pendiente";
+    openLink.setAttribute("aria-disabled", "true");
   }
 
-  phaseResultCount.textContent = resources.length === 1 ? "1 recurso" : `${resources.length} recursos`;
-  phaseResources.replaceChildren(fragment);
-  updateCount(resources.length);
+  panel.append(meta, openLink);
+  item.append(row, panel);
+  return item;
 }
 
 function renderSelectedPhase() {
+  if (!phaseView) return;
   const phase = getSelectedPhase();
   if (!phase) return;
 
-  selectedPhaseId = phase.id;
-  if (phaseKicker) phaseKicker.textContent = phase.label;
-  if (phaseTitle) phaseTitle.textContent = phase.title;
-  if (phaseDescription) phaseDescription.textContent = phase.description;
-  if (phaseResourceCount) phaseResourceCount.textContent = phase.resourceCount;
-  if (phaseLinkCount) phaseLinkCount.textContent = phase.publicLinkCount;
-  if (phaseLegal) phaseLegal.textContent = phase.legal;
+  const query = normalize(searchInput?.value.trim() || "");
+  const resources = (phase.resources || []).filter((resource) => resourceMatches(resource, query));
+  const groups = groupResourcesBySection(resources);
+  const fragment = document.createDocumentFragment();
+  let resourceIndex = 1;
 
-  phaseTabs?.querySelectorAll("[data-phase-id]").forEach((button) => {
-    const isActive = button.dataset.phaseId === phase.id;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  });
+  if (!resources.length) {
+    const block = createElement("article", "topic-block");
+    const header = createElement("header", "block-header");
+    header.append(createElement("p", "", phase.label), createElement("h2", "", phase.title));
+    const list = createElement("ol", "topic-list");
+    const item = createElement("li", "topic-item");
+    const row = createElement("span", "topic-row");
+    row.append(createElement("span", "topic-number", "00"), createElement("span", "", "No hay recursos que coincidan."));
+    item.append(row);
+    list.append(item);
+    block.append(header, list);
+    fragment.append(block);
+  } else {
+    groups.forEach((sectionResources, section) => {
+      const block = createElement("article", "topic-block");
+      const header = createElement("header", "block-header");
+      header.append(createElement("p", "", phase.label), createElement("h2", "", formatSectionName(section)));
+      const list = createElement("ol", "topic-list");
+      sectionResources.forEach((resource) => {
+        list.append(buildResourceItem(resource, resourceIndex));
+        resourceIndex += 1;
+      });
+      block.append(header, list);
+      fragment.append(block);
+    });
+  }
 
-  renderModuleNote(phase);
-  renderPhaseGroups(phase);
-  renderPhaseResources(phase);
+  phaseView.replaceChildren(fragment);
+  updateCount(resources.length, "recursos");
+  if (emptyState) emptyState.hidden = true;
 }
 
 function filterTopics() {
@@ -367,28 +302,19 @@ function filterTopics() {
   if (emptyState) emptyState.hidden = visibleTopics !== 0;
 }
 
-function filterCurrentView() {
-  if (currentMode === "phases") {
-    if (emptyState) emptyState.hidden = true;
-    const phase = getSelectedPhase();
-    if (phase) renderPhaseResources(phase);
+function renderCurrentView() {
+  if (currentView === "topics") {
+    topicView.hidden = false;
+    phaseView.hidden = true;
+    searchInput.placeholder = "Buscar tema...";
+    filterTopics();
     return;
   }
-  filterTopics();
-}
 
-function setMode(mode) {
-  currentMode = mode;
-  topicView.hidden = mode !== "topics";
-  phaseView.hidden = mode !== "phases";
-  if (emptyState && mode === "phases") emptyState.hidden = true;
-  searchInput.placeholder = mode === "topics" ? "Buscar tema..." : "Buscar recurso, área, academia...";
-  modeButtons.forEach((button) => {
-    const isActive = button.dataset.modeButton === mode;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-selected", String(isActive));
-  });
-  filterCurrentView();
+  topicView.hidden = true;
+  phaseView.hidden = false;
+  searchInput.placeholder = "Buscar recurso...";
+  renderSelectedPhase();
 }
 
 setTheme(root.dataset.theme || "dark");
@@ -401,8 +327,9 @@ themeToggle?.addEventListener("click", () => {
   setTheme(nextTheme);
 });
 
-modeButtons.forEach((button) => {
-  button.addEventListener("click", () => setMode(button.dataset.modeButton || "topics"));
+phaseSelect?.addEventListener("change", () => {
+  currentView = phaseSelect.value;
+  renderCurrentView();
 });
 
-searchInput?.addEventListener("input", filterCurrentView);
+searchInput?.addEventListener("input", renderCurrentView);
