@@ -38,12 +38,17 @@
 
 html {
   min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   margin: 0;
+  overflow-x: clip;
   color: var(--ink);
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--accent-soft) 64%, transparent), transparent 180px),
@@ -75,6 +80,8 @@ button {
   top: 0;
   z-index: 10;
   display: grid;
+  width: 100%;
+  max-width: 100%;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 18px;
@@ -85,6 +92,9 @@ button {
 }
 
 .site-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--muted);
   font-size: 0.84rem;
   font-weight: 780;
@@ -137,13 +147,15 @@ button {
 }
 
 .page-main {
-  width: min(100% - 40px, 1080px);
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 22px 0 72px;
+  padding: 22px 20px 72px;
 }
 
 .summary-row {
   display: flex;
+  min-width: 0;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -152,16 +164,19 @@ button {
 }
 
 .summary-row p {
+  min-width: 0;
   margin: 0;
   color: var(--muted);
   font-size: 0.72rem;
   font-weight: 780;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .summary-links {
   display: flex;
+  min-width: 0;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 10px 18px;
@@ -175,6 +190,7 @@ p {
 .source-link {
   display: inline-flex;
   align-items: center;
+  min-width: 0;
   min-height: 24px;
   border-bottom: 1px solid var(--accent);
   color: var(--ink);
@@ -182,6 +198,7 @@ p {
   font-weight: 780;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
   transition:
     color 160ms ease,
     border-color 160ms ease;
@@ -196,6 +213,8 @@ p {
   position: sticky;
   top: 69px;
   z-index: 5;
+  width: 100%;
+  min-width: 0;
   margin: 0 0 28px;
   padding: 14px 16px 16px;
   border: 1px solid color-mix(in srgb, var(--line) 88%, transparent);
@@ -207,6 +226,7 @@ p {
 
 .search-row {
   display: grid;
+  min-width: 0;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 16px;
@@ -243,6 +263,7 @@ p {
 
 .filter-row {
   display: grid;
+  min-width: 0;
   grid-template-columns: auto minmax(180px, 320px);
   align-items: center;
   gap: 10px;
@@ -259,6 +280,7 @@ p {
 
 .phase-select {
   width: 100%;
+  min-width: 0;
   min-height: 34px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -279,6 +301,7 @@ p {
 
 .phase-meta {
   display: flex;
+  min-width: 0;
   min-height: 34px;
   align-items: center;
   overflow: hidden;
@@ -294,11 +317,13 @@ p {
 
 .syllabus {
   display: grid;
+  min-width: 0;
   gap: 40px;
 }
 
 .topic-block {
   display: grid;
+  min-width: 0;
   grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
   gap: clamp(20px, 4vw, 52px);
   padding-top: 20px;
@@ -307,6 +332,7 @@ p {
 
 .block-header {
   position: sticky;
+  min-width: 0;
   top: 142px;
   align-self: start;
 }
@@ -321,15 +347,18 @@ p {
 }
 
 .block-header h2 {
+  min-width: 0;
   margin-bottom: 0;
   color: var(--ink);
   font-size: clamp(1.15rem, 1.7vw, 1.65rem);
   font-weight: 320;
   line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 .topic-list {
   display: grid;
+  min-width: 0;
   gap: 0;
   margin: 0;
   padding: 0;
@@ -337,11 +366,13 @@ p {
 }
 
 .topic-item {
+  min-width: 0;
   border-bottom: 1px solid var(--line);
 }
 
 .topic-row {
   display: grid;
+  min-width: 0;
   grid-template-columns: 38px minmax(0, 1fr);
   gap: 14px;
   min-height: 50px;
@@ -351,6 +382,11 @@ p {
   font-size: 0.96rem;
   line-height: 1.35;
   transition: color 160ms ease;
+}
+
+.topic-row > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .topic-number {
@@ -371,6 +407,8 @@ p {
 
 .topic-materials {
   display: grid;
+  min-width: 0;
+  max-width: calc(100% - 52px);
   grid-template-columns: minmax(130px, 0.9fr) minmax(170px, 1.2fr) auto;
   gap: 10px;
   align-items: center;
@@ -470,8 +508,7 @@ p {
   }
 
   .page-main {
-    width: min(100% - 32px, 1080px);
-    padding-top: 16px;
+    padding: 16px 16px 72px;
   }
 
   .summary-row {
@@ -522,6 +559,7 @@ p {
   .topic-materials {
     grid-template-columns: 1fr;
     margin-left: 42px;
+    max-width: calc(100% - 42px);
   }
 
   .site-footer {
@@ -535,7 +573,7 @@ p {
 
 @media (max-width: 460px) {
   .page-main {
-    width: min(100% - 28px, 1080px);
+    padding-inline: 14px;
   }
 
   .search-row input {
@@ -549,6 +587,7 @@ p {
 
   .topic-materials {
     margin-left: 39px;
+    max-width: calc(100% - 39px);
   }
 }
 
