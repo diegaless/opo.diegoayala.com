@@ -171,7 +171,7 @@ button {
   font-weight: 780;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .summary-links {
@@ -198,7 +198,7 @@ p {
   font-weight: 780;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   transition:
     color 160ms ease,
     border-color 160ms ease;
@@ -353,7 +353,7 @@ p {
   font-size: clamp(1.15rem, 1.7vw, 1.65rem);
   font-weight: 320;
   line-height: 1.1;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .topic-list {
@@ -386,7 +386,7 @@ p {
 
 .topic-row > span:last-child {
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .topic-number {
@@ -520,7 +520,8 @@ p {
   }
 
   .search-panel {
-    top: 65px;
+    position: relative;
+    top: auto;
     margin-bottom: 24px;
     padding: 12px 13px 13px;
   }
@@ -546,7 +547,20 @@ p {
   }
 
   .block-header {
-    position: static;
+    position: sticky;
+    top: 65px;
+    z-index: 4;
+    padding: 10px 0 12px;
+    border-bottom: 1px solid color-mix(in srgb, var(--line) 82%, transparent);
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(14px);
+  }
+
+  .summary-row p,
+  .source-link,
+  .block-header h2,
+  .topic-row > span:last-child {
+    overflow-wrap: anywhere;
   }
 
   .topic-row {
