@@ -782,11 +782,11 @@
           "count": 17
         },
         {
-          "name": "Esquemas_y_resumenes/Sistemas operativos",
+          "name": "Esquemas_y_resumenes/Bases de datos",
           "count": 1
         },
         {
-          "name": "Esquemas_y_resumenes/Bases de datos",
+          "name": "Esquemas_y_resumenes/Sistemas operativos",
           "count": 1
         }
       ],
@@ -1071,7 +1071,7 @@
           "driveFileId": "18Di3TXwAB2_uaJN3SVNdBKcxRzrt18QI"
         },
         {
-          "title": "Tema 01 - Abacus - resumen.doc",
+          "title": "Tema 01 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1079,9 +1079,9 @@
           "topic": "Tema 01",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2001%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/14jiiMY8OcF7TA07w8C4FI0qmglc1X3p6/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "14jiiMY8OcF7TA07w8C4FI0qmglc1X3p6"
         },
         {
           "title": "Tema 01 - Abacus - teoria.pdf",
@@ -1110,7 +1110,7 @@
           "driveFileId": "1t5QCiccNd3jAH2GmYo1jicoNq9_oyiZ-"
         },
         {
-          "title": "Tema 02 - Abacus - resumen.doc",
+          "title": "Tema 02 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1118,9 +1118,9 @@
           "topic": "Tema 02",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2002%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/17ld6uFLd9GqH5J5sBzw88PGJBSGTHOmh/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "17ld6uFLd9GqH5J5sBzw88PGJBSGTHOmh"
         },
         {
           "title": "Tema 02 - Ecoem - teoria.pdf",
@@ -1149,7 +1149,7 @@
           "driveFileId": "1F3JXDYXB8W8ASlmoh34kW62n32ZQd-Xc"
         },
         {
-          "title": "Tema 03 - Abacus - resumen.doc",
+          "title": "Tema 03 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1157,9 +1157,9 @@
           "topic": "Tema 03",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2003%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1Ef3K4myqAXcp8fGKXoAd833cn7PnRZAc/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Ef3K4myqAXcp8fGKXoAd833cn7PnRZAc"
         },
         {
           "title": "Tema 03 - Preparador online - teoria-v2.pdf",
@@ -1175,7 +1175,7 @@
           "driveFileId": "1wsxqe_SP_sjx6vCjgDLpNKrJXl-9ox2g"
         },
         {
-          "title": "Tema 04 - Abacus - resumen.doc",
+          "title": "Tema 04 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1183,9 +1183,9 @@
           "topic": "Tema 04",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2004%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1o6V64CdJFILN3OHkKwVDRUE0KbsCRtsW/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1o6V64CdJFILN3OHkKwVDRUE0KbsCRtsW"
         },
         {
           "title": "Tema 04 - Preparador online - teoria-v2.pdf",
@@ -1201,7 +1201,7 @@
           "driveFileId": "1eUUYUT1XO-kI79vCo-Dlq4-lPTT_Rav1"
         },
         {
-          "title": "Tema 05 - Abacus - resumen.doc",
+          "title": "Tema 05 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1209,9 +1209,9 @@
           "topic": "Tema 05",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2005%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1UDoJjHpZfSlnwoh_g_hkluB0544pDAyx/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1UDoJjHpZfSlnwoh_g_hkluB0544pDAyx"
         },
         {
           "title": "Tema 05 - Preparador online - teoria-v2.pdf",
@@ -1227,7 +1227,7 @@
           "driveFileId": "188B0hXxX4PqQxyw5zhFvNBPo30DQZ-8e"
         },
         {
-          "title": "Tema 06 - Abacus - resumen.doc",
+          "title": "Tema 06 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1235,9 +1235,9 @@
           "topic": "Tema 06",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2006%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1a7qvm5T3rpKB0noezITx_iwKIwEm-Fmu/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1a7qvm5T3rpKB0noezITx_iwKIwEm-Fmu"
         },
         {
           "title": "Tema 06 - Ecoem - teoria.pdf",
@@ -1266,7 +1266,7 @@
           "driveFileId": "1sZUTsHRmPZ4Lq-p0JXn6ULs3QBL5ao7q"
         },
         {
-          "title": "Tema 07 - Abacus - resumen.doc",
+          "title": "Tema 07 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1274,9 +1274,9 @@
           "topic": "Tema 07",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2007%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1dvSuA0taOCygejQMff2RBOHR5IXbu_WK/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1dvSuA0taOCygejQMff2RBOHR5IXbu_WK"
         },
         {
           "title": "Tema 07 - Abacus - teoria.pdf",
@@ -1305,7 +1305,7 @@
           "driveFileId": "11xOomQU4UMmz4bI-ONXlkDPtLrA2acy7"
         },
         {
-          "title": "Tema 08 - Abacus - resumen.doc",
+          "title": "Tema 08 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1313,9 +1313,9 @@
           "topic": "Tema 08",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2008%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1yyq7yZ3i0aX1QLNFXC6-maIb_5GAa3-j/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1yyq7yZ3i0aX1QLNFXC6-maIb_5GAa3-j"
         },
         {
           "title": "Tema 08 - Preparador online - teoria-v2.pdf",
@@ -1331,7 +1331,7 @@
           "driveFileId": "1BzvDF13z9hFzLxmmmZJBeKpqot10R7Hg"
         },
         {
-          "title": "Tema 09 - Abacus - resumen.doc",
+          "title": "Tema 09 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1339,12 +1339,12 @@
           "topic": "Tema 09",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1Hq1USXGQHqIfb23U4T3BbUvr3Lt4jXPP/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Hq1USXGQHqIfb23U4T3BbUvr3Lt4jXPP"
         },
         {
-          "title": "Tema 09 - Ecoem - resumen.docx",
+          "title": "Tema 09 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1352,9 +1352,9 @@
           "topic": "Tema 09",
           "area": "Arquitectura y hardware",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2009%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1vH1cLbNYPf6KorxjgOur5VJAo3KqcN24/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1vH1cLbNYPf6KorxjgOur5VJAo3KqcN24"
         },
         {
           "title": "Tema 09 - Preparador online - teoria-v2.pdf",
@@ -1370,7 +1370,7 @@
           "driveFileId": "1Y2XHUB0hqnjN5ZqQyO-aEOOYh1mUgi-W"
         },
         {
-          "title": "Tema 10 - Abacus - resumen.doc",
+          "title": "Tema 10 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1378,9 +1378,9 @@
           "topic": "Tema 10",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2010%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1aEoAyjxJ_UqmGA2NRsuzFCZdGnhreTIx/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1aEoAyjxJ_UqmGA2NRsuzFCZdGnhreTIx"
         },
         {
           "title": "Tema 10 - Preparador online - teoria-v2.pdf",
@@ -1396,7 +1396,7 @@
           "driveFileId": "1Rb2oH8spyUcLthzKdbswJCMw1hEQbNHD"
         },
         {
-          "title": "Tema 11 - Abacus - resumen.doc",
+          "title": "Tema 11 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1404,12 +1404,12 @@
           "topic": "Tema 11",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1-z2CNJ0bV78Uerd1bvthojP-dRqotDY2/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1-z2CNJ0bV78Uerd1bvthojP-dRqotDY2"
         },
         {
-          "title": "Tema 11 - Ecoem - resumen.docx",
+          "title": "Tema 11 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1417,9 +1417,9 @@
           "topic": "Tema 11",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2011%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1C2E9BZChJNirgYyDMOGN3Qc5OJ9_INtr/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1C2E9BZChJNirgYyDMOGN3Qc5OJ9_INtr"
         },
         {
           "title": "Tema 11 - Preparador online - teoria-v2.pdf",
@@ -1435,7 +1435,7 @@
           "driveFileId": "1hGWWR9reJNnusKx32p0gnmel3NDxWBUo"
         },
         {
-          "title": "Tema 12 - Abacus - resumen.doc",
+          "title": "Tema 12 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1443,12 +1443,12 @@
           "topic": "Tema 12",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/19VB3R9c4rycz58ApnFkq5HmICx8dEPaD/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "19VB3R9c4rycz58ApnFkq5HmICx8dEPaD"
         },
         {
-          "title": "Tema 12 - Ecoem - resumen.docx",
+          "title": "Tema 12 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1456,9 +1456,9 @@
           "topic": "Tema 12",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2012%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1qCPpM71_Von-HLbdYpq2ekklsjDyRQDZ/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1qCPpM71_Von-HLbdYpq2ekklsjDyRQDZ"
         },
         {
           "title": "Tema 12 - Preparador online - teoria-v2.pdf",
@@ -1474,7 +1474,7 @@
           "driveFileId": "15vvPhF8AaXlB4NJpWTOja5HbYYYEzYzq"
         },
         {
-          "title": "Tema 13 - Abacus - resumen.doc",
+          "title": "Tema 13 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1482,12 +1482,12 @@
           "topic": "Tema 13",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1IpnbfkHffvcI7JmrE5nIi4Ekmb_KV6tq/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1IpnbfkHffvcI7JmrE5nIi4Ekmb_KV6tq"
         },
         {
-          "title": "Tema 13 - Ecoem - resumen.docx",
+          "title": "Tema 13 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1495,9 +1495,9 @@
           "topic": "Tema 13",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2013%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/19ZML55IASL32eHUrsLtV8ImW3k7n529D/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "19ZML55IASL32eHUrsLtV8ImW3k7n529D"
         },
         {
           "title": "Tema 13 - Ecoem - teoria.pdf",
@@ -1526,7 +1526,7 @@
           "driveFileId": "1Gknz5G1AZA63v8JXKqFXj1Ptw4CVHeCj"
         },
         {
-          "title": "Tema 14 - Abacus - resumen.doc",
+          "title": "Tema 14 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1534,12 +1534,12 @@
           "topic": "Tema 14",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1_F_zXfjVj-HrujsNQYIJ4h24CWxvseOV/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1_F_zXfjVj-HrujsNQYIJ4h24CWxvseOV"
         },
         {
-          "title": "Tema 14 - Ecoem - resumen.docx",
+          "title": "Tema 14 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1547,9 +1547,9 @@
           "topic": "Tema 14",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2014%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1HhG-43Iu5IFxEQqSZT3tnFf58y1yxc08/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1HhG-43Iu5IFxEQqSZT3tnFf58y1yxc08"
         },
         {
           "title": "Tema 14 - Ecoem - teoria.pdf",
@@ -1578,7 +1578,7 @@
           "driveFileId": "18g3pkeoZsnDeig-NA8o2XdU2SAMI7So_"
         },
         {
-          "title": "Tema 15 - Abacus - resumen.doc",
+          "title": "Tema 15 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1586,9 +1586,9 @@
           "topic": "Tema 15",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2015%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1GJqr76ZjQqx0mcqG1sxkUpok8-XdVcG1/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1GJqr76ZjQqx0mcqG1sxkUpok8-XdVcG1"
         },
         {
           "title": "Tema 15 - Abacus - teoria.pdf",
@@ -1617,7 +1617,7 @@
           "driveFileId": "1fhWa44S1nwG5kXNlUeZJ4OhP4uRfoRc5"
         },
         {
-          "title": "Tema 16 - Abacus - resumen.doc",
+          "title": "Tema 16 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1625,12 +1625,12 @@
           "topic": "Tema 16",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/15ATKS7utXj_8NHmR3y35RN0C2T0C59zf/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "15ATKS7utXj_8NHmR3y35RN0C2T0C59zf"
         },
         {
-          "title": "Tema 16 - Ecoem - resumen.docx",
+          "title": "Tema 16 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1638,9 +1638,9 @@
           "topic": "Tema 16",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2016%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1U9X0Vl3tJ_1NEiqhWP4UqT1sws3-aFwZ/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1U9X0Vl3tJ_1NEiqhWP4UqT1sws3-aFwZ"
         },
         {
           "title": "Tema 16 - Preparador online - teoria-v2.pdf",
@@ -1656,7 +1656,7 @@
           "driveFileId": "1EDFc2Ft7-L6tJjyEuXEr0rMRnGj428a8"
         },
         {
-          "title": "Tema 17 - Abacus - resumen.doc",
+          "title": "Tema 17 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1664,9 +1664,9 @@
           "topic": "Tema 17",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2017%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1g_NUHW9vC0YYyPli3OyDte1meAFacfPU/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1g_NUHW9vC0YYyPli3OyDte1meAFacfPU"
         },
         {
           "title": "Tema 17 - Ecoem - teoria.pdf",
@@ -1695,7 +1695,7 @@
           "driveFileId": "12u68soBwb4TZo42DzSDJwY1BU0pIgCof"
         },
         {
-          "title": "Tema 18 - Abacus - resumen.doc",
+          "title": "Tema 18 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1703,9 +1703,9 @@
           "topic": "Tema 18",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2018%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1naap0AhJHATKS58UKnw05dgUqLCOlh6g/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1naap0AhJHATKS58UKnw05dgUqLCOlh6g"
         },
         {
           "title": "Tema 18 - Preparador online - teoria-v2.pdf",
@@ -1721,7 +1721,7 @@
           "driveFileId": "1Q-2-ReN4-uu0A81OxRCkFq_0fzcHFKCC"
         },
         {
-          "title": "Tema 19 - Abacus - resumen.doc",
+          "title": "Tema 19 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1729,9 +1729,9 @@
           "topic": "Tema 19",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2019%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/15LkCfcRbG1Lf0qbgI73HB2RVwax6k94i/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "15LkCfcRbG1Lf0qbgI73HB2RVwax6k94i"
         },
         {
           "title": "Tema 19 - Ecoem - teoria.pdf",
@@ -1760,7 +1760,7 @@
           "driveFileId": "1ZtCuHhRSJldR_6Hbc5wEssP8CGjsfBB9"
         },
         {
-          "title": "Tema 20 - Abacus - resumen.doc",
+          "title": "Tema 20 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1768,9 +1768,9 @@
           "topic": "Tema 20",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2020%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/17f8khSzcG5IPAgkI_yQTTR9Rguzm7KD4/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "17f8khSzcG5IPAgkI_yQTTR9Rguzm7KD4"
         },
         {
           "title": "Tema 20 - Preparador online - teoria-v2-pes.pdf",
@@ -1786,7 +1786,7 @@
           "driveFileId": "1tYZQl8tbW_6W3_VMit9S8ZiWVV7WeZhM"
         },
         {
-          "title": "Tema 21 - Abacus - resumen.doc",
+          "title": "Tema 21 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1794,9 +1794,9 @@
           "topic": "Tema 21",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2021%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/10MgCnKJuKcT2yF9CBYcm1mXrHObKWJYq/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "10MgCnKJuKcT2yF9CBYcm1mXrHObKWJYq"
         },
         {
           "title": "Tema 21 - Preparador online - teoria.pdf",
@@ -1812,7 +1812,7 @@
           "driveFileId": "1Qzaw-V2DkWsyN3HQmjMX5F5JPM2Dl5RL"
         },
         {
-          "title": "Tema 22 - Abacus - resumen.doc",
+          "title": "Tema 22 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1820,9 +1820,9 @@
           "topic": "Tema 22",
           "area": "Datos, ficheros y sistemas",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2022%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/19QilLDKwsaB3hCTZKFJ1V-GCfLYWa5gX/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "19QilLDKwsaB3hCTZKFJ1V-GCfLYWa5gX"
         },
         {
           "title": "Tema 22 - Preparador online - teoria.pdf",
@@ -1838,7 +1838,7 @@
           "driveFileId": "1EPaFyXgGTQAg8Pg9UOgyj9pvwchWfjxn"
         },
         {
-          "title": "Tema 23 - Abacus - resumen.doc",
+          "title": "Tema 23 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1846,12 +1846,12 @@
           "topic": "Tema 23",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1lJ7Esv8zKPOZS_1EiJBIzZ9z07zU5Dkr/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1lJ7Esv8zKPOZS_1EiJBIzZ9z07zU5Dkr"
         },
         {
-          "title": "Tema 23 - Ecoem - resumen.docx",
+          "title": "Tema 23 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1859,9 +1859,9 @@
           "topic": "Tema 23",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2023%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1JvfrvT6OPWOzLpO1-AXyXeiz9PQAIudW/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1JvfrvT6OPWOzLpO1-AXyXeiz9PQAIudW"
         },
         {
           "title": "Tema 23 - Preparador online - teoria-v2-pes.pdf",
@@ -1877,7 +1877,7 @@
           "driveFileId": "1RW7ZzkmjVZNyU15pf9pPzpY8Eqs9LooA"
         },
         {
-          "title": "Tema 24 - Abacus - resumen.doc",
+          "title": "Tema 24 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1885,12 +1885,12 @@
           "topic": "Tema 24",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1VwXVtfJoACJaPI_MvCnM_ZBU4EXkN4vx/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1VwXVtfJoACJaPI_MvCnM_ZBU4EXkN4vx"
         },
         {
-          "title": "Tema 24 - Ecoem - resumen.docx",
+          "title": "Tema 24 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1898,9 +1898,9 @@
           "topic": "Tema 24",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2024%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1NO2jH1ZbAdDb32fk6LBaLlk5kH6jyCv7/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1NO2jH1ZbAdDb32fk6LBaLlk5kH6jyCv7"
         },
         {
           "title": "Tema 24 - Preparador online - teoria-v2-pes.pdf",
@@ -1916,7 +1916,7 @@
           "driveFileId": "1HPuA0UjOyYMpDYEPDH1l5xvl9VkTJOsB"
         },
         {
-          "title": "Tema 25 - Abacus - resumen.doc",
+          "title": "Tema 25 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1924,12 +1924,12 @@
           "topic": "Tema 25",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2025%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1Ul7dtIFV5dm15dN_oC3pRoP7cLbu-cJ1/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Ul7dtIFV5dm15dN_oC3pRoP7cLbu-cJ1"
         },
         {
-          "title": "Tema 25 - Ecoem - resumen.docx",
+          "title": "Tema 25 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1937,9 +1937,9 @@
           "topic": "Tema 25",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2025%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1P3HcVvY14tqvrgrJWMs4LngsaSL4Nwjz/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1P3HcVvY14tqvrgrJWMs4LngsaSL4Nwjz"
         },
         {
           "title": "Tema 25 - Preparador online - teoria.pdf",
@@ -1955,7 +1955,7 @@
           "driveFileId": "11F8dyjwPFXy-dYlEFCLfeOONhpebcMwR"
         },
         {
-          "title": "Tema 26 - Abacus - resumen.doc",
+          "title": "Tema 26 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1963,12 +1963,12 @@
           "topic": "Tema 26",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2026%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1NABHnrC2Ige9AOjXjU3EYo42qBt-1x-n/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1NABHnrC2Ige9AOjXjU3EYo42qBt-1x-n"
         },
         {
-          "title": "Tema 26 - Ecoem - resumen.docx",
+          "title": "Tema 26 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -1976,9 +1976,9 @@
           "topic": "Tema 26",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2026%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1MxFMHsy2W33PPbk8hJXi5lgh6j9w99VG/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1MxFMHsy2W33PPbk8hJXi5lgh6j9w99VG"
         },
         {
           "title": "Tema 26 - Preparador online - teoria.pdf",
@@ -1994,7 +1994,7 @@
           "driveFileId": "1Rp_tpYAqmpkAlsNlIT55ysHJ1r7IAePk"
         },
         {
-          "title": "Tema 27 - Abacus - resumen.doc",
+          "title": "Tema 27 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2002,12 +2002,12 @@
           "topic": "Tema 27",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2027%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1ZwUVUnkStLQl2jHGsPY9XnOvp6X5j66B/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1ZwUVUnkStLQl2jHGsPY9XnOvp6X5j66B"
         },
         {
-          "title": "Tema 27 - Ecoem - resumen.docx",
+          "title": "Tema 27 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2015,9 +2015,9 @@
           "topic": "Tema 27",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2027%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1MCb2fqEPXft0VgxXU6A3BgMiF_OdbiFL/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1MCb2fqEPXft0VgxXU6A3BgMiF_OdbiFL"
         },
         {
           "title": "Tema 27 - Preparador online - teoria.pdf",
@@ -2033,7 +2033,7 @@
           "driveFileId": "1zy58a0DTCCERz49mxPe9-m-MlAyT42Ev"
         },
         {
-          "title": "Tema 28 - Abacus - resumen.doc",
+          "title": "Tema 28 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2041,9 +2041,9 @@
           "topic": "Tema 28",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2028%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/17CFGSXSITG0TI45eSdYbtHwjxggDebDo/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "17CFGSXSITG0TI45eSdYbtHwjxggDebDo"
         },
         {
           "title": "Tema 28 - Preparador online - teoria.pdf",
@@ -2059,7 +2059,7 @@
           "driveFileId": "1NFmNIpPoOIGUnZiCRjJIYbZzitUQ6eNS"
         },
         {
-          "title": "Tema 29 - Abacus - resumen.doc",
+          "title": "Tema 29 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2067,12 +2067,12 @@
           "topic": "Tema 29",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2029%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1Bt9B2XOlILmetdkBk8gVKxvt9Y1SUbVO/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Bt9B2XOlILmetdkBk8gVKxvt9Y1SUbVO"
         },
         {
-          "title": "Tema 29 - Ecoem - resumen.docx",
+          "title": "Tema 29 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2080,9 +2080,9 @@
           "topic": "Tema 29",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2029%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1Rsf1-traW4z19tvBylHKXEJbGHS50sQT/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Rsf1-traW4z19tvBylHKXEJbGHS50sQT"
         },
         {
           "title": "Tema 29 - Preparador online - teoria.pdf",
@@ -2098,7 +2098,7 @@
           "driveFileId": "1srw0aKXv3p_EY7g3ZdEW5HqTsg11PJ44"
         },
         {
-          "title": "Tema 30 - Abacus - resumen.doc",
+          "title": "Tema 30 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2106,12 +2106,12 @@
           "topic": "Tema 30",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2030%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1vzmd5ml2OTl-3867ebsxXD3o9ZyBWU78/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1vzmd5ml2OTl-3867ebsxXD3o9ZyBWU78"
         },
         {
-          "title": "Tema 30 - Ecoem - resumen.docx",
+          "title": "Tema 30 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2119,9 +2119,9 @@
           "topic": "Tema 30",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2030%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1nT6FisYqa59ZrjIIBZQM3-yqcoxO59IP/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1nT6FisYqa59ZrjIIBZQM3-yqcoxO59IP"
         },
         {
           "title": "Tema 30 - Ecoem - teoria.pdf",
@@ -2150,7 +2150,7 @@
           "driveFileId": "1mTm2Uc3GfhvaMVu_GI2MrwuoAt4Nlc81"
         },
         {
-          "title": "Tema 31 - Abacus - resumen.doc",
+          "title": "Tema 31 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2158,12 +2158,12 @@
           "topic": "Tema 31",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2031%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1JJHmCKkGC59eJz1sWwqX6HtTsmxSGe3y/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1JJHmCKkGC59eJz1sWwqX6HtTsmxSGe3y"
         },
         {
-          "title": "Tema 31 - Ecoem - resumen.docx",
+          "title": "Tema 31 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2171,9 +2171,9 @@
           "topic": "Tema 31",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2031%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1TE7M8mvDVcwgqKq87b7wXpkSuZBGziuE/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1TE7M8mvDVcwgqKq87b7wXpkSuZBGziuE"
         },
         {
           "title": "Tema 31 - Preparador online - teoria.pdf",
@@ -2189,7 +2189,7 @@
           "driveFileId": "1cKVMeZ7G7VvNErx1hyOW-1rB4eFH9jOD"
         },
         {
-          "title": "Tema 32 - Abacus - resumen.doc",
+          "title": "Tema 32 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2197,9 +2197,9 @@
           "topic": "Tema 32",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2032%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1wI4sB5dN3yquW-Fy63ZDIVPbkXRXkGVj/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1wI4sB5dN3yquW-Fy63ZDIVPbkXRXkGVj"
         },
         {
           "title": "Tema 32 - Abacus - teoria.pdf",
@@ -2215,7 +2215,7 @@
           "driveFileId": "1BtBWjT65JOAnACrRadAhuEZcdQHZ-5Gg"
         },
         {
-          "title": "Tema 32 - Ecoem - resumen.docx",
+          "title": "Tema 32 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2223,9 +2223,9 @@
           "topic": "Tema 32",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2032%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1uuWlmT00pxpKIhZTnVIFNTYX3mSdGFhp/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1uuWlmT00pxpKIhZTnVIFNTYX3mSdGFhp"
         },
         {
           "title": "Tema 32 - Preparador online - teoria.pdf",
@@ -2241,7 +2241,7 @@
           "driveFileId": "1v0dPtebV3LpaYiei-YE-eyCeWESeok9i"
         },
         {
-          "title": "Tema 33 - Abacus - resumen.doc",
+          "title": "Tema 33 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2249,12 +2249,12 @@
           "topic": "Tema 33",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2033%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1lXPkeqg90koENI8o87Ao2AHyTHkvhUKv/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1lXPkeqg90koENI8o87Ao2AHyTHkvhUKv"
         },
         {
-          "title": "Tema 33 - Ecoem - resumen.docx",
+          "title": "Tema 33 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2262,9 +2262,9 @@
           "topic": "Tema 33",
           "area": "Programación",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2033%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1qa77zBw4QRg15zXTDggo6IjP6RZ2Cgpw/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1qa77zBw4QRg15zXTDggo6IjP6RZ2Cgpw"
         },
         {
           "title": "Tema 33 - Preparador online - teoria.pdf",
@@ -2280,7 +2280,7 @@
           "driveFileId": "1_FmMUzUqYz-f7XuCraM8pVHh66oUpE0U"
         },
         {
-          "title": "Tema 34 - Abacus - resumen.doc",
+          "title": "Tema 34 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2288,12 +2288,12 @@
           "topic": "Tema 34",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2034%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/18n0VE9dX2kRj-jit4pwrQdCtixUlYWdN/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "18n0VE9dX2kRj-jit4pwrQdCtixUlYWdN"
         },
         {
-          "title": "Tema 34 - Ecoem - resumen.docx",
+          "title": "Tema 34 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2301,9 +2301,9 @@
           "topic": "Tema 34",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2034%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1qbIymVv2wLx_e0-_yiMN3hdvmRUSpFnl/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1qbIymVv2wLx_e0-_yiMN3hdvmRUSpFnl"
         },
         {
           "title": "Tema 34 - Preparador online - teoria.pdf",
@@ -2319,7 +2319,7 @@
           "driveFileId": "1L58e7F3MqqnnpoXA_5mJp_A0GmBj7Fdy"
         },
         {
-          "title": "Tema 35 - Abacus - resumen.doc",
+          "title": "Tema 35 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2327,9 +2327,9 @@
           "topic": "Tema 35",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2035%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1zrwCVWeLVgSgCGb9yOH2q7ztGEa_lZ4J/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1zrwCVWeLVgSgCGb9yOH2q7ztGEa_lZ4J"
         },
         {
           "title": "Tema 35 - Preparador online - teoria.pdf",
@@ -2345,7 +2345,7 @@
           "driveFileId": "1IkWowyB396uPPPQboNrWIEKi_2q5c_jN"
         },
         {
-          "title": "Tema 36 - Abacus - resumen.doc",
+          "title": "Tema 36 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2353,9 +2353,9 @@
           "topic": "Tema 36",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2036%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1v7FSD8GfhwPDsErWjAd31fqSFc9VH0EP/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1v7FSD8GfhwPDsErWjAd31fqSFc9VH0EP"
         },
         {
           "title": "Tema 36 - Abacus - teoria.pdf",
@@ -2384,7 +2384,7 @@
           "driveFileId": "1W0VdXAfCjllIHc29O9oY-V-0Xv13UL4v"
         },
         {
-          "title": "Tema 37 - Abacus - resumen.doc",
+          "title": "Tema 37 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2392,9 +2392,9 @@
           "topic": "Tema 37",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2037%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1zhX1ZRpBF0hoZ_1Y8AZ-XSy4ufeZPxvH/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1zhX1ZRpBF0hoZ_1Y8AZ-XSy4ufeZPxvH"
         },
         {
           "title": "Tema 37 - Preparador online - teoria.pdf",
@@ -2410,7 +2410,7 @@
           "driveFileId": "1A-61ZccFU7p-bUGEFI69WEp5Q7P1zAzJ"
         },
         {
-          "title": "Tema 38 - Abacus - resumen.doc",
+          "title": "Tema 38 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2418,9 +2418,9 @@
           "topic": "Tema 38",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2038%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1IovtSTmjpWkHS7JvnfEhnxgskkuq_Xp-/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1IovtSTmjpWkHS7JvnfEhnxgskkuq_Xp-"
         },
         {
           "title": "Tema 38 - Preparador online - teoria.pdf",
@@ -2436,7 +2436,7 @@
           "driveFileId": "1goMw3fOUaAD4rOv5Flv4Ey75BCbgvejC"
         },
         {
-          "title": "Tema 39 - Abacus - resumen.doc",
+          "title": "Tema 39 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2444,12 +2444,12 @@
           "topic": "Tema 39",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2039%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1wdwnsS_QMJXV9Byf1I79JZnjt7wa8xub/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1wdwnsS_QMJXV9Byf1I79JZnjt7wa8xub"
         },
         {
-          "title": "Tema 39 - Ecoem - resumen.docx",
+          "title": "Tema 39 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2457,9 +2457,9 @@
           "topic": "Tema 39",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2039%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1peoCfXiY-RHvirdZAa6Iinrw-R76ziC2/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1peoCfXiY-RHvirdZAa6Iinrw-R76ziC2"
         },
         {
           "title": "Tema 39 - Ecoem - teoria.pdf",
@@ -2488,7 +2488,7 @@
           "driveFileId": "1G6ITvXcXq-ehvDinTb93QzG6mWkv2-kD"
         },
         {
-          "title": "Tema 40 - Abacus - resumen.doc",
+          "title": "Tema 40 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2496,12 +2496,12 @@
           "topic": "Tema 40",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2040%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1EFHKTo_Y8vbrrZS5AD7pnJadx4GFG8Rg/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1EFHKTo_Y8vbrrZS5AD7pnJadx4GFG8Rg"
         },
         {
-          "title": "Tema 40 - Ecoem - resumen.docx",
+          "title": "Tema 40 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2509,9 +2509,9 @@
           "topic": "Tema 40",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2040%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1DaAUF1PX3jgoTzlgWMCdaVCWsg7eF--U/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1DaAUF1PX3jgoTzlgWMCdaVCWsg7eF--U"
         },
         {
           "title": "Tema 40 - Preparador online - teoria.pdf",
@@ -2527,7 +2527,7 @@
           "driveFileId": "1h10uJy6srss5FTtnKEim54yDA1AIP2yr"
         },
         {
-          "title": "Tema 41 - Abacus - resumen.doc",
+          "title": "Tema 41 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2535,12 +2535,12 @@
           "topic": "Tema 41",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2041%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/18l_netNC6wTh1fNCs_dAJ1V3xNLSAA6Z/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "18l_netNC6wTh1fNCs_dAJ1V3xNLSAA6Z"
         },
         {
-          "title": "Tema 41 - Ecoem - resumen.docx",
+          "title": "Tema 41 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2548,9 +2548,9 @@
           "topic": "Tema 41",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2041%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1MHAae-zrydF9mmTB0VAGZ68M19-B94IX/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1MHAae-zrydF9mmTB0VAGZ68M19-B94IX"
         },
         {
           "title": "Tema 41 - Preparador online - teoria.pdf",
@@ -2566,7 +2566,7 @@
           "driveFileId": "1qys4bZ9oHLq9wfGn-xXU3xHu9HMueYQT"
         },
         {
-          "title": "Tema 42 - Abacus - resumen.doc",
+          "title": "Tema 42 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2574,9 +2574,9 @@
           "topic": "Tema 42",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2042%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1XGdaW3IaUDAjPoLwO9UYbnfOEbS1rwaV/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1XGdaW3IaUDAjPoLwO9UYbnfOEbS1rwaV"
         },
         {
           "title": "Tema 42 - Preparador online - teoria.pdf",
@@ -2592,7 +2592,7 @@
           "driveFileId": "1jz_MYkadsq_1b-Vi0GX5h8BhALcKvKff"
         },
         {
-          "title": "Tema 43 - Abacus - resumen.doc",
+          "title": "Tema 43 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2600,9 +2600,9 @@
           "topic": "Tema 43",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2043%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1rslABZqBoycU_7i8Hs1dLtsMkTKX7SK1/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1rslABZqBoycU_7i8Hs1dLtsMkTKX7SK1"
         },
         {
           "title": "Tema 43 - Preparador online - teoria.pdf",
@@ -2618,7 +2618,7 @@
           "driveFileId": "15-6tUKVlJ4kD2klvR1djhIF0UpAcsRYR"
         },
         {
-          "title": "Tema 44 - Abacus - resumen.doc",
+          "title": "Tema 44 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2626,9 +2626,9 @@
           "topic": "Tema 44",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2044%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1tkD_2MHO9H8KoXOTdpoXoTpd6blQkQH0/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1tkD_2MHO9H8KoXOTdpoXoTpd6blQkQH0"
         },
         {
           "title": "Tema 44 - Preparador online - teoria.pdf",
@@ -2644,7 +2644,7 @@
           "driveFileId": "1rwaYmMHgphehs_GTQAgW5nfxy5KA1b_U"
         },
         {
-          "title": "Tema 45 - Abacus - resumen.doc",
+          "title": "Tema 45 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2652,12 +2652,12 @@
           "topic": "Tema 45",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2045%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1y0owLTLqa1UaBnlFmqoIqiBzMHJU0Tn_/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1y0owLTLqa1UaBnlFmqoIqiBzMHJU0Tn_"
         },
         {
-          "title": "Tema 45 - Ecoem - resumen.docx",
+          "title": "Tema 45 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2665,9 +2665,9 @@
           "topic": "Tema 45",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2045%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1OPG3NBQPDoMNxc9gxIygnLzlJC869taj/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1OPG3NBQPDoMNxc9gxIygnLzlJC869taj"
         },
         {
           "title": "Tema 45 - Ecoem - teoria.pdf",
@@ -2696,7 +2696,7 @@
           "driveFileId": "1kfd-8L0cOnBgsqSQ-9nTFJo0ZAN2zr2j"
         },
         {
-          "title": "Tema 46 - Abacus - resumen.doc",
+          "title": "Tema 46 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2704,12 +2704,12 @@
           "topic": "Tema 46",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2046%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1XchnK8E-ZBJqggmifiNqGxYMpy19hBAk/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1XchnK8E-ZBJqggmifiNqGxYMpy19hBAk"
         },
         {
-          "title": "Tema 46 - Ecoem - resumen.docx",
+          "title": "Tema 46 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2717,9 +2717,9 @@
           "topic": "Tema 46",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2046%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1FEWwEp-iTr6q2ZEMiWzC8np_klZ2xguF/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1FEWwEp-iTr6q2ZEMiWzC8np_klZ2xguF"
         },
         {
           "title": "Tema 46 - Preparador online - teoria.pdf",
@@ -2735,7 +2735,7 @@
           "driveFileId": "1no3wHrLx-z1KIRneNf4QQvw_bpBlp6Xk"
         },
         {
-          "title": "Tema 47 - Abacus - resumen.doc",
+          "title": "Tema 47 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2743,12 +2743,12 @@
           "topic": "Tema 47",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2047%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1XValocfXIVWK-sWpWojYE_jk63N6dlSg/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1XValocfXIVWK-sWpWojYE_jk63N6dlSg"
         },
         {
-          "title": "Tema 47 - Ecoem - resumen.docx",
+          "title": "Tema 47 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2756,9 +2756,9 @@
           "topic": "Tema 47",
           "area": "Bases de datos y sistemas de información",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2047%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/10yM0WOsY4EISp0fsSrXAyjuhhvhghjVR/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "10yM0WOsY4EISp0fsSrXAyjuhhvhghjVR"
         },
         {
           "title": "Tema 47 - Preparador online - teoria.pdf",
@@ -2774,7 +2774,7 @@
           "driveFileId": "1I9eULdzCJJ_Zq1QqYqOGYO2v1rzLShN3"
         },
         {
-          "title": "Tema 48 - Abacus - resumen.doc",
+          "title": "Tema 48 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2782,12 +2782,12 @@
           "topic": "Tema 48",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2048%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1xHA1IYs7s9N7ZcS3HYr4NGm2Lj7YMO3t/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1xHA1IYs7s9N7ZcS3HYr4NGm2Lj7YMO3t"
         },
         {
-          "title": "Tema 48 - Ecoem - resumen.docx",
+          "title": "Tema 48 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2795,9 +2795,9 @@
           "topic": "Tema 48",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2048%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/16UUk0_hCsddeMNJFhLp8sksBRmtuIUPU/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "16UUk0_hCsddeMNJFhLp8sksBRmtuIUPU"
         },
         {
           "title": "Tema 48 - Preparador online - teoria.pdf",
@@ -2813,7 +2813,7 @@
           "driveFileId": "1sEPKarSCKSpRpyiZqgzjBaVwfb7w8Lz6"
         },
         {
-          "title": "Tema 49 - Abacus - resumen.doc",
+          "title": "Tema 49 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2821,9 +2821,9 @@
           "topic": "Tema 49",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2049%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1FzF0vLBE1XMkXV2LlCDl3UdojnPjUMHO/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1FzF0vLBE1XMkXV2LlCDl3UdojnPjUMHO"
         },
         {
           "title": "Tema 49 - Preparador online - teoria.pdf",
@@ -2839,7 +2839,7 @@
           "driveFileId": "1p8xrEw72XyHZZnmlydekj8n3KdhhPlRH"
         },
         {
-          "title": "Tema 50 - Abacus - resumen.doc",
+          "title": "Tema 50 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2847,12 +2847,12 @@
           "topic": "Tema 50",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2050%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1ApJMETQVRVTrlei8J8sl7zbAgeq8fF69/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1ApJMETQVRVTrlei8J8sl7zbAgeq8fF69"
         },
         {
-          "title": "Tema 50 - Ecoem - resumen.docx",
+          "title": "Tema 50 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2860,9 +2860,9 @@
           "topic": "Tema 50",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2050%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1mmNcCZqHeOQXH1swtkmo4PE072Z259ac/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1mmNcCZqHeOQXH1swtkmo4PE072Z259ac"
         },
         {
           "title": "Tema 50 - Preparador online - teoria.pdf",
@@ -2878,7 +2878,7 @@
           "driveFileId": "1WhzBGdlH8XLQQ1L2QN1-C1TGq5QMx2No"
         },
         {
-          "title": "Tema 51 - Abacus - resumen.doc",
+          "title": "Tema 51 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2886,12 +2886,12 @@
           "topic": "Tema 51",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2051%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1xHChVxUXzEaJxxE9TZb2s7G1bs7zhQPI/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1xHChVxUXzEaJxxE9TZb2s7G1bs7zhQPI"
         },
         {
-          "title": "Tema 51 - Ecoem - resumen.docx",
+          "title": "Tema 51 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2899,9 +2899,9 @@
           "topic": "Tema 51",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2051%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1EmY8qiZGbxfTNOP6LOhipp43Gs0TF6iO/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1EmY8qiZGbxfTNOP6LOhipp43Gs0TF6iO"
         },
         {
           "title": "Tema 51 - Preparador online - teoria.pdf",
@@ -2917,7 +2917,7 @@
           "driveFileId": "1woIjqJreHbIYrb6rlTfpBwamE8avuHOn"
         },
         {
-          "title": "Tema 52 - Abacus - resumen.doc",
+          "title": "Tema 52 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2925,9 +2925,9 @@
           "topic": "Tema 52",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2052%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/14fBC2hkYgR0sqzedGZww0uP_o7gbRgmT/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "14fBC2hkYgR0sqzedGZww0uP_o7gbRgmT"
         },
         {
           "title": "Tema 52 - Preparador online - teoria.pdf",
@@ -2943,7 +2943,7 @@
           "driveFileId": "1R_zl-VV1ofR2vKU11s0TPxBFv2KK7G8i"
         },
         {
-          "title": "Tema 53 - Abacus - resumen.doc",
+          "title": "Tema 53 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2951,12 +2951,12 @@
           "topic": "Tema 53",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2053%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1xdyOFnkvnah_z-7AdclbNLFnbr2q9ekZ/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1xdyOFnkvnah_z-7AdclbNLFnbr2q9ekZ"
         },
         {
-          "title": "Tema 53 - Ecoem - resumen.docx",
+          "title": "Tema 53 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2964,9 +2964,9 @@
           "topic": "Tema 53",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2053%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1c0jFeshPB_LqN7-0xcjUUQMo7V8rFWj9/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1c0jFeshPB_LqN7-0xcjUUQMo7V8rFWj9"
         },
         {
           "title": "Tema 53 - Preparador online - teoria.pdf",
@@ -2982,7 +2982,7 @@
           "driveFileId": "1YatzfuE-XYP-2oxCXIyLkU7dc1dLVQ8A"
         },
         {
-          "title": "Tema 54 - Abacus - resumen.doc",
+          "title": "Tema 54 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -2990,12 +2990,12 @@
           "topic": "Tema 54",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2054%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/11yl51uXqNOMylvPl-NucAEc4JFykdF7s/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "11yl51uXqNOMylvPl-NucAEc4JFykdF7s"
         },
         {
-          "title": "Tema 54 - Ecoem - resumen.docx",
+          "title": "Tema 54 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3003,9 +3003,9 @@
           "topic": "Tema 54",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2054%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1Fsy4vfNFjHR-YF9FtRCOTfNzFoTllcBj/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Fsy4vfNFjHR-YF9FtRCOTfNzFoTllcBj"
         },
         {
           "title": "Tema 54 - Preparador online - teoria.pdf",
@@ -3021,7 +3021,7 @@
           "driveFileId": "1kt5nEtgdjmAyHFCPyzVq6p9kGzd9PVZ4"
         },
         {
-          "title": "Tema 55 - Abacus - resumen.doc",
+          "title": "Tema 55 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3029,9 +3029,9 @@
           "topic": "Tema 55",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2055%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1eWEk5GfvcWXPvloeBaecahSI0vlLk8yX/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1eWEk5GfvcWXPvloeBaecahSI0vlLk8yX"
         },
         {
           "title": "Tema 55 - Preparador online - teoria.pdf",
@@ -3047,7 +3047,7 @@
           "driveFileId": "1Ah3H3CqYO5393ppIXEnSHsKZBl6BXCkO"
         },
         {
-          "title": "Tema 56 - Abacus - resumen.doc",
+          "title": "Tema 56 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3055,12 +3055,12 @@
           "topic": "Tema 56",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2056%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1rx-mgc8negAqIK5-KfAUwJkR_FpareZj/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1rx-mgc8negAqIK5-KfAUwJkR_FpareZj"
         },
         {
-          "title": "Tema 56 - Ecoem - resumen.docx",
+          "title": "Tema 56 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3068,9 +3068,9 @@
           "topic": "Tema 56",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2056%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1R44-nqXxkc0a3eh52GXix5hYo6PZ440i/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1R44-nqXxkc0a3eh52GXix5hYo6PZ440i"
         },
         {
           "title": "Tema 56 - Preparador online - teoria.pdf",
@@ -3086,7 +3086,7 @@
           "driveFileId": "1i_1E1VnONys8s9o0Suz4zbWNgS26dVFE"
         },
         {
-          "title": "Tema 57 - Abacus - resumen.doc",
+          "title": "Tema 57 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3094,9 +3094,9 @@
           "topic": "Tema 57",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2057%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1P_Bd1xSl5KC8yATExCAbA6mztzYcSQ_B/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1P_Bd1xSl5KC8yATExCAbA6mztzYcSQ_B"
         },
         {
           "title": "Tema 57 - Preparador online - teoria.pdf",
@@ -3112,7 +3112,7 @@
           "driveFileId": "1Qu-ETNrXU6lxhBcta_30uQWONbqfkSC0"
         },
         {
-          "title": "Tema 58 - Abacus - resumen.doc",
+          "title": "Tema 58 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3120,9 +3120,9 @@
           "topic": "Tema 58",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2058%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1o-xIh-W5oe9uk2Kawz9aFVicPKTgXGXt/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1o-xIh-W5oe9uk2Kawz9aFVicPKTgXGXt"
         },
         {
           "title": "Tema 58 - Preparador online - teoria.pdf",
@@ -3138,7 +3138,7 @@
           "driveFileId": "1zadV06aO96R93w2sCWIBmV7pLNOJQJl-"
         },
         {
-          "title": "Tema 59 - Abacus - resumen.doc",
+          "title": "Tema 59 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3146,9 +3146,9 @@
           "topic": "Tema 59",
           "area": "Ingeniería del software",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2059%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1BXEBEpB7APxvNmqTFaQpFRgbc6vrPqCV/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1BXEBEpB7APxvNmqTFaQpFRgbc6vrPqCV"
         },
         {
           "title": "Tema 59 - Ecoem - teoria.pdf",
@@ -3177,7 +3177,7 @@
           "driveFileId": "1B9gZdtbQaXYEH2uuZ9VwZoBsr0ltG3p5"
         },
         {
-          "title": "Tema 60 - Abacus - resumen.doc",
+          "title": "Tema 60 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3185,12 +3185,12 @@
           "topic": "Tema 60",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2060%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1bq12Gks-ynYCBfAqOwqIiNEtI3m3vJ-Y/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1bq12Gks-ynYCBfAqOwqIiNEtI3m3vJ-Y"
         },
         {
-          "title": "Tema 60 - Ecoem - resumen.docx",
+          "title": "Tema 60 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3198,9 +3198,9 @@
           "topic": "Tema 60",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2060%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1pfwDuT7hKhJTk5nN8cccdQxaL7zDE7vr/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1pfwDuT7hKhJTk5nN8cccdQxaL7zDE7vr"
         },
         {
           "title": "Tema 60 - Preparador online - teoria.pdf",
@@ -3216,7 +3216,7 @@
           "driveFileId": "19IIKGB8jfXA9vXeLftblUqgLmyNXW7Zd"
         },
         {
-          "title": "Tema 61 - Abacus - resumen.doc",
+          "title": "Tema 61 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3224,12 +3224,12 @@
           "topic": "Tema 61",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2061%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1EuGlbNhAfxJk0Z8JXqKI1yGcDGZMBbaE/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1EuGlbNhAfxJk0Z8JXqKI1yGcDGZMBbaE"
         },
         {
-          "title": "Tema 61 - Ecoem - resumen.docx",
+          "title": "Tema 61 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3237,9 +3237,9 @@
           "topic": "Tema 61",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2061%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1uMcarZW2ymG8i76I-UZ53cq66aEOprrw/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1uMcarZW2ymG8i76I-UZ53cq66aEOprrw"
         },
         {
           "title": "Tema 61 - Preparador online - teoria.pdf",
@@ -3255,7 +3255,7 @@
           "driveFileId": "1eYljwxhDSSi1ouFhjq5B1lTmr5cA1A1s"
         },
         {
-          "title": "Tema 62 - Abacus - resumen.doc",
+          "title": "Tema 62 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3263,12 +3263,12 @@
           "topic": "Tema 62",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2062%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/124HNeecFy6B2qOYSJNeC6mF7_UMjQdS1/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "124HNeecFy6B2qOYSJNeC6mF7_UMjQdS1"
         },
         {
-          "title": "Tema 62 - Ecoem - resumen.docx",
+          "title": "Tema 62 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3276,9 +3276,9 @@
           "topic": "Tema 62",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2062%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1DLj2X8_7MwN3_czkvwvKcGvfQFDHFu_N/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1DLj2X8_7MwN3_czkvwvKcGvfQFDHFu_N"
         },
         {
           "title": "Tema 62 - Preparador online - teoria.pdf",
@@ -3294,7 +3294,7 @@
           "driveFileId": "1HZt0K0-wYmK71pLh0MFmMvENVxHlVoOe"
         },
         {
-          "title": "Tema 63 - Abacus - resumen.doc",
+          "title": "Tema 63 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3302,9 +3302,9 @@
           "topic": "Tema 63",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2063%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1IOXNwI8F8vAVctkhgpTl5-PjXnc9oJBn/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1IOXNwI8F8vAVctkhgpTl5-PjXnc9oJBn"
         },
         {
           "title": "Tema 63 - Ecoem - teoria.pdf",
@@ -3333,7 +3333,7 @@
           "driveFileId": "1Po8a3RIAqvGKFDjonDjCHbIgfKe_-Y6R"
         },
         {
-          "title": "Tema 64 - Abacus - resumen.doc",
+          "title": "Tema 64 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3341,9 +3341,9 @@
           "topic": "Tema 64",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2064%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1hv3tUIPE_38J0OF6WAiySqsOyj-7Sbb8/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1hv3tUIPE_38J0OF6WAiySqsOyj-7Sbb8"
         },
         {
           "title": "Tema 64 - Preparador online - teoria.pdf",
@@ -3359,7 +3359,7 @@
           "driveFileId": "1D3j-HBWAro4EJEQP98i9eLVDM8BUNp_8"
         },
         {
-          "title": "Tema 65 - Abacus - resumen.doc",
+          "title": "Tema 65 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3367,9 +3367,9 @@
           "topic": "Tema 65",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2065%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1Gclxqu6olL4tjoKaExxeiMd0hBZNP3GE/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Gclxqu6olL4tjoKaExxeiMd0hBZNP3GE"
         },
         {
           "title": "Tema 65 - Ecoem - teoria.pdf",
@@ -3398,7 +3398,7 @@
           "driveFileId": "1c6U7eNCl1AKr88kqE4s2XFuQjkHtQU-5"
         },
         {
-          "title": "Tema 66 - Abacus - resumen.doc",
+          "title": "Tema 66 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3406,9 +3406,9 @@
           "topic": "Tema 66",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2066%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1M3fSZetbMduKQBSXhFeV-knCu3-w79zx/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1M3fSZetbMduKQBSXhFeV-knCu3-w79zx"
         },
         {
           "title": "Tema 66 - Preparador online - teoria.pdf",
@@ -3424,7 +3424,7 @@
           "driveFileId": "1DF59XXk-GTcOfCeUgY1iilycGhRms2MR"
         },
         {
-          "title": "Tema 67 - Abacus - resumen.doc",
+          "title": "Tema 67 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3432,12 +3432,12 @@
           "topic": "Tema 67",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2067%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1j0uq1Zk_x8zRdNVouagMvdX3_LXLGx2c/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1j0uq1Zk_x8zRdNVouagMvdX3_LXLGx2c"
         },
         {
-          "title": "Tema 67 - Ecoem - resumen.docx",
+          "title": "Tema 67 - Ecoem - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3445,9 +3445,9 @@
           "topic": "Tema 67",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2067%20-%20Ecoem%20-%20resumen.docx%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1PPMZw758CvpRyOqW2f3Ui4fF6zr0fNH1/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1PPMZw758CvpRyOqW2f3Ui4fF6zr0fNH1"
         },
         {
           "title": "Tema 67 - Preparador online - teoria.pdf",
@@ -3463,7 +3463,7 @@
           "driveFileId": "1j_Adjxs1krVaYd9uy-m-mIzIIVEKJcnP"
         },
         {
-          "title": "Tema 68 - Abacus - resumen.doc",
+          "title": "Tema 68 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3471,9 +3471,9 @@
           "topic": "Tema 68",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2068%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1E2wmaD8M-SK_BXKVr4hRy_bxzOPe0PZ1/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1E2wmaD8M-SK_BXKVr4hRy_bxzOPe0PZ1"
         },
         {
           "title": "Tema 68 - Preparador online - teoria.pdf",
@@ -3489,7 +3489,7 @@
           "driveFileId": "17WLaePO5Ky0PArn0w64oNRFHtHrzrhiD"
         },
         {
-          "title": "Tema 69 - Abacus - resumen.doc",
+          "title": "Tema 69 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3497,9 +3497,9 @@
           "topic": "Tema 69",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2069%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1RgWj3jJRNgIqiuZZAGlc1BmQYdHShrxM/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1RgWj3jJRNgIqiuZZAGlc1BmQYdHShrxM"
         },
         {
           "title": "Tema 69 - Preparador online - teoria.pdf",
@@ -3515,7 +3515,7 @@
           "driveFileId": "1EZLhJs1kaMwL8NFOhvQXIdxTZbye-fsf"
         },
         {
-          "title": "Tema 70 - Abacus - resumen.doc",
+          "title": "Tema 70 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3523,9 +3523,9 @@
           "topic": "Tema 70",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2070%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1STun1MkFIu_LlJJw6K4LB2Bb1ds8fM6m/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1STun1MkFIu_LlJJw6K4LB2Bb1ds8fM6m"
         },
         {
           "title": "Tema 70 - Preparador online - teoria.pdf",
@@ -3541,7 +3541,7 @@
           "driveFileId": "1x1yHnyJS-kJNId6hQKvo_GqC4RyIkwSL"
         },
         {
-          "title": "Tema 71 - Abacus - resumen.doc",
+          "title": "Tema 71 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3549,9 +3549,9 @@
           "topic": "Tema 71",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2071%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1HwzCM-6yCAYPac3sd9ilCNpH7gjq9MqD/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1HwzCM-6yCAYPac3sd9ilCNpH7gjq9MqD"
         },
         {
           "title": "Tema 71 - Preparador online - teoria.pdf",
@@ -3567,7 +3567,7 @@
           "driveFileId": "1DPBia2Nd7Rnoejsd9KdPYAmmpUGfIcEB"
         },
         {
-          "title": "Tema 72 - Abacus - resumen.doc",
+          "title": "Tema 72 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3575,9 +3575,9 @@
           "topic": "Tema 72",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2072%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1rg3FIXtjwsKI_Xcl-Jhrk8RKtozUEoMV/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1rg3FIXtjwsKI_Xcl-Jhrk8RKtozUEoMV"
         },
         {
           "title": "Tema 72 - Preparador online - teoria.pdf",
@@ -3593,7 +3593,7 @@
           "driveFileId": "1xYTB1L9YR3n4EJQxJo4Nyj2iDKnBuvzt"
         },
         {
-          "title": "Tema 73 - Abacus - resumen.doc",
+          "title": "Tema 73 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3601,9 +3601,9 @@
           "topic": "Tema 73",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2073%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1nnrg2b14BW6fjAsAUQF5jmqlyHPrn0Cu/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1nnrg2b14BW6fjAsAUQF5jmqlyHPrn0Cu"
         },
         {
           "title": "Tema 73 - Preparador online - teoria.pdf",
@@ -3619,7 +3619,7 @@
           "driveFileId": "1utNTdKEuMpJUAxU_miWrBTNdFp-M7TdN"
         },
         {
-          "title": "Tema 74 - Abacus - resumen.doc",
+          "title": "Tema 74 - Abacus - resumen.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
           "section": "Temario_y_resumenes_por_tema",
           "type": "resumen",
@@ -3627,9 +3627,9 @@
           "topic": "Tema 74",
           "area": "Conocimiento, redes y multimedia",
           "hasPublicLink": true,
-          "url": "https://drive.google.com/drive/u/0/search?q=title%3A%22Tema%2074%20-%20Abacus%20-%20resumen.doc%22",
-          "urlMode": "drive-title-search",
-          "driveFileId": ""
+          "url": "https://drive.google.com/file/d/1xm1IzEhk-NzVdqaqTuVk3GaGdLObzhfk/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1xm1IzEhk-NzVdqaqTuVk3GaGdLObzhfk"
         },
         {
           "title": "Tema 74 - Preparador online - teoria.pdf",
@@ -3653,12 +3653,12 @@
       "title": "Primera prueba - Práctico",
       "legal": "Parte A de la primera prueba.",
       "description": "Prácticos organizados por área: programación, bases de datos, redes, sistemas, circuitos y web/XML.",
-      "resourceCount": 404,
-      "publicLinkCount": 404,
+      "resourceCount": 402,
+      "publicLinkCount": 402,
       "sections": [
         {
           "name": "Practicos_por_area/Programacion",
-          "count": 161
+          "count": 159
         },
         {
           "name": "Practicos_por_area/Bases de datos",
@@ -3693,18 +3693,18 @@
           "count": 2
         },
         {
-          "name": "Examenes_y_correcciones_practicas/Programacion",
+          "name": "Examenes_y_correcciones_practicas/Bases de datos",
           "count": 1
         },
         {
-          "name": "Examenes_y_correcciones_practicas/Bases de datos",
+          "name": "Examenes_y_correcciones_practicas/Programacion",
           "count": 1
         }
       ],
       "academies": [
         {
           "name": "Preparador online",
-          "count": 325
+          "count": 323
         },
         {
           "name": "Ecoem",
@@ -3718,7 +3718,7 @@
       "types": [
         {
           "name": "practico",
-          "count": 400
+          "count": 398
         },
         {
           "name": "correccion",
@@ -6819,34 +6819,6 @@
           "url": "https://drive.google.com/file/d/11jx66eCrep_NpRrCt3ukQQwJ592QHna5/view?usp=drivesdk",
           "urlMode": "drive-file-view",
           "driveFileId": "11jx66eCrep_NpRrCt3ukQQwJ592QHna5"
-        },
-        {
-          "title": "Main.java",
-          "phase": "02_Primera_prueba_A_Practico",
-          "section": "Practicos_por_area/Programacion",
-          "type": "practico",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Programacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1Xn5Yg9Mz3r9EWSS5OEUQt3tOgYpuptrL/view?usp=drivesdk",
-          "urlMode": "drive-file-view",
-          "driveFileId": "1Xn5Yg9Mz3r9EWSS5OEUQt3tOgYpuptrL",
-          "linkNote": "Archivo duplicado: enlazado al ejemplar real disponible en Ecoem."
-        },
-        {
-          "title": "Main__2.java",
-          "phase": "02_Primera_prueba_A_Practico",
-          "section": "Practicos_por_area/Programacion",
-          "type": "practico",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Programacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1-n1TWWoB_pxxjtHTMmIFoCnx2lE1ljU-/view?usp=drivesdk",
-          "urlMode": "drive-file-view",
-          "driveFileId": "1-n1TWWoB_pxxjtHTMmIFoCnx2lE1ljU-",
-          "linkNote": "Archivo duplicado: enlazado al ejemplar real disponible en Ecoem."
         },
         {
           "title": "MySimpleLinkedList.java",
@@ -12355,6 +12327,6 @@
       ]
     }
   ],
-  "totalResources": 916,
-  "publicLinkCount": 916
+  "totalResources": 914,
+  "publicLinkCount": 914
 }
