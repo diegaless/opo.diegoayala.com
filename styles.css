@@ -210,8 +210,8 @@ p {
 }
 
 .search-panel {
-  position: sticky;
-  top: 69px;
+  position: relative;
+  top: auto;
   z-index: 5;
   width: 100%;
   min-width: 0;
@@ -334,7 +334,7 @@ p {
 .block-header {
   position: sticky;
   min-width: 0;
-  top: 142px;
+  top: 92px;
   align-self: start;
 }
 
