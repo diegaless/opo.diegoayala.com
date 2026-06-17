@@ -237,6 +237,347 @@ p {
   white-space: nowrap;
 }
 
+.view-switch {
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(92px, 1fr));
+  gap: 4px;
+  margin: 0 0 12px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--bg) 58%, transparent);
+}
+
+.view-button {
+  min-height: 30px;
+  padding: 0 12px;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 780;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition:
+    background 160ms ease,
+    color 160ms ease;
+}
+
+.view-button:hover,
+.view-button.is-active {
+  background: color-mix(in srgb, var(--accent-soft) 78%, transparent);
+  color: var(--ink);
+}
+
+.phase-board {
+  display: grid;
+  gap: 18px;
+}
+
+.phase-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(116px, 1fr));
+  gap: 8px;
+}
+
+.phase-tab {
+  display: grid;
+  gap: 6px;
+  min-height: 62px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 64%, transparent);
+  color: var(--muted);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    color 160ms ease;
+}
+
+.phase-tab:hover,
+.phase-tab.is-active {
+  border-color: color-mix(in srgb, var(--accent) 68%, var(--line));
+  background: color-mix(in srgb, var(--accent-soft) 70%, var(--surface));
+  color: var(--ink);
+}
+
+.phase-tab span {
+  font-size: 0.68rem;
+  font-weight: 780;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.phase-tab strong {
+  font-size: 1.05rem;
+  font-weight: 520;
+}
+
+.phase-detail {
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.phase-header {
+  max-width: 780px;
+}
+
+.phase-header > p:first-child {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 780;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.phase-header h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.35rem, 2.4vw, 2.1rem);
+  font-weight: 320;
+  line-height: 1.08;
+}
+
+.phase-header p:last-child {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.phase-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.phase-stats div,
+.module-note,
+.phase-group {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 58%, transparent);
+}
+
+.phase-stats div {
+  min-height: 76px;
+  padding: 12px;
+}
+
+.phase-stats dt,
+.phase-group h3,
+.phase-resource-toolbar p {
+  margin: 0;
+  color: var(--quiet);
+  font-size: 0.66rem;
+  font-weight: 780;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.phase-stats dd {
+  margin: 8px 0 0;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 420;
+  line-height: 1.18;
+}
+
+.phase-stats dd[data-phase-legal] {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.module-note {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  color: var(--muted);
+}
+
+.module-note p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.module-note p + p {
+  margin-top: 4px;
+}
+
+.module-note strong {
+  color: var(--ink);
+  font-weight: 760;
+}
+
+.phase-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.phase-group {
+  padding: 12px;
+}
+
+.phase-group-wide {
+  grid-column: 1 / -1;
+}
+
+.phase-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.phase-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  min-height: 28px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.phase-chip span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.phase-chip strong {
+  color: var(--ink);
+  font-weight: 760;
+}
+
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.source-card {
+  display: grid;
+  gap: 5px;
+  min-height: 66px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.source-card:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.source-card span {
+  font-size: 0.66rem;
+  font-weight: 780;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.source-card strong {
+  font-size: 0.8rem;
+  font-weight: 520;
+  line-height: 1.35;
+}
+
+.phase-resource-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.phase-resource-list {
+  display: grid;
+  gap: 0;
+}
+
+.phase-resource {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  min-height: 58px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.phase-resource-body {
+  min-width: 0;
+}
+
+.phase-resource h3 {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 520;
+  line-height: 1.3;
+}
+
+.phase-resource p {
+  margin: 4px 0 0;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
+.phase-resource-link,
+.phase-resource-pending {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  min-width: 96px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: 780;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.phase-resource-link {
+  color: var(--ink);
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.phase-resource-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.phase-resource-pending {
+  color: var(--quiet);
+}
+
+.phase-empty {
+  margin: 36px 0;
+  color: var(--muted);
+  text-align: center;
+}
+
 .syllabus {
   display: grid;
   gap: 40px;
@@ -446,6 +787,22 @@ p {
     grid-template-columns: 1fr;
     gap: 12px;
     padding-top: 16px;
+  }
+
+  .phase-tabs,
+  .phase-stats,
+  .phase-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .phase-resource {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .phase-resource-link,
+  .phase-resource-pending {
+    justify-self: start;
   }
 
   .block-header {

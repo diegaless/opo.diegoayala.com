@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Temario de la especialidad de Informática para oposiciones de Profesorado de Enseñanza Secundaria."
+      content="Temario y recursos por fase de la oposición de Informática en Murcia."
     >
-    <meta property="og:title" content="Temario PES Informática | Diego Ayala">
+    <meta property="og:title" content="Oposición Informática Murcia | Diego Ayala">
     <meta
       property="og:description"
-      content="Consulta rápida de los 74 temas oficiales de Informática."
+      content="Consulta rápida del temario, prácticos y recursos por fase."
     >
     <meta property="og:type" content="website">
-    <title>Temario PES Informática | Diego Ayala</title>
+    <title>Oposición Informática Murcia | Diego Ayala</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <script>
       const savedTheme = localStorage.getItem("theme");
@@ -51,10 +51,10 @@
     </header>
 
     <main class="page-main" aria-labelledby="page-title">
-      <section class="search-panel" aria-label="Buscar en el temario">
-        <h1 id="page-title" class="sr-only">Temario PES de Informática</h1>
+      <section class="search-panel" aria-label="Buscar recursos">
+        <h1 id="page-title" class="sr-only">Oposición de Informática en Murcia</h1>
         <div class="summary-row">
-          <p>PES Informática · 74 epígrafes</p>
+          <p>Murcia · Informática 590107 · DAW 0373</p>
           <div class="summary-links">
             <a
               class="source-link"
@@ -74,7 +74,15 @@
             </a>
           </div>
         </div>
-        <label class="sr-only" for="topic-search">Buscar tema</label>
+        <div class="view-switch" role="tablist" aria-label="Modo de consulta">
+          <button class="view-button is-active" type="button" data-mode-button="topics" role="tab" aria-selected="true">
+            Temario
+          </button>
+          <button class="view-button" type="button" data-mode-button="phases" role="tab" aria-selected="false">
+            Fases
+          </button>
+        </div>
+        <label class="sr-only" for="topic-search">Buscar</label>
         <div class="search-row">
           <input
             id="topic-search"
@@ -89,7 +97,38 @@
         </div>
       </section>
 
-      <section class="syllabus" aria-label="Listado del temario">
+      <section class="phase-board" data-phase-view hidden aria-label="Recursos por fase">
+        <nav class="phase-tabs" data-phase-tabs aria-label="Elegir fase"></nav>
+        <article class="phase-detail" data-phase-detail>
+          <header class="phase-header">
+            <p data-phase-kicker>Fase</p>
+            <h2 data-phase-title>Recursos por fase</h2>
+            <p data-phase-description>Selecciona una fase para ver el material asociado.</p>
+          </header>
+          <dl class="phase-stats">
+            <div>
+              <dt>Recursos</dt>
+              <dd data-phase-resource-count>0</dd>
+            </div>
+            <div>
+              <dt>Enlaces</dt>
+              <dd data-phase-link-count>0</dd>
+            </div>
+            <div>
+              <dt>Encaje</dt>
+              <dd data-phase-legal>Murcia</dd>
+            </div>
+          </dl>
+          <div class="module-note" data-module-note></div>
+          <div class="phase-groups" data-phase-groups></div>
+          <div class="phase-resource-toolbar">
+            <p data-phase-result-count>0 recursos</p>
+          </div>
+          <div class="phase-resource-list" data-phase-resources></div>
+        </article>
+      </section>
+
+      <section class="syllabus" data-topic-view aria-label="Listado del temario">
         <article class="topic-block" data-block>
           <header class="block-header">
             <p>Bloque 01</p>
