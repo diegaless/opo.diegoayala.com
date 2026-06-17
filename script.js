@@ -181,9 +181,23 @@ async function loadPhases() {
 
 function renderPhaseOptions() {
   if (!phaseSelect || !phasesData?.phases) return;
-  phasesData.phases.forEach((phase) => {
-    phaseSelect.append(createOption(phase.id, phase.title));
-  });
+  const phaseOrder = [
+    "00_Normativa_y_orden_legal",
+    "02_Primera_prueba_A_Practico",
+    "01_Primera_prueba_B_Tema_escrito",
+    "03_Segunda_prueba_Programacion_didactica",
+    "04_Segunda_prueba_Unidad_didactica",
+    "05_Fase_concurso_meritos",
+    "06_Fase_practicas",
+    "99_Transversal_Bibliografia_y_simulacros",
+  ];
+  const orderIndex = new Map(phaseOrder.map((phaseId, index) => [phaseId, index]));
+
+  [...phasesData.phases]
+    .sort((left, right) => (orderIndex.get(left.id) ?? 99) - (orderIndex.get(right.id) ?? 99))
+    .forEach((phase) => {
+      phaseSelect.append(createOption(phase.id, phase.title));
+    });
 }
 
 function formatSectionName(section) {

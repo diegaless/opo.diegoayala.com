@@ -766,8 +766,8 @@
     {
       "id": "01_Primera_prueba_B_Tema_escrito",
       "order": 1,
-      "label": "Tema",
-      "title": "Primera prueba - Tema escrito",
+      "label": "Parte B",
+      "title": "Primera prueba - Parte B: Desarrollo de un tema por escrito",
       "legal": "Parte B de la primera prueba.",
       "description": "Temario oficial por número, academia y tipo de material. Los PDFs ya enlazan al visor de Drive cuando están subidos.",
       "resourceCount": 217,
@@ -3649,8 +3649,8 @@
     {
       "id": "02_Primera_prueba_A_Practico",
       "order": 2,
-      "label": "Práctico",
-      "title": "Primera prueba - Práctico",
+      "label": "Parte A",
+      "title": "Primera prueba - Parte A: Prueba de carácter práctico",
       "legal": "Parte A de la primera prueba.",
       "description": "Prácticos organizados por área: programación, bases de datos, redes, sistemas, circuitos y web/XML.",
       "resourceCount": 402,
@@ -8957,8 +8957,8 @@
     {
       "id": "03_Segunda_prueba_Programacion_didactica",
       "order": 3,
-      "label": "Programación",
-      "title": "Segunda prueba - Programación didáctica",
+      "label": "Segunda prueba",
+      "title": "Segunda prueba: Prueba de aptitud pedagógica - Programación didáctica",
       "legal": "Defensa de programación didáctica.",
       "description": "Material de programación con el módulo cerrado como DAW: Lenguajes de marcas y sistemas de gestión de información.",
       "resourceCount": 58,
@@ -9753,8 +9753,8 @@
     {
       "id": "04_Segunda_prueba_Unidad_didactica",
       "order": 4,
-      "label": "Unidad",
-      "title": "Segunda prueba - Unidad didáctica",
+      "label": "Segunda prueba",
+      "title": "Segunda prueba: Prueba de aptitud pedagógica - Unidad didáctica",
       "legal": "Preparación y exposición oral de unidad de trabajo.",
       "description": "Recursos para construir unidades de trabajo del módulo 0373, orientadas a HTML/CSS/XML y gestión de información.",
       "resourceCount": 27,

@@ -264,7 +264,7 @@ p {
 .filter-row {
   display: grid;
   min-width: 0;
-  grid-template-columns: max-content minmax(180px, 320px);
+  grid-template-columns: max-content minmax(260px, 620px);
   justify-content: start;
   align-items: center;
   gap: 10px;
