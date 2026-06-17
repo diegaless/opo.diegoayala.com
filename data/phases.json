@@ -100,7 +100,7 @@
       "legal": "Jerarquía normativa, convocatoria Murcia y fuentes DAW.",
       "description": "Base legal para interpretar cada fase, con Murcia, Informática 590107 y DAW como referencia didáctica.",
       "resourceCount": 49,
-      "publicLinkCount": 0,
+      "publicLinkCount": 49,
       "sections": [
         {
           "name": "Normativa/Legislacion",
@@ -132,7 +132,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1q__FNWWQzQUqjI2P6vtCa5lo5Hu6W_7T/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1q__FNWWQzQUqjI2P6vtCa5lo5Hu6W_7T"
         },
         {
           "title": "168540-Solicitudes 1895(actualizado 12 febrero).pdf",
@@ -142,7 +145,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1P43kcy0RgsUZGb_UA3fMscbm4bDj1gxi/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1P43kcy0RgsUZGb_UA3fMscbm4bDj1gxi"
         },
         {
           "title": "168541-Requisitos1895.pdf",
@@ -152,7 +158,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Fd5SCAIKoHfD5i6Y0E163PU2Lg9g_VdX/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Fd5SCAIKoHfD5i6Y0E163PU2Lg9g_VdX"
         },
         {
           "title": "5504 Decr 165-2019 incor nuevos cert diplom titul BORM10-09-19.pdf",
@@ -162,7 +171,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1jfLidtShlnF-Bl0ex06STj1Wh-eTRKkr/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1jfLidtShlnF-Bl0ex06STj1Wh-eTRKkr"
         },
         {
           "title": "BOE-A-2020-4963 especializacion.pdf",
@@ -172,7 +184,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1ERhubRUUaToBJy0RKY6-6_N7XyUDbN22/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1ERhubRUUaToBJy0RKY6-6_N7XyUDbN22"
         },
         {
           "title": "Baremo Oposicion.pdf",
@@ -182,7 +197,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1vlnags-7gIVCJt2k4D28yRYHUvw5cOoP/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1vlnags-7gIVCJt2k4D28yRYHUvw5cOoP"
         },
         {
           "title": "Leyes Educativas - Cronologia.png",
@@ -192,7 +210,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1R6eF__UFXiwg68AVPFje3R9WirexS5pv/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1R6eF__UFXiwg68AVPFje3R9WirexS5pv"
         },
         {
           "title": "Lomloe.pdf",
@@ -202,7 +223,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1MhaZbUvzMgmmHdRH39ytuaQonXc6b5cH/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1MhaZbUvzMgmmHdRH39ytuaQonXc6b5cH"
         },
         {
           "title": "Nueva Ley Ordenacion FP.pdf",
@@ -212,7 +236,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1gOAHuhVMvIbuSl_jis2hgQOsB34ZOG9O/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1gOAHuhVMvIbuSl_jis2hgQOsB34ZOG9O"
         },
         {
           "title": "ORD_17.pdf",
@@ -222,7 +249,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1JLLcNZgvl_p4465oXUOgaod952SyNA-C/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1JLLcNZgvl_p4465oXUOgaod952SyNA-C"
         },
         {
           "title": "ORD_50.pdf",
@@ -232,7 +262,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/15ul5IxbGgAfHoglHgjEHlbXGVP24sUbf/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "15ul5IxbGgAfHoglHgjEHlbXGVP24sUbf"
         },
         {
           "title": "ORD_50__2.pdf",
@@ -242,7 +275,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1jmUJWfpnso-BvQfnhsfFeoY_swNHG2nQ/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1jmUJWfpnso-BvQfnhsfFeoY_swNHG2nQ"
         },
         {
           "title": "ORD_51.pdf",
@@ -252,7 +288,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Tn4xkBHthjB_5VyyRsaq00Z_1lpzupXy/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Tn4xkBHthjB_5VyyRsaq00Z_1lpzupXy"
         },
         {
           "title": "ORD_51__2.pdf",
@@ -262,7 +301,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1ronaJyxX8DOItmMrYGgSsKRlBZJi2rmz/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1ronaJyxX8DOItmMrYGgSsKRlBZJi2rmz"
         },
         {
           "title": "ORD_56.pdf",
@@ -272,7 +314,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1XBeg4hosSTb6UDYLhT_cIKJ9_N6EfYHq/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1XBeg4hosSTb6UDYLhT_cIKJ9_N6EfYHq"
         },
         {
           "title": "ORD_56__2.pdf",
@@ -282,7 +327,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/15fKGduz-6oObwrbtRYdXZWu05ysqyex3/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "15fKGduz-6oObwrbtRYdXZWu05ysqyex3"
         },
         {
           "title": "Plan de convivencia.pdf",
@@ -292,7 +340,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1qgzZq_togHLVw_5TKmqXxsNSKH47Yzg7/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1qgzZq_togHLVw_5TKmqXxsNSKH47Yzg7"
         },
         {
           "title": "Proyecto Educativo.pdf",
@@ -302,7 +353,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1r3jPVP5d3Myk8tCXNrOtSulbzdNJcG1a/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1r3jPVP5d3Myk8tCXNrOtSulbzdNJcG1a"
         },
         {
           "title": "ProyectoEducativo16_17.pdf",
@@ -312,7 +366,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Qecw7iQYN2Ez6pq2gbIH2IdqJfSPzWH4/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Qecw7iQYN2Ez6pq2gbIH2IdqJfSPzWH4"
         },
         {
           "title": "ProyectoEducativo_21_22.pdf",
@@ -322,7 +379,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1ImHAunXeYXVCkOOwcxpZCv1gmOJiu-ma/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1ImHAunXeYXVCkOOwcxpZCv1gmOJiu-ma"
         },
         {
           "title": "ProyectoGestion16_17.pdf",
@@ -332,7 +392,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1FWkhMQJEUGoT1bAYogTUoU8kBEpR22TW/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1FWkhMQJEUGoT1bAYogTUoU8kBEpR22TW"
         },
         {
           "title": "ProyectoGestion202122.pdf",
@@ -342,7 +405,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1LPAVDhi-1_L33i5L9Xzg4GD7gNBBHPSt/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1LPAVDhi-1_L33i5L9Xzg4GD7gNBBHPSt"
         },
         {
           "title": "RD_17.pdf",
@@ -352,7 +418,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1eOSx3m7eQC7_cS_RNSORNOHIyv9h_wF2/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1eOSx3m7eQC7_cS_RNSORNOHIyv9h_wF2"
         },
         {
           "title": "RD_50.pdf",
@@ -362,7 +431,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/13el55bsymqY_U2bioIH5iqkjtkAEqSjk/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "13el55bsymqY_U2bioIH5iqkjtkAEqSjk"
         },
         {
           "title": "RD_50__2.pdf",
@@ -372,7 +444,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1FuLicarWVj20AD00jcHoNtp52e7mON4V/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1FuLicarWVj20AD00jcHoNtp52e7mON4V"
         },
         {
           "title": "RD_51.pdf",
@@ -382,7 +457,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/16H43TKmHZhM-FRme_roizKtzQ6rii55V/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "16H43TKmHZhM-FRme_roizKtzQ6rii55V"
         },
         {
           "title": "RD_51__2.pdf",
@@ -392,7 +470,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1A-gUDZZFB6_uFALPVV2PKtUxLZrFH2cE/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1A-gUDZZFB6_uFALPVV2PKtUxLZrFH2cE"
         },
         {
           "title": "RD_56.pdf",
@@ -402,7 +483,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1-KVPcnvYg7B3EGnvOKerXKKy8BQrzLBD/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1-KVPcnvYg7B3EGnvOKerXKKy8BQrzLBD"
         },
         {
           "title": "RD_56__2.pdf",
@@ -412,7 +496,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1YJlccdCw-P13h1c78LhMBK707M3E0Lzd/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1YJlccdCw-P13h1c78LhMBK707M3E0Lzd"
         },
         {
           "title": "ROF16_17.pdf",
@@ -422,7 +509,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1ssnBF6w1OcDFuJyfavSWnS2NlEJ-i-hL/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1ssnBF6w1OcDFuJyfavSWnS2NlEJ-i-hL"
         },
         {
           "title": "ROF_2021_22.pdf",
@@ -432,7 +522,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/19KLnAetMh1pgdXI8673-BcG-k_QIfPI1/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "19KLnAetMh1pgdXI8673-BcG-k_QIfPI1"
         },
         {
           "title": "Real Decreto Acceso Docente 276-2007.pdf",
@@ -442,7 +535,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1IWA-6LkSKJixG9OMR8aoYPoIq2fKTjWD/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1IWA-6LkSKJixG9OMR8aoYPoIq2fKTjWD"
         },
         {
           "title": "Real Decreto Estabilizacion Docente 270-2022.pdf",
@@ -452,7 +548,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/10av0xv94k9Ryzdxmmggb5ewytqjEApkL/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "10av0xv94k9Ryzdxmmggb5ewytqjEApkL"
         },
         {
           "title": "Resolucion15septiembre2020CursosEspecializacionFPI.pdf",
@@ -462,7 +561,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1RmY5vxxd8332fW65GW3SYinjhga_taNF/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1RmY5vxxd8332fW65GW3SYinjhga_taNF"
         },
         {
           "title": "convocatoria secundaria 2018.pdf",
@@ -472,7 +574,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1O-7jjUr8M13cd-JItvfJMdIGEb-KlF5Q/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1O-7jjUr8M13cd-JItvfJMdIGEb-KlF5Q"
         },
         {
           "title": "convocatoria secundaria 2018__2.pdf",
@@ -482,7 +587,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1UG_mOPwWIrzuqRK18H-gTKmTCx24CxPw/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1UG_mOPwWIrzuqRK18H-gTKmTCx24CxPw"
         },
         {
           "title": "decreto 302-2010 funcion docente.pdf",
@@ -492,7 +600,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1aFXmSzV-7Gz9boJJFZVHUuMfugH36Hm2/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1aFXmSzV-7Gz9boJJFZVHUuMfugH36Hm2"
         },
         {
           "title": "decreto 327-2010 reglamento IES.pdf",
@@ -502,7 +613,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1F_Zjji-WJgKbYqltfFo2oIX-xgkKl1Md/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1F_Zjji-WJgKbYqltfFo2oIX-xgkKl1Md"
         },
         {
           "title": "decreto 436-2008 FP andalucia.pdf",
@@ -512,7 +626,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1tOaV8uRecrIB3Z2Np-9eDYZVWCG_mRJH/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1tOaV8uRecrIB3Z2Np-9eDYZVWCG_mRJH"
         },
         {
           "title": "disposicion idiomas murcia 2022.pdf",
@@ -522,7 +639,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1dq3Cx5GOacj7m8iwgnVmnR9-GjxQtym_/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1dq3Cx5GOacj7m8iwgnVmnR9-GjxQtym_"
         },
         {
           "title": "jerarquia leyes.png",
@@ -532,7 +652,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1IyzhIKu6C_HeONBldNOcn4qR4FVjuNhj/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1IyzhIKu6C_HeONBldNOcn4qR4FVjuNhj"
         },
         {
           "title": "ley 17-2007 LEA.pdf",
@@ -542,7 +665,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/15zUW9TboCR4pRTyxwqOIMa3MM0E2Du78/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "15zUW9TboCR4pRTyxwqOIMa3MM0E2Du78"
         },
         {
           "title": "orden 29-2010 Evaluacion.pdf",
@@ -552,7 +678,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1GEMzvxJrSuOS-ZOzTVBSxwaCdss2gx1H/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1GEMzvxJrSuOS-ZOzTVBSxwaCdss2gx1H"
         },
         {
           "title": "orden 29-2010 Evaluacion__2.pdf",
@@ -562,7 +691,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Vm1UoTk3mbK_7aCdLlgZPyKbcrWhQb-Z/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Vm1UoTk3mbK_7aCdLlgZPyKbcrWhQb-Z"
         },
         {
           "title": "real decreto 1147-2011 ordenacion fp.pdf",
@@ -572,7 +704,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1_rs7muemChXFAxI3GsWvpfUfBfhdRog_/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1_rs7muemChXFAxI3GsWvpfUfBfhdRog_"
         },
         {
           "title": "resumen leyes.png",
@@ -582,7 +717,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1brCqQH7uAvhfDC9COpKmUNoR0j5Tc68T/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1brCqQH7uAvhfDC9COpKmUNoR0j5Tc68T"
         },
         {
           "title": "resumen titulo fp.docx",
@@ -592,7 +730,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1mBdu6KFXY6gcdctbgZkmUuXUJamBxD-1/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1mBdu6KFXY6gcdctbgZkmUuXUJamBxD-1"
         },
         {
           "title": "titulaciones equivalentes.pdf",
@@ -602,7 +743,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Legislacion",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1r6Vfjj5tTS87M65Ke2-gpeBVuNzT2PyP/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1r6Vfjj5tTS87M65Ke2-gpeBVuNzT2PyP"
         },
         {
           "title": "Webs de interes.docx",
@@ -612,7 +756,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Web XML scripts",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1fbPqKZaL_sFLAbar3mkzrJl24LKfM98P/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1fbPqKZaL_sFLAbar3mkzrJl24LKfM98P"
         }
       ]
     },
@@ -624,7 +771,7 @@
       "legal": "Parte B de la primera prueba.",
       "description": "Temario oficial por número, academia y tipo de material. Los PDFs ya enlazan al visor de Drive cuando están subidos.",
       "resourceCount": 217,
-      "publicLinkCount": 198,
+      "publicLinkCount": 217,
       "sections": [
         {
           "name": "Temario_y_resumenes_por_tema",
@@ -684,7 +831,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Bases de datos",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1w2AWPhBdVPthywmY4jxVn9fzHuY-f8y4/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1w2AWPhBdVPthywmY4jxVn9fzHuY-f8y4"
         },
         {
           "title": "Teoria Resumen Memoria Virtual- Clase 17.pdf",
@@ -694,7 +844,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Sistemas operativos",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/142kvGCcKKrMesvWm2fEJg4s9nK7jJa2q/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "142kvGCcKKrMesvWm2fEJg4s9nK7jJa2q"
         },
         {
           "title": "CamScanner 03-09-2022 21.01.pdf",
@@ -704,7 +857,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1B9oyVCFNtNEc4fedrKY4X8ajyI7Hg0bt/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1B9oyVCFNtNEc4fedrKY4X8ajyI7Hg0bt"
         },
         {
           "title": "Captura de pantalla 2022-01-29 a las 12.23.20.png",
@@ -714,7 +870,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1M5EZnZgQ_MnLZRqHnACfDwSBHGXyrodP/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1M5EZnZgQ_MnLZRqHnACfDwSBHGXyrodP"
         },
         {
           "title": "Captura de pantalla 2022-01-29 a las 12.23.51.png",
@@ -724,7 +883,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/10Tc3rHapEl-yH8n6QPdc0I0Li8VPAZcT/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "10Tc3rHapEl-yH8n6QPdc0I0Li8VPAZcT"
         },
         {
           "title": "Captura de pantalla 2022-02-13 a las 10.42.40.png",
@@ -734,7 +896,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1dY5beKn6RboZN2yE34_YBcAuGPgC22rK/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1dY5beKn6RboZN2yE34_YBcAuGPgC22rK"
         },
         {
           "title": "Introduccion Temas 1 y 2.pdf",
@@ -744,7 +909,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1jBbiIo3mIwMs1ZDHrMyW-OOXV4TRAm6H/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1jBbiIo3mIwMs1ZDHrMyW-OOXV4TRAm6H"
         },
         {
           "title": "Introduccion_Tema1.pdf",
@@ -754,7 +922,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1N0WYwGc7HZwRs6ZqgtC9eCc5OdxyRDRI/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1N0WYwGc7HZwRs6ZqgtC9eCc5OdxyRDRI"
         },
         {
           "title": "Introducciones Alvaro.txt",
@@ -764,7 +935,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1A7M0XHwDvKwKcjLlWBVLHJrXKMVghF29/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1A7M0XHwDvKwKcjLlWBVLHJrXKMVghF29"
         },
         {
           "title": "Introducciones Raul.txt",
@@ -774,7 +948,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1lQenbAPD-1RYhmHEdvF1DuQe52ddKL-b/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1lQenbAPD-1RYhmHEdvF1DuQe52ddKL-b"
         },
         {
           "title": "Introducion_Tema13.pdf",
@@ -784,7 +961,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1NaMo4BEEahqFDWg-F6E9-nbJBtX26N-b/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1NaMo4BEEahqFDWg-F6E9-nbJBtX26N-b"
         },
         {
           "title": "WhatsApp Image 2022-02-21 at 18.32.39.jpeg",
@@ -794,7 +974,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1-U2VF6pOUQOjhz2-xpItPVvlA9yKryDG/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1-U2VF6pOUQOjhz2-xpItPVvlA9yKryDG"
         },
         {
           "title": "WhatsApp Image 2022-03-20 at 9.07.12 AM.jpeg",
@@ -804,7 +987,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1NtxGitmcZn6R7qy5KcCJD2zT2QJghVwl/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1NtxGitmcZn6R7qy5KcCJD2zT2QJghVwl"
         },
         {
           "title": "Introduccion Tema 1. Tiempo 5_50.pdf",
@@ -814,7 +1000,10 @@
           "academy": "Preparador online",
           "topic": "Tema 01",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1FmpDRTBwdc5GIf_k1i7kYLFCyhvQZyyt/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1FmpDRTBwdc5GIf_k1i7kYLFCyhvQZyyt"
         },
         {
           "title": "Introduccion Tema 1.pdf",
@@ -824,7 +1013,10 @@
           "academy": "Preparador online",
           "topic": "Tema 01",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1iZPBoOOlmarzmq9joqa7P1kIjrcMbd3d/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1iZPBoOOlmarzmq9joqa7P1kIjrcMbd3d"
         },
         {
           "title": "Introduccion tema 1.docx",
@@ -834,7 +1026,10 @@
           "academy": "Preparador online",
           "topic": "Tema 01",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1k4LdF8U08ywCU863Q_VJIdHyfR31q4a3/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1k4LdF8U08ywCU863Q_VJIdHyfR31q4a3"
         },
         {
           "title": "introduccion tema3.jpeg",
@@ -844,7 +1039,10 @@
           "academy": "Preparador online",
           "topic": "Tema 03",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Qf68hi4u0RIKn4Cfv9GfG50BsRwYWpkC/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1Qf68hi4u0RIKn4Cfv9GfG50BsRwYWpkC"
         },
         {
           "title": "TEMA 15 Introduccion.pdf",
@@ -854,7 +1052,10 @@
           "academy": "Preparador online",
           "topic": "Tema 15",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1uI4PyiSLG31qEQ-W9lPDup5TG0Fhcyus/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1uI4PyiSLG31qEQ-W9lPDup5TG0Fhcyus"
         },
         {
           "title": "Introduccion Tema 31. Tiempo 5_40.pdf",
@@ -864,7 +1065,10 @@
           "academy": "Preparador online",
           "topic": "Tema 31",
           "area": "General",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/18Di3TXwAB2_uaJN3SVNdBKcxRzrt18QI/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "18Di3TXwAB2_uaJN3SVNdBKcxRzrt18QI"
         },
         {
           "title": "Tema 01 - Abacus - resumen.doc",
@@ -7572,7 +7776,7 @@
       "legal": "Defensa de programación didáctica.",
       "description": "Material de programación con el módulo cerrado como DAW: Lenguajes de marcas y sistemas de gestión de información.",
       "resourceCount": 58,
-      "publicLinkCount": 0,
+      "publicLinkCount": 58,
       "sections": [
         {
           "name": "Programacion_y_plan/Didactica",
@@ -7612,7 +7816,10 @@
           "academy": "General",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1nhh8AlajQZ1aiiocZTGb4qcd5BxxeSRS/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1nhh8AlajQZ1aiiocZTGb4qcd5BxxeSRS"
         },
         {
           "title": "01 - Tabla general modelo (OG CP UD RA).jpeg",
@@ -7622,7 +7829,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1RwDQazuygRlRbqrueK4KPFQOlbQj469O/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1RwDQazuygRlRbqrueK4KPFQOlbQj469O"
         },
         {
           "title": "01 - Tabla general modelo (OG CP UD RA).zip",
@@ -7632,7 +7842,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1EJLNcXLupqzCy3E9DNf3TLCzCjSjdUCv/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1EJLNcXLupqzCy3E9DNf3TLCzCjSjdUCv"
         },
         {
           "title": "02 - Tabla general ejemplo.jpeg",
@@ -7642,7 +7855,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Tj9BMk9UGABZ--ufyQBk07JO5OCPNhH3/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1Tj9BMk9UGABZ--ufyQBk07JO5OCPNhH3"
         },
         {
           "title": "03 - Tabla temporalidad ejemplo.jpeg",
@@ -7652,7 +7868,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1GlLKZpGewHS1VDWbWr232CqOJKCEx-mf/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1GlLKZpGewHS1VDWbWr232CqOJKCEx-mf"
         },
         {
           "title": "04 - Cuadro UD ejemplo.jpeg",
@@ -7662,7 +7881,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/14Acd7O6btioJCyGnTUnSYv3RYHZEiSUa/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "14Acd7O6btioJCyGnTUnSYv3RYHZEiSUa"
         },
         {
           "title": "APARTADO OBJETIVOS.pdf",
@@ -7672,7 +7894,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1OGsAxxyJnbSmY_FlydsBEGSE_xFZq-ov/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1OGsAxxyJnbSmY_FlydsBEGSE_xFZq-ov"
         },
         {
           "title": "Alumnado sordo en secundaria (CNSE).pdf",
@@ -7682,7 +7907,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1stvTTLqnlwm0xlJT1GxaHe8sjE6nUz-Y/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1stvTTLqnlwm0xlJT1GxaHe8sjE6nUz-Y"
         },
         {
           "title": "Definiciones de EVALUACION.doc",
@@ -7692,7 +7920,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/109mGITuxuBEYrXyxYcDeyvXrriDus7QI/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "109mGITuxuBEYrXyxYcDeyvXrriDus7QI"
         },
         {
           "title": "Discurso PD v0.docx",
@@ -7702,7 +7933,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1oDq_o48Sd-vIWPtWic5y9gPCTTFRBtnK/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1oDq_o48Sd-vIWPtWic5y9gPCTTFRBtnK"
         },
         {
           "title": "ESTRUCTURA BASICA DE LA INTRODUCCION DE UNA PROGRAMACION DIDACTICA.docx",
@@ -7712,7 +7946,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/19bfi8aVX3X991nwbe1PTdW-XLjryWwo0/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "19bfi8aVX3X991nwbe1PTdW-XLjryWwo0"
         },
         {
           "title": "Ejemplo 1.png",
@@ -7722,7 +7959,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Ig_iH5S5o5_tOaciMmYVwHxipS4Qnmr2/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1Ig_iH5S5o5_tOaciMmYVwHxipS4Qnmr2"
         },
         {
           "title": "Ejemplo 2.docx",
@@ -7732,7 +7972,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1T9ZPFWiSmc1StYwIKh71quS_K2jZ0X7j/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1T9ZPFWiSmc1StYwIKh71quS_K2jZ0X7j"
         },
         {
           "title": "Ejemplo 3.docx",
@@ -7742,7 +7985,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1jpdA7RnjnGDJ5lW5nGkhCzhMiRjW3_EE/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1jpdA7RnjnGDJ5lW5nGkhCzhMiRjW3_EE"
         },
         {
           "title": "Ejemplo 4.docx",
@@ -7752,7 +7998,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/16j-qQGfSRVMB0NF54_Y3gTKmhGaS0Ne-/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "16j-qQGfSRVMB0NF54_Y3gTKmhGaS0Ne-"
         },
         {
           "title": "Ejemplo 5.docx",
@@ -7762,7 +8011,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1390md_nl2cqXj1azY9xlpbS9O4H_X2Ob/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1390md_nl2cqXj1azY9xlpbS9O4H_X2Ob"
         },
         {
           "title": "Ejemplo 6.docx",
@@ -7772,7 +8024,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1FtyGCUyBq-T8WgAZfb_ChkiCS7JLmcVY/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1FtyGCUyBq-T8WgAZfb_ChkiCS7JLmcVY"
         },
         {
           "title": "Ejemplo 7.doc",
@@ -7782,7 +8037,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1Nv27lMttwTyIGfxVGMSQNq3obgD_BD16/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1Nv27lMttwTyIGfxVGMSQNq3obgD_BD16"
         },
         {
           "title": "Ejemplo Encuadre Modulo-Ciclo.pdf",
@@ -7792,7 +8050,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1zYavMddnS2NQj2W2AWNDv7xtbLgnWKLP/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1zYavMddnS2NQj2W2AWNDv7xtbLgnWKLP"
         },
         {
           "title": "El modulo en el ciclo.docx",
@@ -7802,7 +8063,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/16oEPwVyjcPcNjKBI0630Vo2FMBFz-_dR/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "16oEPwVyjcPcNjKBI0630Vo2FMBFz-_dR"
         },
         {
           "title": "Evaluacion por RA (ejemplo).doc",
@@ -7812,7 +8076,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1J9S3OorV8R52Ea2NXKGd4ADLbxkLcjHp/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1J9S3OorV8R52Ea2NXKGd4ADLbxkLcjHp"
         },
         {
           "title": "Funcionamiento del centro.doc",
@@ -7822,7 +8089,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/18B67tR8DfJ-9bNQx27eQ3lmUjiPabUyw/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "18B67tR8DfJ-9bNQx27eQ3lmUjiPabUyw"
         },
         {
           "title": "Guia accesible AYUDAS TIFLOTECN.pdf",
@@ -7832,7 +8102,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1xQzWajPN0ePgLoO_1eeD5IZ79R6caI93/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1xQzWajPN0ePgLoO_1eeD5IZ79R6caI93"
         },
         {
           "title": "IMG-20160422-WA0034.jpg",
@@ -7842,7 +8115,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1mrlafppgO8MhefvMS3U5IpCAHoJoPxEd/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1mrlafppgO8MhefvMS3U5IpCAHoJoPxEd"
         },
         {
           "title": "IMG-20160422-WA0038.jpg",
@@ -7852,7 +8128,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/12wpg8pRnUFKW8C03zeBqeJr8O1sJB7sW/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "12wpg8pRnUFKW8C03zeBqeJr8O1sJB7sW"
         },
         {
           "title": "IMG-20160422-WA0063.jpg",
@@ -7862,7 +8141,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1zRbmWZm7bn3hWaqn75BI_JWX7Y0qkCPW/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1zRbmWZm7bn3hWaqn75BI_JWX7Y0qkCPW"
         },
         {
           "title": "IMG-20160422-WA0076.jpg",
@@ -7872,7 +8154,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1EHmRE65u9BzLQXQGA8xK6dC5WAvh1Zrh/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1EHmRE65u9BzLQXQGA8xK6dC5WAvh1Zrh"
         },
         {
           "title": "INDICE DE CONTENIDOS.docx",
@@ -7882,7 +8167,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1Z7pyKE7DYQVxls4c9G3MHO8AG0FtF2On/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1Z7pyKE7DYQVxls4c9G3MHO8AG0FtF2On"
         },
         {
           "title": "Indice de una Programacion Didactica.docx",
@@ -7892,7 +8180,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1ALr9SMBDib-iMmvy7YVyf-v5V0-wG7O1/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1ALr9SMBDib-iMmvy7YVyf-v5V0-wG7O1"
         },
         {
           "title": "Ley 4 (2017) - Titulo IV.doc",
@@ -7902,7 +8193,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1gulVM_eQEYfGYk7ONUCcimIXIq4qLQ-T/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1gulVM_eQEYfGYk7ONUCcimIXIq4qLQ-T"
         },
         {
           "title": "Ley 4-2017 Derechos Personas Discapacidad.pdf",
@@ -7912,7 +8206,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1MiStbCuVokw8kDN24s38B34BYUbo4ygV/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1MiStbCuVokw8kDN24s38B34BYUbo4ygV"
         },
         {
           "title": "Modelos de METODOLOGIA.doc",
@@ -7922,7 +8219,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1WR3lNtm5M2O96IMm4YNYh8PhUfOIZRw9/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1WR3lNtm5M2O96IMm4YNYh8PhUfOIZRw9"
         },
         {
           "title": "Modelos de METODOLOGIA.pdf",
@@ -7932,7 +8232,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1rPTwN4mWB5DUWE1ECIOhqrV3Z3b8BQzz/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1rPTwN4mWB5DUWE1ECIOhqrV3Z3b8BQzz"
         },
         {
           "title": "Modelos de Objetivos Contenidos.zip",
@@ -7942,7 +8245,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1xFLrgVZxb_jL5LP3OAU-tRDxg02l5TTt/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1xFLrgVZxb_jL5LP3OAU-tRDxg02l5TTt"
         },
         {
           "title": "Modelos de evaluacion.pdf",
@@ -7952,7 +8258,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1hpP-gjHn8A1Vdeuy0fkjiTVM38YVBCXL/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1hpP-gjHn8A1Vdeuy0fkjiTVM38YVBCXL"
         },
         {
           "title": "Modelos de objetivos.pdf",
@@ -7962,7 +8271,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1_wFub-IAqkXNmKGLuu96R8ac3Qt7QfNr/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1_wFub-IAqkXNmKGLuu96R8ac3Qt7QfNr"
         },
         {
           "title": "Modelos de situaciA n en el contexto.docx",
@@ -7972,7 +8284,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/10HHhaTR5mXy9-N7qfM7Z15xULcN_a1p0/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "10HHhaTR5mXy9-N7qfM7Z15xULcN_a1p0"
         },
         {
           "title": "Modulo 2. Los elementos curiculares de una PD.pdf",
@@ -7982,7 +8297,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/10_Ow7QzQslx2DR98JQVdVC5A_NJT66CC/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "10_Ow7QzQslx2DR98JQVdVC5A_NJT66CC"
         },
         {
           "title": "PROGRAMACION I.pdf",
@@ -7992,7 +8310,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1m6QxbfhdjAFk3rJdtREyPFK0Cl0CY5mx/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1m6QxbfhdjAFk3rJdtREyPFK0Cl0CY5mx"
         },
         {
           "title": "PROGRAMACION SEGURIDAD Y ALTA DISPONIBILIDAD.docx",
@@ -8002,7 +8323,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1VqRFtuelKl4WIfLT74Y4eS_KQZFOZB5K/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1VqRFtuelKl4WIfLT74Y4eS_KQZFOZB5K"
         },
         {
           "title": "Rubrica ejemplo 01 - Actividad escrita general.pdf",
@@ -8012,7 +8336,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1bMtRGt6Sfev7SACMYBm3hWPFyWhQWO9n/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1bMtRGt6Sfev7SACMYBm3hWPFyWhQWO9n"
         },
         {
           "title": "Rubrica ejemplo 02 - Baul de Buff.pdf",
@@ -8022,7 +8349,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1OK710JuBygyZjQfLMx8cnYlByGnjIvVX/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1OK710JuBygyZjQfLMx8cnYlByGnjIvVX"
         },
         {
           "title": "Rubrica ejemplo 03 - Cineforum.pdf",
@@ -8032,7 +8362,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1rBorL745cEXbXkABRD2TThorbaM0v5uL/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1rBorL745cEXbXkABRD2TThorbaM0v5uL"
         },
         {
           "title": "Rubrica ejemplo 04 - Resolucion de conflictos.pdf",
@@ -8042,7 +8375,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/18XeAFt4EAX5L7kWc0oI3P2II_0XfvNlx/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "18XeAFt4EAX5L7kWc0oI3P2II_0XfvNlx"
         },
         {
           "title": "_Modelo Metodologia I(1).pdf",
@@ -8052,7 +8388,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/13L_a4tSiGUpYkm_7s3btBGmxzcBkXhL7/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "13L_a4tSiGUpYkm_7s3btBGmxzcBkXhL7"
         },
         {
           "title": "_Modelo Metodologia II(1).pdf",
@@ -8062,7 +8401,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1RRekP4ifGIGAVnGcDdCazd_FT7Jod263/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1RRekP4ifGIGAVnGcDdCazd_FT7Jod263"
         },
         {
           "title": "_Modelo Metodologia III(1).pdf",
@@ -8072,7 +8414,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Q1h14nKhSl_EgW_l8DMKfagji-BiCqd5/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Q1h14nKhSl_EgW_l8DMKfagji-BiCqd5"
         },
         {
           "title": "discurso programacion 2018.pdf",
@@ -8082,7 +8427,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1HfzirouJSM-ZM3iXVhYAqyxceITGMTl8/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1HfzirouJSM-ZM3iXVhYAqyxceITGMTl8"
         },
         {
           "title": "discursoprogramacion.pdf",
@@ -8092,7 +8440,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1rfEKCrVgwI93XntKRBC82sHTs_QD4q6r/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1rfEKCrVgwI93XntKRBC82sHTs_QD4q6r"
         },
         {
           "title": "mas modelos contextualizacion 2A parte.docx",
@@ -8102,7 +8453,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/17qu9n7MyPEoYquYhmrdOVGtdhKHJ2bws/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "17qu9n7MyPEoYquYhmrdOVGtdhKHJ2bws"
         },
         {
           "title": "mas modelos contextualizacion.docx",
@@ -8112,7 +8466,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1vnaWGixiA8h_-KNGYVIDTvpIpKJXBN5Z/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1vnaWGixiA8h_-KNGYVIDTvpIpKJXBN5Z"
         },
         {
           "title": "modelo RA-I.docx",
@@ -8122,7 +8479,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/14mzoSIqL6JW-GdP_PwDquvTtXoSsnt-u/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "14mzoSIqL6JW-GdP_PwDquvTtXoSsnt-u"
         },
         {
           "title": "modelo RA-II.docx",
@@ -8132,7 +8492,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1pDMcep21zZHniFU2vqCLqQa3PB1Yomo2/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1pDMcep21zZHniFU2vqCLqQa3PB1Yomo2"
         },
         {
           "title": "programacion didactica SEGURIDAD INFORMATICA.docx",
@@ -8142,7 +8505,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/18HKhc3y8zN6rS-3O8FAOMSdRngBFj9xO/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "18HKhc3y8zN6rS-3O8FAOMSdRngBFj9xO"
         },
         {
           "title": "programacionLenguajeMarcas.pdf",
@@ -8152,7 +8518,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1tqUx4IJYQJTMu5fPxcUWi9os85dXTARe/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1tqUx4IJYQJTMu5fPxcUWi9os85dXTARe"
         },
         {
           "title": "covid19 en la programacion didactica.docx",
@@ -8162,7 +8531,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Redes",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1xsBlygziTzewQsid-bpmE6rUMKw83QPm/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1xsBlygziTzewQsid-bpmE6rUMKw83QPm"
         },
         {
           "title": "programacion planificacion de redes.docx",
@@ -8172,7 +8544,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Redes",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1sEez8w1cTWtRiP8o1_exewSyjd42DO1K/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1sEez8w1cTWtRiP8o1_exewSyjd42DO1K"
         },
         {
           "title": "Programacion Didactica Implantacion de Aplicaciones Web.pdf",
@@ -8182,7 +8557,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Web XML scripts",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1GyLd0A-SXB8J_54bsyxukbRVp87OSYiR/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1GyLd0A-SXB8J_54bsyxukbRVp87OSYiR"
         }
       ]
     },
@@ -8194,7 +8572,7 @@
       "legal": "Preparación y exposición oral de unidad de trabajo.",
       "description": "Recursos para construir unidades de trabajo del módulo 0373, orientadas a HTML/CSS/XML y gestión de información.",
       "resourceCount": 27,
-      "publicLinkCount": 0,
+      "publicLinkCount": 27,
       "sections": [
         {
           "name": "Didactica_y_unidades/Didactica",
@@ -8222,7 +8600,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1DT0UIJ7Puke8uMP-Jmmyn_qCuyMstwCS/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1DT0UIJ7Puke8uMP-Jmmyn_qCuyMstwCS"
         },
         {
           "title": "10.doc",
@@ -8232,7 +8613,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1vJlUDBA9O-uBd9mqwcYPlmIJxveMdet8/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1vJlUDBA9O-uBd9mqwcYPlmIJxveMdet8"
         },
         {
           "title": "11.doc",
@@ -8242,7 +8626,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1QJDb2KQpnp20Kgy3TQyhk6RyMxNwAiSW/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1QJDb2KQpnp20Kgy3TQyhk6RyMxNwAiSW"
         },
         {
           "title": "12.doc",
@@ -8252,7 +8639,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1IFfvURliP4J8wniNCvxG_7i_N-ctNKqT/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1IFfvURliP4J8wniNCvxG_7i_N-ctNKqT"
         },
         {
           "title": "13.doc",
@@ -8262,7 +8652,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1YdTO5bqgjo8ukfpuoqJFSmfQo9IWSP45/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1YdTO5bqgjo8ukfpuoqJFSmfQo9IWSP45"
         },
         {
           "title": "14.doc",
@@ -8272,7 +8665,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1Fjc-QrsH5x5mR8S-h2LIMCa4yLqPwVdU/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1Fjc-QrsH5x5mR8S-h2LIMCa4yLqPwVdU"
         },
         {
           "title": "2.doc",
@@ -8282,7 +8678,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1-4xdm4_8lBYvDrrFQLHCHu6z521V66w6/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1-4xdm4_8lBYvDrrFQLHCHu6z521V66w6"
         },
         {
           "title": "3.doc",
@@ -8292,7 +8691,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/15ZlSsIwN8b1KIoYzztjqJ4wzfPz9yHGz/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "15ZlSsIwN8b1KIoYzztjqJ4wzfPz9yHGz"
         },
         {
           "title": "4.doc",
@@ -8302,7 +8704,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1imKvGWUdOT7FyGkXTS_NjxTt1hirD2lv/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1imKvGWUdOT7FyGkXTS_NjxTt1hirD2lv"
         },
         {
           "title": "5.doc",
@@ -8312,7 +8717,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1v5smyOOhZjN1Re5CgF3YKwbXQUe5tp0p/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1v5smyOOhZjN1Re5CgF3YKwbXQUe5tp0p"
         },
         {
           "title": "6.doc",
@@ -8322,7 +8730,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1J8JhqkGTj0bLABDTvWhM47LS_Xp9mGk0/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1J8JhqkGTj0bLABDTvWhM47LS_Xp9mGk0"
         },
         {
           "title": "7.doc",
@@ -8332,7 +8743,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1b4DcydFca5aeMzkvFutce-t2-zvBUiIt/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1b4DcydFca5aeMzkvFutce-t2-zvBUiIt"
         },
         {
           "title": "8.doc",
@@ -8342,7 +8756,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/13Z-l0V7DFOm_6GnbtGtGD3MYDrQmaFYz/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "13Z-l0V7DFOm_6GnbtGtGD3MYDrQmaFYz"
         },
         {
           "title": "9.doc",
@@ -8352,7 +8769,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/10CdtppE53ImxRBti50QQjNljPy5wsoVt/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "10CdtppE53ImxRBti50QQjNljPy5wsoVt"
         },
         {
           "title": "ACTIVIDADES DE DESARROLLO.pdf",
@@ -8362,7 +8782,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Kew183xRhzMa5YtxevAuSGyxNQ57jqb3/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Kew183xRhzMa5YtxevAuSGyxNQ57jqb3"
         },
         {
           "title": "ACTIVIDADES DE INICIO.pdf",
@@ -8372,7 +8795,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1jH1HO4RyHTvOIhunncUppsLlzYzDNmVp/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1jH1HO4RyHTvOIhunncUppsLlzYzDNmVp"
         },
         {
           "title": "ACTIVIDADES DE SINTESIS.pdf",
@@ -8382,7 +8808,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1-kxCTiapTvIcTYbxa62RkPAzMv_DKGJi/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1-kxCTiapTvIcTYbxa62RkPAzMv_DKGJi"
         },
         {
           "title": "CUADRO ACTIVIDADES E-A UD MODELO1.pdf",
@@ -8392,7 +8821,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1KEIZLuQHNHwEClGo6Dp1VTjfnnz6GGIZ/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1KEIZLuQHNHwEClGo6Dp1VTjfnnz6GGIZ"
         },
         {
           "title": "Esquema preliminar de una UD.pdf",
@@ -8402,7 +8834,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1xsygW9z1da2qzO14CTDW1CzxvCOrMU9T/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1xsygW9z1da2qzO14CTDW1CzxvCOrMU9T"
         },
         {
           "title": "Modelo Cuadro Resumen Unidad DIdactica II(1).pdf",
@@ -8412,7 +8847,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1i_0Be-rBAbYCOX_Vke0KrptqKkIOxLVs/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1i_0Be-rBAbYCOX_Vke0KrptqKkIOxLVs"
         },
         {
           "title": "Modelo Cuadro Resumen Unidad Didactica I(1).pdf",
@@ -8422,7 +8860,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1r5DLRlWI2aIqYZYQivv1_HQBa3hcUH64/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1r5DLRlWI2aIqYZYQivv1_HQBa3hcUH64"
         },
         {
           "title": "Modelo Cuadro Resumen Unidad Didactica III(1).pdf",
@@ -8432,7 +8873,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1mk0ErkE1HPo9nChnmB2a3mn82czOgU-P/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1mk0ErkE1HPo9nChnmB2a3mn82czOgU-P"
         },
         {
           "title": "RESEMEN DISCURSO DIDACTICA.pdf",
@@ -8442,7 +8886,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1sxX6F06paoCxmejYcIk5Y0120NOjX0Oo/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1sxX6F06paoCxmejYcIk5Y0120NOjX0Oo"
         },
         {
           "title": "UD2. v0b. Modelo nuevo CORRECION.docx",
@@ -8452,7 +8899,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://docs.google.com/document/d/1sz2080nbYE07lzpnTjaS7EUeMcc4LbDx/edit?usp=drivesdk&rtpof=true&sd=true",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1sz2080nbYE07lzpnTjaS7EUeMcc4LbDx"
         },
         {
           "title": "correcion unidad 2y3.txt",
@@ -8462,7 +8912,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1I_59C6wxt0yV5zKz10Gstumj0vHdD2HU/view?usp=drivesdk",
+          "urlMode": "drive-file-view",
+          "driveFileId": "1I_59C6wxt0yV5zKz10Gstumj0vHdD2HU"
         },
         {
           "title": "guia de actividades unidades didacticas.pdf",
@@ -8472,7 +8925,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1uc952dY4KvZvAbzX-hVzALTnChYs62H0/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1uc952dY4KvZvAbzX-hVzALTnChYs62H0"
         },
         {
           "title": "unidad 2y3.pdf",
@@ -8482,7 +8938,10 @@
           "academy": "Preparador online",
           "topic": "General",
           "area": "Didactica",
-          "hasPublicLink": false
+          "hasPublicLink": true,
+          "url": "https://drive.google.com/file/d/1Ke874jHO8Rzaz5h-tRdrWIamnpE_yVSZ/preview",
+          "urlMode": "drive-pdf-preview",
+          "driveFileId": "1Ke874jHO8Rzaz5h-tRdrWIamnpE_yVSZ"
         }
       ]
     },
@@ -10200,5 +10659,5 @@
     }
   ],
   "totalResources": 916,
-  "publicLinkCount": 198
+  "publicLinkCount": 351
 }
