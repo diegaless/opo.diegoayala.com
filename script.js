@@ -8,6 +8,8 @@ const topicView = document.querySelector("[data-topic-view]");
 const phaseView = document.querySelector("[data-phase-view]");
 const blocks = [...document.querySelectorAll("[data-block]")];
 const topics = [...document.querySelectorAll("[data-topic]")];
+const rubricBlock = document.querySelector("[data-rubric-block]");
+const rubricItems = [...document.querySelectorAll("[data-rubric-item]")];
 const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
 
@@ -34,6 +36,22 @@ function updateCount(visible, type = "temas") {
   if (!countOutput) return;
   const singular = type === "recursos" ? "recurso" : "tema";
   countOutput.textContent = visible === 1 ? `1 ${singular}` : `${visible} ${type}`;
+}
+
+function updateTopicCount(visibleTopics, visibleRubrics) {
+  if (!countOutput) return;
+
+  if (visibleRubrics > 0 && visibleTopics > 0) {
+    countOutput.textContent = `${visibleTopics} temas · ${visibleRubrics} rúbricas`;
+    return;
+  }
+
+  if (visibleRubrics > 0) {
+    countOutput.textContent = visibleRubrics === 1 ? "1 rúbrica" : `${visibleRubrics} rúbricas`;
+    return;
+  }
+
+  updateCount(visibleTopics);
 }
 
 function getTopicKey(topic) {
@@ -284,6 +302,7 @@ function renderSelectedPhase() {
 function filterTopics() {
   const query = normalize(searchInput?.value.trim() || "");
   let visibleTopics = 0;
+  let visibleRubrics = 0;
 
   topics.forEach((topic) => {
     const isVisible = normalize(topic.textContent || "").includes(query);
@@ -298,8 +317,16 @@ function filterTopics() {
     block.hidden = !hasVisibleTopic;
   });
 
-  updateCount(visibleTopics);
-  if (emptyState) emptyState.hidden = visibleTopics !== 0;
+  rubricItems.forEach((item) => {
+    const isVisible = !query || normalize(item.textContent || "").includes(query);
+    item.hidden = !isVisible;
+    if (isVisible) visibleRubrics += 1;
+  });
+
+  if (rubricBlock) rubricBlock.hidden = visibleRubrics === 0;
+
+  updateTopicCount(visibleTopics, visibleRubrics);
+  if (emptyState) emptyState.hidden = visibleTopics !== 0 || visibleRubrics !== 0;
 }
 
 function renderCurrentView() {
@@ -318,7 +345,7 @@ function renderCurrentView() {
 }
 
 setTheme(root.dataset.theme || "dark");
-updateCount(topics.length);
+filterTopics();
 loadMaterials();
 loadPhases();
 

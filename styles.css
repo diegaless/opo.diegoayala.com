@@ -416,6 +416,88 @@ p {
   margin: 0 0 12px 52px;
 }
 
+.rubric-block {
+  border-top-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+}
+
+.rubric-item {
+  padding-bottom: 8px;
+}
+
+.rubric-detail {
+  display: grid;
+  min-width: 0;
+  max-width: calc(100% - 52px);
+  gap: 12px;
+  margin: 0 0 14px 52px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.rubric-detail p {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.rubric-tags,
+.rubric-links {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.rubric-tags span,
+.rubric-source {
+  display: inline-flex;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 30px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 74%, transparent);
+  padding: 0 10px;
+  font-size: 0.72rem;
+  font-weight: 740;
+  overflow-wrap: anywhere;
+}
+
+.rubric-tags span {
+  color: var(--accent);
+}
+
+.rubric-source {
+  color: var(--ink);
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.rubric-source:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.rubric-score {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(64px, auto) minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.rubric-points {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 780;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .material-select,
 .material-link {
   min-height: 34px;
@@ -577,6 +659,16 @@ p {
     max-width: calc(100% - 42px);
   }
 
+  .rubric-detail {
+    margin-left: 42px;
+    max-width: calc(100% - 42px);
+  }
+
+  .rubric-score {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
   .site-footer {
     flex-wrap: wrap;
     gap: 16px;
@@ -601,6 +693,11 @@ p {
   }
 
   .topic-materials {
+    margin-left: 39px;
+    max-width: calc(100% - 39px);
+  }
+
+  .rubric-detail {
     margin-left: 39px;
     max-width: calc(100% - 39px);
   }

@@ -19,8 +19,8 @@
       const savedTheme = localStorage.getItem("theme");
       document.documentElement.dataset.theme = savedTheme || "dark";
     </script>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css?v=20260617-block-sticky">
+    <script src="script.js?v=20260618-rubricas" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260618-rubricas">
   </head>
   <body>
     <header class="site-header">
@@ -98,6 +98,174 @@
       <section class="syllabus" data-phase-view hidden aria-label="Recursos por fase"></section>
 
       <section class="syllabus" data-topic-view aria-label="Listado del temario">
+        <article class="topic-block rubric-block" data-rubric-block>
+          <header class="block-header">
+            <p>Rúbricas</p>
+            <h2>Tema escrito (Parte B)</h2>
+          </header>
+          <ol class="topic-list rubric-list">
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">B</span>
+                <span>Por qué se llama Parte B</span>
+              </span>
+              <div class="rubric-detail">
+                <p>
+                  La Primera prueba se divide en Parte A, de carácter práctico, y Parte B,
+                  desarrollo por escrito de un tema. Por eso el tema teórico aparece como
+                  Parte B: no es otra fase, es la segunda mitad de la primera prueba.
+                </p>
+              </div>
+            </li>
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">10</span>
+                <span>Ponderación, mínimos y tiempo</span>
+              </span>
+              <div class="rubric-detail">
+                <div class="rubric-tags" aria-label="Datos clave">
+                  <span>2 horas</span>
+                  <span>10 puntos</span>
+                  <span>50% de la primera prueba</span>
+                  <span>Mínimo 1,25 en Parte A y B</span>
+                </div>
+                <p>
+                  La Parte B se califica de 0 a 10. La Primera prueba suma Parte A y Parte B
+                  al 50% cada una; para superarla hay que alcanzar al menos 1,25 puntos en
+                  cada parte y una calificación total igual o superior a 5.
+                </p>
+              </div>
+            </li>
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">6</span>
+                <span>Conocimiento científico, profundo y actualizado</span>
+              </span>
+              <div class="rubric-detail">
+                <div class="rubric-score">
+                  <span class="rubric-points">6 pts</span>
+                  <p>
+                    Centrar la exposición en el tema pedido, desarrollar de forma completa
+                    los contenidos específicos, usar referencias actualizadas y añadir
+                    aspectos novedosos, pertinentes y significativos.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">2,5</span>
+                <span>Estructura, desarrollo completo y originalidad</span>
+              </span>
+              <div class="rubric-detail">
+                <div class="rubric-score">
+                  <span class="rubric-points">2,5 pts</span>
+                  <p>
+                    Desarrollar todas las partes del tema, dejar claro el eje central,
+                    organizarlo por bloques diferenciados e incluir introducción,
+                    contextualización, índice, conclusiones y referencias bibliográficas.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">1,5</span>
+                <span>Presentación, orden y redacción</span>
+              </span>
+              <div class="rubric-detail">
+                <div class="rubric-score">
+                  <span class="rubric-points">1,5 pts</span>
+                  <p>
+                    Escribir con claridad, orden y corrección, usar terminología precisa,
+                    mantener una letra legible y apoyar la exposición con ejemplos,
+                    esquemas, gráficos u otros recursos visuales cuando ayuden.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">-3</span>
+                <span>Ortografía, sintaxis y penalizaciones</span>
+              </span>
+              <div class="rubric-detail">
+                <p>
+                  Se descuenta 0,5 por cada falta. Tres tildes mal puestas o ausentes,
+                  tres abreviaturas indebidas, tres errores de puntuación, concordancia,
+                  preposiciones, tiempos verbales, marcadores discursivos o repeticiones
+                  cuentan como una falta. El máximo deducible por estos errores es de
+                  3 puntos en cada parte.
+                </p>
+              </div>
+            </li>
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">!</span>
+                <span>Normas de actuación que afectan al tema</span>
+              </span>
+              <div class="rubric-detail">
+                <p>
+                  La prueba es anónima: cualquier marca identificativa puede suponer un
+                  cero en esa parte. En la mesa solo se permite documento identificativo,
+                  dos bolígrafos azules o negros, pañuelos y agua sin etiqueta. No se
+                  permite calculadora, dispositivos electrónicos ni correctores. Hay que
+                  usar un único tipo de tinta, tachar con una línea horizontal continua y
+                  emplear solo papel blanco entregado y sellado por el tribunal.
+                </p>
+              </div>
+            </li>
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">A4</span>
+                <span>Lo de Arial 11 y 70 páginas no es del tema escrito</span>
+              </span>
+              <div class="rubric-detail">
+                <p>
+                  En los criterios oficiales no aparece un máximo de palabras, páginas o
+                  fuente para la Parte B. Las condiciones de 70 páginas, Arial 11,
+                  interlineado sencillo y formato UNE-A4 se refieren a la programación
+                  didáctica de la Segunda prueba.
+                </p>
+              </div>
+            </li>
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">SRC</span>
+                <span>Fuentes oficiales</span>
+              </span>
+              <div class="rubric-detail">
+                <div class="rubric-links">
+                  <a
+                    class="rubric-source"
+                    href="https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosValoracion_INFORMATICA_01.pdf&IDCONTENIDO=199410&IDTIPO=60&RASTRO=c798%24m3977%2C74131%2C74447%2C74448%2C74501"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Criterios valoración
+                  </a>
+                  <a
+                    class="rubric-source"
+                    href="https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosActuacion_INFORMATICA_01.pdf&IDCONTENIDO=199409&IDTIPO=60&RASTRO=c798%24m3977%2C74131%2C74447%2C74448%2C74501"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Criterios actuación
+                  </a>
+                  <a
+                    class="rubric-source"
+                    href="https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Convocatoria BORM
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </article>
+
         <article class="topic-block" data-block>
           <header class="block-header">
             <p>Bloque 01</p>
