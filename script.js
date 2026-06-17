@@ -233,6 +233,16 @@ function groupResourcesBySection(resources) {
   }, new Map());
 }
 
+function getOrderedSectionGroups(phase, groups) {
+  const sectionOrder = new Map(
+    (phase.sections || []).map((section, index) => [section.name, index]),
+  );
+
+  return [...groups.entries()].sort(
+    ([left], [right]) => (sectionOrder.get(left) ?? 999) - (sectionOrder.get(right) ?? 999),
+  );
+}
+
 function buildResourceItem(resource, index) {
   const item = createElement("li", "topic-item");
   item.dataset.phaseResource = "";
@@ -294,7 +304,7 @@ function renderSelectedPhase() {
     block.append(header, list);
     fragment.append(block);
   } else {
-    groups.forEach((sectionResources, section) => {
+    getOrderedSectionGroups(phase, groups).forEach(([section, sectionResources]) => {
       const block = createElement("article", "topic-block");
       const header = createElement("header", "block-header");
       header.append(createElement("p", "", phase.label), createElement("h2", "", formatSectionName(section)));

@@ -774,20 +774,56 @@
       "publicLinkCount": 217,
       "sections": [
         {
-          "name": "Temario_y_resumenes_por_tema",
-          "count": 198
-        },
-        {
-          "name": "Introducciones_y_correcciones_de_temas",
-          "count": 17
-        },
-        {
           "name": "Esquemas_y_resumenes/Bases de datos",
           "count": 1
         },
         {
           "name": "Esquemas_y_resumenes/Sistemas operativos",
           "count": 1
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 01",
+          "count": 5
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 01 y 02",
+          "count": 1
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 01 y 13",
+          "count": 1
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 01 y 31",
+          "count": 1
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 02",
+          "count": 2
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 03",
+          "count": 1
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 04",
+          "count": 1
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 13",
+          "count": 1
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 15",
+          "count": 2
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 31",
+          "count": 2
+        },
+        {
+          "name": "Temario_y_resumenes_por_tema",
+          "count": 198
         }
       ],
       "academies": [
@@ -806,20 +842,20 @@
       ],
       "types": [
         {
+          "name": "esquema",
+          "count": 2
+        },
+        {
+          "name": "introduccion",
+          "count": 17
+        },
+        {
           "name": "resumen",
           "count": 107
         },
         {
           "name": "teoria",
           "count": 91
-        },
-        {
-          "name": "correccion",
-          "count": 17
-        },
-        {
-          "name": "esquema",
-          "count": 2
         }
       ],
       "resources": [
@@ -852,10 +888,10 @@
         {
           "title": "CamScanner 03-09-2022 21.01.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 02",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 02",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1B9oyVCFNtNEc4fedrKY4X8ajyI7Hg0bt/preview",
@@ -865,10 +901,10 @@
         {
           "title": "Captura de pantalla 2022-01-29 a las 12.23.20.png",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 31",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 31",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1M5EZnZgQ_MnLZRqHnACfDwSBHGXyrodP/view?usp=drivesdk",
@@ -878,10 +914,10 @@
         {
           "title": "Captura de pantalla 2022-01-29 a las 12.23.51.png",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 04",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 04",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/10Tc3rHapEl-yH8n6QPdc0I0Li8VPAZcT/view?usp=drivesdk",
@@ -891,10 +927,10 @@
         {
           "title": "Captura de pantalla 2022-02-13 a las 10.42.40.png",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 02",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 02",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1dY5beKn6RboZN2yE34_YBcAuGPgC22rK/view?usp=drivesdk",
@@ -904,10 +940,10 @@
         {
           "title": "Introduccion Temas 1 y 2.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 01 y 02",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 01 y 02",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1jBbiIo3mIwMs1ZDHrMyW-OOXV4TRAm6H/preview",
@@ -917,10 +953,10 @@
         {
           "title": "Introduccion_Tema1.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 01",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 01",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1N0WYwGc7HZwRs6ZqgtC9eCc5OdxyRDRI/preview",
@@ -930,10 +966,10 @@
         {
           "title": "Introducciones Alvaro.txt",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 01 y 13",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 01 y 13",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1A7M0XHwDvKwKcjLlWBVLHJrXKMVghF29/view?usp=drivesdk",
@@ -943,10 +979,10 @@
         {
           "title": "Introducciones Raul.txt",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 01 y 31",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 01 y 31",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1lQenbAPD-1RYhmHEdvF1DuQe52ddKL-b/view?usp=drivesdk",
@@ -956,10 +992,10 @@
         {
           "title": "Introducion_Tema13.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 13",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 13",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1NaMo4BEEahqFDWg-F6E9-nbJBtX26N-b/preview",
@@ -969,10 +1005,10 @@
         {
           "title": "WhatsApp Image 2022-02-21 at 18.32.39.jpeg",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 15",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 15",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1-U2VF6pOUQOjhz2-xpItPVvlA9yKryDG/view?usp=drivesdk",
@@ -982,10 +1018,10 @@
         {
           "title": "WhatsApp Image 2022-03-20 at 9.07.12 AM.jpeg",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 01",
+          "type": "introduccion",
           "academy": "Preparador online",
-          "topic": "General",
+          "topic": "Tema 01",
           "area": "General",
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1NtxGitmcZn6R7qy5KcCJD2zT2QJghVwl/view?usp=drivesdk",
@@ -995,8 +1031,8 @@
         {
           "title": "Introduccion Tema 1. Tiempo 5_50.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 01",
+          "type": "introduccion",
           "academy": "Preparador online",
           "topic": "Tema 01",
           "area": "General",
@@ -1008,8 +1044,8 @@
         {
           "title": "Introduccion Tema 1.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 01",
+          "type": "introduccion",
           "academy": "Preparador online",
           "topic": "Tema 01",
           "area": "General",
@@ -1021,8 +1057,8 @@
         {
           "title": "Introduccion tema 1.docx",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 01",
+          "type": "introduccion",
           "academy": "Preparador online",
           "topic": "Tema 01",
           "area": "General",
@@ -1034,8 +1070,8 @@
         {
           "title": "introduccion tema3.jpeg",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 03",
+          "type": "introduccion",
           "academy": "Preparador online",
           "topic": "Tema 03",
           "area": "General",
@@ -1047,8 +1083,8 @@
         {
           "title": "TEMA 15 Introduccion.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 15",
+          "type": "introduccion",
           "academy": "Preparador online",
           "topic": "Tema 15",
           "area": "General",
@@ -1060,8 +1096,8 @@
         {
           "title": "Introduccion Tema 31. Tiempo 5_40.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
-          "section": "Introducciones_y_correcciones_de_temas",
-          "type": "correccion",
+          "section": "Introducciones_por_tema/Tema 31",
+          "type": "introduccion",
           "academy": "Preparador online",
           "topic": "Tema 31",
           "area": "General",
