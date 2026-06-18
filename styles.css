@@ -374,7 +374,7 @@ p {
 .topic-row {
   display: grid;
   min-width: 0;
-  grid-template-columns: 38px minmax(0, 1fr);
+  grid-template-columns: minmax(38px, max-content) minmax(0, 1fr);
   gap: 14px;
   min-height: 50px;
   align-items: center;
@@ -396,6 +396,11 @@ p {
   font-weight: 780;
   letter-spacing: 0.12em;
   transition: color 160ms ease;
+}
+
+.phase-marker {
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 .topic-item:hover .topic-row {
@@ -647,7 +652,7 @@ p {
   }
 
   .topic-row {
-    grid-template-columns: 32px minmax(0, 1fr);
+    grid-template-columns: minmax(32px, max-content) minmax(0, 1fr);
     gap: 10px;
     min-height: 46px;
     padding: 9px 0;
@@ -688,7 +693,7 @@ p {
   }
 
   .topic-row {
-    grid-template-columns: 30px minmax(0, 1fr);
+    grid-template-columns: minmax(30px, max-content) minmax(0, 1fr);
     gap: 9px;
   }
 

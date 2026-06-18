@@ -243,12 +243,23 @@ function getOrderedSectionGroups(phase, groups) {
   );
 }
 
-function buildResourceItem(resource, index) {
+function getResourceMarker(resource) {
+  const topic = resource.topic || "";
+  if (!topic || topic === "General") return "•";
+
+  const themeNumbers = topic.match(/\d+/g);
+  if (!themeNumbers?.length) return "•";
+
+  return `T${themeNumbers.map((number) => number.padStart(2, "0")).join("/")}`;
+}
+
+function buildResourceItem(resource) {
   const item = createElement("li", "topic-item");
   item.dataset.phaseResource = "";
 
   const row = createElement("span", "topic-row");
-  const number = createElement("span", "topic-number", String(index).padStart(2, "0"));
+  const number = createElement("span", "topic-number phase-marker", getResourceMarker(resource));
+  if (resource.topic && resource.topic !== "General") number.title = resource.topic;
   const title = createElement("span", "", resource.title);
   row.append(number, title);
 
@@ -289,7 +300,6 @@ function renderSelectedPhase() {
   const resources = (phase.resources || []).filter((resource) => resourceMatches(resource, query));
   const groups = groupResourcesBySection(resources);
   const fragment = document.createDocumentFragment();
-  let resourceIndex = 1;
 
   if (!resources.length) {
     const block = createElement("article", "topic-block");
@@ -298,7 +308,7 @@ function renderSelectedPhase() {
     const list = createElement("ol", "topic-list");
     const item = createElement("li", "topic-item");
     const row = createElement("span", "topic-row");
-    row.append(createElement("span", "topic-number", "00"), createElement("span", "", "No hay recursos que coincidan."));
+    row.append(createElement("span", "topic-number phase-marker", "•"), createElement("span", "", "No hay recursos que coincidan."));
     item.append(row);
     list.append(item);
     block.append(header, list);
@@ -310,8 +320,7 @@ function renderSelectedPhase() {
       header.append(createElement("p", "", phase.label), createElement("h2", "", formatSectionName(section)));
       const list = createElement("ol", "topic-list");
       sectionResources.forEach((resource) => {
-        list.append(buildResourceItem(resource, resourceIndex));
-        resourceIndex += 1;
+        list.append(buildResourceItem(resource));
       });
       block.append(header, list);
       fragment.append(block);
