@@ -93,6 +93,7 @@ function createElement(tag, className, text) {
 }
 
 function getOpenLinkText(item) {
+  if (item.clickLabel) return item.clickLabel;
   if (item.urlMode === "drive-pdf-preview" || item.urlMode === "official-pdf") return "PDF";
   if (item.urlMode === "official-doc") return "DOC";
   if (item.urlMode === "official-sheet") return "XLS";
@@ -310,6 +311,7 @@ function buildResourceItem(resource) {
     openLink.href = resource.url;
     openLink.textContent = getOpenLinkText(resource);
     openLink.title = resource.title;
+    openLink.setAttribute("aria-label", `Abrir ${resource.title}`);
   } else {
     openLink.textContent = "Pendiente";
     openLink.setAttribute("aria-disabled", "true");

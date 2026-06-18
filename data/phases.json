@@ -10543,33 +10543,29 @@
       "id": "98_Novedades_y_publicaciones",
       "order": 98,
       "label": "Novedades",
-      "title": "Novedades y publicaciones oficiales",
-      "legal": "Seguimiento de publicaciones oficiales de CARM, Educarm y RRHH Educación.",
-      "description": "Vista rápida de las últimas novedades oficiales y de los enlaces que conviene vigilar para la oposición en Murcia.",
-      "resourceCount": 11,
-      "publicLinkCount": 11,
+      "title": "Novedades PES 590 · Informática 107",
+      "legal": "Seguimiento filtrado de publicaciones oficiales para PES 590, especialidad 107 Informática, en Murcia.",
+      "description": "Vista rápida solo con publicaciones oficiales relacionadas con Informática de Secundaria, PES 590 y el procedimiento OPOSEC25.",
+      "resourceCount": 12,
+      "publicLinkCount": 12,
       "sections": [
         {
-          "name": "Novedades/Últimas publicaciones CARM",
+          "name": "Novedades/Informática 590107",
           "count": 6
         },
         {
-          "name": "Novedades/Seguimiento oposición 2025",
-          "count": 4
+          "name": "Novedades/Oposición 2025 PES",
+          "count": 5
         },
         {
-          "name": "Novedades/Próxima convocatoria",
+          "name": "Novedades/Normativa base PES",
           "count": 1
         }
       ],
       "academies": [
         {
-          "name": "CARM/RRHH Educación",
-          "count": 6
-        },
-        {
           "name": "CARM/BORM",
-          "count": 4
+          "count": 11
         },
         {
           "name": "Educarm/CARM",
@@ -10578,16 +10574,32 @@
       ],
       "types": [
         {
-          "name": "fuente viva",
+          "name": "seguimiento específico",
           "count": 1
         },
         {
-          "name": "publicación oficial",
-          "count": 5
+          "name": "criterios oficiales",
+          "count": 3
+        },
+        {
+          "name": "prueba práctica",
+          "count": 2
         },
         {
           "name": "seguimiento oficial",
-          "count": 4
+          "count": 2
+        },
+        {
+          "name": "publicaciones tribunal",
+          "count": 1
+        },
+        {
+          "name": "resultado oficial",
+          "count": 1
+        },
+        {
+          "name": "interinidad",
+          "count": 1
         },
         {
           "name": "convocatoria oficial",
@@ -10596,180 +10608,208 @@
       ],
       "resources": [
         {
-          "title": "Últimas novedades de la D.G. de Recursos Humanos, Planificación Educativa e Innovación",
+          "title": "590107 Informática - página oficial de criterios, turno y documentos",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Últimas publicaciones CARM",
-          "type": "fuente viva",
-          "academy": "CARM/RRHH Educación",
-          "topic": "General",
-          "area": "Novedades",
-          "officialDate": "Revisado 18/06/2026",
-          "status": "Fuente viva",
-          "statusKind": "current",
-          "note": "Página oficial que conviene revisar para ver las novedades publicadas por RRHH Educación en tiempo real.",
-          "hasPublicLink": true,
-          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=4254&IDTIPO=100&RASTRO=c77%24m2482",
-          "urlMode": "official-page"
-        },
-        {
-          "title": "17/06/2026 - Habilitaciones para programas de mejora y profundización en Primaria",
-          "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Últimas publicaciones CARM",
-          "type": "publicación oficial",
-          "academy": "CARM/RRHH Educación",
-          "topic": "General",
-          "area": "Novedades",
-          "officialDate": "17/06/2026",
-          "status": "Última publicación",
-          "statusKind": "current",
-          "note": "Una de las publicaciones más recientes de la página oficial de novedades de RRHH Educación.",
-          "hasPublicLink": true,
-          "url": "https://www.carm.es/web/descarga?ARCHIVO=definitiva%20bilingue%20mayo.pdf&ALIAS=ARCH&IDCONTENIDO=207372&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
-          "urlMode": "official-pdf"
-        },
-        {
-          "title": "17/06/2026 - Relación definitiva de permisos parcialmente retribuidos",
-          "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Últimas publicaciones CARM",
-          "type": "publicación oficial",
-          "academy": "CARM/RRHH Educación",
-          "topic": "General",
-          "area": "Novedades",
-          "officialDate": "17/06/2026",
-          "status": "Última publicación",
-          "statusKind": "current",
-          "note": "Publicación reciente de RRHH Educación sobre permisos parcialmente retribuidos.",
-          "hasPublicLink": true,
-          "url": "https://www.carm.es/web/descarga?ARCHIVO=RESOLUCION%2BDEFINTIVA%2BPERMISOS%2BPARCIALMENTE%2BRETRIBUIDOS%2B%2B%28COPIA%29%20%281%29.pdf&ALIAS=ARCH&IDCONTENIDO=207367&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
-          "urlMode": "official-pdf"
-        },
-        {
-          "title": "16/06/2026 - Comisión de servicios para programas educativos 2026-2027",
-          "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Últimas publicaciones CARM",
-          "type": "publicación oficial",
-          "academy": "CARM/RRHH Educación",
-          "topic": "General",
-          "area": "Novedades",
-          "officialDate": "16/06/2026",
-          "status": "Reciente",
-          "statusKind": "current",
-          "note": "Relación definitiva de admitidos/excluidos y provisional de seleccionados para comisión de servicios en programas educativos.",
-          "hasPublicLink": true,
-          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=207322&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
-          "urlMode": "official-page"
-        },
-        {
-          "title": "15/06/2026 - Nota de acceso telemático a los servicios de Educación",
-          "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Últimas publicaciones CARM",
-          "type": "publicación oficial",
-          "academy": "CARM/RRHH Educación",
-          "topic": "General",
-          "area": "Novedades",
-          "officialDate": "15/06/2026",
-          "status": "Reciente",
-          "statusKind": "current",
-          "note": "Nota informativa oficial sobre acceso telemático a servicios de la Consejería.",
-          "hasPublicLink": true,
-          "url": "https://www.carm.es/web/descarga?ARCHIVO=nota_acceso_telematico%2B%28COPIA%29.pdf&ALIAS=ARCH&IDCONTENIDO=207287&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
-          "urlMode": "official-pdf"
-        },
-        {
-          "title": "12/06/2026 - Nota informativa del procedimiento 4624",
-          "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Últimas publicaciones CARM",
-          "type": "publicación oficial",
-          "academy": "CARM/RRHH Educación",
-          "topic": "General",
-          "area": "Novedades",
-          "officialDate": "12/06/2026",
-          "status": "Reciente",
-          "statusKind": "current",
-          "note": "Nota informativa oficial publicada en novedades de RRHH Educación.",
-          "hasPublicLink": true,
-          "url": "https://www.carm.es/web/descarga?ARCHIVO=Nota%20informativa%20procedimiento%204624%20%28COPIA%29.pdf&ALIAS=ARCH&IDCONTENIDO=207273&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
-          "urlMode": "official-pdf"
-        },
-        {
-          "title": "Oposición 2025 Secundaria y resto de cuerpos - página oficial de seguimiento",
-          "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Seguimiento oposición 2025",
-          "type": "seguimiento oficial",
+          "section": "Novedades/Informática 590107",
+          "type": "seguimiento específico",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Oposición 2025",
+          "area": "PES 590 · Informática 107",
           "officialDate": "Revisado 18/06/2026",
           "status": "Seguimiento",
           "statusKind": "current",
-          "note": "Hub oficial de CARM para la oposición 2025 de Secundaria y resto de cuerpos.",
+          "note": "Página oficial CARM de la especialidad 590107 Informática dentro de PES 590.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74501&IDTIPO=100&RASTRO=c562%24m3977%2C74131%2C74447%2C74448",
+          "urlMode": "official-page",
+          "clickLabel": "Abrir"
+        },
+        {
+          "title": "590107 Informática - criterios de valoración oficiales 2025",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Informática 590107",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Criterios oficiales de valoración de la especialidad Informática 590107 para la oposición 2025.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosValoracion_INFORMATICA_01.pdf&IDCONTENIDO=199410&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "590107 Informática - criterios de actuación oficiales 2025",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Informática 590107",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Criterios oficiales de actuación del tribunal de Informática 590107.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosActuacion_INFORMATICA_01.pdf&IDCONTENIDO=199409&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "590107 Informática - turno 5 y adquisición de nuevas especialidades",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Informática 590107",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Referencia",
+          "statusKind": "current",
+          "note": "Documento específico de Informática 590107 publicado por CARM para el turno 5.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=059010701_TURNO_5_-_CRITERIOS_DE_VALORACI%C3%93N_06111851.pdf&IDCONTENIDO=199411&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "590107 Informática - página oficial de la prueba práctica 2025",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Informática 590107",
+          "type": "prueba práctica",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Publicado",
+          "statusKind": "current",
+          "note": "Página oficial CARM con la publicación de la prueba práctica de Informática.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74628&IDTIPO=100&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579",
+          "urlMode": "official-page",
+          "clickLabel": "Abrir"
+        },
+        {
+          "title": "590107 Informática - examen práctico oficial publicado",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Informática 590107",
+          "type": "prueba práctica",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Publicado",
+          "statusKind": "current",
+          "note": "PDF oficial del examen práctico publicado para la especialidad 590107 Informática.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Examen+590-107.pdf&IDCONTENIDO=201654&IDTIPO=60&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579%2C74628",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Oposición 2025 Secundaria y resto de cuerpos - página oficial PES",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Oposición 2025 PES",
+          "type": "seguimiento oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590",
+          "officialDate": "Revisado 18/06/2026",
+          "status": "Seguimiento",
+          "statusKind": "current",
+          "note": "Página oficial general de la oposición 2025 de Secundaria y otros cuerpos. Útil para avisos que afectan a PES 590.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74131&IDTIPO=100&RASTRO=c798%24m3977%2C4332",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "clickLabel": "Abrir"
         },
         {
-          "title": "Publicaciones de tribunales OPOSEC25 - calificaciones, citaciones y avisos",
+          "title": "Publicaciones de tribunales OPOSEC25 - seleccionar 590 / 107 Informática",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Seguimiento oposición 2025",
-          "type": "seguimiento oficial",
+          "section": "Novedades/Oposición 2025 PES",
+          "type": "publicaciones tribunal",
           "academy": "Educarm/CARM",
           "topic": "General",
-          "area": "Oposición 2025",
+          "area": "PES 590 · Informática 107",
           "officialDate": "Revisado 18/06/2026",
           "status": "Seguimiento",
           "statusKind": "current",
-          "note": "Buscador oficial de publicaciones de tribunales para Oposición 2025.",
+          "note": "Buscador oficial de publicaciones del tribunal. Al abrirlo, filtra por cuerpo 590 y especialidad 107 Informática.",
           "hasPublicLink": true,
           "url": "https://servicios.educarm.es/admin/index2.php?anyo=2025&aplicacion=PUBLICACIONES_TRIBUNALES&convocatoria=OPOSEC25&module=publicacionesTribunales",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "clickLabel": "Abrir"
         },
         {
-          "title": "Fase de prácticas 2025 - informes, nombramientos y cierre pendiente",
+          "title": "Seleccionados 2025 - Secundaria y otros cuerpos tras oposición y concurso",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Seguimiento oposición 2025",
+          "section": "Novedades/Oposición 2025 PES",
+          "type": "resultado oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590",
+          "officialDate": "25/07/2025",
+          "status": "Cerrado 2025",
+          "statusKind": "done",
+          "note": "Página oficial con las listas aprobadas de aspirantes seleccionados en Secundaria y resto de cuerpos.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74933&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
+          "urlMode": "official-page",
+          "clickLabel": "Abrir"
+        },
+        {
+          "title": "Fase de prácticas 2025 - Secundaria/PES, informes y nombramientos",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Oposición 2025 PES",
           "type": "seguimiento oficial",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Prácticas",
+          "area": "PES 590",
           "officialDate": "Revisado 18/06/2026",
           "status": "Pendiente de cierre",
           "statusKind": "pending",
-          "note": "Página oficial donde se publican documentos de fase de prácticas; queda vigilar la resolución final de superación.",
+          "note": "Seguimiento oficial de prácticas para aspirantes seleccionados. Vigilar resolución final de superación cuando CARM la publique.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74938&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "clickLabel": "Abrir"
         },
         {
-          "title": "Listas de interinidad 2025-2026 - publicaciones posteriores a la oposición",
+          "title": "Listas de interinidad 2025-2026 - Secundaria y PES tras oposición",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Seguimiento oposición 2025",
-          "type": "seguimiento oficial",
+          "section": "Novedades/Oposición 2025 PES",
+          "type": "interinidad",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Interinidad",
+          "area": "PES 590",
           "officialDate": "24/09/2025",
           "status": "Cerrado 2025",
           "statusKind": "done",
-          "note": "Página oficial de listas de interinidad derivadas del procedimiento 2025.",
+          "note": "Publicaciones oficiales de listas de interinidad 2025-2026 para Secundaria y resto de cuerpos.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74695&IDTIPO=100&RASTRO=c798%24m3977%2C4332%2C74131",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "clickLabel": "Abrir"
         },
         {
-          "title": "Oposición 2026 Cuerpo de Maestros - convocatoria activa de referencia",
+          "title": "Convocatoria oficial BORM 2025 - Secundaria, PES 590 e Informática 590107",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Próxima convocatoria",
+          "section": "Novedades/Normativa base PES",
           "type": "convocatoria oficial",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Oposición 2026",
-          "officialDate": "2026",
-          "status": "Referencia",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "BORM 22/11/2024",
+          "status": "Vigente 2025",
           "statusKind": "current",
-          "note": "No es la especialidad de Informática, pero sirve como convocatoria docente activa para seguir estructura y publicaciones de Murcia.",
+          "note": "Convocatoria oficial de Murcia que regula el procedimiento de Secundaria y resto de cuerpos, incluida Informática 590107.",
           "hasPublicLink": true,
-          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75239&IDTIPO=100&RASTRO=c798%24m3977",
-          "urlMode": "official-page"
+          "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
         }
       ]
     },
@@ -12941,6 +12981,6 @@
       ]
     }
   ],
-  "totalResources": 941,
-  "publicLinkCount": 941
+  "totalResources": 942,
+  "publicLinkCount": 942
 }
