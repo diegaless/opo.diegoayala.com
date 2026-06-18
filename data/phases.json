@@ -3756,8 +3756,8 @@
       "title": "Primera prueba - Parte A: Prueba de carácter práctico",
       "legal": "Parte A de la primera prueba.",
       "description": "Prácticos organizados por área: programación, bases de datos, redes, sistemas, circuitos y web/XML.",
-      "resourceCount": 406,
-      "publicLinkCount": 406,
+      "resourceCount": 408,
+      "publicLinkCount": 408,
       "sections": [
         {
           "name": "Oficial Murcia/Pruebas prácticas publicadas",
@@ -3765,7 +3765,7 @@
         },
         {
           "name": "Oficial Murcia/Criterios y características históricas",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Examenes_y_correcciones_practicas/Bases de datos",
@@ -3815,7 +3815,7 @@
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 4
+          "count": 6
         },
         {
           "name": "Preparador online",
@@ -3837,7 +3837,7 @@
         },
         {
           "name": "criterios oficiales",
-          "count": 1
+          "count": 2
         },
         {
           "name": "correccion",
@@ -3846,6 +3846,10 @@
         {
           "name": "practico",
           "count": 398
+        },
+        {
+          "name": "especificaciones oficiales",
+          "count": 1
         }
       ],
       "resources": [
@@ -3914,6 +3918,40 @@
           "status": "Criterios históricos",
           "note": "PDF oficial de CARM para la primera prueba de Informática 107 en 2015. Describe la Parte A práctica: duración, número de supuestos y criterios de valoración; no es el enunciado del examen.",
           "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Murcia 2008 - requisitos oficiales de la prueba práctica Informática",
+          "phase": "02_Primera_prueba_A_Practico",
+          "section": "Oficial Murcia/Criterios y características históricas",
+          "type": "especificaciones oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 2008 · fecha exacta no visible en CARM",
+          "status": "Especificaciones históricas",
+          "statusKind": "current",
+          "note": "PDF oficial de CARM para la oposición 2008 de Informática 107. Indica que el ejercicio práctico consistía en resolver uno o varios supuestos prácticos y fija duración/material; no contiene los enunciados concretos.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=PRUEBA+PR%C3%81CTICA.pdf&IDCONTENIDO=29018&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Murcia 2008 - criterios oficiales del ejercicio práctico Informática",
+          "phase": "02_Primera_prueba_A_Practico",
+          "section": "Oficial Murcia/Criterios y características históricas",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 2008 · fecha exacta no visible en CARM",
+          "status": "Criterios históricos",
+          "statusKind": "current",
+          "note": "PDF oficial de CARM con criterios de valoración de la oposición 2008 de Informática. Incluye el apartado B.3 Ejercicio de carácter práctico; no es el enunciado del examen.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CRITERIOS+DE+VALORACI%C3%93N+LIBRES+Y+RESERVAS+DE+DISCAPACITADOS.pdf&IDCONTENIDO=29017&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018",
           "urlMode": "official-pdf",
           "clickLabel": "PDF"
         },
@@ -10801,8 +10839,8 @@
       "title": "Novedades PES 590 · Informática 107",
       "legal": "Seguimiento filtrado de publicaciones oficiales para PES 590, especialidad 107 Informática, en Murcia.",
       "description": "Vista rápida solo con publicaciones oficiales relacionadas con Informática de Secundaria, PES 590 y el procedimiento OPOSEC25.",
-      "resourceCount": 18,
-      "publicLinkCount": 18,
+      "resourceCount": 20,
+      "publicLinkCount": 20,
       "sections": [
         {
           "name": "Novedades/Informática 590107",
@@ -10818,13 +10856,13 @@
         },
         {
           "name": "Histórico/Informática 590107",
-          "count": 4
+          "count": 6
         }
       ],
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 17
+          "count": 19
         },
         {
           "name": "Educarm/CARM",
@@ -10838,7 +10876,7 @@
         },
         {
           "name": "criterios oficiales",
-          "count": 7
+          "count": 8
         },
         {
           "name": "prueba práctica",
@@ -10867,6 +10905,10 @@
         {
           "name": "resultados de tribunal",
           "count": 2
+        },
+        {
+          "name": "especificaciones oficiales",
+          "count": 1
         }
       ],
       "resources": [
@@ -11175,6 +11217,42 @@
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16754&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
           "urlMode": "official-page",
           "clickLabel": "CARM"
+        },
+        {
+          "title": "Histórico 2008 - Informática 107: requisitos de la prueba práctica",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Histórico/Informática 590107",
+          "type": "especificaciones oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 2008 · fecha exacta no visible en CARM",
+          "status": "Histórico",
+          "statusKind": "current",
+          "note": "Página histórica CARM 2008 de Informática 107. El PDF describe requisitos y condiciones de la prueba práctica; no publica los ejercicios concretos.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=PRUEBA+PR%C3%81CTICA.pdf&IDCONTENIDO=29018&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF",
+          "sourcePage": "https://www.carm.es/web/pagina?IDCONTENIDO=7018&IDTIPO=100&RASTRO=c305%24m4332%2C5776%2C6971%2C6972"
+        },
+        {
+          "title": "Histórico 2008 - Informática 107: criterios del ejercicio práctico",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Histórico/Informática 590107",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 2008 · fecha exacta no visible en CARM",
+          "status": "Histórico",
+          "statusKind": "current",
+          "note": "Documento histórico CARM 2008 con criterios de valoración. Incluye B.3 Ejercicio de carácter práctico, útil para ver cómo se valoraba la práctica, pero no contiene el enunciado.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CRITERIOS+DE+VALORACI%C3%93N+LIBRES+Y+RESERVAS+DE+DISCAPACITADOS.pdf&IDCONTENIDO=29017&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF",
+          "sourcePage": "https://www.carm.es/web/pagina?IDCONTENIDO=7018&IDTIPO=100&RASTRO=c305%24m4332%2C5776%2C6971%2C6972"
         }
       ]
     },
@@ -13346,6 +13424,6 @@
       ]
     }
   ],
-  "totalResources": 959,
-  "publicLinkCount": 959
+  "totalResources": 963,
+  "publicLinkCount": 963
 }
