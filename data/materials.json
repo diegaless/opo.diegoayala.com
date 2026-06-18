@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T12:29:00.000Z",
+  "generatedAt": "2026-06-18T13:05:00.000Z",
   "driveRootUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "access": "restricted-google-drive",
   "topics": {
@@ -69,6 +69,27 @@
           "clickLabel": "Editar",
           "driveFileId": "1nGzgO2sVpw-k7-Z0ymE4mDGPMrK35i4izWZgb1fE8Rg",
           "access": "private-owner-only"
+        },
+        {
+          "academy": "Ejemplos míos",
+          "label": "Tema completo desarrollado",
+          "type": "ejemplo",
+          "variant": "tema-desarrollado",
+          "fileName": "Tema 01 - Ejemplo completo - Representación y comunicación de la información.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/14tVf7Dtv4C427r6p58fDtLufvStsjBJlJyrjj14P9hU/edit",
+          "driveFileName": "Tema 01 - Ejemplo completo - Representación y comunicación de la información",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1eHui7VcuJnikDdhLUjT_N-juHbdz2Z0t",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Leer",
+          "driveFileId": "14tVf7Dtv4C427r6p58fDtLufvStsjBJlJyrjj14P9hU",
+          "access": "private-owner-only",
+          "sourceReferences": [
+            "BOE 13/02/1996",
+            "Unicode 17.0.0",
+            "RFC 3629 UTF-8",
+            "W3C Character Model"
+          ]
         }
       ]
     },
@@ -4775,7 +4796,7 @@
   },
   "driveFolderId": "1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "linkMode": "drive-pdf-preview",
-  "materialCount": 272,
+  "materialCount": 273,
   "preparadorOnlineReview": {
     "reviewedAt": "2026-06-16T18:49:06Z",
     "rule": "Show one Preparador online material per topic: prefer complete V2/PES theory when available; otherwise complete theory over samples or summaries.",
@@ -4785,5 +4806,7 @@
   "pdfLinkMode": "drive-pdf-preview",
   "myTopicsFolderId": "1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
   "myTopicsFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
-  "myTopicsAccess": "private-owner-only"
+  "myTopicsAccess": "private-owner-only",
+  "myExamplesFolderId": "1eHui7VcuJnikDdhLUjT_N-juHbdz2Z0t",
+  "myExamplesFolderUrl": "https://drive.google.com/drive/folders/1eHui7VcuJnikDdhLUjT_N-juHbdz2Z0t"
 }
