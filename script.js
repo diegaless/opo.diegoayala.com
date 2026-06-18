@@ -87,6 +87,15 @@ function createElement(tag, className, text) {
   return element;
 }
 
+function getOpenLinkText(item) {
+  if (item.urlMode === "drive-pdf-preview" || item.urlMode === "official-pdf") return "PDF";
+  if (item.urlMode === "official-doc") return "DOC";
+  if (item.urlMode === "official-sheet") return "XLS";
+  if (item.urlMode === "official-page") return "Oficial";
+  if (item.urlMode === "drive-title-search" || item.urlMode === "drive-file-view") return "Drive";
+  return "Abrir";
+}
+
 function buildMaterialControls(topic, topicData) {
   const materials = topicData?.materials || [];
   if (!materials.length || topic.querySelector("[data-materials]")) return;
@@ -129,11 +138,7 @@ function buildMaterialControls(topic, topicData) {
     const material = academyMaterials[Number(materialSelect.value) || 0];
     if (material?.url) {
       openLink.href = material.url;
-      openLink.textContent = material.urlMode === "drive-pdf-preview"
-        ? "PDF"
-        : material.urlMode === "drive-title-search"
-          ? "Drive"
-          : "Abrir";
+      openLink.textContent = getOpenLinkText(material);
       openLink.title = material.driveFileName || getMaterialLabel(material);
       openLink.removeAttribute("aria-disabled");
       return;
@@ -279,7 +284,7 @@ function buildResourceItem(resource) {
 
   if (resource.hasPublicLink && resource.url) {
     openLink.href = resource.url;
-    openLink.textContent = resource.urlMode === "drive-pdf-preview" ? "PDF" : "Drive";
+    openLink.textContent = getOpenLinkText(resource);
     openLink.title = resource.title;
   } else {
     openLink.textContent = "Pendiente";

@@ -10173,13 +10173,105 @@
       "label": "Méritos",
       "title": "Fase de concurso - Méritos",
       "legal": "Baremo de experiencia, formación académica y otros méritos.",
-      "description": "Carpeta de control para incorporar documentación de méritos cuando toque.",
-      "resourceCount": 0,
-      "publicLinkCount": 0,
-      "sections": [],
-      "academies": [],
-      "types": [],
-      "resources": []
+      "description": "Enlaces oficiales de Murcia para comprobar baremo, ficha de méritos, documentación justificativa y ayuda administrativa.",
+      "resourceCount": 5,
+      "publicLinkCount": 5,
+      "sections": [
+        {
+          "name": "Meritos/Baremo oficial",
+          "count": 2
+        },
+        {
+          "name": "Meritos/Tramites y modelos",
+          "count": 2
+        },
+        {
+          "name": "Meritos/Justificacion documental",
+          "count": 1
+        }
+      ],
+      "academies": [
+        {
+          "name": "CARM/BORM",
+          "count": 5
+        }
+      ],
+      "types": [
+        {
+          "name": "convocatoria",
+          "count": 2
+        },
+        {
+          "name": "modelo",
+          "count": 1
+        },
+        {
+          "name": "ayuda oficial",
+          "count": 2
+        }
+      ],
+      "resources": [
+        {
+          "title": "Convocatoria oficial Murcia 2025 - fase de concurso y baremo de méritos",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Meritos/Baremo oficial",
+          "type": "convocatoria",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Meritos",
+          "hasPublicLink": true,
+          "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "Anexo II y ficha de baremación - tres bloques de méritos",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Meritos/Baremo oficial",
+          "type": "convocatoria",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Meritos",
+          "hasPublicLink": true,
+          "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "Ficha oficial de solicitud de baremación de méritos - turno libre y reserva",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Meritos/Tramites y modelos",
+          "type": "modelo",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Meritos",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74813&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Preguntas frecuentes oficiales de la oposición 2025",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Meritos/Tramites y modelos",
+          "type": "ayuda oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Meritos",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74132&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Visado de experiencia docente previa en centros privados o municipales",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Meritos/Justificacion documental",
+          "type": "ayuda oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Meritos",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74682&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
+          "urlMode": "official-page"
+        }
+      ]
     },
     {
       "id": "06_Fase_practicas",
@@ -10187,13 +10279,129 @@
       "label": "Prácticas",
       "title": "Fase de prácticas",
       "legal": "Fase posterior al nombramiento como funcionario en prácticas.",
-      "description": "Seguimiento posterior a la obtención de plaza. No contiene material de estudio específico por ahora.",
-      "resourceCount": 0,
-      "publicLinkCount": 0,
-      "sections": [],
-      "academies": [],
-      "types": [],
-      "resources": []
+      "description": "Enlaces oficiales de Murcia para nombramiento, comisión calificadora, informes y evaluación de la fase de prácticas.",
+      "resourceCount": 7,
+      "publicLinkCount": 7,
+      "sections": [
+        {
+          "name": "Practicas/Normativa y nombramiento",
+          "count": 4
+        },
+        {
+          "name": "Practicas/Informes y evaluacion",
+          "count": 3
+        }
+      ],
+      "academies": [
+        {
+          "name": "CARM/BORM",
+          "count": 7
+        }
+      ],
+      "types": [
+        {
+          "name": "convocatoria",
+          "count": 1
+        },
+        {
+          "name": "guia oficial",
+          "count": 1
+        },
+        {
+          "name": "nombramiento",
+          "count": 2
+        },
+        {
+          "name": "informe",
+          "count": 3
+        }
+      ],
+      "resources": [
+        {
+          "title": "Convocatoria oficial Murcia 2025 - fase de prácticas tuteladas",
+          "phase": "06_Fase_practicas",
+          "section": "Practicas/Normativa y nombramiento",
+          "type": "convocatoria",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Practicas",
+          "hasPublicLink": true,
+          "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "Página oficial CARM - fase de prácticas 2025",
+          "phase": "06_Fase_practicas",
+          "section": "Practicas/Normativa y nombramiento",
+          "type": "guia oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Practicas",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74938&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Orden de 31 de julio de 2025 - nombramiento de funcionarios en prácticas",
+          "phase": "06_Fase_practicas",
+          "section": "Practicas/Normativa y nombramiento",
+          "type": "nombramiento",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Practicas",
+          "hasPublicLink": true,
+          "url": "https://rrhheducacion.carm.es/wp-content/uploads/2025/08/2025-3860.pdf",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "Órdenes de fase de prácticas - nombramiento y comisión calificadora",
+          "phase": "06_Fase_practicas",
+          "section": "Practicas/Normativa y nombramiento",
+          "type": "nombramiento",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Practicas",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75148&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Escrito a directores - entrega de informes de fase de prácticas",
+          "phase": "06_Fase_practicas",
+          "section": "Practicas/Informes y evaluacion",
+          "type": "informe",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Practicas",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75153&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Informe del tutor - modelos oficiales",
+          "phase": "06_Fase_practicas",
+          "section": "Practicas/Informes y evaluacion",
+          "type": "informe",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Practicas",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75149&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Informe final del funcionario en prácticas - orientaciones y modelo",
+          "phase": "06_Fase_practicas",
+          "section": "Practicas/Informes y evaluacion",
+          "type": "informe",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Practicas",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75150&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
+          "urlMode": "official-page"
+        }
+      ]
     },
     {
       "id": "99_Transversal_Bibliografia_y_simulacros",
@@ -12363,6 +12571,6 @@
       ]
     }
   ],
-  "totalResources": 914,
-  "publicLinkCount": 914
+  "totalResources": 926,
+  "publicLinkCount": 926
 }
