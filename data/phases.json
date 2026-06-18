@@ -10540,6 +10540,240 @@
       ]
     },
     {
+      "id": "98_Novedades_y_publicaciones",
+      "order": 98,
+      "label": "Novedades",
+      "title": "Novedades y publicaciones oficiales",
+      "legal": "Seguimiento de publicaciones oficiales de CARM, Educarm y RRHH Educación.",
+      "description": "Vista rápida de las últimas novedades oficiales y de los enlaces que conviene vigilar para la oposición en Murcia.",
+      "resourceCount": 11,
+      "publicLinkCount": 11,
+      "sections": [
+        {
+          "name": "Novedades/Últimas publicaciones CARM",
+          "count": 6
+        },
+        {
+          "name": "Novedades/Seguimiento oposición 2025",
+          "count": 4
+        },
+        {
+          "name": "Novedades/Próxima convocatoria",
+          "count": 1
+        }
+      ],
+      "academies": [
+        {
+          "name": "CARM/RRHH Educación",
+          "count": 6
+        },
+        {
+          "name": "CARM/BORM",
+          "count": 4
+        },
+        {
+          "name": "Educarm/CARM",
+          "count": 1
+        }
+      ],
+      "types": [
+        {
+          "name": "fuente viva",
+          "count": 1
+        },
+        {
+          "name": "publicación oficial",
+          "count": 5
+        },
+        {
+          "name": "seguimiento oficial",
+          "count": 4
+        },
+        {
+          "name": "convocatoria oficial",
+          "count": 1
+        }
+      ],
+      "resources": [
+        {
+          "title": "Últimas novedades de la D.G. de Recursos Humanos, Planificación Educativa e Innovación",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Últimas publicaciones CARM",
+          "type": "fuente viva",
+          "academy": "CARM/RRHH Educación",
+          "topic": "General",
+          "area": "Novedades",
+          "officialDate": "Revisado 18/06/2026",
+          "status": "Fuente viva",
+          "statusKind": "current",
+          "note": "Página oficial que conviene revisar para ver las novedades publicadas por RRHH Educación en tiempo real.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=4254&IDTIPO=100&RASTRO=c77%24m2482",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "17/06/2026 - Habilitaciones para programas de mejora y profundización en Primaria",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Últimas publicaciones CARM",
+          "type": "publicación oficial",
+          "academy": "CARM/RRHH Educación",
+          "topic": "General",
+          "area": "Novedades",
+          "officialDate": "17/06/2026",
+          "status": "Última publicación",
+          "statusKind": "current",
+          "note": "Una de las publicaciones más recientes de la página oficial de novedades de RRHH Educación.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=definitiva%20bilingue%20mayo.pdf&ALIAS=ARCH&IDCONTENIDO=207372&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "17/06/2026 - Relación definitiva de permisos parcialmente retribuidos",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Últimas publicaciones CARM",
+          "type": "publicación oficial",
+          "academy": "CARM/RRHH Educación",
+          "topic": "General",
+          "area": "Novedades",
+          "officialDate": "17/06/2026",
+          "status": "Última publicación",
+          "statusKind": "current",
+          "note": "Publicación reciente de RRHH Educación sobre permisos parcialmente retribuidos.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=RESOLUCION%2BDEFINTIVA%2BPERMISOS%2BPARCIALMENTE%2BRETRIBUIDOS%2B%2B%28COPIA%29%20%281%29.pdf&ALIAS=ARCH&IDCONTENIDO=207367&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "16/06/2026 - Comisión de servicios para programas educativos 2026-2027",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Últimas publicaciones CARM",
+          "type": "publicación oficial",
+          "academy": "CARM/RRHH Educación",
+          "topic": "General",
+          "area": "Novedades",
+          "officialDate": "16/06/2026",
+          "status": "Reciente",
+          "statusKind": "current",
+          "note": "Relación definitiva de admitidos/excluidos y provisional de seleccionados para comisión de servicios en programas educativos.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=207322&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "15/06/2026 - Nota de acceso telemático a los servicios de Educación",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Últimas publicaciones CARM",
+          "type": "publicación oficial",
+          "academy": "CARM/RRHH Educación",
+          "topic": "General",
+          "area": "Novedades",
+          "officialDate": "15/06/2026",
+          "status": "Reciente",
+          "statusKind": "current",
+          "note": "Nota informativa oficial sobre acceso telemático a servicios de la Consejería.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=nota_acceso_telematico%2B%28COPIA%29.pdf&ALIAS=ARCH&IDCONTENIDO=207287&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "12/06/2026 - Nota informativa del procedimiento 4624",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Últimas publicaciones CARM",
+          "type": "publicación oficial",
+          "academy": "CARM/RRHH Educación",
+          "topic": "General",
+          "area": "Novedades",
+          "officialDate": "12/06/2026",
+          "status": "Reciente",
+          "statusKind": "current",
+          "note": "Nota informativa oficial publicada en novedades de RRHH Educación.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=Nota%20informativa%20procedimiento%204624%20%28COPIA%29.pdf&ALIAS=ARCH&IDCONTENIDO=207273&IDTIPO=60&RASTRO=c77%24m2482%2C4254",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "Oposición 2025 Secundaria y resto de cuerpos - página oficial de seguimiento",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Seguimiento oposición 2025",
+          "type": "seguimiento oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Oposición 2025",
+          "officialDate": "Revisado 18/06/2026",
+          "status": "Seguimiento",
+          "statusKind": "current",
+          "note": "Hub oficial de CARM para la oposición 2025 de Secundaria y resto de cuerpos.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74131&IDTIPO=100&RASTRO=c798%24m3977%2C4332",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Publicaciones de tribunales OPOSEC25 - calificaciones, citaciones y avisos",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Seguimiento oposición 2025",
+          "type": "seguimiento oficial",
+          "academy": "Educarm/CARM",
+          "topic": "General",
+          "area": "Oposición 2025",
+          "officialDate": "Revisado 18/06/2026",
+          "status": "Seguimiento",
+          "statusKind": "current",
+          "note": "Buscador oficial de publicaciones de tribunales para Oposición 2025.",
+          "hasPublicLink": true,
+          "url": "https://servicios.educarm.es/admin/index2.php?anyo=2025&aplicacion=PUBLICACIONES_TRIBUNALES&convocatoria=OPOSEC25&module=publicacionesTribunales",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Fase de prácticas 2025 - informes, nombramientos y cierre pendiente",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Seguimiento oposición 2025",
+          "type": "seguimiento oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Prácticas",
+          "officialDate": "Revisado 18/06/2026",
+          "status": "Pendiente de cierre",
+          "statusKind": "pending",
+          "note": "Página oficial donde se publican documentos de fase de prácticas; queda vigilar la resolución final de superación.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74938&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Listas de interinidad 2025-2026 - publicaciones posteriores a la oposición",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Seguimiento oposición 2025",
+          "type": "seguimiento oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Interinidad",
+          "officialDate": "24/09/2025",
+          "status": "Cerrado 2025",
+          "statusKind": "done",
+          "note": "Página oficial de listas de interinidad derivadas del procedimiento 2025.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74695&IDTIPO=100&RASTRO=c798%24m3977%2C4332%2C74131",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Oposición 2026 Cuerpo de Maestros - convocatoria activa de referencia",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Próxima convocatoria",
+          "type": "convocatoria oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Oposición 2026",
+          "officialDate": "2026",
+          "status": "Referencia",
+          "statusKind": "current",
+          "note": "No es la especialidad de Informática, pero sirve como convocatoria docente activa para seguir estructura y publicaciones de Murcia.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75239&IDTIPO=100&RASTRO=c798%24m3977",
+          "urlMode": "official-page"
+        }
+      ]
+    },
+    {
       "id": "99_Transversal_Bibliografia_y_simulacros",
       "order": 99,
       "label": "Transversal",
@@ -12707,6 +12941,6 @@
       ]
     }
   ],
-  "totalResources": 930,
-  "publicLinkCount": 930
+  "totalResources": 941,
+  "publicLinkCount": 941
 }

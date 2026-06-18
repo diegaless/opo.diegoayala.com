@@ -34,7 +34,12 @@ function normalize(value) {
 
 function updateCount(visible, type = "temas") {
   if (!countOutput) return;
-  const singular = type === "recursos" ? "recurso" : "tema";
+  const singularByType = {
+    novedades: "novedad",
+    recursos: "recurso",
+    temas: "tema",
+  };
+  const singular = singularByType[type] || "elemento";
   countOutput.textContent = visible === 1 ? `1 ${singular}` : `${visible} ${type}`;
 }
 
@@ -187,6 +192,7 @@ async function loadPhases() {
 function renderPhaseOptions() {
   if (!phaseSelect || !phasesData?.phases) return;
   const phaseOrder = [
+    "98_Novedades_y_publicaciones",
     "00_Normativa_y_orden_legal",
     "02_Primera_prueba_A_Practico",
     "01_Primera_prueba_B_Tema_escrito",
@@ -351,7 +357,7 @@ function renderSelectedPhase() {
   }
 
   phaseView.replaceChildren(fragment);
-  updateCount(resources.length, "recursos");
+  updateCount(resources.length, phase.id === "98_Novedades_y_publicaciones" ? "novedades" : "recursos");
   if (emptyState) emptyState.hidden = true;
 }
 
@@ -396,7 +402,10 @@ function renderCurrentView() {
 
   topicView.hidden = true;
   phaseView.hidden = false;
-  searchInput.placeholder = "Buscar recurso...";
+  const phase = getSelectedPhase();
+  searchInput.placeholder = phase?.id === "98_Novedades_y_publicaciones"
+    ? "Buscar novedad..."
+    : "Buscar recurso...";
   renderSelectedPhase();
 }
 
