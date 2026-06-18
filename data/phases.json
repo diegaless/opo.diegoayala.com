@@ -10173,9 +10173,9 @@
       "label": "Méritos",
       "title": "Fase de concurso - Méritos",
       "legal": "Baremo de experiencia, formación académica y otros méritos.",
-      "description": "Enlaces oficiales de Murcia para comprobar baremo, ficha de méritos, documentación justificativa y ayuda administrativa.",
-      "resourceCount": 5,
-      "publicLinkCount": 5,
+      "description": "Enlaces oficiales de Murcia para comprobar baremo, ficha de méritos, documentación justificativa, reclamaciones y resultado de seleccionados.",
+      "resourceCount": 8,
+      "publicLinkCount": 8,
       "sections": [
         {
           "name": "Meritos/Baremo oficial",
@@ -10187,13 +10187,21 @@
         },
         {
           "name": "Meritos/Justificacion documental",
+          "count": 2
+        },
+        {
+          "name": "Meritos/Reclamaciones y seguimiento",
+          "count": 1
+        },
+        {
+          "name": "Meritos/Resultado final",
           "count": 1
         }
       ],
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 5
+          "count": 8
         }
       ],
       "types": [
@@ -10208,6 +10216,14 @@
         {
           "name": "ayuda oficial",
           "count": 2
+        },
+        {
+          "name": "seguimiento oficial",
+          "count": 2
+        },
+        {
+          "name": "resultado oficial",
+          "count": 1
         }
       ],
       "resources": [
@@ -10218,7 +10234,11 @@
           "type": "convocatoria",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Meritos",
+          "area": "Méritos",
+          "officialDate": "BORM 22/11/2024",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Base oficial de la convocatoria de Murcia para oposición, concurso de méritos y prácticas.",
           "hasPublicLink": true,
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
           "urlMode": "official-pdf"
@@ -10230,7 +10250,11 @@
           "type": "convocatoria",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Meritos",
+          "area": "Méritos",
+          "officialDate": "BORM 22/11/2024",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Baremo de méritos que ordena la experiencia, formación académica y otros méritos.",
           "hasPublicLink": true,
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
           "urlMode": "official-pdf"
@@ -10242,7 +10266,11 @@
           "type": "modelo",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Meritos",
+          "area": "Méritos",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Modelo oficial de CARM para presentar la ficha de baremación cuando proceda.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74813&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
           "urlMode": "official-page"
@@ -10254,7 +10282,11 @@
           "type": "ayuda oficial",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Meritos",
+          "area": "Méritos",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Página oficial de respuestas frecuentes de la oposición 2025.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74132&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
           "urlMode": "official-page"
@@ -10266,9 +10298,61 @@
           "type": "ayuda oficial",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Meritos",
+          "area": "Méritos",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Referencia oficial para justificar experiencia docente en centros privados o municipales.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74682&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Nota informativa oficial - valoración de servicios prestados en el baremo",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Meritos/Justificacion documental",
+          "type": "seguimiento oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Méritos",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Aclara cómo se computa determinada experiencia docente en el apartado de experiencia del baremo.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Nota+informativa_Baremaci%C3%B3n+servicios+prestados.pdf&IDCONTENIDO=198298&IDTIPO=60&RASTRO=c798%24m3977%2C74131%2C74210",
+          "urlMode": "official-pdf"
+        },
+        {
+          "title": "Publicaciones de tribunales - calificaciones, reclamaciones y paso a baremo",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Meritos/Reclamaciones y seguimiento",
+          "type": "seguimiento oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Méritos",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Buscador oficial donde los tribunales publican documentos y avisos relacionados con calificaciones, plazos y reclamaciones.",
+          "hasPublicLink": true,
+          "url": "https://servicios.educarm.es/admin/index2.php?anyo=2025&aplicacion=PUBLICACIONES_TRIBUNALES&convocatoria=OPOSEC25&module=publicacionesTribunales",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Seleccionados - listas aprobadas tras oposición y concurso",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Meritos/Resultado final",
+          "type": "resultado oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Méritos",
+          "officialDate": "25/07/2025",
+          "status": "Cerrado 2025",
+          "statusKind": "done",
+          "note": "Página oficial con la orden y correcciones de aspirantes seleccionados antes del nombramiento en prácticas.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74933&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
           "urlMode": "official-page"
         }
       ]
@@ -10279,9 +10363,9 @@
       "label": "Prácticas",
       "title": "Fase de prácticas",
       "legal": "Fase posterior al nombramiento como funcionario en prácticas.",
-      "description": "Enlaces oficiales de Murcia para nombramiento, comisión calificadora, informes y evaluación de la fase de prácticas.",
-      "resourceCount": 7,
-      "publicLinkCount": 7,
+      "description": "Enlaces oficiales de Murcia para nombramiento, comisión calificadora, informes, evaluación y cierre pendiente de la fase de prácticas.",
+      "resourceCount": 8,
+      "publicLinkCount": 8,
       "sections": [
         {
           "name": "Practicas/Normativa y nombramiento",
@@ -10290,12 +10374,16 @@
         {
           "name": "Practicas/Informes y evaluacion",
           "count": 3
+        },
+        {
+          "name": "Practicas/Cierre y seguimiento",
+          "count": 1
         }
       ],
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 7
+          "count": 8
         }
       ],
       "types": [
@@ -10314,6 +10402,10 @@
         {
           "name": "informe",
           "count": 3
+        },
+        {
+          "name": "seguimiento oficial",
+          "count": 1
         }
       ],
       "resources": [
@@ -10324,7 +10416,11 @@
           "type": "convocatoria",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Practicas",
+          "area": "Prácticas",
+          "officialDate": "BORM 22/11/2024",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Base oficial de la convocatoria que regula la fase de prácticas posterior a la selección.",
           "hasPublicLink": true,
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
           "urlMode": "official-pdf"
@@ -10336,7 +10432,11 @@
           "type": "guia oficial",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Practicas",
+          "area": "Prácticas",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Página oficial de seguimiento de CARM para informes, nombramientos y novedades de prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74938&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
           "urlMode": "official-page"
@@ -10348,7 +10448,11 @@
           "type": "nombramiento",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Practicas",
+          "area": "Prácticas",
+          "officialDate": "31/07/2025",
+          "status": "Cerrado 2025",
+          "statusKind": "done",
+          "note": "Orden oficial de nombramiento de funcionarios en prácticas.",
           "hasPublicLink": true,
           "url": "https://rrhheducacion.carm.es/wp-content/uploads/2025/08/2025-3860.pdf",
           "urlMode": "official-pdf"
@@ -10360,7 +10464,11 @@
           "type": "nombramiento",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Practicas",
+          "area": "Prácticas",
+          "officialDate": "11/09/2025",
+          "status": "Cerrado 2025",
+          "statusKind": "done",
+          "note": "Página oficial de nombramientos y comisión calificadora de la fase de prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75148&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
           "urlMode": "official-page"
@@ -10372,7 +10480,11 @@
           "type": "informe",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Practicas",
+          "area": "Prácticas",
+          "officialDate": "2025/2026",
+          "status": "Vigente",
+          "statusKind": "current",
+          "note": "Instrucciones oficiales para la entrega de informes de la fase de prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75153&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
           "urlMode": "official-page"
@@ -10384,7 +10496,11 @@
           "type": "informe",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Practicas",
+          "area": "Prácticas",
+          "officialDate": "2025/2026",
+          "status": "Vigente",
+          "statusKind": "current",
+          "note": "Modelos oficiales relacionados con el informe del tutor.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75149&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
           "urlMode": "official-page"
@@ -10396,9 +10512,29 @@
           "type": "informe",
           "academy": "CARM/BORM",
           "topic": "General",
-          "area": "Practicas",
+          "area": "Prácticas",
+          "officialDate": "2025/2026",
+          "status": "Vigente",
+          "statusKind": "current",
+          "note": "Orientaciones y modelo oficial para el informe final del funcionario en prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75150&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
+          "urlMode": "official-page"
+        },
+        {
+          "title": "Cierre de la fase de prácticas - pendiente de resolución final",
+          "phase": "06_Fase_practicas",
+          "section": "Practicas/Cierre y seguimiento",
+          "type": "seguimiento oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "Prácticas",
+          "officialDate": "Pendiente 2026",
+          "status": "Pendiente",
+          "statusKind": "pending",
+          "note": "CARM todavía debe publicar en esta sección la resolución final de superación de la fase de prácticas cuando proceda.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74938&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
           "urlMode": "official-page"
         }
       ]
@@ -12571,6 +12707,6 @@
       ]
     }
   ],
-  "totalResources": 926,
-  "publicLinkCount": 926
+  "totalResources": 930,
+  "publicLinkCount": 930
 }

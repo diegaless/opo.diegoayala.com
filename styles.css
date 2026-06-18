@@ -305,15 +305,33 @@ p {
   min-width: 0;
   min-height: 34px;
   align-items: center;
-  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 6px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: color-mix(in srgb, var(--surface) 74%, transparent);
   color: var(--muted);
   font-size: 0.78rem;
-  padding: 0 10px;
+  padding: 6px 8px;
+}
+
+.phase-meta-chip {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.phase-meta-chip.is-current,
+.phase-meta-chip.is-done {
+  color: var(--accent);
+  font-weight: 760;
+}
+
+.phase-meta-chip.is-pending {
+  color: var(--ink);
+  font-weight: 760;
 }
 
 .syllabus {

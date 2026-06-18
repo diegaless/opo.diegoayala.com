@@ -221,6 +221,9 @@ function resourceMatches(resource, query) {
       resource.academy,
       resource.topic,
       resource.area,
+      resource.status,
+      resource.officialDate,
+      resource.note,
     ].join(" "),
   ).includes(query);
 }
@@ -258,6 +261,22 @@ function getResourceMarker(resource) {
   return `T${themeNumbers.map((number) => number.padStart(2, "0")).join("/")}`;
 }
 
+function getResourceMetaItems(resource) {
+  const items = [];
+  if (resource.topic && resource.topic !== "General") items.push({ text: resource.topic });
+  if (resource.academy) items.push({ text: resource.academy });
+  if (resource.type) items.push({ text: resource.type });
+  if (resource.area) items.push({ text: resource.area });
+  if (resource.officialDate) items.push({ text: resource.officialDate });
+  if (resource.status) {
+    items.push({
+      text: resource.status,
+      kind: resource.statusKind ? `is-${resource.statusKind}` : "is-status",
+    });
+  }
+  return items;
+}
+
 function buildResourceItem(resource) {
   const item = createElement("li", "topic-item");
   item.dataset.phaseResource = "";
@@ -269,13 +288,12 @@ function buildResourceItem(resource) {
   row.append(number, title);
 
   const panel = createElement("div", "topic-materials phase-materials");
-  const meta = createElement(
-    "span",
-    "phase-meta",
-    [resource.topic, resource.academy, resource.type, resource.area]
-      .filter(Boolean)
-      .join(" · "),
-  );
+  const meta = createElement("span", "phase-meta");
+  getResourceMetaItems(resource).forEach(({ text, kind }) => {
+    const chip = createElement("span", kind ? `phase-meta-chip ${kind}` : "phase-meta-chip", text);
+    meta.append(chip);
+  });
+  if (resource.note) meta.title = resource.note;
 
   const openLink = document.createElement("a");
   openLink.className = "material-link";
