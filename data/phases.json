@@ -3735,12 +3735,12 @@
       "title": "Primera prueba - Parte A: Prueba de carácter práctico",
       "legal": "Parte A de la primera prueba.",
       "description": "Prácticos organizados por área: programación, bases de datos, redes, sistemas, circuitos y web/XML.",
-      "resourceCount": 403,
-      "publicLinkCount": 403,
+      "resourceCount": 405,
+      "publicLinkCount": 405,
       "sections": [
         {
-          "name": "Oficial Murcia 2025/Parte A - Prueba práctica",
-          "count": 1
+          "name": "Oficial Murcia/Pruebas prácticas publicadas",
+          "count": 3
         },
         {
           "name": "Examenes_y_correcciones_practicas/Bases de datos",
@@ -3790,7 +3790,7 @@
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 1
+          "count": 3
         },
         {
           "name": "Preparador online",
@@ -3807,8 +3807,8 @@
       ],
       "types": [
         {
-          "name": "examen oficial",
-          "count": 1
+          "name": "prueba práctica oficial",
+          "count": 3
         },
         {
           "name": "correccion",
@@ -3821,19 +3821,53 @@
       ],
       "resources": [
         {
-          "title": "Murcia 2025 - Parte A: examen práctico oficial 590107 Informática",
+          "title": "Murcia 2025 - Parte A: prueba práctica oficial 590107 Informática",
           "phase": "02_Primera_prueba_A_Practico",
-          "section": "Oficial Murcia 2025/Parte A - Prueba práctica",
-          "type": "examen oficial",
+          "section": "Oficial Murcia/Pruebas prácticas publicadas",
+          "type": "prueba práctica oficial",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2025 · fecha no visible en CARM",
-          "status": "Último oficial localizado",
+          "status": "Última publicada",
           "statusKind": "current",
           "note": "PDF oficial publicado por CARM para la prueba práctica de la especialidad 590107 Informática. La página pública de CARM no muestra fecha exacta de publicación.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Examen+590-107.pdf&IDCONTENIDO=201654&IDTIPO=60&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579%2C74628",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Murcia 2023 - prueba práctica oficial 590107 Informática",
+          "phase": "02_Primera_prueba_A_Practico",
+          "section": "Oficial Murcia/Pruebas prácticas publicadas",
+          "type": "prueba práctica oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 2023 · fecha no visible en CARM",
+          "status": "Anterior publicada",
+          "statusKind": "current",
+          "note": "En 2023 el práctico se encuadraba como ejercicio B2 de la prueba única. Se incluye aquí porque es el enunciado práctico oficial de Informática 590107 publicado por CARM.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+Inform%C3%A1tica1.pdf&IDCONTENIDO=196263&IDTIPO=60&RASTRO=c305%24m4332%2C71822%2C72632%2C72813%2C72814%2C74342",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Murcia 2021 - Parte A: prueba práctica oficial 0590107 Informática",
+          "phase": "02_Primera_prueba_A_Practico",
+          "section": "Oficial Murcia/Pruebas prácticas publicadas",
+          "type": "prueba práctica oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 2021 · fecha no visible en CARM",
+          "status": "Anterior publicada",
+          "statusKind": "current",
+          "note": "PDF oficial publicado por CARM para la prueba práctica de la especialidad 0590107 Informática de la oposición 2021.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+INFORM%C3%81TICA.pdf&IDCONTENIDO=173493&IDTIPO=60&RASTRO=c798%24m3977%2C69334%2C69959%2C70361%2C70362%2C70432",
           "urlMode": "official-pdf",
           "clickLabel": "PDF"
         },
@@ -13090,6 +13124,6 @@
       ]
     }
   ],
-  "totalResources": 947,
-  "publicLinkCount": 947
+  "totalResources": 949,
+  "publicLinkCount": 949
 }
