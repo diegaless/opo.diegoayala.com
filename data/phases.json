@@ -770,12 +770,16 @@
       "title": "Primera prueba - Parte B: Desarrollo de un tema por escrito",
       "legal": "Parte B de la primera prueba.",
       "description": "Temario oficial por número, academia y tipo de material. Los PDFs ya enlazan al visor de Drive cuando están subidos.",
-      "resourceCount": 219,
-      "publicLinkCount": 219,
+      "resourceCount": 220,
+      "publicLinkCount": 220,
       "sections": [
         {
           "name": "Oficial Murcia 2025/Parte B - Rúbrica y criterios",
           "count": 2
+        },
+        {
+          "name": "Oficial Murcia/Criterios y características históricas",
+          "count": 1
         },
         {
           "name": "Esquemas_y_resumenes/Bases de datos",
@@ -833,7 +837,7 @@
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 2
+          "count": 3
         },
         {
           "name": "Preparador online",
@@ -851,7 +855,7 @@
       "types": [
         {
           "name": "criterios oficiales",
-          "count": 2
+          "count": 3
         },
         {
           "name": "esquema",
@@ -885,6 +889,23 @@
           "note": "La Parte B no publica un ejercicio práctico separado: se desarrolla por escrito uno de los temas sorteados. Este PDF contiene la rúbrica oficial aplicable. Publicado en el portal de tribunales el 11/06/2025 a las 18:34.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosValoracion_INFORMATICA_01.pdf&IDCONTENIDO=199410&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Murcia 2015 - criterios oficiales primera prueba Informática (incluye Parte B tema)",
+          "phase": "01_Primera_prueba_B_Tema_escrito",
+          "section": "Oficial Murcia/Criterios y características históricas",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2015 · fecha no visible en CARM",
+          "status": "Criterios históricos",
+          "note": "PDF oficial de CARM para la primera prueba de Informática 107 en 2015. Incluye criterios de la Parte A práctica y de la Parte B de desarrollo del tema; no es el enunciado del examen.",
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
           "urlMode": "official-pdf",
           "clickLabel": "PDF"
         },
@@ -3735,12 +3756,16 @@
       "title": "Primera prueba - Parte A: Prueba de carácter práctico",
       "legal": "Parte A de la primera prueba.",
       "description": "Prácticos organizados por área: programación, bases de datos, redes, sistemas, circuitos y web/XML.",
-      "resourceCount": 405,
-      "publicLinkCount": 405,
+      "resourceCount": 406,
+      "publicLinkCount": 406,
       "sections": [
         {
           "name": "Oficial Murcia/Pruebas prácticas publicadas",
           "count": 3
+        },
+        {
+          "name": "Oficial Murcia/Criterios y características históricas",
+          "count": 1
         },
         {
           "name": "Examenes_y_correcciones_practicas/Bases de datos",
@@ -3790,7 +3815,7 @@
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 3
+          "count": 4
         },
         {
           "name": "Preparador online",
@@ -3809,6 +3834,10 @@
         {
           "name": "prueba práctica oficial",
           "count": 3
+        },
+        {
+          "name": "criterios oficiales",
+          "count": 1
         },
         {
           "name": "correccion",
@@ -3868,6 +3897,23 @@
           "note": "PDF oficial publicado por CARM para la prueba práctica de la especialidad 0590107 Informática de la oposición 2021.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+INFORM%C3%81TICA.pdf&IDCONTENIDO=173493&IDTIPO=60&RASTRO=c798%24m3977%2C69334%2C69959%2C70361%2C70362%2C70432",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Murcia 2015 - criterios oficiales primera prueba Informática (Parte A práctica)",
+          "phase": "02_Primera_prueba_A_Practico",
+          "section": "Oficial Murcia/Criterios y características históricas",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2015 · fecha no visible en CARM",
+          "status": "Criterios históricos",
+          "note": "PDF oficial de CARM para la primera prueba de Informática 107 en 2015. Describe la Parte A práctica: duración, número de supuestos y criterios de valoración; no es el enunciado del examen.",
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
           "urlMode": "official-pdf",
           "clickLabel": "PDF"
         },
@@ -9106,9 +9152,13 @@
       "title": "Segunda prueba: Prueba de aptitud pedagógica - Programación didáctica",
       "legal": "Defensa de programación didáctica.",
       "description": "Material de programación con el módulo cerrado como DAW: Lenguajes de marcas y sistemas de gestión de información.",
-      "resourceCount": 58,
-      "publicLinkCount": 58,
+      "resourceCount": 59,
+      "publicLinkCount": 59,
       "sections": [
+        {
+          "name": "Oficial Murcia/Criterios y características históricas",
+          "count": 1
+        },
         {
           "name": "Programacion_y_plan/Didactica",
           "count": 55
@@ -9124,6 +9174,10 @@
       ],
       "academies": [
         {
+          "name": "CARM/BORM",
+          "count": 1
+        },
+        {
           "name": "General",
           "count": 1
         },
@@ -9134,11 +9188,32 @@
       ],
       "types": [
         {
+          "name": "criterios oficiales",
+          "count": 1
+        },
+        {
           "name": "didactica",
           "count": 58
         }
       ],
       "resources": [
+        {
+          "title": "Murcia 2015 - criterios oficiales segunda prueba Informática: programación didáctica",
+          "phase": "03_Segunda_prueba_Programacion_didactica",
+          "section": "Oficial Murcia/Criterios y características históricas",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2015 · fecha no visible en CARM",
+          "status": "Criterios históricos",
+          "note": "PDF oficial de CARM para la segunda prueba de Informática 107 en 2015. Incluye defensa de la programación, exposición de unidad didáctica y debate.",
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=SEGUNDA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113997&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
         {
           "title": "PROGRAMACION DIDACTICA FP.docx",
           "phase": "03_Segunda_prueba_Programacion_didactica",
@@ -9902,9 +9977,13 @@
       "title": "Segunda prueba: Prueba de aptitud pedagógica - Unidad didáctica",
       "legal": "Preparación y exposición oral de unidad de trabajo.",
       "description": "Recursos para construir unidades de trabajo del módulo 0373, orientadas a HTML/CSS/XML y gestión de información.",
-      "resourceCount": 27,
-      "publicLinkCount": 27,
+      "resourceCount": 28,
+      "publicLinkCount": 28,
       "sections": [
+        {
+          "name": "Oficial Murcia/Criterios y características históricas",
+          "count": 1
+        },
         {
           "name": "Didactica_y_unidades/Didactica",
           "count": 27
@@ -9912,17 +9991,42 @@
       ],
       "academies": [
         {
+          "name": "CARM/BORM",
+          "count": 1
+        },
+        {
           "name": "Preparador online",
           "count": 27
         }
       ],
       "types": [
         {
+          "name": "criterios oficiales",
+          "count": 1
+        },
+        {
           "name": "didactica",
           "count": 27
         }
       ],
       "resources": [
+        {
+          "title": "Murcia 2015 - criterios oficiales segunda prueba Informática: unidad didáctica",
+          "phase": "04_Segunda_prueba_Unidad_didactica",
+          "section": "Oficial Murcia/Criterios y características históricas",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2015 · fecha no visible en CARM",
+          "status": "Criterios históricos",
+          "note": "PDF oficial de CARM para la segunda prueba de Informática 107 en 2015. Detalla preparación y exposición de la unidad didáctica junto con la defensa de programación.",
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=SEGUNDA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113997&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
         {
           "title": "1.doc",
           "phase": "04_Segunda_prueba_Unidad_didactica",
@@ -10283,11 +10387,15 @@
       "title": "Fase de concurso - Méritos",
       "legal": "Baremo de experiencia, formación académica y otros méritos.",
       "description": "Enlaces oficiales de Murcia para comprobar baremo, ficha de méritos, documentación justificativa, reclamaciones y resultado de seleccionados.",
-      "resourceCount": 8,
-      "publicLinkCount": 8,
+      "resourceCount": 10,
+      "publicLinkCount": 10,
       "sections": [
         {
           "name": "Meritos/Baremo oficial",
+          "count": 2
+        },
+        {
+          "name": "Resultados históricos/Informática 2010",
           "count": 2
         },
         {
@@ -10310,12 +10418,16 @@
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 8
+          "count": 10
         }
       ],
       "types": [
         {
           "name": "convocatoria",
+          "count": 2
+        },
+        {
+          "name": "resultados de tribunal",
           "count": 2
         },
         {
@@ -10351,6 +10463,40 @@
           "hasPublicLink": true,
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
           "urlMode": "official-pdf"
+        },
+        {
+          "title": "Murcia 2010 - notas fase de oposición por tribunales de Informática",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Resultados históricos/Informática 2010",
+          "type": "resultados de tribunal",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2010 · fecha no visible en CARM",
+          "status": "Resultados históricos",
+          "note": "Página oficial de CARM con los PDFs de plazo de reclamaciones y nota de la fase de oposición de los tribunales 1 a 5 de Informática 590/107. No contiene el enunciado del examen.",
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16713&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
+          "urlMode": "official-page",
+          "clickLabel": "CARM"
+        },
+        {
+          "title": "Murcia 2010 - reclamaciones de méritos por tribunales de Informática",
+          "phase": "05_Fase_concurso_meritos",
+          "section": "Resultados históricos/Informática 2010",
+          "type": "resultados de tribunal",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2010 · fecha no visible en CARM",
+          "status": "Resultados históricos",
+          "note": "Página oficial de CARM con reclamaciones de méritos y méritos no valorados de tribunales de Informática 590/107. Sirve como histórico de resultados, no como prueba práctica.",
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16754&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
+          "urlMode": "official-page",
+          "clickLabel": "CARM"
         },
         {
           "title": "Anexo II y ficha de baremación - tres bloques de méritos",
@@ -10655,8 +10801,8 @@
       "title": "Novedades PES 590 · Informática 107",
       "legal": "Seguimiento filtrado de publicaciones oficiales para PES 590, especialidad 107 Informática, en Murcia.",
       "description": "Vista rápida solo con publicaciones oficiales relacionadas con Informática de Secundaria, PES 590 y el procedimiento OPOSEC25.",
-      "resourceCount": 14,
-      "publicLinkCount": 14,
+      "resourceCount": 18,
+      "publicLinkCount": 18,
       "sections": [
         {
           "name": "Novedades/Informática 590107",
@@ -10669,12 +10815,16 @@
         {
           "name": "Novedades/Normativa base PES",
           "count": 1
+        },
+        {
+          "name": "Histórico/Informática 590107",
+          "count": 4
         }
       ],
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 13
+          "count": 17
         },
         {
           "name": "Educarm/CARM",
@@ -10688,7 +10838,7 @@
         },
         {
           "name": "criterios oficiales",
-          "count": 5
+          "count": 7
         },
         {
           "name": "prueba práctica",
@@ -10713,6 +10863,10 @@
         {
           "name": "convocatoria oficial",
           "count": 1
+        },
+        {
+          "name": "resultados de tribunal",
+          "count": 2
         }
       ],
       "resources": [
@@ -10953,6 +11107,74 @@
           "url": "https://servicios.educarm.es/neweb/resources/admin/File/publicacionesTribunales/OPOSEC25/CriteriosActuacion_INFORMATICA_02.pdf",
           "urlMode": "official-pdf",
           "clickLabel": "PDF"
+        },
+        {
+          "title": "Histórico 2015 - Informática 107: criterios oficiales primera prueba",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Histórico/Informática 590107",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2015 · fecha no visible en CARM",
+          "status": "Histórico oficial",
+          "note": "PDF oficial de CARM con criterios y características de la primera prueba de Informática 107 en 2015.",
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Histórico 2015 - Informática 107: criterios oficiales segunda prueba",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Histórico/Informática 590107",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2015 · fecha no visible en CARM",
+          "status": "Histórico oficial",
+          "note": "PDF oficial de CARM con criterios y características de la segunda prueba de Informática 107 en 2015.",
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=SEGUNDA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113997&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Histórico 2010 - Informática 590/107: notas fase de oposición por tribunales",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Histórico/Informática 590107",
+          "type": "resultados de tribunal",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2010 · fecha no visible en CARM",
+          "status": "Histórico oficial",
+          "note": "Página oficial de CARM con notas de fase de oposición y reclamaciones por tribunales de Informática.",
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16713&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
+          "urlMode": "official-page",
+          "clickLabel": "CARM"
+        },
+        {
+          "title": "Histórico 2010 - Informática 590/107: reclamaciones de méritos por tribunales",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Histórico/Informática 590107",
+          "type": "resultados de tribunal",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "statusKind": "current",
+          "hasPublicLink": true,
+          "officialDate": "Publicado 2010 · fecha no visible en CARM",
+          "status": "Histórico oficial",
+          "note": "Página oficial de CARM con reclamaciones de méritos de tribunales de Informática.",
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16754&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
+          "urlMode": "official-page",
+          "clickLabel": "CARM"
         }
       ]
     },
@@ -13124,6 +13346,6 @@
       ]
     }
   ],
-  "totalResources": 949,
-  "publicLinkCount": 949
+  "totalResources": 959,
+  "publicLinkCount": 959
 }
