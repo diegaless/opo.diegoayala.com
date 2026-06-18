@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T21:14:00.442Z",
+  "generatedAt": "2026-06-18T12:29:00.000Z",
   "driveRootUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "access": "restricted-google-drive",
   "topics": {
@@ -54,6 +54,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1t5QCiccNd3jAH2GmYo1jicoNq9_oyiZ-"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 01 - Mi tema - Representación y comunicación de la información.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1nGzgO2sVpw-k7-Z0ymE4mDGPMrK35i4izWZgb1fE8Rg/edit",
+          "driveFileName": "Tema 01 - Mi tema - Representación y comunicación de la información",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1nGzgO2sVpw-k7-Z0ymE4mDGPMrK35i4izWZgb1fE8Rg",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -108,6 +123,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1F3JXDYXB8W8ASlmoh34kW62n32ZQd-Xc"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 02 - Mi tema - Elementos funcionales de un ordenador digital.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1aISuJYxIzUS77eYRa87ACj5iJ5EgEJ6Je-DZ60-gerw/edit",
+          "driveFileName": "Tema 02 - Mi tema - Elementos funcionales de un ordenador digital",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1aISuJYxIzUS77eYRa87ACj5iJ5EgEJ6Je-DZ60-gerw",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -148,6 +178,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1wsxqe_SP_sjx6vCjgDLpNKrJXl-9ox2g"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 03 - Mi tema - Componentes, estructura y funcionamiento de la Unidad Central de Proceso.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1dOzbYhoUm4XvhNfX-2KLyIfrrdyvkCw_tTea24BWW30/edit",
+          "driveFileName": "Tema 03 - Mi tema - Componentes, estructura y funcionamiento de la Unidad Central de Proceso",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1dOzbYhoUm4XvhNfX-2KLyIfrrdyvkCw_tTea24BWW30",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -188,6 +233,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1eUUYUT1XO-kI79vCo-Dlq4-lPTT_Rav1"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 04 - Mi tema - Memoria interna. Tipos. Direccionamiento. Características y funciones.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1IvWZArBk4e3mpanzP11q5iaRl-eplHn6We8KWr58NQE/edit",
+          "driveFileName": "Tema 04 - Mi tema - Memoria interna. Tipos. Direccionamiento. Características y funciones",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1IvWZArBk4e3mpanzP11q5iaRl-eplHn6We8KWr58NQE",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -228,6 +288,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "188B0hXxX4PqQxyw5zhFvNBPo30DQZ-8e"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 05 - Mi tema - Microprocesadores. Estructura. Tipos. Comunicación con el exterior.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1FLSrDIvTKGnnGzudBA44geZzCBMmyno9CoOZxojWLNg/edit",
+          "driveFileName": "Tema 05 - Mi tema - Microprocesadores. Estructura. Tipos. Comunicación con el exterior",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1FLSrDIvTKGnnGzudBA44geZzCBMmyno9CoOZxojWLNg",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -282,6 +357,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1sZUTsHRmPZ4Lq-p0JXn6ULs3QBL5ao7q"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 06 - Mi tema - Sistemas de almacenamiento externo. Tipos. Características y funcionamiento.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1xUXE9TH9s7_J6JXFbALxMqYjxpy7nXWDOt0IzLOHy_I/edit",
+          "driveFileName": "Tema 06 - Mi tema - Sistemas de almacenamiento externo. Tipos. Características y funcionamiento",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1xUXE9TH9s7_J6JXFbALxMqYjxpy7nXWDOt0IzLOHy_I",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -336,6 +426,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "11xOomQU4UMmz4bI-ONXlkDPtLrA2acy7"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 07 - Mi tema - Dispositivos periféricos de entrada salida. Características y funcionamiento.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1yq5d47Zhnr2lui1C6Z6pdkz2VIXShU0wx8h3K_n13UE/edit",
+          "driveFileName": "Tema 07 - Mi tema - Dispositivos periféricos de entrada salida. Características y funcionamiento",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1yq5d47Zhnr2lui1C6Z6pdkz2VIXShU0wx8h3K_n13UE",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -376,6 +481,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1BzvDF13z9hFzLxmmmZJBeKpqot10R7Hg"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 08 - Mi tema - Hardware comercial de un ordenador. Placa base. Tarjetas controladoras de dispositivos y de entrada.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1qRfX-3zKucpG7b5u1hoi4gugUp6Ix8ttRxwmGTFGgG8/edit",
+          "driveFileName": "Tema 08 - Mi tema - Hardware comercial de un ordenador. Placa base. Tarjetas controladoras de dispositivos y de entrada",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1qRfX-3zKucpG7b5u1hoi4gugUp6Ix8ttRxwmGTFGgG8",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -433,6 +553,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1Y2XHUB0hqnjN5ZqQyO-aEOOYh1mUgi-W"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 09 - Mi tema - Lógica de circuitos. Circuitos combinacionales y secuenciales.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1rPWdNo2grM--wUq3ktLnP1OC-zrddOgRopbTlaLEfIM/edit",
+          "driveFileName": "Tema 09 - Mi tema - Lógica de circuitos. Circuitos combinacionales y secuenciales",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1rPWdNo2grM--wUq3ktLnP1OC-zrddOgRopbTlaLEfIM",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -473,6 +608,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1Rb2oH8spyUcLthzKdbswJCMw1hEQbNHD"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 10 - Mi tema - Representación interna de los datos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1e6x2g6zQfXwG_B0IipxRkpLJ_8MApwpUZWc571hV0I8/edit",
+          "driveFileName": "Tema 10 - Mi tema - Representación interna de los datos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1e6x2g6zQfXwG_B0IipxRkpLJ_8MApwpUZWc571hV0I8",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -530,6 +680,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1hGWWR9reJNnusKx32p0gnmel3NDxWBUo"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 11 - Mi tema - Organización lógica de los datos. Estructuras estáticas.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1Dh1sf7XspcqZrRnZnQqA1xrNM0SRgeEnQ7A-oRMhdLg/edit",
+          "driveFileName": "Tema 11 - Mi tema - Organización lógica de los datos. Estructuras estáticas",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1Dh1sf7XspcqZrRnZnQqA1xrNM0SRgeEnQ7A-oRMhdLg",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -587,6 +752,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "15vvPhF8AaXlB4NJpWTOja5HbYYYEzYzq"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 12 - Mi tema - Organización lógica de los datos. Estructuras dinámicas.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1R3T1hcj7sjHd_hO4E4g9HvhRMFtaKWe8uVmPDif-COI/edit",
+          "driveFileName": "Tema 12 - Mi tema - Organización lógica de los datos. Estructuras dinámicas",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1R3T1hcj7sjHd_hO4E4g9HvhRMFtaKWe8uVmPDif-COI",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -658,6 +838,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1Gknz5G1AZA63v8JXKqFXj1Ptw4CVHeCj"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 13 - Mi tema - Ficheros. Tipos. Características. Organizaciones.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1hgCZCSQTKH0yl5uP4sTGW0X7Um6zHaDfMH_D3Rdfn0w/edit",
+          "driveFileName": "Tema 13 - Mi tema - Ficheros. Tipos. Características. Organizaciones",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1hgCZCSQTKH0yl5uP4sTGW0X7Um6zHaDfMH_D3Rdfn0w",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -729,6 +924,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "18g3pkeoZsnDeig-NA8o2XdU2SAMI7So_"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 14 - Mi tema - Utilización de ficheros según su organización.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1gZ2WnHCZ8o7jpW2KpUHZiUd1_phhFmxRLcSXnkj2mZk/edit",
+          "driveFileName": "Tema 14 - Mi tema - Utilización de ficheros según su organización",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1gZ2WnHCZ8o7jpW2KpUHZiUd1_phhFmxRLcSXnkj2mZk",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -783,6 +993,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1fhWa44S1nwG5kXNlUeZJ4OhP4uRfoRc5"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 15 - Mi tema - Sistemas operativos. Componentes. Estructura. Funciones. Tipos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1poWq7-dPtX-GT6jdZaUXlH5Yc2JRXDYl_3gs5jiQAEE/edit",
+          "driveFileName": "Tema 15 - Mi tema - Sistemas operativos. Componentes. Estructura. Funciones. Tipos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1poWq7-dPtX-GT6jdZaUXlH5Yc2JRXDYl_3gs5jiQAEE",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -840,6 +1065,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1EDFc2Ft7-L6tJjyEuXEr0rMRnGj428a8"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 16 - Mi tema - Sistemas operativos Gestión de procesos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/16l8HE0SBvBALD8h444X7M592FVeQ573TEA1q-q26LmQ/edit",
+          "driveFileName": "Tema 16 - Mi tema - Sistemas operativos Gestión de procesos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "16l8HE0SBvBALD8h444X7M592FVeQ573TEA1q-q26LmQ",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -894,6 +1134,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "12u68soBwb4TZo42DzSDJwY1BU0pIgCof"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 17 - Mi tema - Sistemas operativos Gestión de memoria.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1zPwlGau2PBH34BoBUEzSPNiwOaEC5y_6af2hsQIUzSU/edit",
+          "driveFileName": "Tema 17 - Mi tema - Sistemas operativos Gestión de memoria",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1zPwlGau2PBH34BoBUEzSPNiwOaEC5y_6af2hsQIUzSU",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -934,6 +1189,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1Q-2-ReN4-uu0A81OxRCkFq_0fzcHFKCC"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 18 - Mi tema - Sistemas operativos Gestión de entradas salidas.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1_0U-kjWeVPX5oi7yNlP1P5cJz2JtYgyTxhc-fd9E0z4/edit",
+          "driveFileName": "Tema 18 - Mi tema - Sistemas operativos Gestión de entradas salidas",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1_0U-kjWeVPX5oi7yNlP1P5cJz2JtYgyTxhc-fd9E0z4",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -988,6 +1258,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1ZtCuHhRSJldR_6Hbc5wEssP8CGjsfBB9"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 19 - Mi tema - Sistemas operativos Gestión de archivos y dispositivos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/14ckGhF3LkzRodhI307sIo_1Ce3BDLZBA4espg9DWWQQ/edit",
+          "driveFileName": "Tema 19 - Mi tema - Sistemas operativos Gestión de archivos y dispositivos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "14ckGhF3LkzRodhI307sIo_1Ce3BDLZBA4espg9DWWQQ",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1028,6 +1313,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1tYZQl8tbW_6W3_VMit9S8ZiWVV7WeZhM"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 20 - Mi tema - Explotación y administración de sistemas operativos monousuario y multiusuario.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/12voBJFgREdVG1dN7dZIHVrERPLdND8Q7-qtIJpYqjh8/edit",
+          "driveFileName": "Tema 20 - Mi tema - Explotación y administración de sistemas operativos monousuario y multiusuario",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "12voBJFgREdVG1dN7dZIHVrERPLdND8Q7-qtIJpYqjh8",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1066,6 +1366,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1Qzaw-V2DkWsyN3HQmjMX5F5JPM2Dl5RL"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 21 - Mi tema - Sistemas informáticos. Estructura física y funcional.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1a1grRYURtmq6nim4JQOET8-eIhoEXhGa9Da78ILjJys/edit",
+          "driveFileName": "Tema 21 - Mi tema - Sistemas informáticos. Estructura física y funcional",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1a1grRYURtmq6nim4JQOET8-eIhoEXhGa9Da78ILjJys",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1104,6 +1419,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1EPaFyXgGTQAg8Pg9UOgyj9pvwchWfjxn"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 22 - Mi tema - Planificación y explotación de sistemas informáticos. Configuración. Condiciones de instalación. Med.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/168iF08ngFBtvfR52B6lZWkwaBNgG7zrfZ-yQuWOrn1I/edit",
+          "driveFileName": "Tema 22 - Mi tema - Planificación y explotación de sistemas informáticos. Configuración. Condiciones de instalación. Med",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "168iF08ngFBtvfR52B6lZWkwaBNgG7zrfZ-yQuWOrn1I",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1161,6 +1491,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1RW7ZzkmjVZNyU15pf9pPzpY8Eqs9LooA"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 23 - Mi tema - Diseño de algoritmos. Técnicas descriptivas.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/10avhXvVNBq0F-Z2LBPtVkBayAlJzwM62kxm6ihalwtY/edit",
+          "driveFileName": "Tema 23 - Mi tema - Diseño de algoritmos. Técnicas descriptivas",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "10avhXvVNBq0F-Z2LBPtVkBayAlJzwM62kxm6ihalwtY",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1218,6 +1563,21 @@
           "selectedByReview": true,
           "selectionReason": "selected latest V2/PES complete theory",
           "driveFileId": "1HPuA0UjOyYMpDYEPDH1l5xvl9VkTJOsB"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 24 - Mi tema - Lenguajes de programación. Tipos. Características.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1aXxsb1ivM4vjac26y-MEWyLATt0gMbRaxAU0AMY2ssw/edit",
+          "driveFileName": "Tema 24 - Mi tema - Lenguajes de programación. Tipos. Características",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1aXxsb1ivM4vjac26y-MEWyLATt0gMbRaxAU0AMY2ssw",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1273,6 +1633,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "11F8dyjwPFXy-dYlEFCLfeOONhpebcMwR"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 25 - Mi tema - Programación estructurada. Estructuras básicas. Funciones y procedimientos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1ejFrVpCueUiEl_yURJIgU-_pxNzkS4PMGyG50x1JUuI/edit",
+          "driveFileName": "Tema 25 - Mi tema - Programación estructurada. Estructuras básicas. Funciones y procedimientos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1ejFrVpCueUiEl_yURJIgU-_pxNzkS4PMGyG50x1JUuI",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1328,6 +1703,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1Rp_tpYAqmpkAlsNlIT55ysHJ1r7IAePk"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 26 - Mi tema - Programación modular. Diseño de funciones. Recursividad. Librerías.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1c8yZCeqS_p3aO0GKp-I7e11xW-Xvh0tF29Ai7lYZqkk/edit",
+          "driveFileName": "Tema 26 - Mi tema - Programación modular. Diseño de funciones. Recursividad. Librerías",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1c8yZCeqS_p3aO0GKp-I7e11xW-Xvh0tF29Ai7lYZqkk",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1383,6 +1773,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1zy58a0DTCCERz49mxPe9-m-MlAyT42Ev"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 27 - Mi tema - Programación orientada a objetos. Objetos. Clases. Herencia. Polimorfismo. Lenguajes.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1nlGpwcnlqCIzxfH3MYwhoTKj1-q0HI9_RMFmuYpJoJk/edit",
+          "driveFileName": "Tema 27 - Mi tema - Programación orientada a objetos. Objetos. Clases. Herencia. Polimorfismo. Lenguajes",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1nlGpwcnlqCIzxfH3MYwhoTKj1-q0HI9_RMFmuYpJoJk",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1421,6 +1826,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1NFmNIpPoOIGUnZiCRjJIYbZzitUQ6eNS"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 28 - Mi tema - Programación en tiempo real. Interrupciones. Sincronización y comunicación entre tareas. Lenguajes.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1w01U4n8oz-lrMRyiSBsAovyotuWNWs8lK4mpgIopcIc/edit",
+          "driveFileName": "Tema 28 - Mi tema - Programación en tiempo real. Interrupciones. Sincronización y comunicación entre tareas. Lenguajes",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1w01U4n8oz-lrMRyiSBsAovyotuWNWs8lK4mpgIopcIc",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1476,6 +1896,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1srw0aKXv3p_EY7g3ZdEW5HqTsg11PJ44"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 29 - Mi tema - Utilidades para el desarrollo y prueba de programas. Compiladores. Intérpretes. Depuradores.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/16Y5dFw1MMO_c_dZnPcZKLGoU-7OCy3duGE0s4iS4wM4/edit",
+          "driveFileName": "Tema 29 - Mi tema - Utilidades para el desarrollo y prueba de programas. Compiladores. Intérpretes. Depuradores",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "16Y5dFw1MMO_c_dZnPcZKLGoU-7OCy3duGE0s4iS4wM4",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1545,6 +1980,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1mTm2Uc3GfhvaMVu_GI2MrwuoAt4Nlc81"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 30 - Mi tema - Prueba y documentación de programas. Técnicas.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1AOR9Lqa6lengg4zLydBiXE8lledmtXpxLuJC2W7ZaKk/edit",
+          "driveFileName": "Tema 30 - Mi tema - Prueba y documentación de programas. Técnicas",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1AOR9Lqa6lengg4zLydBiXE8lledmtXpxLuJC2W7ZaKk",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1600,6 +2050,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1cKVMeZ7G7VvNErx1hyOW-1rB4eFH9jOD"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 31 - Mi tema - Lenguaje C Características generales. Elementos del lenguaje. Estructura de un programa. Funciones d.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/19SKwtTU9nBVsUQ6D8nTN5gTgi1-wdQL269LF6l0BnTc/edit",
+          "driveFileName": "Tema 31 - Mi tema - Lenguaje C Características generales. Elementos del lenguaje. Estructura de un programa. Funciones d",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "19SKwtTU9nBVsUQ6D8nTN5gTgi1-wdQL269LF6l0BnTc",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1669,6 +2134,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1v0dPtebV3LpaYiei-YE-eyCeWESeok9i"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 32 - Mi tema - Lenguaje C Manipulación de estructuras de datos dinámicas y estáticas. Entrada y salida de datos. Ge.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1Je5xHEc8pvjxyU5g5YXL0Z5iDqAyECwcWc59jQb3uNA/edit",
+          "driveFileName": "Tema 32 - Mi tema - Lenguaje C Manipulación de estructuras de datos dinámicas y estáticas. Entrada y salida de datos. Ge",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1Je5xHEc8pvjxyU5g5YXL0Z5iDqAyECwcWc59jQb3uNA",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1724,6 +2204,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1_FmMUzUqYz-f7XuCraM8pVHh66oUpE0U"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 33 - Mi tema - Programación en lenguaje ensamblador. Instrucciones básicas. Formatos. Direccionamientos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1Bh4EdcoucFDYwvMivnZcNQq-hITy_SN0U4XyetJQKvk/edit",
+          "driveFileName": "Tema 33 - Mi tema - Programación en lenguaje ensamblador. Instrucciones básicas. Formatos. Direccionamientos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1Bh4EdcoucFDYwvMivnZcNQq-hITy_SN0U4XyetJQKvk",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1779,6 +2274,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1L58e7F3MqqnnpoXA_5mJp_A0GmBj7Fdy"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 34 - Mi tema - Sistemas gestores de base de datos. Funciones. Componentes. Arquitecturas de referencia y operaciona.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1fKYDtJupJQdH2BCGC41hwgMF5ivHW3Zs2DEzj2yLONo/edit",
+          "driveFileName": "Tema 34 - Mi tema - Sistemas gestores de base de datos. Funciones. Componentes. Arquitecturas de referencia y operaciona",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1fKYDtJupJQdH2BCGC41hwgMF5ivHW3Zs2DEzj2yLONo",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1819,6 +2329,21 @@
           "selectedByReview": true,
           "selectionReason": "selected complete theory over sample/summary",
           "driveFileId": "1IkWowyB396uPPPQboNrWIEKi_2q5c_jN"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 35 - Mi tema - La definición de datos. Niveles de descripción. Lenguajes. Diccionario de datos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1OtQOMZRIIB55kZUY6mXSJuT3YBETQV4RN2Kw4ycAa2I/edit",
+          "driveFileName": "Tema 35 - Mi tema - La definición de datos. Niveles de descripción. Lenguajes. Diccionario de datos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1OtQOMZRIIB55kZUY6mXSJuT3YBETQV4RN2Kw4ycAa2I",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1871,6 +2396,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1W0VdXAfCjllIHc29O9oY-V-0Xv13UL4v"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 36 - Mi tema - La manipulación de datos. Operaciones. Lenguajes. Optimización de consultas.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1tdyzWRr_EFOiS3karSFvULFDRfABvfPzy8_Gnj3dHd0/edit",
+          "driveFileName": "Tema 36 - Mi tema - La manipulación de datos. Operaciones. Lenguajes. Optimización de consultas",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1tdyzWRr_EFOiS3karSFvULFDRfABvfPzy8_Gnj3dHd0",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1909,6 +2449,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1A-61ZccFU7p-bUGEFI69WEp5Q7P1zAzJ"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 37 - Mi tema - Modelo de datos jerárquico y en red. Estructuras. Operaciones.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1o9wgzzLeIf9dxV1_-Kd6n_htACHY3vtMZdoOe5VFUTs/edit",
+          "driveFileName": "Tema 37 - Mi tema - Modelo de datos jerárquico y en red. Estructuras. Operaciones",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1o9wgzzLeIf9dxV1_-Kd6n_htACHY3vtMZdoOe5VFUTs",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -1947,6 +2502,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1goMw3fOUaAD4rOv5Flv4Ey75BCbgvejC"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 38 - Mi tema - Modelo de datos relacional. Estructuras. Operaciones. Álgebra relacional.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1eNIkQTyLJdJhn_Gigw0wkiqkjHnm_Tpq3tHUyXf6rUY/edit",
+          "driveFileName": "Tema 38 - Mi tema - Modelo de datos relacional. Estructuras. Operaciones. Álgebra relacional",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1eNIkQTyLJdJhn_Gigw0wkiqkjHnm_Tpq3tHUyXf6rUY",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2016,6 +2586,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1G6ITvXcXq-ehvDinTb93QzG6mWkv2-kD"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 39 - Mi tema - Lenguajes para la definición y manipulación de datos en sistemas de base de datos relacionales. Tipo.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1CfCh1hn02U9fii-YN3r1iq2dEqhKMyNsOY_a4A0Bgic/edit",
+          "driveFileName": "Tema 39 - Mi tema - Lenguajes para la definición y manipulación de datos en sistemas de base de datos relacionales. Tipo",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1CfCh1hn02U9fii-YN3r1iq2dEqhKMyNsOY_a4A0Bgic",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2071,6 +2656,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1h10uJy6srss5FTtnKEim54yDA1AIP2yr"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 40 - Mi tema - Diseño de bases de datos relacionales.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1ga6sCjKh7Ir7EY4ZfooAxAXgRJrSMbDkWYRX0U9FMD8/edit",
+          "driveFileName": "Tema 40 - Mi tema - Diseño de bases de datos relacionales",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1ga6sCjKh7Ir7EY4ZfooAxAXgRJrSMbDkWYRX0U9FMD8",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2126,6 +2726,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1qys4bZ9oHLq9wfGn-xXU3xHu9HMueYQT"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 41 - Mi tema - Utilidades de los sistemas gestores de base de datos para el desarrollo de aplicaciones. Tipos. Cara.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1r8bQxy_avCFD4gmOMFSTO5wviAMAeVgXAnO6SEd2W2c/edit",
+          "driveFileName": "Tema 41 - Mi tema - Utilidades de los sistemas gestores de base de datos para el desarrollo de aplicaciones. Tipos. Cara",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1r8bQxy_avCFD4gmOMFSTO5wviAMAeVgXAnO6SEd2W2c",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2164,6 +2779,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1jz_MYkadsq_1b-Vi0GX5h8BhALcKvKff"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 42 - Mi tema - Sistemas de base de datos distribuidos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1pXXwxqUknNWJ1otYg4R-tSrugMDaxz4W23EW2h10thM/edit",
+          "driveFileName": "Tema 42 - Mi tema - Sistemas de base de datos distribuidos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1pXXwxqUknNWJ1otYg4R-tSrugMDaxz4W23EW2h10thM",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2202,6 +2832,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "15-6tUKVlJ4kD2klvR1djhIF0UpAcsRYR"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 43 - Mi tema - Administración de sistemas de base de datos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1UCkGfwDID_GnX6VwDxtmH6PFVrYfCZwlJUdlPcjfHUQ/edit",
+          "driveFileName": "Tema 43 - Mi tema - Administración de sistemas de base de datos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1UCkGfwDID_GnX6VwDxtmH6PFVrYfCZwlJUdlPcjfHUQ",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2240,6 +2885,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1rwaYmMHgphehs_GTQAgW5nfxy5KA1b_U"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 44 - Mi tema - Técnicas y procedimientos para la seguridad de los datos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1mXCKa1kt6GfVQKw50dalVkYivSZb6FdRHoh-zAdpHzw/edit",
+          "driveFileName": "Tema 44 - Mi tema - Técnicas y procedimientos para la seguridad de los datos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1mXCKa1kt6GfVQKw50dalVkYivSZb6FdRHoh-zAdpHzw",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2309,6 +2969,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1kfd-8L0cOnBgsqSQ-9nTFJo0ZAN2zr2j"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 45 - Mi tema - Sistemas de información. Tipos. Características. Sistemas de información en la empresa.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1CnFTOVhwgsgg_ivvHWaN29lR1_oh9KKiMkSzA_8DD08/edit",
+          "driveFileName": "Tema 45 - Mi tema - Sistemas de información. Tipos. Características. Sistemas de información en la empresa",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1CnFTOVhwgsgg_ivvHWaN29lR1_oh9KKiMkSzA_8DD08",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2364,6 +3039,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1no3wHrLx-z1KIRneNf4QQvw_bpBlp6Xk"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 46 - Mi tema - Aplicaciones informáticas de propósito general y para la gestión empresarial. Tipos. Funciones. Cara.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1GEur_WTMqRSAH8v03yabCF1_KwA5pmLpOcdZ8Or5HIU/edit",
+          "driveFileName": "Tema 46 - Mi tema - Aplicaciones informáticas de propósito general y para la gestión empresarial. Tipos. Funciones. Cara",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1GEur_WTMqRSAH8v03yabCF1_KwA5pmLpOcdZ8Or5HIU",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2419,6 +3109,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1I9eULdzCJJ_Zq1QqYqOGYO2v1rzLShN3"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 47 - Mi tema - Instalación y explotación de aplicaciones informáticas. Compartición de datos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/18uCZm8DmbNwQx7KiEblCezB68uTr2X1hbJoUP3bI760/edit",
+          "driveFileName": "Tema 47 - Mi tema - Instalación y explotación de aplicaciones informáticas. Compartición de datos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "18uCZm8DmbNwQx7KiEblCezB68uTr2X1hbJoUP3bI760",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2474,6 +3179,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1sEPKarSCKSpRpyiZqgzjBaVwfb7w8Lz6"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 48 - Mi tema - Ingeniería del software. Ciclo de desarrollo del software. Tipos de ciclos de desarrollo. Metodologí.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/10-GGYQ6hXHAfEkNW2VqcbHRVLoDY8H6XxfuTc0YDWRk/edit",
+          "driveFileName": "Tema 48 - Mi tema - Ingeniería del software. Ciclo de desarrollo del software. Tipos de ciclos de desarrollo. Metodologí",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "10-GGYQ6hXHAfEkNW2VqcbHRVLoDY8H6XxfuTc0YDWRk",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2512,6 +3232,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1p8xrEw72XyHZZnmlydekj8n3KdhhPlRH"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 49 - Mi tema - Análisis de sistemas Modelización de tratamientos. Modelo de flujo de datos y control. Técnicas desc.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1BDROflOyVxgXeY2nGPnQ050QR95NBO3It68SP_tg74k/edit",
+          "driveFileName": "Tema 49 - Mi tema - Análisis de sistemas Modelización de tratamientos. Modelo de flujo de datos y control. Técnicas desc",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1BDROflOyVxgXeY2nGPnQ050QR95NBO3It68SP_tg74k",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2567,6 +3302,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1WhzBGdlH8XLQQ1L2QN1-C1TGq5QMx2No"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 50 - Mi tema - Análisis de sistemas Modelización conceptual de datos. Técnicas descriptivas. Documentación.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1mwfr0xU-2qulFPRjrn66ZCHxPXGWZJCVr5xYFT8ljdU/edit",
+          "driveFileName": "Tema 50 - Mi tema - Análisis de sistemas Modelización conceptual de datos. Técnicas descriptivas. Documentación",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1mwfr0xU-2qulFPRjrn66ZCHxPXGWZJCVr5xYFT8ljdU",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2622,6 +3372,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1woIjqJreHbIYrb6rlTfpBwamE8avuHOn"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 51 - Mi tema - Análisis de sistemas Especificación funcional del sistema. Búsqueda y descripción de requisitos func.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1JZxdAGjf7_jnGrFfa8rnbQNlvsqohD5r1MedFjYq0F4/edit",
+          "driveFileName": "Tema 51 - Mi tema - Análisis de sistemas Especificación funcional del sistema. Búsqueda y descripción de requisitos func",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1JZxdAGjf7_jnGrFfa8rnbQNlvsqohD5r1MedFjYq0F4",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2660,6 +3425,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1R_zl-VV1ofR2vKU11s0TPxBFv2KK7G8i"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 52 - Mi tema - Diseño lógico de funciones. Definición de funciones. Descomposición modular. Técnicas descriptivas.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/19QY41IRfgGrVJt22ONMSatwFKYVFHDPOpL0OzRv3XNo/edit",
+          "driveFileName": "Tema 52 - Mi tema - Diseño lógico de funciones. Definición de funciones. Descomposición modular. Técnicas descriptivas",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "19QY41IRfgGrVJt22ONMSatwFKYVFHDPOpL0OzRv3XNo",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2715,6 +3495,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1YatzfuE-XYP-2oxCXIyLkU7dc1dLVQ8A"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 53 - Mi tema - Diseño lógico de datos. Transformación del modelo conceptual a modelos lógicos. Análisis relacional.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1QnniICU1PlPWo6JZyXs1xSy6XMBK4hNLyLPIwKtFjr8/edit",
+          "driveFileName": "Tema 53 - Mi tema - Diseño lógico de datos. Transformación del modelo conceptual a modelos lógicos. Análisis relacional",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1QnniICU1PlPWo6JZyXs1xSy6XMBK4hNLyLPIwKtFjr8",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2770,6 +3565,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1kt5nEtgdjmAyHFCPyzVq6p9kGzd9PVZ4"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 54 - Mi tema - Diseño de interfaces de usuario. Criterios de diseño. Descripción de interfaces. Documentación. Herr.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/13g2_QSTjEJ-M-tFdVKS43b7kz1jywZY0b6QJvHZyscg/edit",
+          "driveFileName": "Tema 54 - Mi tema - Diseño de interfaces de usuario. Criterios de diseño. Descripción de interfaces. Documentación. Herr",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "13g2_QSTjEJ-M-tFdVKS43b7kz1jywZY0b6QJvHZyscg",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2808,6 +3618,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1Ah3H3CqYO5393ppIXEnSHsKZBl6BXCkO"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 55 - Mi tema - Diseño físico de datos y funciones. Criterios de diseño. Documentación.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/19ua09vuvmXDcV63hcGlxS5uuwNLqfL53YT1m0fuKu5E/edit",
+          "driveFileName": "Tema 55 - Mi tema - Diseño físico de datos y funciones. Criterios de diseño. Documentación",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "19ua09vuvmXDcV63hcGlxS5uuwNLqfL53YT1m0fuKu5E",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2863,6 +3688,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1i_1E1VnONys8s9o0Suz4zbWNgS26dVFE"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 56 - Mi tema - Análisis y diseño orientado a objetos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1jU8Phc3-QYBGMMBrjvNulmNp7cChHY0i66hlPARgT-M/edit",
+          "driveFileName": "Tema 56 - Mi tema - Análisis y diseño orientado a objetos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1jU8Phc3-QYBGMMBrjvNulmNp7cChHY0i66hlPARgT-M",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2901,6 +3741,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1Qu-ETNrXU6lxhBcta_30uQWONbqfkSC0"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 57 - Mi tema - Calidad del software. Factores y métricas. Estrategias de prueba.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1j7HLzDExV5-d2q87XMJbpVU2H8LuItn-LiUdZsq-Zc0/edit",
+          "driveFileName": "Tema 57 - Mi tema - Calidad del software. Factores y métricas. Estrategias de prueba",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1j7HLzDExV5-d2q87XMJbpVU2H8LuItn-LiUdZsq-Zc0",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2939,6 +3794,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1zadV06aO96R93w2sCWIBmV7pLNOJQJl-"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 58 - Mi tema - Ayudas automatizadas para el desarrollo de software (herramientas CASE). Tipos. Estructura. Prestaci.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/11f-I5-YLai63YzibH1RrQFG-79vnQZNKET2o8zRxIvI/edit",
+          "driveFileName": "Tema 58 - Mi tema - Ayudas automatizadas para el desarrollo de software (herramientas CASE). Tipos. Estructura. Prestaci",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "11f-I5-YLai63YzibH1RrQFG-79vnQZNKET2o8zRxIvI",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -2991,6 +3861,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1B9gZdtbQaXYEH2uuZ9VwZoBsr0ltG3p5"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 59 - Mi tema - Gestión y control de proyectos informáticos. Estimación de recursos. Planificación temporal y organi.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/15c-J3exdUFf8flrZHC8aeByZyE4c1FDfE8BFo5AlSW0/edit",
+          "driveFileName": "Tema 59 - Mi tema - Gestión y control de proyectos informáticos. Estimación de recursos. Planificación temporal y organi",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "15c-J3exdUFf8flrZHC8aeByZyE4c1FDfE8BFo5AlSW0",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3046,6 +3931,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "19IIKGB8jfXA9vXeLftblUqgLmyNXW7Zd"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 60 - Mi tema - Sistemas basados en el conocimiento. Representación del conocimiento. Componentes y arquitectura.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1AFjpfc3ZkS-bMlEyPmoC3Jaf50XGr11omtHNVgWxv54/edit",
+          "driveFileName": "Tema 60 - Mi tema - Sistemas basados en el conocimiento. Representación del conocimiento. Componentes y arquitectura",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1AFjpfc3ZkS-bMlEyPmoC3Jaf50XGr11omtHNVgWxv54",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3101,6 +4001,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1eYljwxhDSSi1ouFhjq5B1lTmr5cA1A1s"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 61 - Mi tema - Redes y servicios de comunicaciones.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1fKfzlvgBIpazmAs3bxAvjyqToIW1fQivm-az7pTaUmc/edit",
+          "driveFileName": "Tema 61 - Mi tema - Redes y servicios de comunicaciones",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1fKfzlvgBIpazmAs3bxAvjyqToIW1fQivm-az7pTaUmc",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3156,6 +4071,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1HZt0K0-wYmK71pLh0MFmMvENVxHlVoOe"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 62 - Mi tema - Arquitecturas de sistemas de comunicaciones. Arquitecturas basadas en niveles. Estándares.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1gDvrbBE9AutJZlp10Kqr372AgG1Y0FVUhXfJcdV79Kk/edit",
+          "driveFileName": "Tema 62 - Mi tema - Arquitecturas de sistemas de comunicaciones. Arquitecturas basadas en niveles. Estándares",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1gDvrbBE9AutJZlp10Kqr372AgG1Y0FVUhXfJcdV79Kk",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3208,6 +4138,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1Po8a3RIAqvGKFDjonDjCHbIgfKe_-Y6R"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 63 - Mi tema - Funciones y servicios del nivel físico. Tipos y medios de transmisión. Adaptación al medio de transm.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/16fki2Vwh7KI-cN-FluRooW_6iu_ObX0sMMCaM5F7ZEI/edit",
+          "driveFileName": "Tema 63 - Mi tema - Funciones y servicios del nivel físico. Tipos y medios de transmisión. Adaptación al medio de transm",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "16fki2Vwh7KI-cN-FluRooW_6iu_ObX0sMMCaM5F7ZEI",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3246,6 +4191,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1D3j-HBWAro4EJEQP98i9eLVDM8BUNp_8"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 64 - Mi tema - Funciones y servicios del nivel de enlace. Técnicas. Protocolos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1s7rKr0-S97MgynmXDBc08n17ymXcAAdRb2sr2reiHIs/edit",
+          "driveFileName": "Tema 64 - Mi tema - Funciones y servicios del nivel de enlace. Técnicas. Protocolos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1s7rKr0-S97MgynmXDBc08n17ymXcAAdRb2sr2reiHIs",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3300,6 +4260,21 @@
           "selectedByReview": true,
           "selectionReason": "selected complete theory over sample/summary",
           "driveFileId": "1c6U7eNCl1AKr88kqE4s2XFuQjkHtQU-5"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 65 - Mi tema - Funciones y servicios del nivel de red y del nivel de transporte. Técnicas. Protocolos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1f5CQwL7qCl2LH7BAy6XJEk7FjPuL8mjpIQhUxa1ZK0o/edit",
+          "driveFileName": "Tema 65 - Mi tema - Funciones y servicios del nivel de red y del nivel de transporte. Técnicas. Protocolos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1f5CQwL7qCl2LH7BAy6XJEk7FjPuL8mjpIQhUxa1ZK0o",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3338,6 +4313,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1DF59XXk-GTcOfCeUgY1iilycGhRms2MR"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 66 - Mi tema - Funciones y servicios en niveles sesión, presentación y aplicación. Protocolos. Estándares.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/15CZhNNaoH_X6pjel12-ZTsWOdzEPc4oe9szyuSgtFh0/edit",
+          "driveFileName": "Tema 66 - Mi tema - Funciones y servicios en niveles sesión, presentación y aplicación. Protocolos. Estándares",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "15CZhNNaoH_X6pjel12-ZTsWOdzEPc4oe9szyuSgtFh0",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3393,6 +4383,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1j_Adjxs1krVaYd9uy-m-mIzIIVEKJcnP"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 67 - Mi tema - Redes de área local. Componentes. Topologías. Estándares. Protocolos.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1H-9mkCCBJezCDfMvg3KFfk6J89lai3nLpJVjV4g6rJI/edit",
+          "driveFileName": "Tema 67 - Mi tema - Redes de área local. Componentes. Topologías. Estándares. Protocolos",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1H-9mkCCBJezCDfMvg3KFfk6J89lai3nLpJVjV4g6rJI",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3431,6 +4436,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "17WLaePO5Ky0PArn0w64oNRFHtHrzrhiD"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 68 - Mi tema - Software de sistemas en red. Componentes. Funciones. Estructura.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1tYqE-LmFv0c6LoPJ6pllve8jNLwOIdL0lTHw05vRTI4/edit",
+          "driveFileName": "Tema 68 - Mi tema - Software de sistemas en red. Componentes. Funciones. Estructura",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1tYqE-LmFv0c6LoPJ6pllve8jNLwOIdL0lTHw05vRTI4",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3469,6 +4489,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1EZLhJs1kaMwL8NFOhvQXIdxTZbye-fsf"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 69 - Mi tema - Integración de sistemas. Medios de interconexión. Estándares. Protocolos de acceso a redes de área e.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1emz6DUW85LnPPfyaonhQNaj48k9m-1BRpgGfbqSP-4Q/edit",
+          "driveFileName": "Tema 69 - Mi tema - Integración de sistemas. Medios de interconexión. Estándares. Protocolos de acceso a redes de área e",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1emz6DUW85LnPPfyaonhQNaj48k9m-1BRpgGfbqSP-4Q",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3507,6 +4542,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1x1yHnyJS-kJNId6hQKvo_GqC4RyIkwSL"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 70 - Mi tema - Diseño de sistemas en red local. Parámetros de diseño. Instalación y configuración de sistemas en re.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1quaKHLZGDysW6HzXsk5smjNqxmKJy_-GNVm9PgwxxPI/edit",
+          "driveFileName": "Tema 70 - Mi tema - Diseño de sistemas en red local. Parámetros de diseño. Instalación y configuración de sistemas en re",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1quaKHLZGDysW6HzXsk5smjNqxmKJy_-GNVm9PgwxxPI",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3545,6 +4595,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1DPBia2Nd7Rnoejsd9KdPYAmmpUGfIcEB"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 71 - Mi tema - Explotación y administración de sistemas en red local. Facilidades de gestión.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/137O7f7TrKwC8l_-Cjt1J-ZWgHIVH0P-bwk8FL3c-_dI/edit",
+          "driveFileName": "Tema 71 - Mi tema - Explotación y administración de sistemas en red local. Facilidades de gestión",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "137O7f7TrKwC8l_-Cjt1J-ZWgHIVH0P-bwk8FL3c-_dI",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3583,6 +4648,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1xYTB1L9YR3n4EJQxJo4Nyj2iDKnBuvzt"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 72 - Mi tema - La seguridad en sistemas en red. Servicios de seguridad. Técnicas y sistemas de protección. Estándar.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1k6De6XFr9qJ1355wLNls4j-TIiYC8GRUziY_-ZbN4Jw/edit",
+          "driveFileName": "Tema 72 - Mi tema - La seguridad en sistemas en red. Servicios de seguridad. Técnicas y sistemas de protección. Estándar",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1k6De6XFr9qJ1355wLNls4j-TIiYC8GRUziY_-ZbN4Jw",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3621,6 +4701,21 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1utNTdKEuMpJUAxU_miWrBTNdFp-M7TdN"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 73 - Mi tema - Evaluación y mejora de prestaciones en un sistema en red. Técnicas y procedimientos de medidas.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/1Vn-2_zGT2SsjzDECn5Pxp4Q8IlW17OobeI88VhxT3a4/edit",
+          "driveFileName": "Tema 73 - Mi tema - Evaluación y mejora de prestaciones en un sistema en red. Técnicas y procedimientos de medidas",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "1Vn-2_zGT2SsjzDECn5Pxp4Q8IlW17OobeI88VhxT3a4",
+          "access": "private-owner-only"
         }
       ]
     },
@@ -3659,18 +4754,36 @@
           "driveFolderUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1k6Y7NlbnyoOm8hKOhsSCpcnB4OxHdmW1"
+        },
+        {
+          "academy": "Mi temario",
+          "label": "Google Docs editable",
+          "type": "mi-tema",
+          "variant": "google-doc",
+          "fileName": "Tema 74 - Mi tema - Sistemas multimedia.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/195e1114bLHNNM4kxrLfipMDSKl35dJ245KzXDioRNr0/edit",
+          "driveFileName": "Tema 74 - Mi tema - Sistemas multimedia",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Editar",
+          "driveFileId": "195e1114bLHNNM4kxrLfipMDSKl35dJ245KzXDioRNr0",
+          "access": "private-owner-only"
         }
       ]
     }
   },
   "driveFolderId": "1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "linkMode": "drive-pdf-preview",
-  "materialCount": 198,
+  "materialCount": 272,
   "preparadorOnlineReview": {
     "reviewedAt": "2026-06-16T18:49:06Z",
     "rule": "Show one Preparador online material per topic: prefer complete V2/PES theory when available; otherwise complete theory over samples or summaries.",
     "reviewedDuplicateTopics": 24,
     "hiddenMaterialCount": 28
   },
-  "pdfLinkMode": "drive-pdf-preview"
+  "pdfLinkMode": "drive-pdf-preview",
+  "myTopicsFolderId": "1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+  "myTopicsFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
+  "myTopicsAccess": "private-owner-only"
 }
