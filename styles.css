@@ -453,6 +453,10 @@ p {
   transition: color 160ms ease;
 }
 
+.topic-row.topic-row-no-marker {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .topic-row > span:last-child {
   min-width: 0;
   overflow-wrap: break-word;
@@ -487,6 +491,11 @@ p {
   gap: 10px;
   align-items: center;
   margin: 0 0 12px 52px;
+}
+
+.topic-item.topic-item-no-marker .topic-materials {
+  max-width: 100%;
+  margin-left: 0;
 }
 
 .rubric-block {

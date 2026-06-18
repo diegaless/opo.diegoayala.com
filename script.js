@@ -415,8 +415,8 @@ function renderProgressView() {
     header.append(createElement("p", "", "Mi progreso"), createElement("h2", "", "Sin resultados"));
     const list = createElement("ol", "topic-list");
     const item = createElement("li", "topic-item");
-    const row = createElement("span", "topic-row");
-    row.append(createElement("span", "topic-number", "•"), createElement("span", "", "No hay temas que coincidan."));
+    const row = createElement("span", "topic-row topic-row-no-marker");
+    row.append(createElement("span", "", "No hay temas que coincidan."));
     item.append(row);
     list.append(item);
     block.append(header, list);
@@ -440,10 +440,10 @@ function renderProgressView() {
 
 function getResourceMarker(resource) {
   const topic = resource.topic || "";
-  if (!topic || topic === "General") return "•";
+  if (!topic || topic === "General") return "";
 
   const themeNumbers = topic.match(/\d+/g);
-  if (!themeNumbers?.length) return "•";
+  if (!themeNumbers?.length) return "";
 
   return `T${themeNumbers.map((number) => number.padStart(2, "0")).join("/")}`;
 }
@@ -468,11 +468,14 @@ function buildResourceItem(resource) {
   const item = createElement("li", "topic-item");
   item.dataset.phaseResource = "";
 
-  const row = createElement("span", "topic-row");
-  const number = createElement("span", "topic-number phase-marker", getResourceMarker(resource));
-  if (resource.topic && resource.topic !== "General") number.title = resource.topic;
+  const marker = getResourceMarker(resource);
+  const row = createElement("span", marker ? "topic-row" : "topic-row topic-row-no-marker");
+  if (!marker) item.classList.add("topic-item-no-marker");
+  const number = marker ? createElement("span", "topic-number phase-marker", marker) : null;
+  if (number && resource.topic && resource.topic !== "General") number.title = resource.topic;
   const title = createElement("span", "", resource.title);
-  row.append(number, title);
+  if (number) row.append(number);
+  row.append(title);
 
   const panel = createElement("div", "topic-materials phase-materials");
   const meta = createElement("span", "phase-meta");
@@ -518,8 +521,8 @@ function renderSelectedPhase() {
     header.append(createElement("p", "", phase.label), createElement("h2", "", phase.title));
     const list = createElement("ol", "topic-list");
     const item = createElement("li", "topic-item");
-    const row = createElement("span", "topic-row");
-    row.append(createElement("span", "topic-number phase-marker", "•"), createElement("span", "", "No hay recursos que coincidan."));
+    const row = createElement("span", "topic-row topic-row-no-marker");
+    row.append(createElement("span", "", "No hay recursos que coincidan."));
     item.append(row);
     list.append(item);
     block.append(header, list);
