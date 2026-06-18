@@ -770,9 +770,13 @@
       "title": "Primera prueba - Parte B: Desarrollo de un tema por escrito",
       "legal": "Parte B de la primera prueba.",
       "description": "Temario oficial por número, academia y tipo de material. Los PDFs ya enlazan al visor de Drive cuando están subidos.",
-      "resourceCount": 217,
-      "publicLinkCount": 217,
+      "resourceCount": 219,
+      "publicLinkCount": 219,
       "sections": [
+        {
+          "name": "Oficial Murcia 2025/Parte B - Rúbrica y criterios",
+          "count": 2
+        },
         {
           "name": "Esquemas_y_resumenes/Bases de datos",
           "count": 1
@@ -782,12 +786,24 @@
           "count": 1
         },
         {
-          "name": "Introducciones_por_tema/Tema 01",
-          "count": 5
+          "name": "Introducciones_por_tema/Tema 02",
+          "count": 2
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 31",
+          "count": 2
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 04",
+          "count": 1
         },
         {
           "name": "Introducciones_por_tema/Tema 01 y 02",
           "count": 1
+        },
+        {
+          "name": "Introducciones_por_tema/Tema 01",
+          "count": 5
         },
         {
           "name": "Introducciones_por_tema/Tema 01 y 13",
@@ -795,18 +811,6 @@
         },
         {
           "name": "Introducciones_por_tema/Tema 01 y 31",
-          "count": 1
-        },
-        {
-          "name": "Introducciones_por_tema/Tema 02",
-          "count": 2
-        },
-        {
-          "name": "Introducciones_por_tema/Tema 03",
-          "count": 1
-        },
-        {
-          "name": "Introducciones_por_tema/Tema 04",
           "count": 1
         },
         {
@@ -818,8 +822,8 @@
           "count": 2
         },
         {
-          "name": "Introducciones_por_tema/Tema 31",
-          "count": 2
+          "name": "Introducciones_por_tema/Tema 03",
+          "count": 1
         },
         {
           "name": "Temario_y_resumenes_por_tema",
@@ -827,6 +831,10 @@
         }
       ],
       "academies": [
+        {
+          "name": "CARM/BORM",
+          "count": 2
+        },
         {
           "name": "Preparador online",
           "count": 93
@@ -841,6 +849,10 @@
         }
       ],
       "types": [
+        {
+          "name": "criterios oficiales",
+          "count": 2
+        },
         {
           "name": "esquema",
           "count": 2
@@ -859,6 +871,23 @@
         }
       ],
       "resources": [
+        {
+          "title": "Murcia 2025 - Parte B: criterios oficiales para el desarrollo del tema",
+          "phase": "01_Primera_prueba_B_Tema_escrito",
+          "section": "Oficial Murcia 2025/Parte B - Rúbrica y criterios",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Último oficial localizado",
+          "statusKind": "current",
+          "note": "La Parte B no publica un ejercicio práctico separado: se desarrolla por escrito uno de los temas sorteados. Este PDF contiene la rúbrica oficial aplicable.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosValoracion_INFORMATICA_01.pdf&IDCONTENIDO=199410&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
         {
           "title": "Resumen Modelo Entidad-Relacion.pdf",
           "phase": "01_Primera_prueba_B_Tema_escrito",
@@ -3679,6 +3708,23 @@
           "url": "https://drive.google.com/file/d/1k6Y7NlbnyoOm8hKOhsSCpcnB4OxHdmW1/preview",
           "urlMode": "drive-pdf-preview",
           "driveFileId": "1k6Y7NlbnyoOm8hKOhsSCpcnB4OxHdmW1"
+        },
+        {
+          "title": "Murcia 2025 - Parte B: normas oficiales de actuación",
+          "phase": "01_Primera_prueba_B_Tema_escrito",
+          "section": "Oficial Murcia 2025/Parte B - Rúbrica y criterios",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Último oficial localizado",
+          "statusKind": "current",
+          "note": "Normas de actuación del tribunal: anonimato, material permitido, bolígrafo y condiciones de realización.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosActuacion_INFORMATICA_01.pdf&IDCONTENIDO=199409&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
         }
       ]
     },
@@ -3689,24 +3735,28 @@
       "title": "Primera prueba - Parte A: Prueba de carácter práctico",
       "legal": "Parte A de la primera prueba.",
       "description": "Prácticos organizados por área: programación, bases de datos, redes, sistemas, circuitos y web/XML.",
-      "resourceCount": 402,
-      "publicLinkCount": 402,
+      "resourceCount": 403,
+      "publicLinkCount": 403,
       "sections": [
         {
-          "name": "Practicos_por_area/Programacion",
-          "count": 159
+          "name": "Oficial Murcia 2025/Parte A - Prueba práctica",
+          "count": 1
+        },
+        {
+          "name": "Examenes_y_correcciones_practicas/Bases de datos",
+          "count": 1
+        },
+        {
+          "name": "Examenes_y_correcciones_practicas/Programacion",
+          "count": 1
+        },
+        {
+          "name": "Examenes_y_correcciones_practicas/Redes",
+          "count": 2
         },
         {
           "name": "Practicos_por_area/Bases de datos",
           "count": 81
-        },
-        {
-          "name": "Practicos_por_area/Sistemas operativos",
-          "count": 40
-        },
-        {
-          "name": "Practicos_por_area/Redes",
-          "count": 35
         },
         {
           "name": "Practicos_por_area/Circuitos digitales",
@@ -3717,27 +3767,31 @@
           "count": 34
         },
         {
-          "name": "Practicos_por_area/Web XML scripts",
-          "count": 12
-        },
-        {
           "name": "Practicos_por_area/Ingenieria software",
           "count": 3
         },
         {
-          "name": "Examenes_y_correcciones_practicas/Redes",
-          "count": 2
+          "name": "Practicos_por_area/Programacion",
+          "count": 159
         },
         {
-          "name": "Examenes_y_correcciones_practicas/Bases de datos",
-          "count": 1
+          "name": "Practicos_por_area/Redes",
+          "count": 35
         },
         {
-          "name": "Examenes_y_correcciones_practicas/Programacion",
-          "count": 1
+          "name": "Practicos_por_area/Sistemas operativos",
+          "count": 40
+        },
+        {
+          "name": "Practicos_por_area/Web XML scripts",
+          "count": 12
         }
       ],
       "academies": [
+        {
+          "name": "CARM/BORM",
+          "count": 1
+        },
         {
           "name": "Preparador online",
           "count": 323
@@ -3753,15 +3807,36 @@
       ],
       "types": [
         {
-          "name": "practico",
-          "count": 398
+          "name": "examen oficial",
+          "count": 1
         },
         {
           "name": "correccion",
           "count": 4
+        },
+        {
+          "name": "practico",
+          "count": 398
         }
       ],
       "resources": [
+        {
+          "title": "Murcia 2025 - Parte A: examen práctico oficial 590107 Informática",
+          "phase": "02_Primera_prueba_A_Practico",
+          "section": "Oficial Murcia 2025/Parte A - Prueba práctica",
+          "type": "examen oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Último oficial localizado",
+          "statusKind": "current",
+          "note": "PDF oficial publicado por CARM para la prueba práctica de la especialidad 590107 Informática.",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Examen+590-107.pdf&IDCONTENIDO=201654&IDTIPO=60&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579%2C74628",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
         {
           "title": "TEMA 40 Diseno de Base de Datos Relacionales (1).pdf",
           "phase": "02_Primera_prueba_A_Practico",
@@ -9015,12 +9090,12 @@
       ],
       "academies": [
         {
-          "name": "Preparador online",
-          "count": 57
-        },
-        {
           "name": "General",
           "count": 1
+        },
+        {
+          "name": "Preparador online",
+          "count": 57
         }
       ],
       "types": [
@@ -10546,12 +10621,12 @@
       "title": "Novedades PES 590 · Informática 107",
       "legal": "Seguimiento filtrado de publicaciones oficiales para PES 590, especialidad 107 Informática, en Murcia.",
       "description": "Vista rápida solo con publicaciones oficiales relacionadas con Informática de Secundaria, PES 590 y el procedimiento OPOSEC25.",
-      "resourceCount": 12,
-      "publicLinkCount": 12,
+      "resourceCount": 14,
+      "publicLinkCount": 14,
       "sections": [
         {
           "name": "Novedades/Informática 590107",
-          "count": 6
+          "count": 8
         },
         {
           "name": "Novedades/Oposición 2025 PES",
@@ -10565,7 +10640,7 @@
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 11
+          "count": 13
         },
         {
           "name": "Educarm/CARM",
@@ -10579,7 +10654,7 @@
         },
         {
           "name": "criterios oficiales",
-          "count": 3
+          "count": 5
         },
         {
           "name": "prueba práctica",
@@ -10810,6 +10885,40 @@
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
           "urlMode": "official-pdf",
           "clickLabel": "PDF"
+        },
+        {
+          "title": "590107 Informática - criterios de valoración oficiales 2025 Tribunal 02",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Informática 590107",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Copia publicada en el portal de tribunales para el Tribunal 02 de Informática 590107.",
+          "hasPublicLink": true,
+          "url": "https://servicios.educarm.es/neweb/resources/admin/File/publicacionesTribunales/OPOSEC25/CriteriosValoracion_INFORMATICA_02.pdf",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "590107 Informática - criterios de actuación oficiales 2025 Tribunal 02",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Novedades/Informática 590107",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "2025",
+          "status": "Vigente 2025",
+          "statusKind": "current",
+          "note": "Copia publicada en el portal de tribunales para el Tribunal 02 de Informática 590107.",
+          "hasPublicLink": true,
+          "url": "https://servicios.educarm.es/neweb/resources/admin/File/publicacionesTribunales/OPOSEC25/CriteriosActuacion_INFORMATICA_02.pdf",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
         }
       ]
     },
@@ -10824,36 +10933,36 @@
       "publicLinkCount": 161,
       "sections": [
         {
-          "name": "Correcciones_y_simulacros/General",
-          "count": 72
-        },
-        {
-          "name": "Bibliografia_por_area/Programacion",
-          "count": 23
-        },
-        {
-          "name": "Bibliografia_por_area/General",
-          "count": 20
-        },
-        {
           "name": "Bibliografia_por_area/Bases de datos",
           "count": 16
-        },
-        {
-          "name": "Bibliografia_por_area/Sistemas operativos",
-          "count": 10
         },
         {
           "name": "Bibliografia_por_area/Circuitos digitales",
           "count": 6
         },
         {
-          "name": "Bibliografia_por_area/Redes",
-          "count": 6
+          "name": "Bibliografia_por_area/General",
+          "count": 20
         },
         {
           "name": "Bibliografia_por_area/Ingenieria software",
           "count": 5
+        },
+        {
+          "name": "Bibliografia_por_area/Programacion",
+          "count": 23
+        },
+        {
+          "name": "Bibliografia_por_area/Redes",
+          "count": 6
+        },
+        {
+          "name": "Bibliografia_por_area/Sistemas operativos",
+          "count": 10
+        },
+        {
+          "name": "Correcciones_y_simulacros/General",
+          "count": 72
         },
         {
           "name": "Otros_documentos",
@@ -12981,6 +13090,6 @@
       ]
     }
   ],
-  "totalResources": 942,
-  "publicLinkCount": 942
+  "totalResources": 947,
+  "publicLinkCount": 947
 }
