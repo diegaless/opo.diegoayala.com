@@ -14,6 +14,7 @@ const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
 
 let currentView = "topics";
+let materialsData = null;
 let phasesData = null;
 
 function setTheme(theme) {
@@ -76,6 +77,17 @@ function getMaterialLabel(material) {
   const parts = [material.label || material.fileName];
   if (material.pages) parts.push(`${material.pages} pag.`);
   return parts.join(" - ");
+}
+
+function formatDate(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("es-ES", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  }).format(date);
 }
 
 function createOption(value, text) {
@@ -169,11 +181,14 @@ async function loadMaterials() {
     const response = await fetch(materialsUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`No se pudo cargar ${materialsUrl}`);
     const data = await response.json();
+    materialsData = data;
 
     topics.forEach((topic) => {
       const key = getTopicKey(topic);
       buildMaterialControls(topic, data.topics?.[key]);
     });
+
+    if (currentView === "progress") renderCurrentView();
   } catch (error) {
     console.warn(error);
   }
@@ -256,6 +271,171 @@ function getOrderedSectionGroups(phase, groups) {
   return [...groups.entries()].sort(
     ([left], [right]) => (sectionOrder.get(left) ?? 999) - (sectionOrder.get(right) ?? 999),
   );
+}
+
+function getTopicEntries() {
+  return Object.entries(materialsData?.topics || {})
+    .map(([key, topic]) => ({ key, topic }))
+    .sort((left, right) => Number(left.key) - Number(right.key));
+}
+
+function getTopicMaterial(topic, predicate) {
+  return (topic.materials || []).find(predicate);
+}
+
+function getProgressState(topic) {
+  const myTopic = getTopicMaterial(topic, (material) => material.academy === "Mi temario");
+  const examples = (topic.materials || []).filter((material) => material.academy === "Ejemplos míos");
+  const fullExample = examples.find((material) => material.variant === "tema-desarrollado");
+  const memorySheet = examples.find((material) => material.variant === "memorizacion");
+
+  return {
+    fullExample,
+    memorySheet,
+    myTopic,
+    updatedAt: myTopic?.progressUpdatedAt,
+  };
+}
+
+function progressTopicMatches(entry, query) {
+  if (!query) return true;
+  const state = getProgressState(entry.topic);
+  return normalize(
+    [
+      entry.key,
+      entry.topic.title,
+      entry.topic.block,
+      state.myTopic?.progressLabel,
+      state.fullExample?.label,
+      state.memorySheet?.label,
+    ].join(" "),
+  ).includes(query);
+}
+
+function buildProgressOverview(entries) {
+  const progress = materialsData?.myTopicProgress || {};
+  const templatesReady = progress.templatesReady ?? entries.filter(({ topic }) => getProgressState(topic).myTopic).length;
+  const examplesReady = progress.examplesAvailable ?? entries.filter(({ topic }) => getProgressState(topic).fullExample).length;
+  const memoryReady = progress.memorySheetsAvailable ?? entries.filter(({ topic }) => getProgressState(topic).memorySheet).length;
+  const total = progress.totalTopics ?? entries.length;
+
+  const block = createElement("article", "topic-block progress-overview");
+  const header = createElement("header", "block-header");
+  header.append(createElement("p", "", "Mi progreso"), createElement("h2", "", "Estado de mis temas"));
+
+  const dashboard = createElement("div", "progress-dashboard");
+  [
+    ["Plantillas", `${templatesReady}/${total}`],
+    ["Mis versiones", `${progress.myVersionsComplete || 0} completas`],
+    ["Ejemplos", `${examplesReady} disponibles`],
+    ["Repasos", `${memoryReady} disponibles`],
+    ["Revisión", formatDate(progress.updatedAt)],
+  ].forEach(([label, value]) => {
+    const stat = createElement("span", "progress-stat");
+    stat.append(createElement("span", "progress-stat-label", label), createElement("strong", "", value));
+    dashboard.append(stat);
+  });
+
+  block.append(header, dashboard);
+  return block;
+}
+
+function buildProgressItem(entry) {
+  const { key, topic } = entry;
+  const state = getProgressState(topic);
+  const item = createElement("li", "topic-item progress-item");
+
+  const row = createElement("span", "topic-row");
+  row.append(createElement("span", "topic-number", key), createElement("span", "", topic.title));
+
+  const panel = createElement("div", "topic-materials phase-materials progress-materials");
+  const meta = createElement("span", "phase-meta progress-meta");
+
+  const chips = [];
+  chips.push({
+    kind: state.myTopic ? "is-done" : "is-pending",
+    text: state.myTopic?.progressLabel || "Sin plantilla",
+  });
+  chips.push({ kind: "is-pending", text: "Mi versión pendiente" });
+  if (state.fullExample) chips.push({ kind: "is-done", text: "Ejemplo completo" });
+  if (state.memorySheet) chips.push({ kind: "is-done", text: "Repaso listo" });
+  if (state.updatedAt) chips.push({ text: `Rev. ${formatDate(state.updatedAt)}` });
+
+  chips.forEach(({ text, kind }) => {
+    meta.append(createElement("span", kind ? `phase-meta-chip ${kind}` : "phase-meta-chip", text));
+  });
+
+  const actions = createElement("span", "progress-actions");
+  [
+    { item: state.myTopic, label: "Editar" },
+    { item: state.fullExample, label: "Leer" },
+    { item: state.memorySheet, label: "Repasar" },
+  ].forEach(({ item: material, label }) => {
+    if (!material?.url) return;
+    const link = document.createElement("a");
+    link.className = "material-link progress-link";
+    link.href = material.url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.textContent = material.clickLabel || label;
+    link.title = material.driveFileName || material.label || label;
+    actions.append(link);
+  });
+
+  panel.append(meta, actions);
+  item.append(row, panel);
+  return item;
+}
+
+function renderProgressView() {
+  if (!phaseView) return;
+
+  if (!materialsData?.topics) {
+    phaseView.replaceChildren();
+    updateCount(0);
+    return;
+  }
+
+  const query = normalize(searchInput?.value.trim() || "");
+  const entries = getTopicEntries();
+  const filteredEntries = entries.filter((entry) => progressTopicMatches(entry, query));
+  const groups = filteredEntries.reduce((map, entry) => {
+    const block = entry.topic.block || "Temario";
+    if (!map.has(block)) map.set(block, []);
+    map.get(block).push(entry);
+    return map;
+  }, new Map());
+
+  const fragment = document.createDocumentFragment();
+  fragment.append(buildProgressOverview(entries));
+
+  if (!filteredEntries.length) {
+    const block = createElement("article", "topic-block");
+    const header = createElement("header", "block-header");
+    header.append(createElement("p", "", "Mi progreso"), createElement("h2", "", "Sin resultados"));
+    const list = createElement("ol", "topic-list");
+    const item = createElement("li", "topic-item");
+    const row = createElement("span", "topic-row");
+    row.append(createElement("span", "topic-number", "•"), createElement("span", "", "No hay temas que coincidan."));
+    item.append(row);
+    list.append(item);
+    block.append(header, list);
+    fragment.append(block);
+  } else {
+    groups.forEach((blockEntries, blockName) => {
+      const block = createElement("article", "topic-block");
+      const header = createElement("header", "block-header");
+      header.append(createElement("p", "", "Mi progreso"), createElement("h2", "", blockName));
+      const list = createElement("ol", "topic-list");
+      blockEntries.forEach((entry) => list.append(buildProgressItem(entry)));
+      block.append(header, list);
+      fragment.append(block);
+    });
+  }
+
+  phaseView.replaceChildren(fragment);
+  updateCount(filteredEntries.length);
+  if (emptyState) emptyState.hidden = filteredEntries.length !== 0;
 }
 
 function getResourceMarker(resource) {
@@ -399,6 +579,14 @@ function renderCurrentView() {
     phaseView.hidden = true;
     searchInput.placeholder = "Buscar tema...";
     filterTopics();
+    return;
+  }
+
+  if (currentView === "progress") {
+    topicView.hidden = true;
+    phaseView.hidden = false;
+    searchInput.placeholder = "Buscar tema...";
+    renderProgressView();
     return;
   }
 

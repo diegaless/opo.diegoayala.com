@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:05:00.000Z",
+  "generatedAt": "2026-06-18T14:45:00.000Z",
   "driveRootUrl": "https://drive.google.com/drive/folders/1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "access": "restricted-google-drive",
   "topics": {
@@ -68,7 +68,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1nGzgO2sVpw-k7-Z0ymE4mDGPMrK35i4izWZgb1fE8Rg",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         },
         {
           "academy": "Ejemplos míos",
@@ -83,6 +96,27 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Leer",
           "driveFileId": "14tVf7Dtv4C427r6p58fDtLufvStsjBJlJyrjj14P9hU",
+          "access": "private-owner-only",
+          "sourceReferences": [
+            "BOE 13/02/1996",
+            "Unicode 17.0.0",
+            "RFC 3629 UTF-8",
+            "W3C Character Model"
+          ]
+        },
+        {
+          "academy": "Ejemplos míos",
+          "label": "Para memorizar",
+          "type": "repaso",
+          "variant": "memorizacion",
+          "fileName": "Tema 01 - Para memorizar - Representación y comunicación de la información.gdoc",
+          "extension": ".gdoc",
+          "url": "https://docs.google.com/document/d/14-YWtmENpiQz7eRt_Isn1p9e7O9iwwXa7_sAzI5_A4U/edit",
+          "driveFileName": "Tema 01 - Para memorizar - Representación y comunicación de la información",
+          "driveFolderUrl": "https://drive.google.com/drive/folders/1eHui7VcuJnikDdhLUjT_N-juHbdz2Z0t",
+          "urlMode": "google-doc-edit",
+          "clickLabel": "Repasar",
+          "driveFileId": "14-YWtmENpiQz7eRt_Isn1p9e7O9iwwXa7_sAzI5_A4U",
           "access": "private-owner-only",
           "sourceReferences": [
             "BOE 13/02/1996",
@@ -158,7 +192,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1aISuJYxIzUS77eYRa87ACj5iJ5EgEJ6Je-DZ60-gerw",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -213,7 +260,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1dOzbYhoUm4XvhNfX-2KLyIfrrdyvkCw_tTea24BWW30",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -268,7 +328,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1IvWZArBk4e3mpanzP11q5iaRl-eplHn6We8KWr58NQE",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -323,7 +396,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1FLSrDIvTKGnnGzudBA44geZzCBMmyno9CoOZxojWLNg",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -392,7 +478,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1xUXE9TH9s7_J6JXFbALxMqYjxpy7nXWDOt0IzLOHy_I",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -461,7 +560,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1yq5d47Zhnr2lui1C6Z6pdkz2VIXShU0wx8h3K_n13UE",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -516,7 +628,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1qRfX-3zKucpG7b5u1hoi4gugUp6Ix8ttRxwmGTFGgG8",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -588,7 +713,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1rPWdNo2grM--wUq3ktLnP1OC-zrddOgRopbTlaLEfIM",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -643,7 +781,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1e6x2g6zQfXwG_B0IipxRkpLJ_8MApwpUZWc571hV0I8",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -715,7 +866,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1Dh1sf7XspcqZrRnZnQqA1xrNM0SRgeEnQ7A-oRMhdLg",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -787,7 +951,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1R3T1hcj7sjHd_hO4E4g9HvhRMFtaKWe8uVmPDif-COI",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -873,7 +1050,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1hgCZCSQTKH0yl5uP4sTGW0X7Um6zHaDfMH_D3Rdfn0w",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -959,7 +1149,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1gZ2WnHCZ8o7jpW2KpUHZiUd1_phhFmxRLcSXnkj2mZk",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1028,7 +1231,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1poWq7-dPtX-GT6jdZaUXlH5Yc2JRXDYl_3gs5jiQAEE",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1100,7 +1316,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "16l8HE0SBvBALD8h444X7M592FVeQ573TEA1q-q26LmQ",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1169,7 +1398,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1zPwlGau2PBH34BoBUEzSPNiwOaEC5y_6af2hsQIUzSU",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1224,7 +1466,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1_0U-kjWeVPX5oi7yNlP1P5cJz2JtYgyTxhc-fd9E0z4",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1293,7 +1548,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "14ckGhF3LkzRodhI307sIo_1Ce3BDLZBA4espg9DWWQQ",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1348,7 +1616,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "12voBJFgREdVG1dN7dZIHVrERPLdND8Q7-qtIJpYqjh8",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1401,7 +1682,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1a1grRYURtmq6nim4JQOET8-eIhoEXhGa9Da78ILjJys",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1454,7 +1748,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "168iF08ngFBtvfR52B6lZWkwaBNgG7zrfZ-yQuWOrn1I",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1526,7 +1833,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "10avhXvVNBq0F-Z2LBPtVkBayAlJzwM62kxm6ihalwtY",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1598,7 +1918,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1aXxsb1ivM4vjac26y-MEWyLATt0gMbRaxAU0AMY2ssw",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1668,7 +2001,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1ejFrVpCueUiEl_yURJIgU-_pxNzkS4PMGyG50x1JUuI",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1738,7 +2084,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1c8yZCeqS_p3aO0GKp-I7e11xW-Xvh0tF29Ai7lYZqkk",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1808,7 +2167,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1nlGpwcnlqCIzxfH3MYwhoTKj1-q0HI9_RMFmuYpJoJk",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1861,7 +2233,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1w01U4n8oz-lrMRyiSBsAovyotuWNWs8lK4mpgIopcIc",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -1931,7 +2316,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "16Y5dFw1MMO_c_dZnPcZKLGoU-7OCy3duGE0s4iS4wM4",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2015,7 +2413,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1AOR9Lqa6lengg4zLydBiXE8lledmtXpxLuJC2W7ZaKk",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2085,7 +2496,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "19SKwtTU9nBVsUQ6D8nTN5gTgi1-wdQL269LF6l0BnTc",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2169,7 +2593,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1Je5xHEc8pvjxyU5g5YXL0Z5iDqAyECwcWc59jQb3uNA",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2239,7 +2676,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1Bh4EdcoucFDYwvMivnZcNQq-hITy_SN0U4XyetJQKvk",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2309,7 +2759,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1fKYDtJupJQdH2BCGC41hwgMF5ivHW3Zs2DEzj2yLONo",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2364,7 +2827,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1OtQOMZRIIB55kZUY6mXSJuT3YBETQV4RN2Kw4ycAa2I",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2431,7 +2907,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1tdyzWRr_EFOiS3karSFvULFDRfABvfPzy8_Gnj3dHd0",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2484,7 +2973,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1o9wgzzLeIf9dxV1_-Kd6n_htACHY3vtMZdoOe5VFUTs",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2537,7 +3039,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1eNIkQTyLJdJhn_Gigw0wkiqkjHnm_Tpq3tHUyXf6rUY",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2621,7 +3136,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1CfCh1hn02U9fii-YN3r1iq2dEqhKMyNsOY_a4A0Bgic",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2691,7 +3219,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1ga6sCjKh7Ir7EY4ZfooAxAXgRJrSMbDkWYRX0U9FMD8",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2761,7 +3302,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1r8bQxy_avCFD4gmOMFSTO5wviAMAeVgXAnO6SEd2W2c",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2814,7 +3368,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1pXXwxqUknNWJ1otYg4R-tSrugMDaxz4W23EW2h10thM",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2867,7 +3434,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1UCkGfwDID_GnX6VwDxtmH6PFVrYfCZwlJUdlPcjfHUQ",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -2920,7 +3500,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1mXCKa1kt6GfVQKw50dalVkYivSZb6FdRHoh-zAdpHzw",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3004,7 +3597,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1CnFTOVhwgsgg_ivvHWaN29lR1_oh9KKiMkSzA_8DD08",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3074,7 +3680,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1GEur_WTMqRSAH8v03yabCF1_KwA5pmLpOcdZ8Or5HIU",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3144,7 +3763,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "18uCZm8DmbNwQx7KiEblCezB68uTr2X1hbJoUP3bI760",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3214,7 +3846,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "10-GGYQ6hXHAfEkNW2VqcbHRVLoDY8H6XxfuTc0YDWRk",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3267,7 +3912,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1BDROflOyVxgXeY2nGPnQ050QR95NBO3It68SP_tg74k",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3337,7 +3995,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1mwfr0xU-2qulFPRjrn66ZCHxPXGWZJCVr5xYFT8ljdU",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3407,7 +4078,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1JZxdAGjf7_jnGrFfa8rnbQNlvsqohD5r1MedFjYq0F4",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3460,7 +4144,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "19QY41IRfgGrVJt22ONMSatwFKYVFHDPOpL0OzRv3XNo",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3530,7 +4227,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1QnniICU1PlPWo6JZyXs1xSy6XMBK4hNLyLPIwKtFjr8",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3600,7 +4310,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "13g2_QSTjEJ-M-tFdVKS43b7kz1jywZY0b6QJvHZyscg",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3653,7 +4376,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "19ua09vuvmXDcV63hcGlxS5uuwNLqfL53YT1m0fuKu5E",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3723,7 +4459,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1jU8Phc3-QYBGMMBrjvNulmNp7cChHY0i66hlPARgT-M",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3776,7 +4525,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1j7HLzDExV5-d2q87XMJbpVU2H8LuItn-LiUdZsq-Zc0",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3829,7 +4591,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "11f-I5-YLai63YzibH1RrQFG-79vnQZNKET2o8zRxIvI",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3896,7 +4671,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "15c-J3exdUFf8flrZHC8aeByZyE4c1FDfE8BFo5AlSW0",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -3966,7 +4754,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1AFjpfc3ZkS-bMlEyPmoC3Jaf50XGr11omtHNVgWxv54",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4036,7 +4837,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1fKfzlvgBIpazmAs3bxAvjyqToIW1fQivm-az7pTaUmc",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4106,7 +4920,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1gDvrbBE9AutJZlp10Kqr372AgG1Y0FVUhXfJcdV79Kk",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4173,7 +5000,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "16fki2Vwh7KI-cN-FluRooW_6iu_ObX0sMMCaM5F7ZEI",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4226,7 +5066,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1s7rKr0-S97MgynmXDBc08n17ymXcAAdRb2sr2reiHIs",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4295,7 +5148,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1f5CQwL7qCl2LH7BAy6XJEk7FjPuL8mjpIQhUxa1ZK0o",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4348,7 +5214,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "15CZhNNaoH_X6pjel12-ZTsWOdzEPc4oe9szyuSgtFh0",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4418,7 +5297,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1H-9mkCCBJezCDfMvg3KFfk6J89lai3nLpJVjV4g6rJI",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4471,7 +5363,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1tYqE-LmFv0c6LoPJ6pllve8jNLwOIdL0lTHw05vRTI4",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4524,7 +5429,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1emz6DUW85LnPPfyaonhQNaj48k9m-1BRpgGfbqSP-4Q",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4577,7 +5495,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1quaKHLZGDysW6HzXsk5smjNqxmKJy_-GNVm9PgwxxPI",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4630,7 +5561,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "137O7f7TrKwC8l_-Cjt1J-ZWgHIVH0P-bwk8FL3c-_dI",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4683,7 +5627,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1k6De6XFr9qJ1355wLNls4j-TIiYC8GRUziY_-ZbN4Jw",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4736,7 +5693,20 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "1Vn-2_zGT2SsjzDECn5Pxp4Q8IlW17OobeI88VhxT3a4",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     },
@@ -4789,14 +5759,27 @@
           "urlMode": "google-doc-edit",
           "clickLabel": "Editar",
           "driveFileId": "195e1114bLHNNM4kxrLfipMDSKl35dJ245KzXDioRNr0",
-          "access": "private-owner-only"
+          "access": "private-owner-only",
+          "progressStage": "template",
+          "progressLabel": "Plantilla lista",
+          "progressUpdatedAt": "2026-06-18",
+          "templateVersion": "v2-rubrica-10",
+          "templateChecklist": [
+            "introduccion",
+            "indice mental",
+            "desarrollo",
+            "actualizacion",
+            "conclusion",
+            "bibliografia",
+            "checklist rubrica"
+          ]
         }
       ]
     }
   },
   "driveFolderId": "1WaL3rtwpQpQI8iagVFF-qVMRnthlak7p",
   "linkMode": "drive-pdf-preview",
-  "materialCount": 273,
+  "materialCount": 274,
   "preparadorOnlineReview": {
     "reviewedAt": "2026-06-16T18:49:06Z",
     "rule": "Show one Preparador online material per topic: prefer complete V2/PES theory when available; otherwise complete theory over samples or summaries.",
@@ -4808,5 +5791,15 @@
   "myTopicsFolderUrl": "https://drive.google.com/drive/folders/1O35wYpp_7fjiGRaPMcoG6BswntNmdzZ8",
   "myTopicsAccess": "private-owner-only",
   "myExamplesFolderId": "1eHui7VcuJnikDdhLUjT_N-juHbdz2Z0t",
-  "myExamplesFolderUrl": "https://drive.google.com/drive/folders/1eHui7VcuJnikDdhLUjT_N-juHbdz2Z0t"
+  "myExamplesFolderUrl": "https://drive.google.com/drive/folders/1eHui7VcuJnikDdhLUjT_N-juHbdz2Z0t",
+  "myTopicProgress": {
+    "updatedAt": "2026-06-18T14:45:00.000Z",
+    "templateVersion": "v2-rubrica-10",
+    "totalTopics": 74,
+    "templatesReady": 74,
+    "myVersionsInProgress": 0,
+    "myVersionsComplete": 0,
+    "examplesAvailable": 2,
+    "memorySheetsAvailable": 1
+  }
 }

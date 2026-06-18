@@ -334,6 +334,56 @@ p {
   font-weight: 760;
 }
 
+.progress-dashboard {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.progress-stat {
+  display: grid;
+  min-width: 132px;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 74%, transparent);
+  padding: 10px 12px;
+}
+
+.progress-stat-label {
+  color: var(--quiet);
+  font-size: 0.66rem;
+  font-weight: 780;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.progress-stat strong {
+  min-width: 0;
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 720;
+  overflow-wrap: anywhere;
+}
+
+.progress-materials {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.progress-actions {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.progress-link {
+  min-width: 92px;
+}
+
 .syllabus {
   display: grid;
   min-width: 0;
@@ -680,6 +730,14 @@ p {
     grid-template-columns: 1fr;
     margin-left: 42px;
     max-width: calc(100% - 42px);
+  }
+
+  .progress-actions {
+    justify-content: stretch;
+  }
+
+  .progress-actions .material-link {
+    flex: 1 1 96px;
   }
 
   .rubric-detail {
