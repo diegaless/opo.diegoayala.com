@@ -243,6 +243,7 @@ function resourceMatches(resource, query) {
       resource.academy,
       resource.topic,
       resource.area,
+      ...getResourceDocumentTags(resource).map(({ text }) => text),
       resource.status,
       resource.officialDate,
       resource.note,
@@ -448,8 +449,61 @@ function getResourceMarker(resource) {
   return `T${themeNumbers.map((number) => number.padStart(2, "0")).join("/")}`;
 }
 
+function getResourceDocumentTags(resource) {
+  const rawText = [
+    resource.title,
+    resource.section,
+    resource.type,
+    resource.academy,
+    resource.area,
+    resource.note,
+    resource.url,
+  ].join(" ");
+  const text = normalize(rawText);
+  const tags = [];
+
+  const isOfficialMurcia =
+    resource.academy === "CARM/BORM" ||
+    text.includes("carm.es") ||
+    text.includes("borm.es") ||
+    text.includes("rrhheducacion.carm.es") ||
+    (text.includes("murcia") && text.includes("oficial"));
+  const isOfficialOtherRegion =
+    resource.officialScope === "other-ccaa" ||
+    resource.sourceKind === "official-other-ccaa";
+
+  if (isOfficialMurcia) {
+    tags.push({ text: "Oficial Murcia", kind: "is-doc-tag is-official-murcia" });
+  } else if (isOfficialOtherRegion) {
+    tags.push({ text: "Oficial otra CCAA", kind: "is-doc-tag is-official-other" });
+  }
+
+  const isRubric = text.includes("rubrica") || text.includes("criterios de valoracion");
+  const isCriteria =
+    text.includes("criterio") ||
+    text.includes("criterios") ||
+    text.includes("baremo") ||
+    text.includes("especificaciones oficiales");
+  const isPractical =
+    resource.phase === "02_Primera_prueba_A_Practico" ||
+    text.includes("practico") ||
+    text.includes("prueba practica") ||
+    text.includes("simulacro") ||
+    text.includes("correccion");
+
+  if (isRubric) tags.push({ text: "Rúbrica", kind: "is-doc-tag is-rubric" });
+  if (isPractical) tags.push({ text: "Práctico", kind: "is-doc-tag is-practical" });
+  if (isCriteria) tags.push({ text: "Criterios", kind: "is-doc-tag is-criteria" });
+
+  if (!isRubric && !isPractical && !isCriteria) {
+    tags.push({ text: "Referencia", kind: "is-doc-tag is-reference" });
+  }
+
+  return tags;
+}
+
 function getResourceMetaItems(resource) {
-  const items = [];
+  const items = [...getResourceDocumentTags(resource)];
   if (resource.topic && resource.topic !== "General") items.push({ text: resource.topic });
   if (resource.academy) items.push({ text: resource.academy });
   if (resource.type) items.push({ text: resource.type });

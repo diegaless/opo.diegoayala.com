@@ -323,6 +323,35 @@ p {
   white-space: nowrap;
 }
 
+.phase-meta-chip.is-doc-tag {
+  display: inline-flex;
+  min-height: 22px;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, currentColor 34%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+  padding: 0 8px;
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 780;
+  letter-spacing: 0.02em;
+}
+
+.phase-meta-chip.is-official-murcia {
+  color: var(--accent);
+}
+
+.phase-meta-chip.is-official-other,
+.phase-meta-chip.is-rubric,
+.phase-meta-chip.is-practical,
+.phase-meta-chip.is-criteria {
+  color: var(--ink);
+}
+
+.phase-meta-chip.is-reference {
+  color: var(--quiet);
+}
+
 .phase-meta-chip.is-current,
 .phase-meta-chip.is-done {
   color: var(--accent);
