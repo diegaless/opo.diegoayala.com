@@ -10833,6 +10833,188 @@
       ]
     },
     {
+      "id": "97_Que_cae_mas",
+      "order": 97,
+      "label": "Tendencias",
+      "title": "Qué cae más - prácticos reales Murcia",
+      "legal": "Cruce de los prácticos oficiales de Informática 590107 localizados en Murcia.",
+      "description": "Mapa de frecuencia por áreas a partir de los prácticos oficiales de Murcia 2021, 2023 y 2025. No incluye exámenes de otras CCAA.",
+      "resourceCount": 0,
+      "publicLinkCount": 0,
+      "sections": [],
+      "academies": [],
+      "types": [],
+      "sourceYears": [
+        {
+          "year": "2025",
+          "title": "Murcia 2025 - Parte A: prueba práctica oficial 590107 Informática",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Examen+590-107.pdf&IDCONTENIDO=201654&IDTIPO=60&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579%2C74628",
+          "summary": "8 supuestos independientes; se eligen 4."
+        },
+        {
+          "year": "2023",
+          "title": "Murcia 2023 - prueba práctica oficial 590107 Informática",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+Inform%C3%A1tica1.pdf&IDCONTENIDO=196263&IDTIPO=60&RASTRO=c305%24m4332%2C71822%2C72632%2C72813%2C72814%2C74342",
+          "summary": "5 supuestos con programación, SQL, XML/XSLT, redes y Java."
+        },
+        {
+          "year": "2021",
+          "title": "Murcia 2021 - Parte A: prueba práctica oficial 0590107 Informática",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+INFORM%C3%81TICA.pdf&IDCONTENIDO=173493&IDTIPO=60&RASTRO=c562%24m3977%2C69334%2C69959%2C70361%2C70362%2C70432",
+          "summary": "7 supuestos con algoritmos, SQL, XML, redes, DNS, firewall y PHP."
+        }
+      ],
+      "trendAreas": [
+        {
+          "name": "Bases de datos y SQL",
+          "priority": "Muy alta",
+          "appearances": 3,
+          "totalYears": 3,
+          "score": 5,
+          "years": [
+            "2021",
+            "2023",
+            "2025"
+          ],
+          "focus": [
+            "SQL estándar",
+            "consultas con joins, agregaciones y ordenación",
+            "subconsultas",
+            "DDL",
+            "PL/SQL y cursores"
+          ],
+          "evidence": [
+            "2025: biblioteca, consultas SQL, DDL y PL/SQL.",
+            "2023: sistema de ventas con consultas SQL.",
+            "2021: base de datos relacional con consultas SQL."
+          ],
+          "studyAction": "Prioridad diaria: practicar SQL a mano, explicar el proceso resolutivo y controlar GROUP BY, HAVING, LEFT JOIN, subconsultas y restricciones."
+        },
+        {
+          "name": "Programación, algoritmos y POO",
+          "priority": "Muy alta",
+          "appearances": 3,
+          "totalYears": 3,
+          "score": 5,
+          "years": [
+            "2021",
+            "2023",
+            "2025"
+          ],
+          "focus": [
+            "pseudocódigo",
+            "arrays",
+            "Java",
+            "POO",
+            "clases, herencia e interfaces",
+            "métodos matemáticos"
+          ],
+          "evidence": [
+            "2025: dos supuestos Java/POO con jerarquías, interfaces y colecciones.",
+            "2023: desplazamiento circular de arrays y clase PolinomioGradoDos.",
+            "2021: algoritmo de integración por trapecios."
+          ],
+          "studyAction": "Prioridad diaria: escribir código limpio en papel, probar casos límite y explicar invariantes, precondiciones y complejidad cuando proceda."
+        },
+        {
+          "name": "Redes, direccionamiento y routing",
+          "priority": "Muy alta",
+          "appearances": 3,
+          "totalYears": 3,
+          "score": 4,
+          "years": [
+            "2021",
+            "2023",
+            "2025"
+          ],
+          "focus": [
+            "IPv4/IPv6",
+            "subnetting y VLSM",
+            "VLAN",
+            "rutas estáticas",
+            "RSTP",
+            "tablas de encaminamiento"
+          ],
+          "evidence": [
+            "2025: subredes, routers y tablas de enrutamiento.",
+            "2023: VLSM, interfaces, rutas estáticas, cableado y VLAN.",
+            "2021: IPv6 stateless, VLSM, 802.1q y RSTP."
+          ],
+          "studyAction": "Prioridad alta: resolver redes completas con tabla, máscara, broadcast, rango, gateway y justificación de routing."
+        },
+        {
+          "name": "XML, XSD, XSLT, HTML y CSS",
+          "priority": "Alta",
+          "appearances": 3,
+          "totalYears": 3,
+          "score": 4,
+          "years": [
+            "2021",
+            "2023",
+            "2025"
+          ],
+          "focus": [
+            "DTD",
+            "XSD",
+            "validación XML",
+            "XSLT",
+            "selectores CSS",
+            "expresiones regulares"
+          ],
+          "evidence": [
+            "2025: selectores CSS, XSD y validación de formato hexadecimal.",
+            "2023: DTD, XSD, XSLT y XPath.",
+            "2021: XML bien formado/válido, DTD y XSD."
+          ],
+          "studyAction": "Prioridad alta para DAW/Lenguaje de Marcas: dominar validación, cardinalidades, atributos, restricciones y transformaciones simples."
+        },
+        {
+          "name": "Sistemas, servicios y seguridad Linux",
+          "priority": "Media-alta",
+          "appearances": 1,
+          "totalYears": 3,
+          "score": 2,
+          "years": [
+            "2021"
+          ],
+          "focus": [
+            "DNS/BIND",
+            "dig",
+            "iptables",
+            "NAT",
+            "firewall",
+            "servicios de red"
+          ],
+          "evidence": [
+            "2021: servidor DNS con Bind9, registros de zona, dig, firewall e iptables."
+          ],
+          "studyAction": "No es lo más repetido en 2021-2025, pero conviene llevarlo entrenado porque puntúa mucho cuando aparece y se relaciona con redes."
+        },
+        {
+          "name": "Web/PHP y tratamiento de ficheros",
+          "priority": "Media",
+          "appearances": 1,
+          "totalYears": 3,
+          "score": 1,
+          "years": [
+            "2021"
+          ],
+          "focus": [
+            "formularios",
+            "subida de ficheros",
+            "validación",
+            "ordenación",
+            "procesamiento servidor"
+          ],
+          "evidence": [
+            "2021: script PHP para subir dos ficheros de texto, mezclar, ordenar y mostrar líneas."
+          ],
+          "studyAction": "Como refuerzo: saber leer/escribir ficheros, validar entradas y describir el flujo cliente-servidor con precisión."
+        }
+      ],
+      "resources": []
+    },
+    {
       "id": "98_Novedades_y_publicaciones",
       "order": 98,
       "label": "Novedades",

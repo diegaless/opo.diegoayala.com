@@ -36,6 +36,7 @@ function normalize(value) {
 function updateCount(visible, type = "temas") {
   if (!countOutput) return;
   const singularByType = {
+    áreas: "área",
     novedades: "novedad",
     recursos: "recurso",
     temas: "tema",
@@ -209,6 +210,7 @@ function renderPhaseOptions() {
   if (!phaseSelect || !phasesData?.phases) return;
   const phaseOrder = [
     "98_Novedades_y_publicaciones",
+    "97_Que_cae_mas",
     "00_Normativa_y_orden_legal",
     "02_Primera_prueba_A_Practico",
     "01_Primera_prueba_B_Tema_escrito",
@@ -518,6 +520,160 @@ function getResourceMetaItems(resource) {
   return items;
 }
 
+function trendMatches(trend, query) {
+  if (!query) return true;
+  return normalize(
+    [
+      trend.name,
+      trend.priority,
+      trend.years?.join(" "),
+      trend.focus?.join(" "),
+      trend.evidence?.join(" "),
+      trend.studyAction,
+    ].join(" "),
+  ).includes(query);
+}
+
+function buildTrendOverview(phase, trends) {
+  const sources = phase.sourceYears || [];
+  const totalYears = new Set(sources.map((source) => source.year)).size;
+  const maxScore = Math.max(...trends.map((trend) => trend.score || 0), 0);
+
+  const block = createElement("article", "topic-block trend-overview");
+  const header = createElement("header", "block-header");
+  header.append(createElement("p", "", phase.label), createElement("h2", "", "Lectura rápida"));
+
+  const dashboard = createElement("div", "progress-dashboard trend-dashboard");
+  [
+    ["Años oficiales", totalYears],
+    ["Áreas críticas", trends.filter((trend) => trend.priority?.includes("Muy alta")).length],
+    ["Máxima frecuencia", `${maxScore} evidencias`],
+    ["Otras CCAA", "0"],
+  ].forEach(([label, value]) => {
+    const stat = createElement("span", "progress-stat");
+    stat.append(createElement("span", "progress-stat-label", label), createElement("strong", "", value));
+    dashboard.append(stat);
+  });
+
+  const note = createElement(
+    "p",
+    "trend-note",
+    phase.description || "Cruce de prácticos oficiales localizados.",
+  );
+  const body = createElement("div", "trend-overview-body");
+  body.append(dashboard, note);
+  block.append(header, body);
+  return block;
+}
+
+function buildTrendItem(trend, index) {
+  const item = createElement("li", "topic-item trend-item");
+  const row = createElement("span", "topic-row");
+  row.append(
+    createElement("span", "topic-number", String(index + 1).padStart(2, "0")),
+    createElement("span", "", trend.name),
+  );
+
+  const detail = createElement("div", "trend-detail");
+  const width = Math.max(8, Math.min(100, ((trend.appearances || 0) / (trend.totalYears || 1)) * 100));
+  const meter = createElement("span", "trend-meter");
+  const bar = createElement("span", "trend-meter-bar");
+  bar.style.width = `${width}%`;
+  meter.append(bar);
+
+  const meta = createElement("span", "phase-meta trend-meta");
+  [
+    trend.priority,
+    `${trend.appearances}/${trend.totalYears} convocatorias`,
+    `${trend.score} evidencias`,
+    ...(trend.years || []),
+  ]
+    .filter(Boolean)
+    .forEach((text, chipIndex) => {
+      const kind = chipIndex === 0 ? "phase-meta-chip is-doc-tag is-official-murcia" : "phase-meta-chip";
+      meta.append(createElement("span", kind, text));
+    });
+
+  const focus = createElement("p", "trend-focus", (trend.focus || []).join(" · "));
+  const evidence = createElement("div", "trend-evidence");
+  (trend.evidence || []).forEach((line) => evidence.append(createElement("p", "", line)));
+  const action = createElement("p", "trend-action", trend.studyAction);
+
+  detail.append(meter, meta, focus, evidence, action);
+  item.append(row, detail);
+  return item;
+}
+
+function buildTrendSources(phase) {
+  const sources = phase.sourceYears || [];
+  const block = createElement("article", "topic-block");
+  const header = createElement("header", "block-header");
+  header.append(createElement("p", "", "Fuentes"), createElement("h2", "", "Prácticos cruzados"));
+
+  const list = createElement("ol", "topic-list");
+  sources.forEach((source, index) => {
+    const item = createElement("li", "topic-item");
+    const row = createElement("span", "topic-row");
+    row.append(
+      createElement("span", "topic-number", source.year || String(index + 1).padStart(2, "0")),
+      createElement("span", "", source.title),
+    );
+
+    const panel = createElement("div", "topic-materials phase-materials");
+    const meta = createElement("span", "phase-meta");
+    meta.append(
+      createElement("span", "phase-meta-chip is-doc-tag is-official-murcia", "Oficial Murcia"),
+      createElement("span", "phase-meta-chip", source.summary || "Práctico oficial localizado"),
+    );
+    const link = document.createElement("a");
+    link.className = "material-link";
+    link.href = source.url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.textContent = "PDF";
+    link.setAttribute("aria-label", `Abrir ${source.title}`);
+    panel.append(meta, link);
+    item.append(row, panel);
+    list.append(item);
+  });
+
+  block.append(header, list);
+  return block;
+}
+
+function renderTrendView(phase, query) {
+  const trends = (phase.trendAreas || []).filter((trend) => trendMatches(trend, query));
+  const fragment = document.createDocumentFragment();
+  fragment.append(buildTrendOverview(phase, phase.trendAreas || []));
+
+  if (!trends.length) {
+    const block = createElement("article", "topic-block");
+    const header = createElement("header", "block-header");
+    header.append(createElement("p", "", phase.label), createElement("h2", "", "Sin resultados"));
+    const list = createElement("ol", "topic-list");
+    const item = createElement("li", "topic-item");
+    const row = createElement("span", "topic-row topic-row-no-marker");
+    row.append(createElement("span", "", "No hay áreas que coincidan."));
+    item.append(row);
+    list.append(item);
+    block.append(header, list);
+    fragment.append(block);
+  } else {
+    const block = createElement("article", "topic-block");
+    const header = createElement("header", "block-header");
+    header.append(createElement("p", "", phase.label), createElement("h2", "", "Áreas por frecuencia"));
+    const list = createElement("ol", "topic-list");
+    trends.forEach((trend, index) => list.append(buildTrendItem(trend, index)));
+    block.append(header, list);
+    fragment.append(block);
+  }
+
+  fragment.append(buildTrendSources(phase));
+  phaseView.replaceChildren(fragment);
+  updateCount(trends.length, "áreas");
+  if (emptyState) emptyState.hidden = true;
+}
+
 function buildResourceItem(resource) {
   const item = createElement("li", "topic-item");
   item.dataset.phaseResource = "";
@@ -565,6 +721,11 @@ function renderSelectedPhase() {
   if (!phase) return;
 
   const query = normalize(searchInput?.value.trim() || "");
+  if (phase.trendAreas) {
+    renderTrendView(phase, query);
+    return;
+  }
+
   const resources = (phase.resources || []).filter((resource) => resourceMatches(resource, query));
   const groups = groupResourcesBySection(resources);
   const fragment = document.createDocumentFragment();
@@ -650,9 +811,13 @@ function renderCurrentView() {
   topicView.hidden = true;
   phaseView.hidden = false;
   const phase = getSelectedPhase();
-  searchInput.placeholder = phase?.id === "98_Novedades_y_publicaciones"
-    ? "Buscar novedad..."
-    : "Buscar recurso...";
+  if (phase?.trendAreas) {
+    searchInput.placeholder = "Buscar tendencia...";
+  } else {
+    searchInput.placeholder = phase?.id === "98_Novedades_y_publicaciones"
+      ? "Buscar novedad..."
+      : "Buscar recurso...";
+  }
   renderSelectedPhase();
 }
 

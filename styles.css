@@ -413,6 +413,71 @@ p {
   min-width: 92px;
 }
 
+.trend-overview-body,
+.trend-detail {
+  display: grid;
+  min-width: 0;
+  gap: 12px;
+}
+
+.trend-detail {
+  max-width: calc(100% - 52px);
+  margin: 0 0 14px 52px;
+}
+
+.trend-dashboard {
+  align-items: stretch;
+}
+
+.trend-note,
+.trend-focus,
+.trend-action,
+.trend-evidence p {
+  min-width: 0;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.trend-focus {
+  color: var(--ink);
+  font-weight: 680;
+}
+
+.trend-action {
+  border-left: 2px solid var(--accent);
+  padding-left: 10px;
+}
+
+.trend-meter {
+  display: block;
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 74%, transparent);
+}
+
+.trend-meter-bar {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.trend-evidence {
+  display: grid;
+  min-width: 0;
+  gap: 6px;
+}
+
+.trend-meta {
+  align-items: flex-start;
+}
+
 .syllabus {
   display: grid;
   min-width: 0;
@@ -783,6 +848,11 @@ p {
     max-width: calc(100% - 42px);
   }
 
+  .trend-detail {
+    margin-left: 42px;
+    max-width: calc(100% - 42px);
+  }
+
   .rubric-score {
     grid-template-columns: 1fr;
     gap: 4px;
@@ -817,6 +887,11 @@ p {
   }
 
   .rubric-detail {
+    margin-left: 39px;
+    max-width: calc(100% - 39px);
+  }
+
+  .trend-detail {
     margin-left: 39px;
     max-width: calc(100% - 39px);
   }
