@@ -413,6 +413,38 @@ p {
   min-width: 92px;
 }
 
+.template-guide {
+  border-top-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+}
+
+.template-detail {
+  display: grid;
+  min-width: 0;
+  max-width: calc(100% - 52px);
+  gap: 6px;
+  margin: 0 0 14px 52px;
+}
+
+.template-goal,
+.template-check {
+  min-width: 0;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.template-check {
+  color: var(--quiet);
+}
+
+.template-check::before {
+  content: "Control: ";
+  color: var(--accent);
+  font-weight: 760;
+}
+
 .trend-overview-body,
 .trend-detail {
   display: grid;
@@ -848,6 +880,11 @@ p {
     max-width: calc(100% - 42px);
   }
 
+  .template-detail {
+    margin-left: 42px;
+    max-width: calc(100% - 42px);
+  }
+
   .trend-detail {
     margin-left: 42px;
     max-width: calc(100% - 42px);
@@ -887,6 +924,11 @@ p {
   }
 
   .rubric-detail {
+    margin-left: 39px;
+    max-width: calc(100% - 39px);
+  }
+
+  .template-detail {
     margin-left: 39px;
     max-width: calc(100% - 39px);
   }

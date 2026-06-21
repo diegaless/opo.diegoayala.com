@@ -12,6 +12,43 @@ const rubricBlock = document.querySelector("[data-rubric-block]");
 const rubricItems = [...document.querySelectorAll("[data-rubric-item]")];
 const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
+const fallbackTopicTemplate = [
+  {
+    name: "Índice",
+    goal: "Abrir con 4-6 epígrafes que ordenen el tema y dejen claro el eje central.",
+    check: "El recorrido completo se entiende de un vistazo.",
+  },
+  {
+    name: "Introducción",
+    goal: "Definir el tema, justificar su relevancia técnica/docente y anunciar la estructura.",
+    check: "Incluye definición, importancia y enlace con el temario oficial.",
+  },
+  {
+    name: "Desarrollo científico",
+    goal: "Explicar conceptos, clasificaciones, funcionamiento, relaciones, límites y terminología.",
+    check: "Cada epígrafe aporta contenido evaluable.",
+  },
+  {
+    name: "Normativa y actualización",
+    goal: "Integrar BOE, normativa educativa, Murcia, estándares, seguridad, accesibilidad y versiones actuales cuando proceda.",
+    check: "La normativa no queda pegada al final sin relación.",
+  },
+  {
+    name: "Ejemplos propios",
+    goal: "Incluir 2-3 ejemplos breves y correctos, conectados con DAW, programación, BBDD, redes, sistemas o seguridad.",
+    check: "Los ejemplos demuestran dominio real.",
+  },
+  {
+    name: "Conclusión",
+    goal: "Cerrar sintetizando el valor del tema y su aplicación profesional/docente.",
+    check: "No repite la introducción.",
+  },
+  {
+    name: "Bibliografía",
+    goal: "Terminar con fuentes oficiales, manuales, documentación técnica y referencias actualizadas.",
+    check: "No depende solo de apuntes de academia.",
+  },
+];
 
 let currentView = "topics";
 let materialsData = null;
@@ -300,9 +337,16 @@ function getProgressState(topic) {
   };
 }
 
+function getTopicTemplateSections() {
+  return materialsData?.myTopicProgress?.templateStructure || fallbackTopicTemplate;
+}
+
 function progressTopicMatches(entry, query) {
   if (!query) return true;
   const state = getProgressState(entry.topic);
+  const templateText = getTopicTemplateSections()
+    .map((section) => [section.name, section.goal, section.check].join(" "))
+    .join(" ");
   return normalize(
     [
       entry.key,
@@ -311,6 +355,7 @@ function progressTopicMatches(entry, query) {
       state.myTopic?.progressLabel,
       state.fullExample?.label,
       state.memorySheet?.label,
+      templateText,
     ].join(" "),
   ).includes(query);
 }
@@ -321,6 +366,7 @@ function buildProgressOverview(entries) {
   const examplesReady = progress.examplesAvailable ?? entries.filter(({ topic }) => getProgressState(topic).fullExample).length;
   const memoryReady = progress.memorySheetsAvailable ?? entries.filter(({ topic }) => getProgressState(topic).memorySheet).length;
   const total = progress.totalTopics ?? entries.length;
+  const templateSections = getTopicTemplateSections();
 
   const block = createElement("article", "topic-block progress-overview");
   const header = createElement("header", "block-header");
@@ -329,6 +375,7 @@ function buildProgressOverview(entries) {
   const dashboard = createElement("div", "progress-dashboard");
   [
     ["Plantillas", `${templatesReady}/${total}`],
+    ["Estructura", `${templateSections.length} apartados`],
     ["Mis versiones", `${progress.myVersionsComplete || 0} completas`],
     ["Ejemplos", `${examplesReady} disponibles`],
     ["Repasos", `${memoryReady} disponibles`],
@@ -340,6 +387,36 @@ function buildProgressOverview(entries) {
   });
 
   block.append(header, dashboard);
+  return block;
+}
+
+function buildTemplateGuide() {
+  const progress = materialsData?.myTopicProgress || {};
+  const sections = getTopicTemplateSections();
+  const block = createElement("article", "topic-block template-guide");
+  const header = createElement("header", "block-header");
+  header.append(
+    createElement("p", "", "Plantilla"),
+    createElement("h2", "", progress.templateName || "Plantilla fija de tema de 10"),
+  );
+
+  const list = createElement("ol", "topic-list template-list");
+  sections.forEach((section, index) => {
+    const item = createElement("li", "topic-item template-item");
+    const row = createElement("span", "topic-row");
+    row.append(
+      createElement("span", "topic-number", String(index + 1).padStart(2, "0")),
+      createElement("span", "", section.name),
+    );
+
+    const detail = createElement("div", "template-detail");
+    detail.append(createElement("p", "template-goal", section.goal));
+    if (section.check) detail.append(createElement("p", "template-check", section.check));
+    item.append(row, detail);
+    list.append(item);
+  });
+
+  block.append(header, list);
   return block;
 }
 
@@ -411,6 +488,7 @@ function renderProgressView() {
 
   const fragment = document.createDocumentFragment();
   fragment.append(buildProgressOverview(entries));
+  fragment.append(buildTemplateGuide());
 
   if (!filteredEntries.length) {
     const block = createElement("article", "topic-block");
