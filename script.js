@@ -74,6 +74,7 @@ function updateCount(visible, type = "temas") {
   if (!countOutput) return;
   const singularByType = {
     áreas: "área",
+    fichas: "ficha",
     novedades: "novedad",
     recursos: "recurso",
     temas: "tema",
@@ -250,6 +251,7 @@ function renderPhaseOptions() {
     "97_Que_cae_mas",
     "00_Normativa_y_orden_legal",
     "02_Primera_prueba_A_Practico",
+    "96_Practicos_soluciones_codex",
     "01_Primera_prueba_B_Tema_escrito",
     "03_Segunda_prueba_Programacion_didactica",
     "04_Segunda_prueba_Unidad_didactica",
@@ -752,6 +754,149 @@ function renderTrendView(phase, query) {
   if (emptyState) emptyState.hidden = true;
 }
 
+function practiceGuideMatches(guide, query) {
+  if (!query) return true;
+  return normalize(
+    [
+      guide.name,
+      guide.priority,
+      guide.frequency,
+      guide.whatFalls?.join(" "),
+      guide.method?.join(" "),
+      guide.errors?.join(" "),
+      guide.example?.statement,
+      guide.example?.solution,
+      guide.example?.explanation,
+    ].join(" "),
+  ).includes(query);
+}
+
+function buildPracticeOverview(phase, guides) {
+  const block = createElement("article", "topic-block practice-overview");
+  const header = createElement("header", "block-header");
+  header.append(createElement("p", "", phase.label), createElement("h2", "", "Cómo usar estas fichas"));
+
+  const body = createElement("div", "practice-overview-body");
+  const dashboard = createElement("div", "progress-dashboard");
+  [
+    ["Fichas", guides.length],
+    ["Base oficial", "Murcia 2021-2025"],
+    ["Autoría", phase.authorship?.createdWith || "Codex"],
+    ["Carácter", "Orientativo"],
+  ].forEach(([label, value]) => {
+    const stat = createElement("span", "progress-stat");
+    stat.append(createElement("span", "progress-stat-label", label), createElement("strong", "", value));
+    dashboard.append(stat);
+  });
+
+  const notice = createElement("div", "practice-authorship");
+  notice.append(
+    createElement(
+      "strong",
+      "practice-authorship-title",
+      phase.authorship?.label || "Soluciones propias realizadas con Codex",
+    ),
+    createElement(
+      "p",
+      "",
+      phase.authorship?.disclaimer || "Estas soluciones no tienen carácter oficial.",
+    ),
+  );
+  body.append(dashboard, notice);
+  block.append(header, body);
+  return block;
+}
+
+function buildPracticeTextSection(title, lines, className = "") {
+  const section = createElement("section", className ? `practice-section ${className}` : "practice-section");
+  section.append(createElement("h3", "", title));
+  const content = createElement("div", "practice-lines");
+  (lines || []).forEach((line, index) => {
+    const row = createElement("p", "practice-line");
+    row.append(
+      createElement("span", "practice-line-number", String(index + 1).padStart(2, "0")),
+      createElement("span", "", line),
+    );
+    content.append(row);
+  });
+  section.append(content);
+  return section;
+}
+
+function buildPracticeGuide(guide, index, query) {
+  const item = createElement("li", "topic-item practice-item");
+  const details = document.createElement("details");
+  details.className = "practice-guide";
+  if (query) details.open = true;
+
+  const summary = document.createElement("summary");
+  summary.className = "practice-summary";
+  const row = createElement("span", "topic-row");
+  row.append(
+    createElement("span", "topic-number", String(index + 1).padStart(2, "0")),
+    createElement("span", "", guide.name),
+  );
+  const meta = createElement("span", "phase-meta practice-summary-meta");
+  meta.append(
+    createElement("span", "phase-meta-chip is-doc-tag is-practical", guide.priority),
+    createElement("span", "phase-meta-chip", guide.frequency),
+    createElement("span", "phase-meta-chip is-current", "Solución Codex"),
+  );
+  summary.append(row, meta);
+
+  const detail = createElement("div", "practice-detail");
+  detail.append(
+    buildPracticeTextSection("Qué cae", guide.whatFalls, "practice-what"),
+    buildPracticeTextSection("Cómo resolverlo", guide.method, "practice-method"),
+    buildPracticeTextSection("Errores típicos", guide.errors, "practice-errors"),
+  );
+
+  const example = createElement("section", "practice-section practice-example");
+  example.append(createElement("h3", "", "Ejemplo resuelto"));
+  example.append(createElement("p", "practice-statement", guide.example?.statement || ""));
+  const solution = createElement("pre", "practice-solution");
+  solution.append(createElement("code", "", guide.example?.solution || ""));
+  example.append(solution, createElement("p", "practice-explanation", guide.example?.explanation || ""));
+
+  const signature = createElement(
+    "p",
+    "practice-signature",
+    "Solución propia realizada con Codex · No oficial",
+  );
+  detail.append(example, signature);
+  details.append(summary, detail);
+  item.append(details);
+  return item;
+}
+
+function renderPracticeGuides(phase, query) {
+  const allGuides = phase.practiceGuides || [];
+  const guides = allGuides.filter((guide) => practiceGuideMatches(guide, query));
+  const fragment = document.createDocumentFragment();
+  fragment.append(buildPracticeOverview(phase, allGuides));
+
+  const block = createElement("article", "topic-block");
+  const header = createElement("header", "block-header");
+  header.append(createElement("p", "", phase.label), createElement("h2", "", "Fichas por área"));
+  const list = createElement("ol", "topic-list practice-list");
+
+  if (!guides.length) {
+    const item = createElement("li", "topic-item");
+    const row = createElement("span", "topic-row topic-row-no-marker");
+    row.append(createElement("span", "", "No hay fichas que coincidan."));
+    item.append(row);
+    list.append(item);
+  } else {
+    guides.forEach((guide, index) => list.append(buildPracticeGuide(guide, index, query)));
+  }
+
+  block.append(header, list);
+  fragment.append(block);
+  phaseView.replaceChildren(fragment);
+  updateCount(guides.length, "fichas");
+  if (emptyState) emptyState.hidden = true;
+}
+
 function buildResourceItem(resource) {
   const item = createElement("li", "topic-item");
   item.dataset.phaseResource = "";
@@ -801,6 +946,10 @@ function renderSelectedPhase() {
   const query = normalize(searchInput?.value.trim() || "");
   if (phase.trendAreas) {
     renderTrendView(phase, query);
+    return;
+  }
+  if (phase.practiceGuides) {
+    renderPracticeGuides(phase, query);
     return;
   }
 
@@ -891,6 +1040,8 @@ function renderCurrentView() {
   const phase = getSelectedPhase();
   if (phase?.trendAreas) {
     searchInput.placeholder = "Buscar tendencia...";
+  } else if (phase?.practiceGuides) {
+    searchInput.placeholder = "Buscar ficha práctica...";
   } else {
     searchInput.placeholder = phase?.id === "98_Novedades_y_publicaciones"
       ? "Buscar novedad..."

@@ -3750,6 +3750,274 @@
       ]
     },
     {
+      "id": "96_Practicos_soluciones_codex",
+      "order": 96,
+      "label": "Parte A · Soluciones",
+      "title": "Prácticos - Guías y soluciones propias",
+      "legal": "Material de entrenamiento para la Primera prueba - Parte A.",
+      "description": "Fichas de resolución por áreas, construidas a partir de los prácticos oficiales de Murcia localizados y del banco privado de ejercicios.",
+      "authorship": {
+        "createdWith": "Codex",
+        "label": "Soluciones propias realizadas con Codex",
+        "disclaimer": "Contenido orientativo y revisable. No son soluciones oficiales de la CARM ni criterios publicados por un tribunal."
+      },
+      "resourceCount": 0,
+      "publicLinkCount": 0,
+      "sections": [],
+      "academies": [],
+      "types": [],
+      "practiceGuides": [
+        {
+          "id": "bases-datos-sql",
+          "name": "Bases de datos y SQL",
+          "priority": "Muy alta",
+          "frequency": "Murcia 2021, 2023 y 2025",
+          "whatFalls": [
+            "Modelo relacional y paso de requisitos a tablas",
+            "Consultas con JOIN, GROUP BY, HAVING y subconsultas",
+            "DDL, restricciones, claves e integridad",
+            "PL/SQL, cursores y procedimientos"
+          ],
+          "method": [
+            "Subrayar entidades, relaciones, filtros, agrupaciones y resultado solicitado.",
+            "Escribir primero las tablas implicadas y las condiciones de unión.",
+            "Separar WHERE, que filtra filas, de HAVING, que filtra grupos.",
+            "Comprobar duplicados, valores nulos, fechas y cardinalidad del resultado.",
+            "Cerrar explicando decisiones, restricciones y coste aproximado cuando proceda."
+          ],
+          "errors": [
+            "Usar funciones de agregado en WHERE.",
+            "Olvidar columnas no agregadas en GROUP BY.",
+            "Convertir un LEFT JOIN en INNER JOIN al filtrar mal en WHERE.",
+            "Usar BETWEEN con fechas y horas sin controlar el límite superior."
+          ],
+          "example": {
+            "statement": "CLIENTE(id, nombre) y PEDIDO(id, cliente_id, fecha, total). Obtener los clientes cuyo importe acumulado durante 2025 sea al menos 1.000 euros, ordenados de mayor a menor.",
+            "solution": "SELECT c.id, c.nombre, SUM(p.total) AS total_2025\nFROM cliente c\nJOIN pedido p ON p.cliente_id = c.id\nWHERE p.fecha >= DATE '2025-01-01'\n  AND p.fecha <  DATE '2026-01-01'\nGROUP BY c.id, c.nombre\nHAVING SUM(p.total) >= 1000\nORDER BY total_2025 DESC;",
+            "explanation": "JOIN relaciona clientes y pedidos; WHERE limita las filas al año 2025; GROUP BY forma un grupo por cliente; HAVING filtra por el total agregado. El límite superior exclusivo funciona también si fecha contiene hora."
+          }
+        },
+        {
+          "id": "programacion-algoritmos",
+          "name": "Programación, algoritmos y Java/C/C++",
+          "priority": "Muy alta",
+          "frequency": "Murcia 2021, 2023 y 2025",
+          "whatFalls": [
+            "Arrays, cadenas, matrices y estructuras dinámicas",
+            "Pseudocódigo y trazado de algoritmos",
+            "Java y programación orientada a objetos",
+            "C/C++, punteros, memoria y tratamiento de ficheros",
+            "Complejidad, casos límite y pruebas"
+          ],
+          "method": [
+            "Definir entradas, salidas, precondiciones y casos límite antes de programar.",
+            "Elegir la estructura de datos y escribir el algoritmo en pasos.",
+            "Resolver primero el caso normal y después vacío, uno, repetidos y límites.",
+            "Hacer una traza manual con un ejemplo pequeño.",
+            "Indicar complejidad temporal y espacial, y justificar las decisiones."
+          ],
+          "errors": [
+            "Empezar a codificar sin fijar el contrato del método.",
+            "Errores de índice, división por cero o desbordamiento.",
+            "Modificar una colección mientras se recorre de forma insegura.",
+            "En C/C++, no liberar memoria o usar punteros sin validar."
+          ],
+          "example": {
+            "statement": "Implementar en Java una rotación de un array k posiciones a la derecha, en O(n) y sin usar otro array.",
+            "solution": "static void rotarDerecha(int[] v, int k) {\n    if (v == null || v.length < 2) return;\n    k %= v.length;\n    if (k < 0) k += v.length;\n    invertir(v, 0, v.length - 1);\n    invertir(v, 0, k - 1);\n    invertir(v, k, v.length - 1);\n}\n\nstatic void invertir(int[] v, int i, int j) {\n    while (i < j) {\n        int tmp = v[i];\n        v[i++] = v[j];\n        v[j--] = tmp;\n    }\n}",
+            "explanation": "Se normaliza k y se aplican tres inversiones. Para [1,2,3,4,5] y k=2 se obtiene [4,5,1,2,3]. Recorre el array un número constante de veces: O(n) de tiempo y O(1) de memoria."
+          }
+        },
+        {
+          "id": "redes-vlsm-routing",
+          "name": "Redes, VLSM, VLAN y routing",
+          "priority": "Muy alta",
+          "frequency": "Murcia 2021, 2023 y 2025",
+          "whatFalls": [
+            "Subnetting IPv4 e IPv6",
+            "VLSM y asignación eficiente de direcciones",
+            "VLAN, trunking y RSTP",
+            "Rutas estáticas y tablas de encaminamiento",
+            "Cableado, interfaces y servicios de red"
+          ],
+          "method": [
+            "Ordenar las redes de mayor a menor número de hosts.",
+            "Calcular el prefijo mínimo incluyendo red y broadcast en IPv4.",
+            "Asignar bloques respetando sus fronteras binarias.",
+            "Anotar red, máscara, primer host, último host y broadcast.",
+            "Construir después interfaces, gateways y rutas, comprobando ida y vuelta."
+          ],
+          "errors": [
+            "Asignar subredes sin respetar el tamaño del bloque.",
+            "Contar red y broadcast como hosts utilizables.",
+            "Olvidar la ruta de retorno.",
+            "Confundir VLAN lógica con subred IP o puerto access con trunk."
+          ],
+          "example": {
+            "statement": "Dividir 192.168.10.0/24 para tres redes de 100, 50 y 20 hosts mediante VLSM.",
+            "solution": "100 hosts -> 192.168.10.0/25\nRed: .0 | Hosts: .1-.126 | Broadcast: .127\n\n50 hosts -> 192.168.10.128/26\nRed: .128 | Hosts: .129-.190 | Broadcast: .191\n\n20 hosts -> 192.168.10.192/27\nRed: .192 | Hosts: .193-.222 | Broadcast: .223\n\nReserva libre -> 192.168.10.224/27",
+            "explanation": "Se asigna primero la red mayor. /25 ofrece 126 hosts, /26 ofrece 62 y /27 ofrece 30. Los bloques quedan alineados y no se solapan."
+          }
+        },
+        {
+          "id": "xml-xsd-xslt",
+          "name": "XML, XSD, XSLT, HTML y CSS",
+          "priority": "Alta",
+          "frequency": "Murcia 2021, 2023 y 2025",
+          "whatFalls": [
+            "XML bien formado y válido",
+            "DTD y XML Schema",
+            "Cardinalidades, atributos, patrones y restricciones",
+            "XPath y transformaciones XSLT",
+            "Selectores CSS, HTML y expresiones regulares"
+          ],
+          "method": [
+            "Escribir primero un XML de ejemplo válido.",
+            "Decidir secuencia, repetición, opcionalidad y tipos de datos.",
+            "Crear tipos simples para patrones y rangos.",
+            "Validar mentalmente un caso correcto y dos incorrectos.",
+            "En XSLT, fijar el nodo contexto antes de escribir cada XPath."
+          ],
+          "errors": [
+            "Confundir XML bien formado con XML válido.",
+            "Usar minOccurs y maxOccurs en un lugar no permitido.",
+            "Olvidar escapar caracteres o declarar espacios de nombres.",
+            "Escribir XPath desde un contexto distinto al que procesa la plantilla."
+          ],
+          "example": {
+            "statement": "Definir con XSD un elemento producto con código AAA-1234 y precio decimal estrictamente positivo.",
+            "solution": "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"producto\">\n    <xs:complexType>\n      <xs:sequence>\n        <xs:element name=\"codigo\">\n          <xs:simpleType>\n            <xs:restriction base=\"xs:string\">\n              <xs:pattern value=\"[A-Z]{3}-[0-9]{4}\"/>\n            </xs:restriction>\n          </xs:simpleType>\n        </xs:element>\n        <xs:element name=\"precio\">\n          <xs:simpleType>\n            <xs:restriction base=\"xs:decimal\">\n              <xs:minExclusive value=\"0\"/>\n            </xs:restriction>\n          </xs:simpleType>\n        </xs:element>\n      </xs:sequence>\n    </xs:complexType>\n  </xs:element>\n</xs:schema>",
+            "explanation": "El patrón obliga a tres mayúsculas, guion y cuatro cifras. minExclusive descarta cero y números negativos."
+          }
+        },
+        {
+          "id": "sistemas-linux-seguridad",
+          "name": "Sistemas Linux, servicios y seguridad",
+          "priority": "Media-alta",
+          "frequency": "Murcia 2021; refuerzo relacionado con redes",
+          "whatFalls": [
+            "Usuarios, permisos, procesos y sistema de ficheros",
+            "DNS/BIND y herramientas como dig",
+            "Firewall, NAT, iptables/nftables",
+            "Servicios, logs y diagnóstico",
+            "Arranque, memoria y almacenamiento"
+          ],
+          "method": [
+            "Dibujar el flujo de red o el estado inicial del sistema.",
+            "Aplicar primero política por defecto y tráfico establecido.",
+            "Añadir reglas específicas de la más concreta a la más general.",
+            "Comprobar persistencia, logs y prueba desde cliente y servidor.",
+            "Explicar el riesgo que controla cada orden."
+          ],
+          "errors": [
+            "Bloquear la sesión de administración al cambiar la política.",
+            "Olvidar loopback o ESTABLISHED,RELATED.",
+            "Mezclar cadenas INPUT, OUTPUT y FORWARD.",
+            "No contemplar IPv6 o la persistencia tras reinicio."
+          ],
+          "example": {
+            "statement": "Configurar iptables para aceptar conexiones establecidas, SSH solo desde 192.168.1.0/24, HTTP desde cualquier origen y descartar el resto de entradas.",
+            "solution": "iptables -F\niptables -P INPUT DROP\niptables -P FORWARD DROP\niptables -P OUTPUT ACCEPT\niptables -A INPUT -i lo -j ACCEPT\niptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT\niptables -A INPUT -p tcp -s 192.168.1.0/24 --dport 22 \\\n  -m conntrack --ctstate NEW -j ACCEPT\niptables -A INPUT -p tcp --dport 80 \\\n  -m conntrack --ctstate NEW -j ACCEPT",
+            "explanation": "La política es restrictiva y las excepciones son explícitas. En un caso real se guardarían las reglas y se configuraría también IPv6 con ip6tables o nftables."
+          }
+        },
+        {
+          "id": "web-php-ficheros",
+          "name": "Web, PHP y tratamiento de ficheros",
+          "priority": "Media",
+          "frequency": "Murcia 2021",
+          "whatFalls": [
+            "Formularios y validación de entradas",
+            "Subida y tratamiento de ficheros",
+            "Sesiones, cookies y flujo cliente-servidor",
+            "Ordenación, filtrado y salida HTML segura",
+            "Errores, límites y seguridad básica"
+          ],
+          "method": [
+            "Validar error de subida, tamaño y tipo antes de leer.",
+            "No confiar en el nombre ni en el MIME enviado por el navegador.",
+            "Separar lectura, transformación y presentación.",
+            "Escapar siempre la salida HTML.",
+            "Probar archivo vacío, grande, inválido y con caracteres especiales."
+          ],
+          "errors": [
+            "Usar directamente el nombre original como ruta.",
+            "Confiar solo en la extensión.",
+            "Mostrar contenido sin htmlspecialchars.",
+            "No limitar tamaño ni manejar errores de upload."
+          ],
+          "example": {
+            "statement": "Recibir un TXT de hasta 1 MiB, ordenar sus líneas ignorando vacías y mostrarlas de forma segura.",
+            "solution": "$f = $_FILES['fichero'] ?? null;\nif (!$f || $f['error'] !== UPLOAD_ERR_OK) {\n    throw new RuntimeException('Subida no válida');\n}\nif ($f['size'] > 1024 * 1024) {\n    throw new RuntimeException('Máximo 1 MiB');\n}\n$mime = (new finfo(FILEINFO_MIME_TYPE))->file($f['tmp_name']);\nif ($mime !== 'text/plain') {\n    throw new RuntimeException('Solo texto plano');\n}\n$lineas = file($f['tmp_name'], FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);\nnatcasesort($lineas);\nforeach ($lineas as $linea) {\n    echo '<p>' . htmlspecialchars($linea, ENT_QUOTES, 'UTF-8') . '</p>';\n}",
+            "explanation": "Se valida antes de procesar, se usa el fichero temporal del servidor y se escapa la salida para evitar inyección HTML."
+          }
+        },
+        {
+          "id": "circuitos-digitales",
+          "name": "Circuitos digitales",
+          "priority": "Refuerzo",
+          "frequency": "Banco privado de prácticos",
+          "whatFalls": [
+            "Álgebra de Boole y simplificación",
+            "Mapas de Karnaugh",
+            "Circuitos combinacionales y secuenciales",
+            "Sumadores, multiplexores, biestables y contadores",
+            "Máquinas de Mealy y Moore"
+          ],
+          "method": [
+            "Definir entradas, salidas y tabla de verdad.",
+            "Obtener minterms o maxterms según convenga.",
+            "Simplificar con Karnaugh o álgebra.",
+            "Dibujar el circuito y comprobar todas las combinaciones.",
+            "En secuenciales, añadir estados, transiciones y reloj."
+          ],
+          "errors": [
+            "Agrupar celdas de Karnaugh que no son adyacentes.",
+            "No usar grupos potencia de dos o desaprovechar don't care.",
+            "Confundir salida de Mealy con Moore.",
+            "Ignorar retardos, reset o flanco de reloj cuando son relevantes."
+          ],
+          "example": {
+            "statement": "Diseñar un sumador completo de un bit con entradas A, B y Cin, y salidas S y Cout.",
+            "solution": "S = A XOR B XOR Cin\nCout = (A AND B) OR (Cin AND (A XOR B))\n\nA B Cin | S Cout\n0 0  0  | 0  0\n0 0  1  | 1  0\n0 1  0  | 1  0\n0 1  1  | 0  1\n1 0  0  | 1  0\n1 0  1  | 0  1\n1 1  0  | 0  1\n1 1  1  | 1  1",
+            "explanation": "S representa la paridad de las tres entradas. Cout vale uno cuando al menos dos entradas valen uno. Puede construirse con dos semisumadores y una puerta OR."
+          }
+        },
+        {
+          "id": "ingenieria-pruebas",
+          "name": "Ingeniería del software y pruebas",
+          "priority": "Refuerzo",
+          "frequency": "Banco privado de prácticos",
+          "whatFalls": [
+            "Requisitos y casos de uso",
+            "UML, análisis y diseño",
+            "Ciclos de vida y metodologías",
+            "Particiones de equivalencia y valores límite",
+            "Planificación, calidad y documentación"
+          ],
+          "method": [
+            "Separar requisitos funcionales y no funcionales.",
+            "Identificar actores, precondiciones, flujo principal y alternativos.",
+            "Convertir cada regla en al menos una prueba positiva y una negativa.",
+            "Añadir límites exactos, estado anterior y resultado esperado.",
+            "Mantener trazabilidad entre requisito, diseño y prueba."
+          ],
+          "errors": [
+            "Escribir casos de prueba sin resultado esperado.",
+            "Probar solo el camino feliz.",
+            "Confundir requisito con solución técnica.",
+            "No cubrir límites, transiciones de estado o concurrencia."
+          ],
+          "example": {
+            "statement": "Un acceso exige contraseña de al menos 12 caracteres; tras tres fallos bloquea 15 minutos. Diseñar pruebas mínimas de frontera y estado.",
+            "solution": "P1: longitud 11 -> rechazada por longitud.\nP2: longitud 12 válida -> acceso permitido.\nP3: longitud 13 válida -> acceso permitido.\nP4: 1.er fallo -> continúa habilitado.\nP5: 2.º fallo -> continúa habilitado.\nP6: 3.er fallo -> cuenta bloqueada.\nP7: intento a los 14:59 -> bloqueado.\nP8: intento a los 15:00 con credencial válida -> acceso permitido.\nP9: acceso correcto antes del tercer fallo -> contador de fallos reiniciado.",
+            "explanation": "Se cubren los límites 11/12/13, la transición al tercer fallo, el límite temporal y el reinicio del estado tras autenticación correcta."
+          }
+        }
+      ],
+      "resources": []
+    },
+    {
       "id": "02_Primera_prueba_A_Practico",
       "order": 2,
       "label": "Parte A",

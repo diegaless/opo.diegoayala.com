@@ -274,6 +274,59 @@ def validate_phases(phases_data: dict[str, Any], audit: Audit) -> None:
             audit.error("phase.resources.invalid", location, "resources must be a list")
             continue
 
+        practice_guides = phase.get("practiceGuides")
+        if practice_guides is not None:
+            if not isinstance(practice_guides, list) or not practice_guides:
+                audit.error("practice_guides.invalid", f"{location}.practiceGuides", "practiceGuides must be a non-empty list")
+            else:
+                authorship = phase.get("authorship") or {}
+                if authorship.get("createdWith") != "Codex":
+                    audit.error(
+                        "practice_guides.authorship",
+                        f"{location}.authorship",
+                        "Practice solutions must declare createdWith=Codex",
+                    )
+
+                guide_ids: set[str] = set()
+                for guide_index, guide in enumerate(practice_guides):
+                    guide_location = f"{location}.practiceGuides[{guide_index}]"
+                    if not isinstance(guide, dict):
+                        audit.error("practice_guide.invalid", guide_location, "Practice guide must be an object")
+                        continue
+
+                    required_fields(
+                        audit,
+                        guide_location,
+                        guide,
+                        ["id", "name", "priority", "frequency", "whatFalls", "method", "errors", "example"],
+                    )
+                    guide_id = guide.get("id")
+                    if guide_id in guide_ids:
+                        audit.error("practice_guide.id.duplicate", guide_location, f"Duplicate practice guide id {guide_id}")
+                    elif guide_id:
+                        guide_ids.add(guide_id)
+
+                    for field in ("whatFalls", "method", "errors"):
+                        value = guide.get(field)
+                        if not isinstance(value, list) or not value or not all(isinstance(item, str) and item.strip() for item in value):
+                            audit.error(
+                                "practice_guide.list.invalid",
+                                f"{guide_location}.{field}",
+                                f"{field} must be a non-empty list of strings",
+                            )
+
+                    example = guide.get("example")
+                    if not isinstance(example, dict):
+                        audit.error("practice_guide.example.invalid", f"{guide_location}.example", "example must be an object")
+                    else:
+                        required_fields(
+                            audit,
+                            f"{guide_location}.example",
+                            example,
+                            ["statement", "solution", "explanation"],
+                        )
+                    audit.stats["practice_guides"] += 1
+
         duplicate_ids: dict[str, list[str]] = defaultdict(list)
         public_count = 0
         for resource_index, resource in enumerate(resources):
@@ -489,6 +542,7 @@ def print_report(audit: Audit) -> None:
     )
     print(f"- phases: {audit.stats['phases']}")
     print(f"- phase resources: {audit.stats['phase_resources']}")
+    print(f"- practical solution guides: {audit.stats['practice_guides']}")
     print(
         "- Drive ids: "
         f"{audit.stats['unique_drive_ids']} unique, "
