@@ -246,26 +246,70 @@ async function loadPhases() {
 
 function renderPhaseOptions() {
   if (!phaseSelect || !phasesData?.phases) return;
-  const phaseOrder = [
-    "98_Novedades_y_publicaciones",
-    "97_Que_cae_mas",
-    "00_Normativa_y_orden_legal",
-    "02_Primera_prueba_A_Practico",
-    "96_Practicos_soluciones_codex",
-    "01_Primera_prueba_B_Tema_escrito",
-    "03_Segunda_prueba_Programacion_didactica",
-    "04_Segunda_prueba_Unidad_didactica",
-    "05_Fase_concurso_meritos",
-    "06_Fase_practicas",
-    "99_Transversal_Bibliografia_y_simulacros",
+  const phaseGroups = [
+    {
+      label: "Actualidad y normativa",
+      options: [
+        ["98_Novedades_y_publicaciones", "Novedades oficiales"],
+        ["00_Normativa_y_orden_legal", "Normativa y referencias"],
+      ],
+    },
+    {
+      label: "Primera prueba",
+      options: [
+        ["02_Primera_prueba_A_Practico", "Parte A · Prueba práctica"],
+        ["97_Que_cae_mas", "Parte A · Qué cae más"],
+        ["96_Practicos_soluciones_codex", "Parte A · Guías y soluciones propias"],
+        ["01_Primera_prueba_B_Tema_escrito", "Parte B · Tema escrito"],
+      ],
+    },
+    {
+      label: "Segunda prueba · Aptitud pedagógica",
+      options: [
+        ["03_Segunda_prueba_Programacion_didactica", "Programación didáctica"],
+        ["04_Segunda_prueba_Unidad_didactica", "Unidad didáctica"],
+      ],
+    },
+    {
+      label: "Después de la oposición",
+      options: [
+        ["05_Fase_concurso_meritos", "Concurso · Méritos"],
+        ["06_Fase_practicas", "Fase de prácticas"],
+      ],
+    },
+    {
+      label: "Apoyo",
+      options: [
+        ["99_Transversal_Bibliografia_y_simulacros", "Bibliografía y simulacros"],
+      ],
+    },
   ];
-  const orderIndex = new Map(phaseOrder.map((phaseId, index) => [phaseId, index]));
+  const phasesById = new Map(phasesData.phases.map((phase) => [phase.id, phase]));
+  const renderedIds = new Set();
 
-  [...phasesData.phases]
-    .sort((left, right) => (orderIndex.get(left.id) ?? 99) - (orderIndex.get(right.id) ?? 99))
-    .forEach((phase) => {
-      phaseSelect.append(createOption(phase.id, phase.title));
+  phaseGroups.forEach((phaseGroup) => {
+    const group = document.createElement("optgroup");
+    group.label = phaseGroup.label;
+
+    phaseGroup.options.forEach(([phaseId, optionLabel]) => {
+      const phase = phasesById.get(phaseId);
+      if (!phase) return;
+      const option = createOption(phase.id, optionLabel);
+      option.title = phase.title;
+      group.append(option);
+      renderedIds.add(phase.id);
     });
+
+    if (group.children.length) phaseSelect.append(group);
+  });
+
+  const remainingPhases = phasesData.phases.filter((phase) => !renderedIds.has(phase.id));
+  if (!remainingPhases.length) return;
+
+  const otherGroup = document.createElement("optgroup");
+  otherGroup.label = "Otros recursos";
+  remainingPhases.forEach((phase) => otherGroup.append(createOption(phase.id, phase.title)));
+  phaseSelect.append(otherGroup);
 }
 
 function formatSectionName(section) {

@@ -330,6 +330,14 @@ p {
   border-color: var(--accent);
 }
 
+.phase-select optgroup {
+  font-weight: 760;
+}
+
+.phase-select option {
+  font-weight: 430;
+}
+
 .phase-materials {
   grid-template-columns: minmax(0, 1fr) auto;
 }
