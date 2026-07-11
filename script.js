@@ -173,7 +173,7 @@ function buildMaterialControls(topic, topicData) {
   const openLink = document.createElement("a");
   openLink.className = "material-link";
   openLink.target = "_blank";
-  openLink.rel = "noreferrer";
+  openLink.rel = "noopener noreferrer";
 
   [...groups.keys()].sort().forEach((academy) => {
     academySelect.append(createOption(academy, academy));
@@ -458,7 +458,7 @@ function buildProgressItem(entry) {
     link.className = "material-link progress-link";
     link.href = material.url;
     link.target = "_blank";
-    link.rel = "noreferrer";
+    link.rel = "noopener noreferrer";
     link.textContent = material.clickLabel || label;
     link.title = material.driveFileName || material.label || label;
     actions.append(link);
@@ -539,12 +539,14 @@ function getResourceDocumentTags(resource) {
     resource.academy,
     resource.area,
     resource.note,
+    resource.sourceKind,
     resource.url,
   ].join(" ");
   const text = normalize(rawText);
   const tags = [];
 
   const isOfficialMurcia =
+    resource.sourceKind === "official-murcia" ||
     resource.academy === "CARM/BORM" ||
     text.includes("carm.es") ||
     text.includes("borm.es") ||
@@ -553,11 +555,21 @@ function getResourceDocumentTags(resource) {
   const isOfficialOtherRegion =
     resource.officialScope === "other-ccaa" ||
     resource.sourceKind === "official-other-ccaa";
+  const isOfficialState =
+    resource.sourceKind === "official-state" || text.includes("boe.es");
+  const isRegionalGuide = resource.sourceKind === "regional-guide";
+  const isArchive = resource.sourceKind === "archive-private";
 
-  if (isOfficialMurcia) {
-    tags.push({ text: "Oficial Murcia", kind: "is-doc-tag is-official-murcia" });
-  } else if (isOfficialOtherRegion) {
+  if (isOfficialOtherRegion) {
     tags.push({ text: "Oficial otra CCAA", kind: "is-doc-tag is-official-other" });
+  } else if (isOfficialState) {
+    tags.push({ text: "Oficial estatal", kind: "is-doc-tag is-official-state" });
+  } else if (isOfficialMurcia) {
+    tags.push({ text: "Oficial Murcia", kind: "is-doc-tag is-official-murcia" });
+  } else if (isRegionalGuide) {
+    tags.push({ text: "Guía curricular", kind: "is-doc-tag is-regional-guide" });
+  } else if (isArchive) {
+    tags.push({ text: "Archivo", kind: "is-doc-tag is-archive" });
   }
 
   const isRubric = text.includes("rubrica") || text.includes("criterios de valoracion");
@@ -577,7 +589,7 @@ function getResourceDocumentTags(resource) {
   if (isPractical) tags.push({ text: "Práctico", kind: "is-doc-tag is-practical" });
   if (isCriteria) tags.push({ text: "Criterios", kind: "is-doc-tag is-criteria" });
 
-  if (!isRubric && !isPractical && !isCriteria) {
+  if (!isRubric && !isPractical && !isCriteria && !isArchive) {
     tags.push({ text: "Referencia", kind: "is-doc-tag is-reference" });
   }
 
@@ -701,15 +713,21 @@ function buildTrendSources(phase) {
 
     const panel = createElement("div", "topic-materials phase-materials");
     const meta = createElement("span", "phase-meta");
-    meta.append(
-      createElement("span", "phase-meta-chip is-doc-tag is-official-murcia", "Oficial Murcia"),
-      createElement("span", "phase-meta-chip", source.summary || "Práctico oficial localizado"),
-    );
+    meta.append(createElement("span", "phase-meta-chip is-doc-tag is-official-murcia", "Oficial Murcia"));
+    [
+      { text: source.officialDate },
+      { text: source.status, kind: source.statusKind ? ` is-${source.statusKind}` : "" },
+      { text: source.summary || "Práctico oficial localizado" },
+    ]
+      .filter(({ text }) => text)
+      .forEach(({ text, kind = "" }) => {
+        meta.append(createElement("span", `phase-meta-chip${kind}`, text));
+      });
     const link = document.createElement("a");
     link.className = "material-link";
     link.href = source.url;
     link.target = "_blank";
-    link.rel = "noreferrer";
+    link.rel = "noopener noreferrer";
     link.textContent = "PDF";
     link.setAttribute("aria-label", `Abrir ${source.title}`);
     panel.append(meta, link);
@@ -916,12 +934,11 @@ function buildResourceItem(resource) {
     const chip = createElement("span", kind ? `phase-meta-chip ${kind}` : "phase-meta-chip", text);
     meta.append(chip);
   });
-  if (resource.note) meta.title = resource.note;
 
   const openLink = document.createElement("a");
   openLink.className = "material-link";
   openLink.target = "_blank";
-  openLink.rel = "noreferrer";
+  openLink.rel = "noopener noreferrer";
 
   if (resource.hasPublicLink && resource.url) {
     openLink.href = resource.url;
@@ -934,6 +951,9 @@ function buildResourceItem(resource) {
   }
 
   panel.append(meta, openLink);
+  if (resource.note && resource.sourceKind !== "archive-private") {
+    panel.append(createElement("p", "phase-note", resource.note));
+  }
   item.append(row, panel);
   return item;
 }

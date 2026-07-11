@@ -13,16 +13,18 @@
       content="Consulta rápida del temario, prácticos y recursos por fase."
     >
     <meta property="og:type" content="website">
+    <meta name="last-reviewed" content="2026-07-12">
     <title>Oposición Informática Murcia | Diego Ayala</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <script>
       const savedTheme = localStorage.getItem("theme");
       document.documentElement.dataset.theme = savedTheme || "dark";
     </script>
-    <script src="script.js?v=20260623-practice-solutions-v1" defer></script>
-    <link rel="stylesheet" href="styles.css?v=20260623-practice-solutions-v1">
+    <script src="script.js?v=20260712-data-audit-v1" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260712-data-audit-v1">
   </head>
   <body>
+    <a class="skip-link" href="#content">Saltar al contenido</a>
     <header class="site-header">
       <a class="site-name" href="./" aria-label="Inicio">Diego Ayala</a>
       <button
@@ -50,28 +52,34 @@
       </button>
     </header>
 
-    <main class="page-main" aria-labelledby="page-title">
+    <main id="content" class="page-main" aria-labelledby="page-title">
       <section class="search-panel" aria-label="Buscar recursos">
         <h1 id="page-title" class="sr-only">Oposición de Informática en Murcia</h1>
         <div class="summary-row">
-          <p>Murcia · Informática 590107 · DAW 0373</p>
+          <p>Murcia · PES Informática 590107 · DAW 0373</p>
           <div class="summary-links">
             <a
               class="source-link"
               href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-1996-3102"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              BOE 13/02/1996
+              Temario BOE 1996
             </a>
             <a
               class="source-link"
               href="https://drive.google.com/drive/folders/1Yc0I72JAJi4QfbvPJKyvhSaz2yyxJdRs"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Drive privado
             </a>
+            <span
+              class="verification-stamp"
+              title="Temario, criterios, convocatoria, enlaces y procedencia contrastados"
+            >
+              Revisado 12/07/2026
+            </span>
           </div>
         </div>
         <div class="filter-row">
@@ -101,10 +109,24 @@
       <section class="syllabus" data-topic-view aria-label="Listado del temario">
         <article class="topic-block rubric-block" data-rubric-block>
           <header class="block-header">
-            <p>Rúbricas</p>
-            <h2>Parte B: Desarrollo de un tema por escrito</h2>
+            <p>Rúbrica oficial Murcia · 2025</p>
+            <h2>Parte B: Desarrollo por escrito de un tema</h2>
           </header>
           <ol class="topic-list rubric-list">
+            <li class="topic-item rubric-item" data-rubric-item>
+              <span class="topic-row">
+                <span class="topic-number">REV</span>
+                <span>Alcance: últimos criterios oficiales localizados</span>
+              </span>
+              <div class="rubric-detail">
+                <p>
+                  Estas condiciones corresponden a la convocatoria de Murcia 2025 y fueron
+                  revisadas el 12/07/2026. Son la última referencia oficial localizada para
+                  Informática 590107, pero deben volver a comprobarse cuando se publique una
+                  nueva convocatoria.
+                </p>
+              </div>
+            </li>
             <li class="topic-item rubric-item" data-rubric-item>
               <span class="topic-row">
                 <span class="topic-number">B</span>
@@ -127,14 +149,16 @@
               <div class="rubric-detail">
                 <div class="rubric-tags" aria-label="Datos clave">
                   <span>2 horas</span>
+                  <span>4 temas sorteados</span>
                   <span>10 puntos</span>
                   <span>50% de la primera prueba</span>
                   <span>Mínimo 1,25 en Parte A y B</span>
                 </div>
                 <p>
-                  La Parte B se califica de 0 a 10. La Primera prueba suma Parte A y Parte B
-                  al 50% cada una; para superarla hay que alcanzar al menos 1,25 puntos en
-                  cada parte y una calificación total igual o superior a 5.
+                  Al tener la especialidad 74 temas, se elige uno entre cuatro extraídos al
+                  azar. La Parte B se califica de 0 a 10. La Primera prueba suma Parte A y
+                  Parte B al 50% cada una; para superarla hay que alcanzar al menos 1,25
+                  puntos en cada parte y una calificación total igual o superior a 5.
                 </p>
               </div>
             </li>
@@ -242,25 +266,25 @@
                     class="rubric-source"
                     href="https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosValoracion_INFORMATICA_01.pdf&IDCONTENIDO=199410&IDTIPO=60&RASTRO=c798%24m3977%2C74131%2C74447%2C74448%2C74501"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
-                    Criterios valoración
+                    Criterios valoración 2025
                   </a>
                   <a
                     class="rubric-source"
                     href="https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosActuacion_INFORMATICA_01.pdf&IDCONTENIDO=199409&IDTIPO=60&RASTRO=c798%24m3977%2C74131%2C74447%2C74448%2C74501"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
-                    Criterios actuación
+                    Criterios actuación 2025
                   </a>
                   <a
                     class="rubric-source"
                     href="https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
-                    Convocatoria BORM
+                    Convocatoria BORM 2025
                   </a>
                 </div>
               </div>
@@ -771,9 +795,9 @@
     </main>
 
     <footer class="site-footer">
-      <a href="https://github.com/diegaless" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://github.com/diegaless" target="_blank" rel="noopener noreferrer">GitHub</a>
       <span aria-hidden="true"></span>
-      <a href="https://www.linkedin.com/in/diego-ayala/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/diego-ayala/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <span aria-hidden="true"></span>
       <a href="mailto:diego.ayala.bernal2@gmail.com">Contacto</a>
     </footer>

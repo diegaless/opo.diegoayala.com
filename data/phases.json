@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-17 02:29:42",
+  "generatedAt": "2026-07-12 00:00:00",
   "source": "Material por fases del examen - Murcia",
-  "access": "Los materiales complementarios aparecerán como enlaces cuando se suba la carpeta final a Drive.",
+  "access": "Los archivos de Drive son privados y requieren la cuenta autorizada; las fuentes oficiales externas son públicas.",
   "selectedModule": {
     "cycle_status": "DAW - Técnico Superior en Desarrollo de Aplicaciones Web",
     "recommended_cycle": "Ciclo cerrado por decisión del opositor: DAW.",
     "module": "Lenguajes de marcas y sistemas de gestión de información",
     "code": "0373",
     "family": "Informática y Comunicaciones",
-    "course": "2.º curso",
+    "course": "1.º curso",
     "current_total_hours": "135 horas",
-    "weekly_hours": "6 horas semanales como referencia de distribución ordinaria",
-    "old_curriculum_hours": "125 horas, 6 horas semanales y 7 ECTS en el Anexo III de la Orden de 12/03/2013",
-    "hours_note": "Para la programación final usar 135 horas si se contextualiza en la organización vigente 2025/2026; conservar la nota de 125 horas solo como referencia histórica del currículo BORM 2013.",
+    "weekly_hours": "4 horas semanales, según las tablas horarias de Murcia de noviembre de 2025.",
+    "old_curriculum_hours": "125 horas y 6 horas semanales en 2.º curso en el Anexo III de la Orden de 12/03/2013",
+    "hours_note": "Para una programación contextualizada en 2025/2026, usar 1.º curso, 135 horas y 4 horas semanales, citando la tabla organizativa de noviembre de 2025. Volver a comprobar la distribución al publicarse las instrucciones del curso aplicable.",
     "content_blocks": [
       "lenguajes de marcas y XML",
       "HTML/XHTML y hojas de estilo",
@@ -25,70 +25,136 @@
   },
   "legalSources": [
     {
+      "nivel": "Estado actual de convocatoria",
+      "norma": "Portal oficial de oposiciones docentes de la CARM",
+      "relevancia": "A 12/07/2026, el portal oficial muestra convocatorias 2026 para Maestros y Catedráticos de Música, pero no una nueva convocatoria de PES/Informática. La última localizada para 590107 sigue siendo la de 2025.",
+      "url": "https://www.carm.es/web/pagina?IDCONTENIDO=3977&IDTIPO=100&RASTRO=c798%24m",
+      "sourceKind": "official-murcia",
+      "officialDate": "Revisado 12/07/2026",
+      "status": "Sin nueva convocatoria PES publicada",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
+    },
+    {
       "nivel": "Convocatoria autonómica Murcia",
-      "norma": "Orden de 20 de noviembre de 2024, BORM núm. 272 de 22/11/2024",
-      "relevancia": "Bases y convocatoria de Secundaria/FP 2025 en la Región de Murcia. Define pruebas, entrega de programación, méritos y fase de prácticas.",
-      "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952"
+      "norma": "Orden de 20 de noviembre de 2024, BORM n.º 272 de 22/11/2024",
+      "relevancia": "Bases de la convocatoria de Secundaria y otros cuerpos celebrada en 2025. Es referencia histórica y no una convocatoria abierta.",
+      "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
+      "sourceKind": "official-murcia",
+      "officialDate": "Publicado 22/11/2024",
+      "status": "Convocatoria 2025 cerrada",
+      "statusKind": "historical",
+      "verifiedAt": "2026-07-12"
     },
     {
       "nivel": "Criterios oficiales Murcia - Informática 590107",
-      "norma": "Criterios de valoración y actuación 2025 de 590107 Informática",
-      "relevancia": "Concreta tiempos, material permitido, ponderaciones de programación, unidad y debate, y rúbricas de valoración.",
-      "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74501&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74447%2C74448"
+      "norma": "Criterios de valoración y actuación de Informática 590107 (2025)",
+      "relevancia": "Últimos criterios oficiales localizados para la especialidad. Concretan tiempos, material, ponderaciones y rúbricas de la convocatoria 2025; deben revisarse cuando se publique otra convocatoria.",
+      "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74501&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74447%2C74448",
+      "sourceKind": "official-murcia",
+      "officialDate": "Publicado 11/06/2025",
+      "status": "Últimos criterios localizados (2025)",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
     },
     {
       "nivel": "Reglamento estatal de ingreso",
-      "norma": "Real Decreto 276/2007, de 23 de febrero",
-      "relevancia": "Marco general del ingreso, accesos y adquisición de nuevas especialidades docentes.",
-      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-4372"
+      "norma": "Real Decreto 276/2007, de 23 de febrero - texto consolidado",
+      "relevancia": "Marco estatal de ingreso, accesos y adquisición de nuevas especialidades docentes.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-4372",
+      "sourceKind": "official-state",
+      "officialDate": "Texto consolidado consultado 12/07/2026",
+      "status": "Marco estatal",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
     },
     {
       "nivel": "Temario estatal",
-      "norma": "Orden de 9 de septiembre de 1993, Orden de 1 de febrero de 1996 y Orden ECD/191/2012",
-      "relevancia": "Temarios vigentes aplicables hasta aprobación de temarios definitivos.",
-      "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952"
+      "norma": "Orden de 1 de febrero de 1996 - temario de Informática (74 temas)",
+      "relevancia": "Fuente primaria del listado de 74 temas de la especialidad de Informática utilizado por la convocatoria de Murcia 2025.",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1996-3102",
+      "sourceKind": "official-state",
+      "officialDate": "Publicado 13/02/1996",
+      "status": "Temario aplicado en 2025",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
     },
     {
-      "nivel": "Currículo Murcia - ESO/Bachillerato",
-      "norma": "Decreto n.º 235/2022 y Decreto n.º 251/2022",
-      "relevancia": "Currículo autonómico de ESO y Bachillerato en la Región de Murcia.",
-      "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952"
-    },
-    {
-      "nivel": "FP estatal y currículo del ciclo elegido",
-      "norma": "Ley Orgánica 3/2022, Real Decreto 659/2023 y normativa curricular del título/módulo",
-      "relevancia": "Base para programar módulos de FP: resultados de aprendizaje, criterios de evaluación, competencias y unidades de competencia.",
-      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-16889"
+      "nivel": "Ordenación estatal de FP",
+      "norma": "Ley Orgánica 3/2022 y Real Decreto 659/2023",
+      "relevancia": "Marco estatal del sistema de Formación Profesional para contextualizar resultados de aprendizaje, evaluación y formación en empresa.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-16889",
+      "sourceKind": "official-state",
+      "officialDate": "Texto consolidado consultado 12/07/2026",
+      "status": "Marco estatal",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
     },
     {
       "nivel": "Título DAW - estatal",
-      "norma": "Real Decreto 686/2010 y actualización por Real Decreto 405/2023",
-      "relevancia": "Referente estatal para Técnico Superior en Desarrollo de Aplicaciones Web.",
-      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-9269"
+      "norma": "Real Decreto 686/2010, de 20 de mayo",
+      "relevancia": "Establece el título de Técnico Superior en Desarrollo de Aplicaciones Web y sus enseñanzas mínimas.",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-9269",
+      "sourceKind": "official-state",
+      "officialDate": "Publicado 12/06/2010",
+      "status": "Norma del título",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
     },
     {
       "nivel": "Actualización estatal DAW",
       "norma": "Real Decreto 405/2023, de 29 de mayo",
-      "relevancia": "Actualiza el título de Técnico Superior en Desarrollo de Aplicaciones Web y fija enseñanzas mínimas.",
-      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-13221"
+      "relevancia": "Actualiza el título de DAW y sus enseñanzas mínimas.",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-13221",
+      "sourceKind": "official-state",
+      "officialDate": "Publicado 03/06/2023",
+      "status": "Actualización del título",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
+    },
+    {
+      "nivel": "Atribución docente DAW",
+      "norma": "Real Decreto 500/2024, de 21 de mayo",
+      "relevancia": "Actualiza el anexo de atribución docente de DAW y asigna el módulo 0373 a la especialidad de Informática del cuerpo de Secundaria.",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-10685",
+      "sourceKind": "official-state",
+      "officialDate": "Publicado 28/05/2024",
+      "status": "Atribución docente actualizada",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
     },
     {
       "nivel": "Currículo Murcia - DAW",
-      "norma": "Orden de 12 de marzo de 2013, currículo de Desarrollo de Aplicaciones Web en Murcia",
-      "relevancia": "Currículo autonómico de Murcia para programar el módulo si se elige DAW.",
-      "url": "https://www.borm.es/borm/documento?id=562568&obj=anu"
+      "norma": "Orden de 12 de marzo de 2013 - currículo DAW en Murcia",
+      "relevancia": "Currículo autonómico base del ciclo DAW; debe leerse junto con sus modificaciones posteriores.",
+      "url": "https://www.borm.es/services/anuncio/ano/2013/numero/4800/pdf?id=562568",
+      "sourceKind": "official-murcia",
+      "officialDate": "Publicado 01/04/2013",
+      "status": "Norma base, modificada",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
     },
     {
-      "nivel": "Guía FP Murcia 2025/2026 - DAW",
-      "norma": "Guía de Formación Profesional de la Consejería de Educación y Formación Profesional de la Región de Murcia",
-      "relevancia": "Oferta y organización actual del ciclo DAW: módulo 0373 en segundo curso con 135 horas.",
-      "url": "https://llegarasalto.com/guiafp/ciclos/IFC-323.html"
+      "nivel": "Actualización curricular Murcia - Informática",
+      "norma": "Orden de 10 de septiembre de 2022, BORM n.º 217",
+      "relevancia": "Modifica los currículos de Informática y Comunicaciones en Murcia, incluido el contenido del módulo 0373.",
+      "url": "https://www.borm.es/services/anuncio/ano/2022/numero/4674/pdf?id=810699",
+      "sourceKind": "official-murcia",
+      "officialDate": "Publicado 19/09/2022",
+      "status": "Modificación curricular",
+      "statusKind": "verified",
+      "verifiedAt": "2026-07-12"
     },
     {
-      "nivel": "Actualización curricular Murcia informática",
-      "norma": "Orden de 10 de septiembre de 2022, BORM núm. 217 de 19/09/2022",
-      "relevancia": "Modifica currículos de ciclos de Informática y Comunicaciones en Murcia e incluye contenidos del módulo 0373.",
-      "url": "https://www.borm.es/services/anuncio/ano/2022/numero/4674/pdf?id=810699"
+      "nivel": "Organización curricular Murcia - DAW 2025/2026",
+      "norma": "Tablas horarias de Grado Superior - versión noviembre de 2025",
+      "relevancia": "La tabla de organización de FP de Murcia sitúa 0373 en 1.º de DAW, con 135 horas totales y 4 horas semanales. Es una referencia organizativa de 2025/2026, no una norma publicada en BORM, y debe revisarse para el curso aplicable.",
+      "url": "https://www.llegarasalto.com/wp-content/uploads/2025/11/TABLAS-HORARIAS-GS-NOVIEMBRE_2025.pdf",
+      "sourceKind": "regional-guide",
+      "officialDate": "Versión noviembre 2025 · revisado 12/07/2026",
+      "status": "Referencia organizativa 2025/2026",
+      "statusKind": "historical",
+      "verifiedAt": "2026-07-12"
     }
   ],
   "phases": [
@@ -96,38 +162,310 @@
       "id": "00_Normativa_y_orden_legal",
       "order": 0,
       "label": "Normativa",
-      "title": "Normativa y orden legal",
-      "legal": "Jerarquía normativa, convocatoria Murcia y fuentes DAW.",
-      "description": "Base legal para interpretar cada fase, con Murcia, Informática 590107 y DAW como referencia didáctica.",
-      "resourceCount": 49,
-      "publicLinkCount": 49,
+      "title": "Normativa verificada y archivo de referencia",
+      "legal": "Fuentes oficiales separadas del archivo del preparador.",
+      "description": "Primero se muestran las fuentes oficiales aplicables. El material privado restante queda marcado como archivo sin vigencia verificada.",
+      "resourceCount": 34,
+      "publicLinkCount": 34,
       "sections": [
         {
-          "name": "Normativa/Legislacion",
-          "count": 48
+          "name": "Fuentes verificadas/Proceso selectivo",
+          "count": 3
         },
         {
-          "name": "Normativa/Web XML scripts",
+          "name": "Fuentes verificadas/Temario y acceso",
+          "count": 2
+        },
+        {
+          "name": "Fuentes verificadas/DAW y módulo 0373",
+          "count": 7
+        },
+        {
+          "name": "Archivo del preparador/Material auxiliar",
+          "count": 21
+        },
+        {
+          "name": "Archivo del preparador/Web XML y scripts",
           "count": 1
         }
       ],
       "academies": [
         {
+          "name": "CARM/BORM",
+          "count": 5
+        },
+        {
+          "name": "BOE",
+          "count": 6
+        },
+        {
+          "name": "Guía FP Murcia",
+          "count": 1
+        },
+        {
           "name": "Preparador online",
-          "count": 49
+          "count": 22
         }
       ],
       "types": [
         {
+          "name": "convocatoria oficial",
+          "count": 2
+        },
+        {
+          "name": "criterios oficiales",
+          "count": 1
+        },
+        {
+          "name": "normativa oficial",
+          "count": 7
+        },
+        {
+          "name": "temario oficial",
+          "count": 1
+        },
+        {
+          "name": "guía curricular",
+          "count": 1
+        },
+        {
           "name": "legislacion",
-          "count": 49
+          "count": 22
         }
       ],
       "resources": [
         {
+          "title": "Portal oficial de oposiciones docentes de la CARM",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/Proceso selectivo",
+          "type": "convocatoria oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Revisado 12/07/2026",
+          "status": "Sin nueva convocatoria PES publicada",
+          "statusKind": "verified",
+          "note": "A 12/07/2026, el portal oficial muestra convocatorias 2026 para Maestros y Catedráticos de Música, pero no una nueva convocatoria de PES/Informática. La última localizada para 590107 sigue siendo la de 2025.",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=3977&IDTIPO=100&RASTRO=c798%24m",
+          "urlMode": "official-page",
+          "clickLabel": "Oficial"
+        },
+        {
+          "title": "Orden de 20 de noviembre de 2024, BORM n.º 272 de 22/11/2024",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/Proceso selectivo",
+          "type": "convocatoria oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 22/11/2024",
+          "status": "Convocatoria 2025 cerrada",
+          "statusKind": "historical",
+          "note": "Bases de la convocatoria de Secundaria y otros cuerpos celebrada en 2025. Es referencia histórica y no una convocatoria abierta.",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Criterios de valoración y actuación de Informática 590107 (2025)",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/Proceso selectivo",
+          "type": "criterios oficiales",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 11/06/2025",
+          "status": "Últimos criterios localizados (2025)",
+          "statusKind": "verified",
+          "note": "Últimos criterios oficiales localizados para la especialidad. Concretan tiempos, material, ponderaciones y rúbricas de la convocatoria 2025; deben revisarse cuando se publique otra convocatoria.",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74501&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74447%2C74448",
+          "urlMode": "official-page",
+          "clickLabel": "Oficial"
+        },
+        {
+          "title": "Real Decreto 276/2007, de 23 de febrero - texto consolidado",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/Temario y acceso",
+          "type": "normativa oficial",
+          "academy": "BOE",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Texto consolidado consultado 12/07/2026",
+          "status": "Marco estatal",
+          "statusKind": "verified",
+          "note": "Marco estatal de ingreso, accesos y adquisición de nuevas especialidades docentes.",
+          "sourceKind": "official-state",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-4372",
+          "urlMode": "official-page",
+          "clickLabel": "Oficial"
+        },
+        {
+          "title": "Orden de 1 de febrero de 1996 - temario de Informática (74 temas)",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/Temario y acceso",
+          "type": "temario oficial",
+          "academy": "BOE",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Publicado 13/02/1996",
+          "status": "Temario aplicado en 2025",
+          "statusKind": "verified",
+          "note": "Fuente primaria del listado de 74 temas de la especialidad de Informática utilizado por la convocatoria de Murcia 2025.",
+          "sourceKind": "official-state",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1996-3102",
+          "urlMode": "official-page",
+          "clickLabel": "Oficial"
+        },
+        {
+          "title": "Ley Orgánica 3/2022 y Real Decreto 659/2023",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/DAW y módulo 0373",
+          "type": "normativa oficial",
+          "academy": "BOE",
+          "topic": "General",
+          "area": "DAW · Lenguajes de marcas 0373",
+          "officialDate": "Texto consolidado consultado 12/07/2026",
+          "status": "Marco estatal",
+          "statusKind": "verified",
+          "note": "Marco estatal del sistema de Formación Profesional para contextualizar resultados de aprendizaje, evaluación y formación en empresa.",
+          "sourceKind": "official-state",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-16889",
+          "urlMode": "official-page",
+          "clickLabel": "Oficial"
+        },
+        {
+          "title": "Real Decreto 686/2010, de 20 de mayo",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/DAW y módulo 0373",
+          "type": "normativa oficial",
+          "academy": "BOE",
+          "topic": "General",
+          "area": "DAW · Lenguajes de marcas 0373",
+          "officialDate": "Publicado 12/06/2010",
+          "status": "Norma del título",
+          "statusKind": "verified",
+          "note": "Establece el título de Técnico Superior en Desarrollo de Aplicaciones Web y sus enseñanzas mínimas.",
+          "sourceKind": "official-state",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-9269",
+          "urlMode": "official-page",
+          "clickLabel": "Oficial"
+        },
+        {
+          "title": "Real Decreto 405/2023, de 29 de mayo",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/DAW y módulo 0373",
+          "type": "normativa oficial",
+          "academy": "BOE",
+          "topic": "General",
+          "area": "DAW · Lenguajes de marcas 0373",
+          "officialDate": "Publicado 03/06/2023",
+          "status": "Actualización del título",
+          "statusKind": "verified",
+          "note": "Actualiza el título de DAW y sus enseñanzas mínimas.",
+          "sourceKind": "official-state",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-13221",
+          "urlMode": "official-page",
+          "clickLabel": "Oficial"
+        },
+        {
+          "title": "Real Decreto 500/2024, de 21 de mayo",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/DAW y módulo 0373",
+          "type": "normativa oficial",
+          "academy": "BOE",
+          "topic": "General",
+          "area": "DAW · Lenguajes de marcas 0373",
+          "officialDate": "Publicado 28/05/2024",
+          "status": "Atribución docente actualizada",
+          "statusKind": "verified",
+          "note": "Actualiza el anexo de atribución docente de DAW y asigna el módulo 0373 a la especialidad de Informática del cuerpo de Secundaria.",
+          "sourceKind": "official-state",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-10685",
+          "urlMode": "official-page",
+          "clickLabel": "Oficial"
+        },
+        {
+          "title": "Orden de 12 de marzo de 2013 - currículo DAW en Murcia",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/DAW y módulo 0373",
+          "type": "normativa oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "DAW · Lenguajes de marcas 0373",
+          "officialDate": "Publicado 01/04/2013",
+          "status": "Norma base, modificada",
+          "statusKind": "verified",
+          "note": "Currículo autonómico base del ciclo DAW; debe leerse junto con sus modificaciones posteriores.",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.borm.es/services/anuncio/ano/2013/numero/4800/pdf?id=562568",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Orden de 10 de septiembre de 2022, BORM n.º 217",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/DAW y módulo 0373",
+          "type": "normativa oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "DAW · Lenguajes de marcas 0373",
+          "officialDate": "Publicado 19/09/2022",
+          "status": "Modificación curricular",
+          "statusKind": "verified",
+          "note": "Modifica los currículos de Informática y Comunicaciones en Murcia, incluido el contenido del módulo 0373.",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.borm.es/services/anuncio/ano/2022/numero/4674/pdf?id=810699",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
+          "title": "Tablas horarias de Grado Superior - versión noviembre de 2025",
+          "phase": "00_Normativa_y_orden_legal",
+          "section": "Fuentes verificadas/DAW y módulo 0373",
+          "type": "guía curricular",
+          "academy": "Guía FP Murcia",
+          "topic": "General",
+          "area": "DAW · Lenguajes de marcas 0373",
+          "officialDate": "Versión noviembre 2025 · revisado 12/07/2026",
+          "status": "Referencia organizativa 2025/2026",
+          "statusKind": "historical",
+          "note": "La tabla de organización de FP de Murcia sitúa 0373 en 1.º de DAW, con 135 horas totales y 4 horas semanales. Es una referencia organizativa de 2025/2026, no una norma publicada en BORM, y debe revisarse para el curso aplicable.",
+          "sourceKind": "regional-guide",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.llegarasalto.com/wp-content/uploads/2025/11/TABLAS-HORARIAS-GS-NOVIEMBRE_2025.pdf",
+          "urlMode": "official-pdf",
+          "clickLabel": "PDF"
+        },
+        {
           "title": "111942-Decreto 43-2015 reconocimiento competencias lenguas extranjeras.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -135,12 +473,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1q__FNWWQzQUqjI2P6vtCa5lo5Hu6W_7T/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1q__FNWWQzQUqjI2P6vtCa5lo5Hu6W_7T"
+          "driveFileId": "1q__FNWWQzQUqjI2P6vtCa5lo5Hu6W_7T",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "168540-Solicitudes 1895(actualizado 12 febrero).pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -148,12 +491,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1P43kcy0RgsUZGb_UA3fMscbm4bDj1gxi/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1P43kcy0RgsUZGb_UA3fMscbm4bDj1gxi"
+          "driveFileId": "1P43kcy0RgsUZGb_UA3fMscbm4bDj1gxi",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "168541-Requisitos1895.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -161,12 +509,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1Fd5SCAIKoHfD5i6Y0E163PU2Lg9g_VdX/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1Fd5SCAIKoHfD5i6Y0E163PU2Lg9g_VdX"
+          "driveFileId": "1Fd5SCAIKoHfD5i6Y0E163PU2Lg9g_VdX",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "5504 Decr 165-2019 incor nuevos cert diplom titul BORM10-09-19.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -174,12 +527,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1jfLidtShlnF-Bl0ex06STj1Wh-eTRKkr/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1jfLidtShlnF-Bl0ex06STj1Wh-eTRKkr"
+          "driveFileId": "1jfLidtShlnF-Bl0ex06STj1Wh-eTRKkr",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "BOE-A-2020-4963 especializacion.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -187,12 +545,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1ERhubRUUaToBJy0RKY6-6_N7XyUDbN22/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1ERhubRUUaToBJy0RKY6-6_N7XyUDbN22"
+          "driveFileId": "1ERhubRUUaToBJy0RKY6-6_N7XyUDbN22",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "Baremo Oposicion.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -200,12 +563,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1vlnags-7gIVCJt2k4D28yRYHUvw5cOoP/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1vlnags-7gIVCJt2k4D28yRYHUvw5cOoP"
+          "driveFileId": "1vlnags-7gIVCJt2k4D28yRYHUvw5cOoP",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "Leyes Educativas - Cronologia.png",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -213,12 +581,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1R6eF__UFXiwg68AVPFje3R9WirexS5pv/view?usp=drivesdk",
           "urlMode": "drive-file-view",
-          "driveFileId": "1R6eF__UFXiwg68AVPFje3R9WirexS5pv"
+          "driveFileId": "1R6eF__UFXiwg68AVPFje3R9WirexS5pv",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "Lomloe.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -226,12 +599,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1MhaZbUvzMgmmHdRH39ytuaQonXc6b5cH/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1MhaZbUvzMgmmHdRH39ytuaQonXc6b5cH"
+          "driveFileId": "1MhaZbUvzMgmmHdRH39ytuaQonXc6b5cH",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "Nueva Ley Ordenacion FP.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -239,181 +617,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1gOAHuhVMvIbuSl_jis2hgQOsB34ZOG9O/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1gOAHuhVMvIbuSl_jis2hgQOsB34ZOG9O"
-        },
-        {
-          "title": "ORD_17.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1JLLcNZgvl_p4465oXUOgaod952SyNA-C/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1JLLcNZgvl_p4465oXUOgaod952SyNA-C"
-        },
-        {
-          "title": "ORD_50.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/15ul5IxbGgAfHoglHgjEHlbXGVP24sUbf/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "15ul5IxbGgAfHoglHgjEHlbXGVP24sUbf"
-        },
-        {
-          "title": "ORD_50__2.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1jmUJWfpnso-BvQfnhsfFeoY_swNHG2nQ/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1jmUJWfpnso-BvQfnhsfFeoY_swNHG2nQ"
-        },
-        {
-          "title": "ORD_51.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1Tn4xkBHthjB_5VyyRsaq00Z_1lpzupXy/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1Tn4xkBHthjB_5VyyRsaq00Z_1lpzupXy"
-        },
-        {
-          "title": "ORD_51__2.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1ronaJyxX8DOItmMrYGgSsKRlBZJi2rmz/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1ronaJyxX8DOItmMrYGgSsKRlBZJi2rmz"
-        },
-        {
-          "title": "ORD_56.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1XBeg4hosSTb6UDYLhT_cIKJ9_N6EfYHq/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1XBeg4hosSTb6UDYLhT_cIKJ9_N6EfYHq"
-        },
-        {
-          "title": "ORD_56__2.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/15fKGduz-6oObwrbtRYdXZWu05ysqyex3/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "15fKGduz-6oObwrbtRYdXZWu05ysqyex3"
-        },
-        {
-          "title": "Plan de convivencia.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1qgzZq_togHLVw_5TKmqXxsNSKH47Yzg7/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1qgzZq_togHLVw_5TKmqXxsNSKH47Yzg7"
-        },
-        {
-          "title": "Proyecto Educativo.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1r3jPVP5d3Myk8tCXNrOtSulbzdNJcG1a/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1r3jPVP5d3Myk8tCXNrOtSulbzdNJcG1a"
-        },
-        {
-          "title": "ProyectoEducativo16_17.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1Qecw7iQYN2Ez6pq2gbIH2IdqJfSPzWH4/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1Qecw7iQYN2Ez6pq2gbIH2IdqJfSPzWH4"
-        },
-        {
-          "title": "ProyectoEducativo_21_22.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1ImHAunXeYXVCkOOwcxpZCv1gmOJiu-ma/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1ImHAunXeYXVCkOOwcxpZCv1gmOJiu-ma"
-        },
-        {
-          "title": "ProyectoGestion16_17.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1FWkhMQJEUGoT1bAYogTUoU8kBEpR22TW/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1FWkhMQJEUGoT1bAYogTUoU8kBEpR22TW"
-        },
-        {
-          "title": "ProyectoGestion202122.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1LPAVDhi-1_L33i5L9Xzg4GD7gNBBHPSt/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1LPAVDhi-1_L33i5L9Xzg4GD7gNBBHPSt"
+          "driveFileId": "1gOAHuhVMvIbuSl_jis2hgQOsB34ZOG9O",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "RD_17.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -421,12 +635,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1eOSx3m7eQC7_cS_RNSORNOHIyv9h_wF2/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1eOSx3m7eQC7_cS_RNSORNOHIyv9h_wF2"
+          "driveFileId": "1eOSx3m7eQC7_cS_RNSORNOHIyv9h_wF2",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "RD_50.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -434,25 +653,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/13el55bsymqY_U2bioIH5iqkjtkAEqSjk/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "13el55bsymqY_U2bioIH5iqkjtkAEqSjk"
-        },
-        {
-          "title": "RD_50__2.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1FuLicarWVj20AD00jcHoNtp52e7mON4V/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1FuLicarWVj20AD00jcHoNtp52e7mON4V"
+          "driveFileId": "13el55bsymqY_U2bioIH5iqkjtkAEqSjk",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "RD_51.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -460,25 +671,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/16H43TKmHZhM-FRme_roizKtzQ6rii55V/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "16H43TKmHZhM-FRme_roizKtzQ6rii55V"
-        },
-        {
-          "title": "RD_51__2.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1A-gUDZZFB6_uFALPVV2PKtUxLZrFH2cE/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1A-gUDZZFB6_uFALPVV2PKtUxLZrFH2cE"
+          "driveFileId": "16H43TKmHZhM-FRme_roizKtzQ6rii55V",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "RD_56.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -486,51 +689,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1-KVPcnvYg7B3EGnvOKerXKKy8BQrzLBD/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1-KVPcnvYg7B3EGnvOKerXKKy8BQrzLBD"
-        },
-        {
-          "title": "RD_56__2.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1YJlccdCw-P13h1c78LhMBK707M3E0Lzd/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1YJlccdCw-P13h1c78LhMBK707M3E0Lzd"
-        },
-        {
-          "title": "ROF16_17.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1ssnBF6w1OcDFuJyfavSWnS2NlEJ-i-hL/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1ssnBF6w1OcDFuJyfavSWnS2NlEJ-i-hL"
-        },
-        {
-          "title": "ROF_2021_22.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/19KLnAetMh1pgdXI8673-BcG-k_QIfPI1/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "19KLnAetMh1pgdXI8673-BcG-k_QIfPI1"
+          "driveFileId": "1-KVPcnvYg7B3EGnvOKerXKKy8BQrzLBD",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "Real Decreto Acceso Docente 276-2007.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -538,12 +707,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1IWA-6LkSKJixG9OMR8aoYPoIq2fKTjWD/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1IWA-6LkSKJixG9OMR8aoYPoIq2fKTjWD"
+          "driveFileId": "1IWA-6LkSKJixG9OMR8aoYPoIq2fKTjWD",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "Real Decreto Estabilizacion Docente 270-2022.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -551,12 +725,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/10av0xv94k9Ryzdxmmggb5ewytqjEApkL/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "10av0xv94k9Ryzdxmmggb5ewytqjEApkL"
+          "driveFileId": "10av0xv94k9Ryzdxmmggb5ewytqjEApkL",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "Resolucion15septiembre2020CursosEspecializacionFPI.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -564,77 +743,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1RmY5vxxd8332fW65GW3SYinjhga_taNF/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1RmY5vxxd8332fW65GW3SYinjhga_taNF"
-        },
-        {
-          "title": "convocatoria secundaria 2018.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1O-7jjUr8M13cd-JItvfJMdIGEb-KlF5Q/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1O-7jjUr8M13cd-JItvfJMdIGEb-KlF5Q"
-        },
-        {
-          "title": "convocatoria secundaria 2018__2.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1UG_mOPwWIrzuqRK18H-gTKmTCx24CxPw/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1UG_mOPwWIrzuqRK18H-gTKmTCx24CxPw"
-        },
-        {
-          "title": "decreto 302-2010 funcion docente.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1aFXmSzV-7Gz9boJJFZVHUuMfugH36Hm2/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1aFXmSzV-7Gz9boJJFZVHUuMfugH36Hm2"
-        },
-        {
-          "title": "decreto 327-2010 reglamento IES.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1F_Zjji-WJgKbYqltfFo2oIX-xgkKl1Md/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1F_Zjji-WJgKbYqltfFo2oIX-xgkKl1Md"
-        },
-        {
-          "title": "decreto 436-2008 FP andalucia.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1tOaV8uRecrIB3Z2Np-9eDYZVWCG_mRJH/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1tOaV8uRecrIB3Z2Np-9eDYZVWCG_mRJH"
+          "driveFileId": "1RmY5vxxd8332fW65GW3SYinjhga_taNF",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "disposicion idiomas murcia 2022.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -642,12 +761,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1dq3Cx5GOacj7m8iwgnVmnR9-GjxQtym_/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1dq3Cx5GOacj7m8iwgnVmnR9-GjxQtym_"
+          "driveFileId": "1dq3Cx5GOacj7m8iwgnVmnR9-GjxQtym_",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "jerarquia leyes.png",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -655,51 +779,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1IyzhIKu6C_HeONBldNOcn4qR4FVjuNhj/view?usp=drivesdk",
           "urlMode": "drive-file-view",
-          "driveFileId": "1IyzhIKu6C_HeONBldNOcn4qR4FVjuNhj"
-        },
-        {
-          "title": "ley 17-2007 LEA.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/15zUW9TboCR4pRTyxwqOIMa3MM0E2Du78/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "15zUW9TboCR4pRTyxwqOIMa3MM0E2Du78"
-        },
-        {
-          "title": "orden 29-2010 Evaluacion.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1GEMzvxJrSuOS-ZOzTVBSxwaCdss2gx1H/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1GEMzvxJrSuOS-ZOzTVBSxwaCdss2gx1H"
-        },
-        {
-          "title": "orden 29-2010 Evaluacion__2.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1Vm1UoTk3mbK_7aCdLlgZPyKbcrWhQb-Z/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1Vm1UoTk3mbK_7aCdLlgZPyKbcrWhQb-Z"
+          "driveFileId": "1IyzhIKu6C_HeONBldNOcn4qR4FVjuNhj",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "real decreto 1147-2011 ordenacion fp.pdf",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -707,12 +797,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1_rs7muemChXFAxI3GsWvpfUfBfhdRog_/preview",
           "urlMode": "drive-pdf-preview",
-          "driveFileId": "1_rs7muemChXFAxI3GsWvpfUfBfhdRog_"
+          "driveFileId": "1_rs7muemChXFAxI3GsWvpfUfBfhdRog_",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "resumen leyes.png",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -720,12 +815,17 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1brCqQH7uAvhfDC9COpKmUNoR0j5Tc68T/view?usp=drivesdk",
           "urlMode": "drive-file-view",
-          "driveFileId": "1brCqQH7uAvhfDC9COpKmUNoR0j5Tc68T"
+          "driveFileId": "1brCqQH7uAvhfDC9COpKmUNoR0j5Tc68T",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "resumen titulo fp.docx",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
+          "section": "Archivo del preparador/Material auxiliar",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -733,25 +833,17 @@
           "hasPublicLink": true,
           "url": "https://docs.google.com/document/d/1mBdu6KFXY6gcdctbgZkmUuXUJamBxD-1/edit?usp=drivesdk&rtpof=true&sd=true",
           "urlMode": "drive-file-view",
-          "driveFileId": "1mBdu6KFXY6gcdctbgZkmUuXUJamBxD-1"
-        },
-        {
-          "title": "titulaciones equivalentes.pdf",
-          "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Legislacion",
-          "type": "legislacion",
-          "academy": "Preparador online",
-          "topic": "General",
-          "area": "Legislacion",
-          "hasPublicLink": true,
-          "url": "https://drive.google.com/file/d/1r6Vfjj5tTS87M65Ke2-gpeBVuNzT2PyP/preview",
-          "urlMode": "drive-pdf-preview",
-          "driveFileId": "1r6Vfjj5tTS87M65Ke2-gpeBVuNzT2PyP"
+          "driveFileId": "1mBdu6KFXY6gcdctbgZkmUuXUJamBxD-1",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         },
         {
           "title": "Webs de interes.docx",
           "phase": "00_Normativa_y_orden_legal",
-          "section": "Normativa/Web XML scripts",
+          "section": "Archivo del preparador/Web XML y scripts",
           "type": "legislacion",
           "academy": "Preparador online",
           "topic": "General",
@@ -759,7 +851,12 @@
           "hasPublicLink": true,
           "url": "https://docs.google.com/document/d/1fbPqKZaL_sFLAbar3mkzrJl24LKfM98P/edit?usp=drivesdk&rtpof=true&sd=true",
           "urlMode": "drive-file-view",
-          "driveFileId": "1fbPqKZaL_sFLAbar3mkzrJl24LKfM98P"
+          "driveFileId": "1fbPqKZaL_sFLAbar3mkzrJl24LKfM98P",
+          "sourceKind": "archive-private",
+          "status": "Archivo · vigencia no verificada",
+          "statusKind": "archive",
+          "reviewedAt": "2026-07-12",
+          "note": "Material privado conservado como referencia. No sustituye la fuente oficial y puede estar desactualizado."
         }
       ]
     },
@@ -767,7 +864,7 @@
       "id": "01_Primera_prueba_B_Tema_escrito",
       "order": 1,
       "label": "Parte B",
-      "title": "Primera prueba - Parte B: Desarrollo de un tema por escrito",
+      "title": "Primera prueba - Parte B: Desarrollo por escrito de un tema",
       "legal": "Parte B de la primera prueba.",
       "description": "Temario oficial por número, academia y tipo de material. Los PDFs ya enlazan al visor de Drive cuando están subidos.",
       "resourceCount": 220,
@@ -884,13 +981,15 @@
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 11/06/2025 18:34",
-          "status": "Último oficial localizado",
-          "statusKind": "current",
+          "status": "Último localizado (2025)",
+          "statusKind": "verified",
           "note": "La Parte B no publica un ejercicio práctico separado: se desarrolla por escrito uno de los temas sorteados. Este PDF contiene la rúbrica oficial aplicable. Publicado en el portal de tribunales el 11/06/2025 a las 18:34.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosValoracion_INFORMATICA_01.pdf&IDCONTENIDO=199410&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Murcia 2015 - criterios oficiales primera prueba Informática (incluye Parte B tema)",
@@ -900,14 +999,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2015 · fecha no visible en CARM",
           "status": "Criterios históricos",
           "note": "PDF oficial de CARM para la primera prueba de Informática 107 en 2015. Incluye criterios de la Parte A práctica y de la Parte B de desarrollo del tema; no es el enunciado del examen.",
           "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Resumen Modelo Entidad-Relacion.pdf",
@@ -3739,13 +3840,15 @@
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 11/06/2025 18:34",
-          "status": "Último oficial localizado",
-          "statusKind": "current",
+          "status": "Último localizado (2025)",
+          "statusKind": "verified",
           "note": "Normas de actuación del tribunal: anonimato, material permitido, bolígrafo y condiciones de realización. Publicado en el portal de tribunales el 11/06/2025 a las 18:34.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosActuacion_INFORMATICA_01.pdf&IDCONTENIDO=199409&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         }
       ]
     },
@@ -3917,8 +4020,8 @@
           ],
           "example": {
             "statement": "Configurar iptables para aceptar conexiones establecidas, SSH solo desde 192.168.1.0/24, HTTP desde cualquier origen y descartar el resto de entradas.",
-            "solution": "iptables -F\niptables -P INPUT DROP\niptables -P FORWARD DROP\niptables -P OUTPUT ACCEPT\niptables -A INPUT -i lo -j ACCEPT\niptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT\niptables -A INPUT -p tcp -s 192.168.1.0/24 --dport 22 \\\n  -m conntrack --ctstate NEW -j ACCEPT\niptables -A INPUT -p tcp --dport 80 \\\n  -m conntrack --ctstate NEW -j ACCEPT",
-            "explanation": "La política es restrictiva y las excepciones son explícitas. En un caso real se guardarían las reglas y se configuraría también IPv6 con ip6tables o nftables."
+            "solution": "iptables -F\niptables -P OUTPUT ACCEPT\niptables -A INPUT -i lo -j ACCEPT\niptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT\niptables -A INPUT -p tcp -s 192.168.1.0/24 --dport 22 \\\n  -m conntrack --ctstate NEW -j ACCEPT\niptables -A INPUT -p tcp --dport 80 \\\n  -m conntrack --ctstate NEW -j ACCEPT\niptables -P FORWARD DROP\niptables -P INPUT DROP",
+            "explanation": "Las excepciones se cargan antes de activar la política restrictiva para no cortar una sesión de administración ya establecida. En un caso real se guardarían las reglas y se configuraría también IPv6 con ip6tables o nftables."
           }
         },
         {
@@ -4108,16 +4211,16 @@
           "count": 2
         },
         {
+          "name": "especificaciones oficiales",
+          "count": 1
+        },
+        {
           "name": "correccion",
           "count": 4
         },
         {
           "name": "practico",
           "count": 398
-        },
-        {
-          "name": "especificaciones oficiales",
-          "count": 1
         }
       ],
       "resources": [
@@ -4130,13 +4233,15 @@
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2025 · fecha no visible en CARM",
-          "status": "Última publicada",
-          "statusKind": "current",
+          "status": "Última publicada (2025)",
+          "statusKind": "verified",
           "note": "PDF oficial publicado por CARM para la prueba práctica de la especialidad 590107 Informática. La página pública de CARM no muestra fecha exacta de publicación.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Examen+590-107.pdf&IDCONTENIDO=201654&IDTIPO=60&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579%2C74628",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Murcia 2023 - prueba práctica oficial 590107 Informática",
@@ -4148,12 +4253,14 @@
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2023 · fecha no visible en CARM",
           "status": "Anterior publicada",
-          "statusKind": "current",
+          "statusKind": "historical",
           "note": "En 2023 el práctico se encuadraba como ejercicio B2 de la prueba única. Se incluye aquí porque es el enunciado práctico oficial de Informática 590107 publicado por CARM.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+Inform%C3%A1tica1.pdf&IDCONTENIDO=196263&IDTIPO=60&RASTRO=c305%24m4332%2C71822%2C72632%2C72813%2C72814%2C74342",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Murcia 2021 - Parte A: prueba práctica oficial 0590107 Informática",
@@ -4165,12 +4272,14 @@
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2021 · fecha no visible en CARM",
           "status": "Anterior publicada",
-          "statusKind": "current",
+          "statusKind": "historical",
           "note": "PDF oficial publicado por CARM para la prueba práctica de la especialidad 0590107 Informática de la oposición 2021.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+INFORM%C3%81TICA.pdf&IDCONTENIDO=173493&IDTIPO=60&RASTRO=c798%24m3977%2C69334%2C69959%2C70361%2C70362%2C70432",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Murcia 2015 - criterios oficiales primera prueba Informática (Parte A práctica)",
@@ -4180,14 +4289,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2015 · fecha no visible en CARM",
           "status": "Criterios históricos",
           "note": "PDF oficial de CARM para la primera prueba de Informática 107 en 2015. Describe la Parte A práctica: duración, número de supuestos y criterios de valoración; no es el enunciado del examen.",
           "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Murcia 2008 - requisitos oficiales de la prueba práctica Informática",
@@ -4199,12 +4310,14 @@
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2008 · fecha exacta no visible en CARM",
           "status": "Especificaciones históricas",
-          "statusKind": "current",
+          "statusKind": "historical",
           "note": "PDF oficial de CARM para la oposición 2008 de Informática 107. Indica que el ejercicio práctico consistía en resolver uno o varios supuestos prácticos y fija duración/material; no contiene los enunciados concretos.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=PRUEBA+PR%C3%81CTICA.pdf&IDCONTENIDO=29018&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Murcia 2008 - criterios oficiales del ejercicio práctico Informática",
@@ -4216,12 +4329,14 @@
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2008 · fecha exacta no visible en CARM",
           "status": "Criterios históricos",
-          "statusKind": "current",
+          "statusKind": "historical",
           "note": "PDF oficial de CARM con criterios de valoración de la oposición 2008 de Informática. Incluye el apartado B.3 Ejercicio de carácter práctico; no es el enunciado del examen.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CRITERIOS+DE+VALORACI%C3%93N+LIBRES+Y+RESERVAS+DE+DISCAPACITADOS.pdf&IDCONTENIDO=29017&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "TEMA 40 Diseno de Base de Datos Relacionales (1).pdf",
@@ -8420,7 +8535,8 @@
           "hasPublicLink": true,
           "url": "https://drive.google.com/file/d/1Q8LSNE8tiOqbjvB7fdBDLIVOndkkJrcO/view?usp=drivesdk",
           "urlMode": "drive-file-view",
-          "driveFileId": "1Q8LSNE8tiOqbjvB7fdBDLIVOndkkJrcO"
+          "driveFileId": "1Q8LSNE8tiOqbjvB7fdBDLIVOndkkJrcO",
+          "statusKind": "historical"
         },
         {
           "title": "EJERCICIO 3 - REDES (Ejercicio de examen).pdf",
@@ -9511,14 +9627,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2015 · fecha no visible en CARM",
           "status": "Criterios históricos",
           "note": "PDF oficial de CARM para la segunda prueba de Informática 107 en 2015. Incluye defensa de la programación, exposición de unidad didáctica y debate.",
           "url": "https://www.carm.es/web/descarga?ARCHIVO=SEGUNDA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113997&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "PROGRAMACION DIDACTICA FP.docx",
@@ -10324,14 +10442,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2015 · fecha no visible en CARM",
           "status": "Criterios históricos",
           "note": "PDF oficial de CARM para la segunda prueba de Informática 107 en 2015. Detalla preparación y exposición de la unidad didáctica junto con la defensa de programación.",
           "url": "https://www.carm.es/web/descarga?ARCHIVO=SEGUNDA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113997&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "1.doc",
@@ -10763,12 +10883,14 @@
           "topic": "General",
           "area": "Méritos",
           "officialDate": "BORM 22/11/2024",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Base oficial de la convocatoria de Murcia para oposición, concurso de méritos y prácticas.",
           "hasPublicLink": true,
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
-          "urlMode": "official-pdf"
+          "urlMode": "official-pdf",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Murcia 2010 - notas fase de oposición por tribunales de Informática",
@@ -10778,14 +10900,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2010 · fecha no visible en CARM",
           "status": "Resultados históricos",
           "note": "Página oficial de CARM con los PDFs de plazo de reclamaciones y nota de la fase de oposición de los tribunales 1 a 5 de Informática 590/107. No contiene el enunciado del examen.",
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16713&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
           "urlMode": "official-page",
-          "clickLabel": "CARM"
+          "clickLabel": "CARM",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Murcia 2010 - reclamaciones de méritos por tribunales de Informática",
@@ -10795,14 +10919,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2010 · fecha no visible en CARM",
           "status": "Resultados históricos",
           "note": "Página oficial de CARM con reclamaciones de méritos y méritos no valorados de tribunales de Informática 590/107. Sirve como histórico de resultados, no como prueba práctica.",
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16754&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
           "urlMode": "official-page",
-          "clickLabel": "CARM"
+          "clickLabel": "CARM",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Anexo II y ficha de baremación - tres bloques de méritos",
@@ -10813,12 +10939,14 @@
           "topic": "General",
           "area": "Méritos",
           "officialDate": "BORM 22/11/2024",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Baremo de méritos que ordena la experiencia, formación académica y otros méritos.",
           "hasPublicLink": true,
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
-          "urlMode": "official-pdf"
+          "urlMode": "official-pdf",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Ficha oficial de solicitud de baremación de méritos - turno libre y reserva",
@@ -10829,12 +10957,14 @@
           "topic": "General",
           "area": "Méritos",
           "officialDate": "2025",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Modelo oficial de CARM para presentar la ficha de baremación cuando proceda.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74813&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Preguntas frecuentes oficiales de la oposición 2025",
@@ -10845,12 +10975,14 @@
           "topic": "General",
           "area": "Méritos",
           "officialDate": "2025",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Página oficial de respuestas frecuentes de la oposición 2025.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74132&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Visado de experiencia docente previa en centros privados o municipales",
@@ -10861,12 +10993,14 @@
           "topic": "General",
           "area": "Méritos",
           "officialDate": "2025",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Referencia oficial para justificar experiencia docente en centros privados o municipales.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74682&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Nota informativa oficial - valoración de servicios prestados en el baremo",
@@ -10877,12 +11011,14 @@
           "topic": "General",
           "area": "Méritos",
           "officialDate": "2025",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Aclara cómo se computa determinada experiencia docente en el apartado de experiencia del baremo.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Nota+informativa_Baremaci%C3%B3n+servicios+prestados.pdf&IDCONTENIDO=198298&IDTIPO=60&RASTRO=c798%24m3977%2C74131%2C74210",
-          "urlMode": "official-pdf"
+          "urlMode": "official-pdf",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Publicaciones de tribunales - calificaciones, reclamaciones y paso a baremo",
@@ -10893,12 +11029,14 @@
           "topic": "General",
           "area": "Méritos",
           "officialDate": "2025",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Buscador oficial donde los tribunales publican documentos y avisos relacionados con calificaciones, plazos y reclamaciones.",
           "hasPublicLink": true,
           "url": "https://servicios.educarm.es/admin/index2.php?anyo=2025&aplicacion=PUBLICACIONES_TRIBUNALES&convocatoria=OPOSEC25&module=publicacionesTribunales",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Seleccionados - listas aprobadas tras oposición y concurso",
@@ -10914,7 +11052,9 @@
           "note": "Página oficial con la orden y correcciones de aspirantes seleccionados antes del nombramiento en prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74933&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         }
       ]
     },
@@ -10979,12 +11119,14 @@
           "topic": "General",
           "area": "Prácticas",
           "officialDate": "BORM 22/11/2024",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Base oficial de la convocatoria que regula la fase de prácticas posterior a la selección.",
           "hasPublicLink": true,
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
-          "urlMode": "official-pdf"
+          "urlMode": "official-pdf",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Página oficial CARM - fase de prácticas 2025",
@@ -10995,12 +11137,14 @@
           "topic": "General",
           "area": "Prácticas",
           "officialDate": "2025",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Página oficial de seguimiento de CARM para informes, nombramientos y novedades de prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74938&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Orden de 31 de julio de 2025 - nombramiento de funcionarios en prácticas",
@@ -11016,7 +11160,9 @@
           "note": "Orden oficial de nombramiento de funcionarios en prácticas.",
           "hasPublicLink": true,
           "url": "https://rrhheducacion.carm.es/wp-content/uploads/2025/08/2025-3860.pdf",
-          "urlMode": "official-pdf"
+          "urlMode": "official-pdf",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Órdenes de fase de prácticas - nombramiento y comisión calificadora",
@@ -11032,7 +11178,9 @@
           "note": "Página oficial de nombramientos y comisión calificadora de la fase de prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75148&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Escrito a directores - entrega de informes de fase de prácticas",
@@ -11043,12 +11191,14 @@
           "topic": "General",
           "area": "Prácticas",
           "officialDate": "2025/2026",
-          "status": "Vigente",
-          "statusKind": "current",
+          "status": "Curso 2025/2026",
+          "statusKind": "historical",
           "note": "Instrucciones oficiales para la entrega de informes de la fase de prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75153&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Informe del tutor - modelos oficiales",
@@ -11059,12 +11209,14 @@
           "topic": "General",
           "area": "Prácticas",
           "officialDate": "2025/2026",
-          "status": "Vigente",
-          "statusKind": "current",
+          "status": "Curso 2025/2026",
+          "statusKind": "historical",
           "note": "Modelos oficiales relacionados con el informe del tutor.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75149&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Informe final del funcionario en prácticas - orientaciones y modelo",
@@ -11075,28 +11227,32 @@
           "topic": "General",
           "area": "Prácticas",
           "officialDate": "2025/2026",
-          "status": "Vigente",
-          "statusKind": "current",
+          "status": "Curso 2025/2026",
+          "statusKind": "historical",
           "note": "Orientaciones y modelo oficial para el informe final del funcionario en prácticas.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=75150&IDTIPO=100&RASTRO=c798%24m3977%2C74131%2C74938",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
-          "title": "Cierre de la fase de prácticas - pendiente de resolución final",
+          "title": "Seguimiento de la resolución final de la fase de prácticas 2025/2026",
           "phase": "06_Fase_practicas",
           "section": "Practicas/Cierre y seguimiento",
           "type": "seguimiento oficial",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "Prácticas",
-          "officialDate": "Pendiente 2026",
-          "status": "Pendiente",
+          "officialDate": "Revisado 12/07/2026",
+          "status": "Sin resolución final localizada",
           "statusKind": "pending",
-          "note": "CARM todavía debe publicar en esta sección la resolución final de superación de la fase de prácticas cuando proceda.",
+          "note": "La sección oficial consultada conserva nombramientos e informes, pero no muestra una resolución final de aptos a fecha 12/07/2026.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74938&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
-          "urlMode": "official-page"
+          "urlMode": "official-page",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         }
       ]
     },
@@ -11117,19 +11273,34 @@
           "year": "2025",
           "title": "Murcia 2025 - Parte A: prueba práctica oficial 590107 Informática",
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Examen+590-107.pdf&IDCONTENIDO=201654&IDTIPO=60&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579%2C74628",
-          "summary": "8 supuestos independientes; se eligen 4."
+          "summary": "8 supuestos independientes; se eligen 4.",
+          "sourceKind": "official-murcia",
+          "officialDate": "Publicado 2025 · fecha exacta no visible en CARM",
+          "status": "Última prueba publicada (2025)",
+          "statusKind": "verified",
+          "verifiedAt": "2026-07-12"
         },
         {
           "year": "2023",
           "title": "Murcia 2023 - prueba práctica oficial 590107 Informática",
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+Inform%C3%A1tica1.pdf&IDCONTENIDO=196263&IDTIPO=60&RASTRO=c305%24m4332%2C71822%2C72632%2C72813%2C72814%2C74342",
-          "summary": "5 supuestos con programación, SQL, XML/XSLT, redes y Java."
+          "summary": "5 supuestos con programación, SQL, XML/XSLT, redes y Java.",
+          "sourceKind": "official-murcia",
+          "officialDate": "Publicado 2023 · fecha exacta no visible en CARM",
+          "status": "Prueba oficial histórica",
+          "statusKind": "historical",
+          "verifiedAt": "2026-07-12"
         },
         {
           "year": "2021",
           "title": "Murcia 2021 - Parte A: prueba práctica oficial 0590107 Informática",
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+INFORM%C3%81TICA.pdf&IDCONTENIDO=173493&IDTIPO=60&RASTRO=c562%24m3977%2C69334%2C69959%2C70361%2C70362%2C70432",
-          "summary": "7 supuestos con algoritmos, SQL, XML, redes, DNS, firewall y PHP."
+          "summary": "7 supuestos con algoritmos, SQL, XML, redes, DNS, firewall y PHP.",
+          "sourceKind": "official-murcia",
+          "officialDate": "Publicado 2021 · fecha exacta no visible en CARM",
+          "status": "Prueba oficial histórica",
+          "statusKind": "historical",
+          "verifiedAt": "2026-07-12"
         }
       ],
       "trendAreas": [
@@ -11286,22 +11457,26 @@
       "id": "98_Novedades_y_publicaciones",
       "order": 98,
       "label": "Novedades",
-      "title": "Novedades PES 590 · Informática 107",
-      "legal": "Seguimiento filtrado de publicaciones oficiales para PES 590, especialidad 107 Informática, en Murcia.",
-      "description": "Vista rápida solo con publicaciones oficiales relacionadas con Informática de Secundaria, PES 590 y el procedimiento OPOSEC25.",
-      "resourceCount": 20,
-      "publicLinkCount": 20,
+      "title": "Novedades PES 590 · Informática 107 · Murcia",
+      "legal": "Estado oficial verificado y archivo de la convocatoria 2025.",
+      "description": "Seguimiento exclusivo de PES 590 e Informática 107 en Murcia, con fecha de comprobación y alcance explícitos.",
+      "resourceCount": 21,
+      "publicLinkCount": 21,
       "sections": [
         {
-          "name": "Novedades/Informática 590107",
+          "name": "Estado actual/Convocatoria PES",
+          "count": 1
+        },
+        {
+          "name": "Última convocatoria PES/Informática 2025",
           "count": 8
         },
         {
-          "name": "Novedades/Oposición 2025 PES",
+          "name": "Histórico 2025/Proceso y resultados",
           "count": 5
         },
         {
-          "name": "Novedades/Normativa base PES",
+          "name": "Histórico 2025/Convocatoria",
           "count": 1
         },
         {
@@ -11312,7 +11487,7 @@
       "academies": [
         {
           "name": "CARM/BORM",
-          "count": 19
+          "count": 20
         },
         {
           "name": "Educarm/CARM",
@@ -11320,6 +11495,10 @@
         }
       ],
       "types": [
+        {
+          "name": "estado oficial",
+          "count": 1
+        },
         {
           "name": "seguimiento específico",
           "count": 1
@@ -11363,145 +11542,180 @@
       ],
       "resources": [
         {
+          "title": "Situación actual PES/Informática en Murcia: sin nueva convocatoria publicada",
+          "phase": "98_Novedades_y_publicaciones",
+          "section": "Estado actual/Convocatoria PES",
+          "type": "estado oficial",
+          "academy": "CARM/BORM",
+          "topic": "General",
+          "area": "PES 590 · Informática 107",
+          "officialDate": "Revisado 12/07/2026",
+          "status": "Sin plazo de instancia abierto",
+          "statusKind": "verified",
+          "note": "El portal oficial de oposiciones de Murcia muestra en 2026 Maestros y Catedráticos de Música, pero no una nueva convocatoria de PES/Informática. La última localizada para 590107 es la de 2025; esto no predice la fecha de la siguiente.",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12",
+          "hasPublicLink": true,
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=3977&IDTIPO=100&RASTRO=c798%24m",
+          "urlMode": "official-page",
+          "clickLabel": "CARM"
+        },
+        {
           "title": "590107 Informática - página oficial de criterios, turno y documentos",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Informática 590107",
+          "section": "Última convocatoria PES/Informática 2025",
           "type": "seguimiento específico",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Docs publicados 11/06/2025",
-          "status": "Seguimiento",
-          "statusKind": "current",
+          "status": "Archivo oficial 2025",
+          "statusKind": "historical",
           "note": "Página oficial CARM de la especialidad 590107 Informática dentro de PES 590. Los criterios enlazados aparecen publicados en el portal de tribunales el 11/06/2025.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74501&IDTIPO=100&RASTRO=c562%24m3977%2C74131%2C74447%2C74448",
           "urlMode": "official-page",
-          "clickLabel": "Abrir"
+          "clickLabel": "Abrir",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "590107 Informática - criterios de valoración oficiales 2025",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Informática 590107",
+          "section": "Última convocatoria PES/Informática 2025",
           "type": "criterios oficiales",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 11/06/2025 18:34",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Últimos criterios localizados (2025)",
+          "statusKind": "verified",
           "note": "Criterios oficiales de valoración de la especialidad Informática 590107 para la oposición 2025. Publicado en el portal de tribunales el 11/06/2025 a las 18:34.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosValoracion_INFORMATICA_01.pdf&IDCONTENIDO=199410&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "590107 Informática - criterios de actuación oficiales 2025",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Informática 590107",
+          "section": "Última convocatoria PES/Informática 2025",
           "type": "criterios oficiales",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 11/06/2025 18:34",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Últimos criterios localizados (2025)",
+          "statusKind": "verified",
           "note": "Criterios oficiales de actuación del tribunal de Informática 590107. Publicado en el portal de tribunales el 11/06/2025 a las 18:34.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosActuacion_INFORMATICA_01.pdf&IDCONTENIDO=199409&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "590107 Informática - turno 5 y adquisición de nuevas especialidades",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Informática 590107",
+          "section": "Última convocatoria PES/Informática 2025",
           "type": "criterios oficiales",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 11/06/2025 18:51",
-          "status": "Referencia",
-          "statusKind": "current",
+          "status": "Referencia de 2025",
+          "statusKind": "historical",
           "note": "Documento específico de Informática 590107 publicado por CARM para el turno 5. Publicado en el portal de tribunales el 11/06/2025 a las 18:51.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=059010701_TURNO_5_-_CRITERIOS_DE_VALORACI%C3%93N_06111851.pdf&IDCONTENIDO=199411&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "590107 Informática - página oficial de la prueba práctica 2025",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Informática 590107",
+          "section": "Última convocatoria PES/Informática 2025",
           "type": "prueba práctica",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2025 · fecha no visible en CARM",
-          "status": "Publicado",
-          "statusKind": "current",
+          "status": "Última prueba publicada (2025)",
+          "statusKind": "verified",
           "note": "Página oficial CARM con la publicación de la prueba práctica de Informática. La página pública no muestra fecha exacta de publicación.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74628&IDTIPO=100&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579",
           "urlMode": "official-page",
-          "clickLabel": "Abrir"
+          "clickLabel": "Abrir",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "590107 Informática - examen práctico oficial publicado",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Informática 590107",
+          "section": "Última convocatoria PES/Informática 2025",
           "type": "prueba práctica",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2025 · fecha no visible en CARM",
-          "status": "Publicado",
-          "statusKind": "current",
+          "status": "Última prueba publicada (2025)",
+          "statusKind": "verified",
           "note": "PDF oficial del examen práctico publicado para la especialidad 590107 Informática. La página pública de CARM no muestra fecha exacta de publicación.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Examen+590-107.pdf&IDCONTENIDO=201654&IDTIPO=60&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579%2C74628",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Oposición 2025 Secundaria y resto de cuerpos - página oficial PES",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Oposición 2025 PES",
+          "section": "Histórico 2025/Proceso y resultados",
           "type": "seguimiento oficial",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590",
           "officialDate": "Seguimiento · rev. 18/06/2026",
-          "status": "Seguimiento",
-          "statusKind": "current",
+          "status": "Histórico del proceso 2025",
+          "statusKind": "historical",
           "note": "Página oficial general de la oposición 2025 de Secundaria y otros cuerpos. Útil para avisos que afectan a PES 590. Revisado el 18/06/2026.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74131&IDTIPO=100&RASTRO=c798%24m3977%2C4332",
           "urlMode": "official-page",
-          "clickLabel": "Abrir"
+          "clickLabel": "Abrir",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Publicaciones de tribunales OPOSEC25 - seleccionar 590 / 107 Informática",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Oposición 2025 PES",
+          "section": "Histórico 2025/Proceso y resultados",
           "type": "publicaciones tribunal",
           "academy": "Educarm/CARM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Seguimiento · rev. 18/06/2026",
-          "status": "Seguimiento",
-          "statusKind": "current",
+          "status": "Histórico del proceso 2025",
+          "statusKind": "historical",
           "note": "Buscador oficial de publicaciones de tribunales: seleccionar cuerpo 0590, especialidad 107 Informática y tribunal 01/02. Revisado el 18/06/2026.",
           "hasPublicLink": true,
           "url": "https://servicios.educarm.es/admin/index2.php?anyo=2025&aplicacion=PUBLICACIONES_TRIBUNALES&convocatoria=OPOSEC25&module=publicacionesTribunales",
           "urlMode": "official-page",
-          "clickLabel": "Abrir"
+          "clickLabel": "Abrir",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Seleccionados 2025 - Secundaria y otros cuerpos tras oposición y concurso",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Oposición 2025 PES",
+          "section": "Histórico 2025/Proceso y resultados",
           "type": "resultado oficial",
           "academy": "CARM/BORM",
           "topic": "General",
@@ -11513,29 +11727,33 @@
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74933&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
           "urlMode": "official-page",
-          "clickLabel": "Abrir"
+          "clickLabel": "Abrir",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Fase de prácticas 2025 - Secundaria/PES, informes y nombramientos",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Oposición 2025 PES",
+          "section": "Histórico 2025/Proceso y resultados",
           "type": "seguimiento oficial",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590",
-          "officialDate": "Seguimiento · rev. 18/06/2026",
-          "status": "Pendiente de cierre",
+          "officialDate": "Revisado 12/07/2026",
+          "status": "Sin resolución final localizada",
           "statusKind": "pending",
-          "note": "Seguimiento oficial de prácticas para aspirantes seleccionados. Vigilar resolución final de superación cuando CARM la publique. Revisado el 18/06/2026.",
+          "note": "La página oficial conserva nombramientos e informes de la fase de prácticas 2025/2026, pero no muestra una resolución final de aptos a fecha 12/07/2026.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74938&IDTIPO=100&RASTRO=c798%24m3977%2C74131",
           "urlMode": "official-page",
-          "clickLabel": "Abrir"
+          "clickLabel": "Abrir",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Listas de interinidad 2025-2026 - Secundaria y PES tras oposición",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Oposición 2025 PES",
+          "section": "Histórico 2025/Proceso y resultados",
           "type": "interinidad",
           "academy": "CARM/BORM",
           "topic": "General",
@@ -11547,58 +11765,66 @@
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74695&IDTIPO=100&RASTRO=c798%24m3977%2C4332%2C74131",
           "urlMode": "official-page",
-          "clickLabel": "Abrir"
+          "clickLabel": "Abrir",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Convocatoria oficial BORM 2025 - Secundaria, PES 590 e Informática 590107",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Normativa base PES",
+          "section": "Histórico 2025/Convocatoria",
           "type": "convocatoria oficial",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado BORM 22/11/2024",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Convocatoria 2025",
+          "statusKind": "historical",
           "note": "Convocatoria oficial de Murcia que regula el procedimiento de Secundaria y resto de cuerpos, incluida Informática 590107. Publicado en el BORM el 22/11/2024.",
           "hasPublicLink": true,
           "url": "https://www.borm.es/services/anuncio/ano/2024/numero/5838/pdf?id=831952",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "590107 Informática - criterios de valoración oficiales 2025 Tribunal 02",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Informática 590107",
+          "section": "Última convocatoria PES/Informática 2025",
           "type": "criterios oficiales",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 11/06/2025 18:34",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Últimos criterios localizados (2025)",
+          "statusKind": "verified",
           "note": "Copia publicada en el portal de tribunales para el Tribunal 02 de Informática 590107. Publicado el 11/06/2025 a las 18:34.",
           "hasPublicLink": true,
           "url": "https://servicios.educarm.es/neweb/resources/admin/File/publicacionesTribunales/OPOSEC25/CriteriosValoracion_INFORMATICA_02.pdf",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "590107 Informática - criterios de actuación oficiales 2025 Tribunal 02",
           "phase": "98_Novedades_y_publicaciones",
-          "section": "Novedades/Informática 590107",
+          "section": "Última convocatoria PES/Informática 2025",
           "type": "criterios oficiales",
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 11/06/2025 18:34",
-          "status": "Vigente 2025",
-          "statusKind": "current",
+          "status": "Últimos criterios localizados (2025)",
+          "statusKind": "verified",
           "note": "Copia publicada en el portal de tribunales para el Tribunal 02 de Informática 590107. Publicado el 11/06/2025 a las 18:34.",
           "hasPublicLink": true,
           "url": "https://servicios.educarm.es/neweb/resources/admin/File/publicacionesTribunales/OPOSEC25/CriteriosActuacion_INFORMATICA_02.pdf",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Histórico 2015 - Informática 107: criterios oficiales primera prueba",
@@ -11608,14 +11834,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2015 · fecha no visible en CARM",
           "status": "Histórico oficial",
           "note": "PDF oficial de CARM con criterios y características de la primera prueba de Informática 107 en 2015.",
           "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Histórico 2015 - Informática 107: criterios oficiales segunda prueba",
@@ -11625,14 +11853,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2015 · fecha no visible en CARM",
           "status": "Histórico oficial",
           "note": "PDF oficial de CARM con criterios y características de la segunda prueba de Informática 107 en 2015.",
           "url": "https://www.carm.es/web/descarga?ARCHIVO=SEGUNDA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113997&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288",
           "urlMode": "official-pdf",
-          "clickLabel": "PDF"
+          "clickLabel": "PDF",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Histórico 2010 - Informática 590/107: notas fase de oposición por tribunales",
@@ -11642,14 +11872,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2010 · fecha no visible en CARM",
           "status": "Histórico oficial",
           "note": "Página oficial de CARM con notas de fase de oposición y reclamaciones por tribunales de Informática.",
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16713&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
           "urlMode": "official-page",
-          "clickLabel": "CARM"
+          "clickLabel": "CARM",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Histórico 2010 - Informática 590/107: reclamaciones de méritos por tribunales",
@@ -11659,14 +11891,16 @@
           "academy": "CARM/BORM",
           "topic": "General",
           "area": "PES 590 · Informática 107",
-          "statusKind": "current",
+          "statusKind": "historical",
           "hasPublicLink": true,
           "officialDate": "Publicado 2010 · fecha no visible en CARM",
           "status": "Histórico oficial",
           "note": "Página oficial de CARM con reclamaciones de méritos de tribunales de Informática.",
           "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16754&IDTIPO=11&RASTRO=c798%24m3977%2C23539",
           "urlMode": "official-page",
-          "clickLabel": "CARM"
+          "clickLabel": "CARM",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Histórico 2008 - Informática 107: requisitos de la prueba práctica",
@@ -11678,13 +11912,15 @@
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2008 · fecha exacta no visible en CARM",
           "status": "Histórico",
-          "statusKind": "current",
+          "statusKind": "historical",
           "note": "Página histórica CARM 2008 de Informática 107. El PDF describe requisitos y condiciones de la prueba práctica; no publica los ejercicios concretos.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=PRUEBA+PR%C3%81CTICA.pdf&IDCONTENIDO=29018&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018",
           "urlMode": "official-pdf",
           "clickLabel": "PDF",
-          "sourcePage": "https://www.carm.es/web/pagina?IDCONTENIDO=7018&IDTIPO=100&RASTRO=c305%24m4332%2C5776%2C6971%2C6972"
+          "sourcePage": "https://www.carm.es/web/pagina?IDCONTENIDO=7018&IDTIPO=100&RASTRO=c305%24m4332%2C5776%2C6971%2C6972",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         },
         {
           "title": "Histórico 2008 - Informática 107: criterios del ejercicio práctico",
@@ -11696,13 +11932,15 @@
           "area": "PES 590 · Informática 107",
           "officialDate": "Publicado 2008 · fecha exacta no visible en CARM",
           "status": "Histórico",
-          "statusKind": "current",
+          "statusKind": "historical",
           "note": "Documento histórico CARM 2008 con criterios de valoración. Incluye B.3 Ejercicio de carácter práctico, útil para ver cómo se valoraba la práctica, pero no contiene el enunciado.",
           "hasPublicLink": true,
           "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CRITERIOS+DE+VALORACI%C3%93N+LIBRES+Y+RESERVAS+DE+DISCAPACITADOS.pdf&IDCONTENIDO=29017&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018",
           "urlMode": "official-pdf",
           "clickLabel": "PDF",
-          "sourcePage": "https://www.carm.es/web/pagina?IDCONTENIDO=7018&IDTIPO=100&RASTRO=c305%24m4332%2C5776%2C6971%2C6972"
+          "sourcePage": "https://www.carm.es/web/pagina?IDCONTENIDO=7018&IDTIPO=100&RASTRO=c305%24m4332%2C5776%2C6971%2C6972",
+          "sourceKind": "official-murcia",
+          "verifiedAt": "2026-07-12"
         }
       ]
     },
@@ -13874,6 +14112,17 @@
       ]
     }
   ],
-  "totalResources": 963,
-  "publicLinkCount": 963
+  "totalResources": 949,
+  "publicLinkCount": 949,
+  "verifiedAt": "2026-07-12",
+  "verification": {
+    "scope": "Temario BOE, criterios y convocatoria CARM/BORM, estado de convocatoria, enlaces y procedencia de recursos.",
+    "officialSources": [
+      "BOE",
+      "BORM",
+      "CARM"
+    ],
+    "note": "Las soluciones Codex y los archivos del preparador se muestran como material no oficial.",
+    "driveAccess": "Todos los archivos enlazados se auditan con metadatos de permisos; las carpetas raíz se contrastan aparte."
+  }
 }

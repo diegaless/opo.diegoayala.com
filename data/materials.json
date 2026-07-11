@@ -5914,5 +5914,11 @@
         "check": "No depende solo de academias y evita bibliografía decorativa."
       }
     ]
+  },
+  "verifiedAt": "2026-07-12",
+  "verification": {
+    "driveLinks": "Comprobados con acceso autenticado",
+    "permissions": "Todos los archivos enlazados se auditan como solo propietario; las carpetas raíz se contrastan aparte",
+    "owner": "diego.ayala.bernal2@gmail.com"
   }
 }
