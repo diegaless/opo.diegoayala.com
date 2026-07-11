@@ -20,8 +20,8 @@
       const savedTheme = localStorage.getItem("theme");
       document.documentElement.dataset.theme = savedTheme || "dark";
     </script>
-    <script src="script.js?v=20260712-data-audit-v1" defer></script>
-    <link rel="stylesheet" href="styles.css?v=20260712-data-audit-v1">
+    <script src="script.js?v=20260712-responsive-v2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260712-responsive-v2">
   </head>
   <body>
     <a class="skip-link" href="#content">Saltar al contenido</a>
@@ -100,7 +100,7 @@
             placeholder="Buscar tema..."
             data-search
           >
-          <output for="topic-search" data-count>74 temas</output>
+          <output for="topic-search" data-count aria-live="polite">74 temas</output>
         </div>
       </section>
 
