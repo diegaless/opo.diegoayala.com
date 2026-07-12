@@ -12,6 +12,7 @@ const rubricBlock = document.querySelector("[data-rubric-block]");
 const rubricItems = [...document.querySelectorAll("[data-rubric-item]")];
 const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
+const studyStateKey = "opo-study-state-v1";
 const fallbackTopicTemplate = [
   {
     name: "Índice",
@@ -53,6 +54,9 @@ const fallbackTopicTemplate = [
 let currentView = "topics";
 let materialsData = null;
 let phasesData = null;
+let isRestoringStudyState = true;
+let scrollSaveTimer = null;
+let lastExplicitStudyItem = null;
 
 function setTheme(theme) {
   root.dataset.theme = theme;
@@ -68,6 +72,134 @@ function normalize(value) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
+}
+
+function createStudyKey(scope, type, ...parts) {
+  const source = normalize(parts.filter(Boolean).join("|"));
+  let hash = 2166136261;
+  for (let index = 0; index < source.length; index += 1) {
+    hash ^= source.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return `${scope}:${type}:${(hash >>> 0).toString(36)}`;
+}
+
+function assignStaticStudyKeys() {
+  topics.forEach((topic, index) => {
+    const number = topic.querySelector(".topic-number")?.textContent.trim();
+    topic.dataset.studyKey = `topics:topic:${number || index + 1}`;
+  });
+  rubricItems.forEach((item, index) => {
+    item.dataset.studyKey = `topics:rubric:${index + 1}`;
+  });
+}
+
+function readStudyState() {
+  try {
+    const state = JSON.parse(localStorage.getItem(studyStateKey) || "null");
+    return state && typeof state === "object" ? state : null;
+  } catch {
+    return null;
+  }
+}
+
+function getVisibleStudyItems() {
+  const view = currentView === "topics" ? topicView : phaseView;
+  if (!view || view.hidden) return [];
+  return [...view.querySelectorAll("[data-study-key]")].filter((item) => {
+    const rect = item.getBoundingClientRect();
+    return !item.hidden && rect.width > 0 && rect.height > 0;
+  });
+}
+
+function getCurrentStudyItem() {
+  const items = getVisibleStudyItems();
+  if (!items.length) return null;
+
+  const readingLine = Math.min(window.innerHeight * 0.42, 360);
+  return items.find((item) => {
+    const rect = item.getBoundingClientRect();
+    return rect.top <= readingLine && rect.bottom > readingLine;
+  }) || items.find((item) => item.getBoundingClientRect().top > readingLine) || items.at(-1);
+}
+
+function writeStudyState(preferredItem = null) {
+  if (isRestoringStudyState) return;
+  const item = preferredItem?.dataset.studyKey ? preferredItem : getCurrentStudyItem();
+  const details = item?.querySelector(":scope > details");
+  const state = {
+    view: currentView,
+    search: searchInput?.value || "",
+    scrollY: Math.round(window.scrollY),
+    anchorKey: item?.dataset.studyKey || "",
+    anchorTop: item ? Math.round(item.getBoundingClientRect().top) : null,
+    anchorOpen: Boolean(details?.open),
+  };
+
+  try {
+    localStorage.setItem(studyStateKey, JSON.stringify(state));
+  } catch {
+    // The page remains usable when storage is unavailable.
+  }
+}
+
+function getRestoreOffset(item, savedTop) {
+  const stickyTop = Number.parseFloat(
+    getComputedStyle(root).getPropertyValue("--block-sticky-offset"),
+  ) || 0;
+  const blockHeader = window.matchMedia("(max-width: 820px)").matches
+    ? item.closest(".topic-block")?.querySelector(":scope > .block-header")
+    : null;
+  const minimum = stickyTop + (blockHeader?.offsetHeight || 0) + 12;
+  const maximum = Math.max(minimum, Math.min(window.innerHeight * 0.42, 360));
+  const preferred = Number.isFinite(savedTop) ? savedTop : minimum;
+  return Math.min(maximum, Math.max(minimum, preferred));
+}
+
+function afterNextPaint() {
+  return new Promise((resolve) => {
+    requestAnimationFrame(() => requestAnimationFrame(resolve));
+  });
+}
+
+function scrollImmediately(top) {
+  const previousBehavior = root.style.scrollBehavior;
+  root.style.scrollBehavior = "auto";
+  window.scrollTo(0, Math.max(0, top));
+  requestAnimationFrame(() => {
+    root.style.scrollBehavior = previousBehavior;
+  });
+}
+
+async function restoreStudyState() {
+  const state = readStudyState();
+  const hasView = state?.view && [...phaseSelect.options].some((option) => option.value === state.view);
+  let restoredItem = null;
+
+  if (hasView) {
+    currentView = state.view;
+    phaseSelect.value = currentView;
+    searchInput.value = typeof state.search === "string" ? state.search : "";
+    renderCurrentView();
+    await afterNextPaint();
+
+    const item = getVisibleStudyItems().find(
+      (candidate) => candidate.dataset.studyKey === state.anchorKey,
+    );
+    if (item) {
+      restoredItem = item;
+      const details = item.querySelector(":scope > details");
+      if (details && state.anchorOpen) details.open = true;
+      const top = item.getBoundingClientRect().top + window.scrollY - getRestoreOffset(item, state.anchorTop);
+      scrollImmediately(top);
+    } else if (Number.isFinite(state.scrollY)) {
+      scrollImmediately(state.scrollY);
+    }
+    await afterNextPaint();
+  }
+
+  isRestoringStudyState = false;
+  writeStudyState(restoredItem);
 }
 
 function updateCount(visible, type = "temas") {
@@ -449,6 +581,7 @@ function buildTemplateGuide() {
   const list = createElement("ol", "topic-list template-list");
   sections.forEach((section, index) => {
     const item = createElement("li", "topic-item template-item");
+    item.dataset.studyKey = `progress:template:${index + 1}`;
     const row = createElement("span", "topic-row");
     row.append(
       createElement("span", "topic-number", String(index + 1).padStart(2, "0")),
@@ -470,6 +603,7 @@ function buildProgressItem(entry) {
   const { key, topic } = entry;
   const state = getProgressState(topic);
   const item = createElement("li", "topic-item progress-item");
+  item.dataset.studyKey = `progress:topic:${key}`;
 
   const row = createElement("span", "topic-row");
   row.append(createElement("span", "topic-number", key), createElement("span", "", topic.title));
@@ -704,6 +838,7 @@ function buildTrendOverview(phase, trends) {
 
 function buildTrendItem(trend, index) {
   const item = createElement("li", "topic-item trend-item");
+  item.dataset.studyKey = createStudyKey(currentView, "trend", trend.name);
   const row = createElement("span", "topic-row");
   row.append(
     createElement("span", "topic-number", String(index + 1).padStart(2, "0")),
@@ -749,6 +884,7 @@ function buildTrendSources(phase) {
   const list = createElement("ol", "topic-list");
   sources.forEach((source, index) => {
     const item = createElement("li", "topic-item");
+    item.dataset.studyKey = createStudyKey(currentView, "source", source.title, source.url);
     const row = createElement("span", "topic-row");
     row.append(
       createElement("span", "topic-number", source.year || String(index + 1).padStart(2, "0")),
@@ -887,6 +1023,7 @@ function buildPracticeTextSection(title, lines, className = "") {
 
 function buildPracticeGuide(guide, index, query) {
   const item = createElement("li", "topic-item practice-item");
+  item.dataset.studyKey = createStudyKey(currentView, "guide", guide.id, guide.name);
   const details = document.createElement("details");
   details.className = "practice-guide";
   if (query) details.open = true;
@@ -962,6 +1099,14 @@ function renderPracticeGuides(phase, query) {
 function buildResourceItem(resource) {
   const item = createElement("li", "topic-item");
   item.dataset.phaseResource = "";
+  item.dataset.studyKey = createStudyKey(
+    currentView,
+    "resource",
+    resource.section,
+    resource.topic,
+    resource.title,
+    resource.url,
+  );
 
   const marker = getResourceMarker(resource);
   const row = createElement("span", marker ? "topic-row" : "topic-row topic-row-no-marker");
@@ -1114,10 +1259,16 @@ function renderCurrentView() {
   renderSelectedPhase();
 }
 
+async function initializeStudyView() {
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  assignStaticStudyKeys();
+  filterTopics();
+  await Promise.all([loadMaterials(), loadPhases()]);
+  await restoreStudyState();
+}
+
 setTheme(root.dataset.theme || "dark");
-filterTopics();
-loadMaterials();
-loadPhases();
+initializeStudyView();
 
 themeToggle?.addEventListener("click", () => {
   const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
@@ -1125,8 +1276,61 @@ themeToggle?.addEventListener("click", () => {
 });
 
 phaseSelect?.addEventListener("change", () => {
+  lastExplicitStudyItem = null;
   currentView = phaseSelect.value;
   renderCurrentView();
+  writeStudyState();
 });
 
-searchInput?.addEventListener("input", renderCurrentView);
+searchInput?.addEventListener("input", () => {
+  lastExplicitStudyItem = null;
+  renderCurrentView();
+  writeStudyState();
+});
+
+window.addEventListener("scroll", () => {
+  if (isRestoringStudyState) return;
+  window.clearTimeout(scrollSaveTimer);
+  scrollSaveTimer = window.setTimeout(() => writeStudyState(lastExplicitStudyItem), 140);
+}, { passive: true });
+
+document.addEventListener("pointerdown", (event) => {
+  const item = event.target instanceof Element
+    ? event.target.closest("[data-study-key]")
+    : null;
+  if (item) {
+    lastExplicitStudyItem = item;
+    writeStudyState(item);
+  } else {
+    lastExplicitStudyItem = null;
+  }
+});
+
+window.addEventListener("wheel", () => {
+  lastExplicitStudyItem = null;
+}, { passive: true });
+
+window.addEventListener("touchmove", () => {
+  lastExplicitStudyItem = null;
+}, { passive: true });
+
+document.addEventListener("keydown", (event) => {
+  if (["ArrowDown", "ArrowUp", "End", "Home", "PageDown", "PageUp", " "].includes(event.key)) {
+    lastExplicitStudyItem = null;
+  }
+});
+
+document.addEventListener("toggle", (event) => {
+  const item = event.target instanceof Element
+    ? event.target.closest("[data-study-key]")
+    : null;
+  if (item) {
+    lastExplicitStudyItem = item;
+    writeStudyState(item);
+  }
+}, true);
+
+window.addEventListener("pagehide", () => writeStudyState(lastExplicitStudyItem));
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") writeStudyState(lastExplicitStudyItem);
+});
