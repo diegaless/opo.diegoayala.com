@@ -3,14 +3,14 @@
   --bg: #eef3f7;
   --surface: #ffffff;
   --ink: #101820;
-  --muted: #4b5865;
-  --quiet: #5d6a78;
+  --muted: #2f3d49;
+  --quiet: #465563;
   --line: #b8c5d0;
   --line-strong: #8797a6;
   --accent: #0b6b63;
   --accent-2: #6d28d9;
   --accent-soft: rgba(11, 107, 99, 0.14);
-  --placeholder: #667584;
+  --placeholder: #566674;
   --shadow: 0 22px 72px rgba(25, 39, 52, 0.14);
   --block-sticky-offset: 92px;
 }
@@ -1388,6 +1388,48 @@ p {
 :focus-visible {
   outline: 3px solid color-mix(in srgb, var(--accent) 44%, transparent);
   outline-offset: 5px;
+}
+
+:root:not([data-theme="dark"]) .topic-row {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 480;
+  line-height: 1.45;
+}
+
+:root:not([data-theme="dark"]) .rubric-detail,
+:root:not([data-theme="dark"]) .phase-note,
+:root:not([data-theme="dark"]) .template-goal,
+:root:not([data-theme="dark"]) .template-check,
+:root:not([data-theme="dark"]) .trend-note,
+:root:not([data-theme="dark"]) .trend-action,
+:root:not([data-theme="dark"]) .trend-evidence p,
+:root:not([data-theme="dark"]) .practice-authorship p,
+:root:not([data-theme="dark"]) .practice-statement,
+:root:not([data-theme="dark"]) .practice-explanation,
+:root:not([data-theme="dark"]) .practice-line {
+  font-size: 0.9rem;
+  font-weight: 440;
+  line-height: 1.65;
+}
+
+:root:not([data-theme="dark"]) .practice-statement {
+  color: var(--ink);
+  font-weight: 680;
+}
+
+:root:not([data-theme="dark"]) .phase-picker-trigger,
+:root:not([data-theme="dark"]) .phase-option,
+:root:not([data-theme="dark"]) .phase-meta,
+:root:not([data-theme="dark"]) .material-select,
+:root:not([data-theme="dark"]) .material-link {
+  font-size: 0.84rem;
+}
+
+:root:not([data-theme="dark"]) .phase-picker-trigger,
+:root:not([data-theme="dark"]) .phase-option,
+:root:not([data-theme="dark"]) .material-select {
+  font-weight: 500;
 }
 
 @media (max-width: 820px) {
