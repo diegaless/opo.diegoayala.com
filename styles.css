@@ -1,16 +1,17 @@
 :root {
   color-scheme: light;
-  --bg: #f8fafc;
-  --surface: rgba(255, 255, 255, 0.76);
-  --ink: #101418;
-  --muted: #64707d;
-  --quiet: #8a95a3;
-  --line: #dce3ea;
-  --line-strong: #c9d4de;
-  --accent: #0f766e;
-  --accent-2: #7c3aed;
-  --accent-soft: rgba(15, 118, 110, 0.12);
-  --shadow: 0 22px 80px rgba(16, 20, 24, 0.08);
+  --bg: #eef3f7;
+  --surface: #ffffff;
+  --ink: #101820;
+  --muted: #4b5865;
+  --quiet: #5d6a78;
+  --line: #b8c5d0;
+  --line-strong: #8797a6;
+  --accent: #0b6b63;
+  --accent-2: #6d28d9;
+  --accent-soft: rgba(11, 107, 99, 0.14);
+  --placeholder: #667584;
+  --shadow: 0 22px 72px rgba(25, 39, 52, 0.14);
   --block-sticky-offset: 92px;
 }
 
@@ -26,6 +27,7 @@
   --accent: #2dd4bf;
   --accent-2: #a78bfa;
   --accent-soft: rgba(45, 212, 191, 0.12);
+  --placeholder: color-mix(in srgb, var(--muted) 58%, transparent);
   --shadow: 0 26px 100px rgba(0, 0, 0, 0.34);
 }
 
@@ -296,7 +298,7 @@ p {
 }
 
 .search-row input::placeholder {
-  color: color-mix(in srgb, var(--muted) 58%, transparent);
+  color: var(--placeholder);
 }
 
 .search-row input:focus {
