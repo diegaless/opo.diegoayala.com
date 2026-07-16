@@ -1,9 +1,20 @@
 const root = document.documentElement;
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const searchInput = document.querySelector("[data-search]");
+const searchClear = document.querySelector("[data-search-clear]");
 const countOutput = document.querySelector("[data-count]");
 const emptyState = document.querySelector("[data-empty]");
 const phaseSelect = document.querySelector("[data-phase-select]");
+const phaseTrigger = document.querySelector("[data-phase-trigger]");
+const phaseValue = document.querySelector("[data-phase-value]");
+const phaseDialog = document.querySelector("[data-phase-dialog]");
+const phaseDialogClose = document.querySelector("[data-phase-close]");
+const phaseOptionSearch = document.querySelector("[data-phase-search]");
+const phaseOptionList = document.querySelector("[data-phase-options]");
+const indexTrigger = document.querySelector("[data-index-trigger]");
+const indexDialog = document.querySelector("[data-index-dialog]");
+const indexDialogClose = document.querySelector("[data-index-close]");
+const indexList = document.querySelector("[data-index-list]");
 const topicView = document.querySelector("[data-topic-view]");
 const phaseView = document.querySelector("[data-phase-view]");
 const blocks = [...document.querySelectorAll("[data-block]")];
@@ -13,6 +24,7 @@ const rubricItems = [...document.querySelectorAll("[data-rubric-item]")];
 const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
 const studyStateKey = "opo-study-state-v1";
+const collapsedBlocksKey = "opo-collapsed-blocks-v1";
 const fallbackTopicTemplate = [
   {
     name: "Índice",
@@ -57,6 +69,7 @@ let phasesData = null;
 let isRestoringStudyState = true;
 let scrollSaveTimer = null;
 let lastExplicitStudyItem = null;
+let readingPositionFrame = null;
 
 function setTheme(theme) {
   root.dataset.theme = theme;
@@ -74,6 +87,161 @@ function normalize(value) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
+function showModal(dialog) {
+  if (!dialog || dialog.open) return;
+  if (typeof dialog.showModal === "function") dialog.showModal();
+  else dialog.setAttribute("open", "");
+}
+
+function closeModal(dialog) {
+  if (!dialog?.open) return;
+  if (typeof dialog.close === "function") dialog.close();
+  else dialog.removeAttribute("open");
+}
+
+function clickedOutsideDialog(dialog, event) {
+  if (event.target !== dialog) return false;
+  const rect = dialog.getBoundingClientRect();
+  return event.clientX < rect.left || event.clientX > rect.right
+    || event.clientY < rect.top || event.clientY > rect.bottom;
+}
+
+function syncPhasePicker() {
+  if (!phaseSelect || !phaseValue) return;
+  const selected = phaseSelect.selectedOptions[0];
+  if (selected) phaseValue.textContent = selected.textContent;
+  phaseOptionList?.querySelectorAll("[data-phase-option]").forEach((option) => {
+    option.setAttribute("aria-selected", String(option.dataset.phaseOption === phaseSelect.value));
+  });
+}
+
+function getVisiblePhaseOptions() {
+  if (!phaseOptionList) return [];
+  return [...phaseOptionList.querySelectorAll("[data-phase-option]")].filter(
+    (option) => !option.hidden && !option.closest("[data-phase-group]")?.hidden,
+  );
+}
+
+function movePhaseOptionFocus(current, direction) {
+  const options = getVisiblePhaseOptions();
+  if (!options.length) return;
+  const currentIndex = options.indexOf(current);
+  const nextIndex = (currentIndex + direction + options.length) % options.length;
+  options[nextIndex].focus();
+}
+
+function choosePhase(value) {
+  if (!phaseSelect || phaseSelect.value === value) {
+    closeModal(phaseDialog);
+    phaseTrigger?.focus();
+    return;
+  }
+  phaseSelect.value = value;
+  phaseSelect.dispatchEvent(new Event("change", { bubbles: true }));
+  closeModal(phaseDialog);
+  phaseTrigger?.focus();
+}
+
+function renderPhasePickerOptions() {
+  if (!phaseSelect || !phaseOptionList) return;
+  const fragment = document.createDocumentFragment();
+
+  [...phaseSelect.children].forEach((child, groupIndex) => {
+    const options = child.tagName === "OPTGROUP" ? [...child.querySelectorAll("option")] : [child];
+    if (!options.length) return;
+
+    const group = createElement("div", "phase-option-group");
+    group.dataset.phaseGroup = "";
+    group.dataset.phaseGroupText = normalize(child.label || "General");
+    group.setAttribute("role", "group");
+    const groupLabel = createElement("p", "phase-option-group-label", child.label || "General");
+    groupLabel.id = `phase-option-group-${groupIndex + 1}`;
+    group.setAttribute("aria-labelledby", groupLabel.id);
+    group.append(groupLabel);
+
+    options.forEach((sourceOption, optionIndex) => {
+      const option = createElement("button", "phase-option", sourceOption.textContent);
+      option.type = "button";
+      option.id = `phase-option-${groupIndex + 1}-${optionIndex + 1}`;
+      option.dataset.phaseOption = sourceOption.value;
+      option.dataset.phaseOptionText = normalize(`${sourceOption.textContent} ${sourceOption.title || ""}`);
+      option.setAttribute("role", "option");
+      option.setAttribute("aria-selected", String(sourceOption.selected));
+      option.addEventListener("click", () => choosePhase(sourceOption.value));
+      option.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowDown") {
+          event.preventDefault();
+          movePhaseOptionFocus(option, 1);
+        } else if (event.key === "ArrowUp") {
+          event.preventDefault();
+          movePhaseOptionFocus(option, -1);
+        } else if (event.key === "Home" || event.key === "End") {
+          event.preventDefault();
+          const visibleOptions = getVisiblePhaseOptions();
+          visibleOptions[event.key === "Home" ? 0 : visibleOptions.length - 1]?.focus();
+        } else if (event.key === "Escape") {
+          event.preventDefault();
+          closeModal(phaseDialog);
+        }
+      });
+      group.append(option);
+    });
+    fragment.append(group);
+  });
+
+  const empty = createElement("p", "phase-option-empty", "No hay vistas que coincidan.");
+  empty.dataset.phaseEmpty = "";
+  empty.hidden = true;
+  fragment.append(empty);
+  phaseOptionList.replaceChildren(fragment);
+  syncPhasePicker();
+}
+
+function filterPhasePickerOptions() {
+  if (!phaseOptionList) return;
+  const query = normalize(phaseOptionSearch?.value.trim() || "");
+  let visibleCount = 0;
+  phaseOptionList.querySelectorAll("[data-phase-group]").forEach((group) => {
+    const groupMatches = group.dataset.phaseGroupText.includes(query);
+    let groupVisible = 0;
+    group.querySelectorAll("[data-phase-option]").forEach((option) => {
+      const matches = !query || groupMatches || option.dataset.phaseOptionText.includes(query);
+      option.hidden = !matches;
+      if (matches) groupVisible += 1;
+    });
+    group.hidden = groupVisible === 0;
+    visibleCount += groupVisible;
+  });
+  const empty = phaseOptionList.querySelector("[data-phase-empty]");
+  if (empty) empty.hidden = visibleCount !== 0;
+}
+
+function positionPhaseDialog() {
+  if (!phaseDialog || !phaseTrigger || window.innerWidth <= 820) return;
+  const triggerRect = phaseTrigger.getBoundingClientRect();
+  const width = Math.min(Math.max(triggerRect.width, 380), Math.min(480, window.innerWidth - 24));
+  const left = Math.min(Math.max(12, triggerRect.left), window.innerWidth - width - 12);
+  phaseDialog.style.setProperty("--phase-dialog-top", `${Math.min(triggerRect.bottom + 6, window.innerHeight - 180)}px`);
+  phaseDialog.style.setProperty("--phase-dialog-left", `${left}px`);
+  phaseDialog.style.setProperty("--phase-dialog-width", `${width}px`);
+}
+
+function openPhasePicker(focusSelected = false) {
+  if (!phaseDialog) return;
+  phaseOptionSearch.value = "";
+  filterPhasePickerOptions();
+  positionPhaseDialog();
+  showModal(phaseDialog);
+  phaseTrigger?.setAttribute("aria-expanded", "true");
+  requestAnimationFrame(() => {
+    if (focusSelected) {
+      phaseOptionList?.querySelector('[aria-selected="true"]')?.focus();
+    } else {
+      phaseOptionSearch?.focus();
+    }
+  });
+}
+
 function createStudyKey(scope, type, ...parts) {
   const source = normalize(parts.filter(Boolean).join("|"));
   let hash = 2166136261;
@@ -88,9 +256,11 @@ function assignStaticStudyKeys() {
   topics.forEach((topic, index) => {
     const number = topic.querySelector(".topic-number")?.textContent.trim();
     topic.dataset.studyKey = `topics:topic:${number || index + 1}`;
+    topic.querySelector(".topic-row > span:last-child")?.classList.add("searchable-title");
   });
   rubricItems.forEach((item, index) => {
     item.dataset.studyKey = `topics:rubric:${index + 1}`;
+    item.querySelector(".topic-row > span:last-child")?.classList.add("searchable-title");
   });
 }
 
@@ -275,6 +445,208 @@ function createElement(tag, className, text) {
   return element;
 }
 
+function createIcon(paths) {
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", "control-icon");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("aria-hidden", "true");
+  paths.forEach((pathData) => {
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", pathData);
+    svg.append(path);
+  });
+  return svg;
+}
+
+function readCollapsedBlocks() {
+  try {
+    const value = JSON.parse(localStorage.getItem(collapsedBlocksKey) || "[]");
+    return new Set(Array.isArray(value) ? value : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveCollapsedBlocks() {
+  const collapsed = blocks
+    .filter((block) => block.dataset.collapsed === "true")
+    .map((block) => block.dataset.blockKey);
+  try {
+    localStorage.setItem(collapsedBlocksKey, JSON.stringify(collapsed));
+  } catch {
+    // Collapsing still works for the current visit.
+  }
+}
+
+function updateBlockCollapseButton(block) {
+  const button = block.querySelector("[data-block-collapse]");
+  if (!button) return;
+  const collapsed = block.dataset.collapsed === "true";
+  const title = block.querySelector(".block-header h2")?.textContent || "bloque";
+  button.setAttribute("aria-expanded", String(!collapsed));
+  button.setAttribute("aria-label", `${collapsed ? "Desplegar" : "Plegar"} ${title}`);
+  button.title = collapsed ? "Desplegar bloque" : "Plegar bloque";
+}
+
+function applyBlockCollapseState() {
+  const hasQuery = Boolean(searchInput?.value.trim());
+  blocks.forEach((block) => {
+    block.classList.toggle(
+      "is-collapsed",
+      !hasQuery && block.dataset.collapsed === "true",
+    );
+    updateBlockCollapseButton(block);
+  });
+}
+
+function setBlockCollapsed(block, collapsed) {
+  block.dataset.collapsed = String(collapsed);
+  applyBlockCollapseState();
+  saveCollapsedBlocks();
+  scheduleReadingPositionUpdate();
+}
+
+async function jumpToTopicBlock(block) {
+  if (searchInput?.value) {
+    searchInput.value = "";
+    renderCurrentView();
+    writeStudyState();
+  }
+  setBlockCollapsed(block, false);
+  closeModal(indexDialog);
+  await afterNextPaint();
+  block.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function setupTopicNavigation() {
+  if (!indexList) return;
+  const collapsed = readCollapsedBlocks();
+  const fragment = document.createDocumentFragment();
+
+  blocks.forEach((block, index) => {
+    const header = block.querySelector(":scope > .block-header");
+    const kicker = header?.querySelector(":scope > p");
+    const title = header?.querySelector(":scope > h2");
+    const list = block.querySelector(":scope > .topic-list");
+    const blockTopics = [...block.querySelectorAll("[data-topic]")];
+    if (!header || !kicker || !title || !list || !blockTopics.length) return;
+
+    const firstNumber = getTopicKey(blockTopics[0]);
+    const lastNumber = getTopicKey(blockTopics.at(-1));
+    const blockKey = `block-${String(index + 1).padStart(2, "0")}`;
+    block.dataset.blockKey = blockKey;
+    block.dataset.collapsed = String(collapsed.has(blockKey));
+    list.id = `topic-list-${index + 1}`;
+
+    const meta = createElement("div", "block-meta");
+    const position = createElement("span", "block-position");
+    position.dataset.blockPosition = "";
+    const collapse = createElement("button", "block-collapse");
+    collapse.type = "button";
+    collapse.dataset.blockCollapse = "";
+    collapse.setAttribute("aria-controls", list.id);
+    collapse.append(createIcon(["m6 9 6 6 6-6"]));
+    collapse.addEventListener("click", () => {
+      setBlockCollapsed(block, block.dataset.collapsed !== "true");
+    });
+    meta.append(kicker, position, collapse);
+    header.prepend(meta);
+    updateBlockCollapseButton(block);
+
+    const indexItem = createElement("button", "quick-index-item");
+    indexItem.type = "button";
+    indexItem.dataset.indexBlock = blockKey;
+    const indexLabel = createElement("span", "quick-index-item-label", kicker.textContent);
+    const indexTitle = createElement("strong", "", title.textContent);
+    const indexRange = createElement(
+      "span",
+      "quick-index-item-range",
+      `Temas ${Number(firstNumber)}–${Number(lastNumber)}`,
+    );
+    indexItem.append(indexLabel, indexTitle, indexRange);
+    indexItem.addEventListener("click", () => jumpToTopicBlock(block));
+    fragment.append(indexItem);
+  });
+
+  indexList.replaceChildren(fragment);
+  applyBlockCollapseState();
+}
+
+function getReadingTopic() {
+  const visibleTopics = topics.filter((topic) => {
+    const rect = topic.getBoundingClientRect();
+    return !topic.hidden && rect.width > 0 && rect.height > 0;
+  });
+  if (!visibleTopics.length) return null;
+  const readingLine = Math.min(window.innerHeight * 0.42, 360);
+  return visibleTopics.find((topic) => {
+    const rect = topic.getBoundingClientRect();
+    return rect.top <= readingLine && rect.bottom > readingLine;
+  }) || visibleTopics.find((topic) => topic.getBoundingClientRect().top > readingLine) || visibleTopics.at(-1);
+}
+
+function updateReadingPosition() {
+  readingPositionFrame = null;
+  blocks.forEach((block) => block.querySelector(".block-header")?.classList.remove("is-current"));
+  indexList?.querySelectorAll("[aria-current]").forEach((item) => item.removeAttribute("aria-current"));
+  if (currentView !== "topics") return;
+
+  const topic = getReadingTopic();
+  const block = topic?.closest("[data-block]");
+  if (!topic || !block) return;
+  const number = Number(getTopicKey(topic));
+  const header = block.querySelector(":scope > .block-header");
+  const position = header?.querySelector("[data-block-position]");
+  if (position) position.textContent = `Tema ${number} de ${topics.length}`;
+  header?.classList.add("is-current");
+  indexList?.querySelector(`[data-index-block="${block.dataset.blockKey}"]`)?.setAttribute("aria-current", "true");
+}
+
+function scheduleReadingPositionUpdate() {
+  if (readingPositionFrame !== null) return;
+  readingPositionFrame = requestAnimationFrame(updateReadingPosition);
+}
+
+function highlightSearchText(element, query) {
+  const original = element.dataset.originalText || element.textContent || "";
+  element.dataset.originalText = original;
+  element.replaceChildren();
+  if (!query) {
+    element.textContent = original;
+    return;
+  }
+
+  const normalizedText = normalize(original);
+  const normalizedQuery = normalize(query);
+  let cursor = 0;
+  let matchIndex = normalizedText.indexOf(normalizedQuery);
+  while (matchIndex >= 0) {
+    element.append(document.createTextNode(original.slice(cursor, matchIndex)));
+    const mark = createElement("mark", "search-highlight", original.slice(matchIndex, matchIndex + normalizedQuery.length));
+    element.append(mark);
+    cursor = matchIndex + normalizedQuery.length;
+    matchIndex = normalizedText.indexOf(normalizedQuery, cursor);
+  }
+  element.append(document.createTextNode(original.slice(cursor)));
+}
+
+function applySearchHighlights() {
+  const query = searchInput?.value.trim() || "";
+  const view = currentView === "topics" ? topicView : phaseView;
+  view?.querySelectorAll(".searchable-title").forEach((element) => {
+    highlightSearchText(element, query);
+  });
+}
+
+function finalizeViewRender() {
+  if (searchClear) searchClear.hidden = !searchInput?.value;
+  if (indexTrigger) indexTrigger.hidden = currentView !== "topics";
+  syncPhasePicker();
+  applySearchHighlights();
+  applyBlockCollapseState();
+  scheduleReadingPositionUpdate();
+}
+
 function getOpenLinkText(item) {
   if (item.clickLabel) return item.clickLabel;
   if (item.urlMode === "drive-pdf-preview" || item.urlMode === "official-pdf") return "PDF";
@@ -436,12 +808,14 @@ function renderPhaseOptions() {
   });
 
   const remainingPhases = phasesData.phases.filter((phase) => !renderedIds.has(phase.id));
-  if (!remainingPhases.length) return;
+  if (remainingPhases.length) {
+    const otherGroup = document.createElement("optgroup");
+    otherGroup.label = "Otros recursos";
+    remainingPhases.forEach((phase) => otherGroup.append(createOption(phase.id, phase.title)));
+    phaseSelect.append(otherGroup);
+  }
 
-  const otherGroup = document.createElement("optgroup");
-  otherGroup.label = "Otros recursos";
-  remainingPhases.forEach((phase) => otherGroup.append(createOption(phase.id, phase.title)));
-  phaseSelect.append(otherGroup);
+  renderPhasePickerOptions();
 }
 
 function formatSectionName(section) {
@@ -585,7 +959,7 @@ function buildTemplateGuide() {
     const row = createElement("span", "topic-row");
     row.append(
       createElement("span", "topic-number", String(index + 1).padStart(2, "0")),
-      createElement("span", "", section.name),
+      createElement("span", "searchable-title", section.name),
     );
 
     const detail = createElement("div", "template-detail");
@@ -606,7 +980,10 @@ function buildProgressItem(entry) {
   item.dataset.studyKey = `progress:topic:${key}`;
 
   const row = createElement("span", "topic-row");
-  row.append(createElement("span", "topic-number", key), createElement("span", "", topic.title));
+  row.append(
+    createElement("span", "topic-number", key),
+    createElement("span", "searchable-title", topic.title),
+  );
 
   const panel = createElement("div", "topic-materials phase-materials progress-materials");
   const meta = createElement("span", "phase-meta progress-meta");
@@ -842,7 +1219,7 @@ function buildTrendItem(trend, index) {
   const row = createElement("span", "topic-row");
   row.append(
     createElement("span", "topic-number", String(index + 1).padStart(2, "0")),
-    createElement("span", "", trend.name),
+    createElement("span", "searchable-title", trend.name),
   );
 
   const detail = createElement("div", "trend-detail");
@@ -888,7 +1265,7 @@ function buildTrendSources(phase) {
     const row = createElement("span", "topic-row");
     row.append(
       createElement("span", "topic-number", source.year || String(index + 1).padStart(2, "0")),
-      createElement("span", "", source.title),
+      createElement("span", "searchable-title", source.title),
     );
 
     const panel = createElement("div", "topic-materials phase-materials");
@@ -1033,7 +1410,7 @@ function buildPracticeGuide(guide, index, query) {
   const row = createElement("span", "topic-row");
   row.append(
     createElement("span", "topic-number", String(index + 1).padStart(2, "0")),
-    createElement("span", "", guide.name),
+    createElement("span", "searchable-title", guide.name),
   );
   const meta = createElement("span", "phase-meta practice-summary-meta");
   meta.append(
@@ -1113,7 +1490,7 @@ function buildResourceItem(resource) {
   if (!marker) item.classList.add("topic-item-no-marker");
   const number = marker ? createElement("span", "topic-number phase-marker", marker) : null;
   if (number && resource.topic && resource.topic !== "General") number.title = resource.topic;
-  const title = createElement("span", "", resource.title);
+  const title = createElement("span", "searchable-title", resource.title);
   if (number) row.append(number);
   row.append(title);
 
@@ -1233,6 +1610,7 @@ function renderCurrentView() {
     phaseView.hidden = true;
     searchInput.placeholder = "Buscar tema...";
     filterTopics();
+    finalizeViewRender();
     return;
   }
 
@@ -1241,6 +1619,7 @@ function renderCurrentView() {
     phaseView.hidden = false;
     searchInput.placeholder = "Buscar tema...";
     renderProgressView();
+    finalizeViewRender();
     return;
   }
 
@@ -1257,12 +1636,15 @@ function renderCurrentView() {
       : "Buscar recurso...";
   }
   renderSelectedPhase();
+  finalizeViewRender();
 }
 
 async function initializeStudyView() {
   if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   assignStaticStudyKeys();
-  filterTopics();
+  setupTopicNavigation();
+  renderPhasePickerOptions();
+  renderCurrentView();
   await Promise.all([loadMaterials(), loadPhases()]);
   await restoreStudyState();
 }
@@ -1282,17 +1664,74 @@ phaseSelect?.addEventListener("change", () => {
   writeStudyState();
 });
 
+phaseTrigger?.addEventListener("click", () => openPhasePicker());
+phaseTrigger?.addEventListener("keydown", (event) => {
+  if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+  event.preventDefault();
+  openPhasePicker(true);
+});
+
+phaseDialogClose?.addEventListener("click", () => closeModal(phaseDialog));
+phaseDialog?.addEventListener("click", (event) => {
+  if (clickedOutsideDialog(phaseDialog, event)) closeModal(phaseDialog);
+});
+phaseDialog?.addEventListener("close", () => {
+  phaseTrigger?.setAttribute("aria-expanded", "false");
+  phaseTrigger?.focus();
+});
+
+phaseOptionSearch?.addEventListener("input", filterPhasePickerOptions);
+phaseOptionSearch?.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowDown") {
+    event.preventDefault();
+    getVisiblePhaseOptions()[0]?.focus();
+  } else if (event.key === "Escape") {
+    event.preventDefault();
+    closeModal(phaseDialog);
+  }
+});
+
+indexTrigger?.addEventListener("click", () => {
+  showModal(indexDialog);
+  indexTrigger.setAttribute("aria-expanded", "true");
+  requestAnimationFrame(() => {
+    (indexList?.querySelector('[aria-current="true"]') || indexList?.querySelector("button"))?.focus();
+  });
+});
+indexDialogClose?.addEventListener("click", () => closeModal(indexDialog));
+indexDialog?.addEventListener("click", (event) => {
+  if (clickedOutsideDialog(indexDialog, event)) closeModal(indexDialog);
+});
+indexDialog?.addEventListener("close", () => {
+  indexTrigger?.setAttribute("aria-expanded", "false");
+  indexTrigger?.focus();
+});
+
 searchInput?.addEventListener("input", () => {
   lastExplicitStudyItem = null;
   renderCurrentView();
   writeStudyState();
 });
 
+searchClear?.addEventListener("click", () => {
+  searchInput.value = "";
+  lastExplicitStudyItem = null;
+  renderCurrentView();
+  writeStudyState();
+  searchInput.focus();
+});
+
 window.addEventListener("scroll", () => {
+  scheduleReadingPositionUpdate();
   if (isRestoringStudyState) return;
   window.clearTimeout(scrollSaveTimer);
   scrollSaveTimer = window.setTimeout(() => writeStudyState(lastExplicitStudyItem), 140);
 }, { passive: true });
+
+window.addEventListener("resize", () => {
+  scheduleReadingPositionUpdate();
+  if (phaseDialog?.open) positionPhaseDialog();
+});
 
 document.addEventListener("pointerdown", (event) => {
   const item = event.target instanceof Element

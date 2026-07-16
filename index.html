@@ -20,8 +20,8 @@
       const savedTheme = localStorage.getItem("theme");
       document.documentElement.dataset.theme = savedTheme || "dark";
     </script>
-    <script src="script.js?v=20260712-study-memory-v4" defer></script>
-    <link rel="stylesheet" href="styles.css?v=20260712-study-memory-v4">
+    <script src="script.js?v=20260716-navigation-v5" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260716-navigation-v5">
   </head>
   <body>
     <a class="skip-link" href="#content">Saltar al contenido</a>
@@ -83,25 +83,85 @@
           </div>
         </div>
         <div class="filter-row">
-          <label class="filter-label" for="phase-select">Vista</label>
-          <select id="phase-select" class="phase-select" data-phase-select>
-            <optgroup label="Estudio">
-              <option value="topics">Temario oficial</option>
-              <option value="progress">Mi progreso</option>
-            </optgroup>
-          </select>
+          <span id="phase-picker-label" class="filter-label">Vista</span>
+          <div class="view-controls">
+            <div class="phase-picker">
+              <button
+                id="phase-picker-trigger"
+                class="phase-picker-trigger"
+                type="button"
+                data-phase-trigger
+                aria-labelledby="phase-picker-label phase-picker-value"
+                aria-haspopup="dialog"
+                aria-controls="phase-picker-dialog"
+                aria-expanded="false"
+              >
+                <span id="phase-picker-value" data-phase-value>Temario oficial</span>
+                <svg class="control-icon phase-picker-chevron" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </button>
+              <select
+                id="phase-select"
+                class="phase-select-native"
+                data-phase-select
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <optgroup label="Estudio">
+                  <option value="topics">Temario oficial</option>
+                  <option value="progress">Mi progreso</option>
+                </optgroup>
+              </select>
+            </div>
+            <button
+              class="quick-index-trigger"
+              type="button"
+              data-index-trigger
+              aria-label="Abrir índice del temario"
+              aria-haspopup="dialog"
+              aria-controls="quick-index-dialog"
+              aria-expanded="false"
+              title="Índice del temario"
+            >
+              <svg class="control-icon" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M8 6h13"></path>
+                <path d="M8 12h13"></path>
+                <path d="M8 18h13"></path>
+                <path d="M3 6h.01"></path>
+                <path d="M3 12h.01"></path>
+                <path d="M3 18h.01"></path>
+              </svg>
+              <span>Índice</span>
+            </button>
+          </div>
         </div>
         <label class="sr-only" for="topic-search">Buscar</label>
         <div class="search-row">
-          <input
-            id="topic-search"
-            type="search"
-            name="q"
-            autocomplete="off"
-            spellcheck="false"
-            placeholder="Buscar tema..."
-            data-search
-          >
+          <div class="search-field">
+            <input
+              id="topic-search"
+              type="search"
+              name="q"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="Buscar tema..."
+              data-search
+            >
+            <button
+              class="search-clear"
+              type="button"
+              data-search-clear
+              aria-label="Borrar búsqueda"
+              title="Borrar búsqueda"
+              hidden
+            >
+              <svg class="control-icon" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+          </div>
           <output for="topic-search" data-count aria-live="polite">74 temas</output>
         </div>
       </section>
@@ -795,6 +855,76 @@
 
       <p class="empty-state" data-empty hidden>No hay temas que coincidan con la búsqueda.</p>
     </main>
+
+    <dialog
+      id="phase-picker-dialog"
+      class="app-dialog phase-picker-dialog"
+      data-phase-dialog
+      aria-labelledby="phase-dialog-title"
+    >
+      <div class="dialog-header">
+        <h2 id="phase-dialog-title">Vista</h2>
+        <button
+          class="dialog-close"
+          type="button"
+          data-phase-close
+          aria-label="Cerrar selector"
+          title="Cerrar"
+        >
+          <svg class="control-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <label class="sr-only" for="phase-option-search">Buscar vista</label>
+      <div class="dialog-search">
+        <svg class="control-icon" aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <input
+          id="phase-option-search"
+          type="search"
+          autocomplete="off"
+          placeholder="Buscar vista..."
+          data-phase-search
+        >
+      </div>
+      <div
+        class="phase-option-list"
+        role="listbox"
+        aria-labelledby="phase-dialog-title"
+        data-phase-options
+      ></div>
+    </dialog>
+
+    <dialog
+      id="quick-index-dialog"
+      class="app-dialog quick-index-dialog"
+      data-index-dialog
+      aria-labelledby="index-dialog-title"
+    >
+      <div class="dialog-header index-dialog-header">
+        <div>
+          <p>74 temas</p>
+          <h2 id="index-dialog-title">Índice del temario</h2>
+        </div>
+        <button
+          class="dialog-close"
+          type="button"
+          data-index-close
+          aria-label="Cerrar índice"
+          title="Cerrar"
+        >
+          <svg class="control-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="quick-index-list" aria-label="Bloques del temario" data-index-list></nav>
+    </dialog>
 
     <footer class="site-footer">
       <a href="https://github.com/diegaless" target="_blank" rel="noopener noreferrer">GitHub</a>
