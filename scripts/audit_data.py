@@ -18,6 +18,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 import unicodedata
 import urllib.error
 import urllib.request
@@ -1517,24 +1518,32 @@ def check_drive(
     validate_drive_permissions(audit, available_entries, owner)
 
 
-def check_one_http_url(url: str, timeout: float) -> tuple[bool, str]:
-    headers = {"User-Agent": "opo-diegoayala-audit/1.0"}
-    for method, extra_headers in (("HEAD", {}), ("GET", {"Range": "bytes=0-0"})):
-        request = urllib.request.Request(url, method=method, headers={**headers, **extra_headers})
-        try:
-            with urllib.request.urlopen(request, timeout=timeout) as response:
-                status = response.status
-                if status in HTTP_OK:
-                    return True, str(status)
-                last = str(status)
-        except urllib.error.HTTPError as exc:
-            last = f"HTTP {exc.code}"
-            if method == "HEAD" and exc.code in {405, 403, 501}:
-                continue
-        except Exception as exc:
-            last = exc.__class__.__name__ + ": " + str(exc)
-            if method == "HEAD":
-                continue
+def check_one_http_url(url: str, timeout: float, attempts: int = 2) -> tuple[bool, str]:
+    headers = {
+        "User-Agent": "opo-diegoayala-audit/1.0 (+https://opo.diegoayala.com/)",
+        "Accept": "*/*",
+        "Connection": "close",
+    }
+    last = "no response"
+    for attempt in range(attempts):
+        for method, extra_headers in (("HEAD", {}), ("GET", {"Range": "bytes=0-0"})):
+            request = urllib.request.Request(url, method=method, headers={**headers, **extra_headers})
+            try:
+                with urllib.request.urlopen(request, timeout=timeout) as response:
+                    status = response.status
+                    if status in HTTP_OK:
+                        return True, str(status)
+                    last = str(status)
+            except urllib.error.HTTPError as exc:
+                last = f"HTTP {exc.code}"
+                if method == "HEAD" and exc.code in {405, 403, 501}:
+                    continue
+            except Exception as exc:
+                last = exc.__class__.__name__ + ": " + str(exc)
+                if method == "HEAD":
+                    continue
+        if attempt + 1 < attempts:
+            time.sleep(3 * (attempt + 1))
     return False, last
 
 
