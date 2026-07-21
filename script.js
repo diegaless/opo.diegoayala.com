@@ -1021,16 +1021,10 @@ function renderPhaseOptions() {
   if (!phaseSelect || !phasesData?.phases) return;
   const phaseGroups = [
     {
-      label: "Actualidad y normativa",
-      options: [
-        ["98_Novedades_y_publicaciones", "Novedades oficiales"],
-        ["00_Normativa_y_orden_legal", "Normativa y referencias"],
-      ],
-    },
-    {
       label: "Primera prueba",
       options: [
         ["02_Primera_prueba_A_Practico", "Parte A · Prueba práctica"],
+        ["topics", "Parte B · Tema escrito"],
         ["97_Que_cae_mas", "Parte A · Qué cae más"],
         ["96_Practicos_soluciones_codex", "Parte A · Guías y soluciones propias"],
       ],
@@ -1040,6 +1034,19 @@ function renderPhaseOptions() {
       options: [
         ["03_Segunda_prueba_Programacion_didactica", "Programación didáctica"],
         ["04_Segunda_prueba_Unidad_didactica", "Unidad didáctica"],
+      ],
+    },
+    {
+      label: "Seguimiento personal",
+      options: [
+        ["progress", "Mi progreso"],
+      ],
+    },
+    {
+      label: "Actualidad y normativa",
+      options: [
+        ["98_Novedades_y_publicaciones", "Novedades oficiales"],
+        ["00_Normativa_y_orden_legal", "Normativa y referencias"],
       ],
     },
     {
@@ -1057,7 +1064,12 @@ function renderPhaseOptions() {
     },
   ];
   const phasesById = new Map(phasesData.phases.map((phase) => [phase.id, phase]));
+  const specialOptions = new Map([
+    ["topics", "Primera prueba - Parte B: Desarrollo por escrito de un tema"],
+    ["progress", "Seguimiento personal del temario"],
+  ]);
   const renderedIds = new Set([partBPhaseId]);
+  phaseSelect.replaceChildren();
 
   phaseGroups.forEach((phaseGroup) => {
     const group = document.createElement("optgroup");
@@ -1065,11 +1077,12 @@ function renderPhaseOptions() {
 
     phaseGroup.options.forEach(([phaseId, optionLabel]) => {
       const phase = phasesById.get(phaseId);
-      if (!phase) return;
-      const option = createOption(phase.id, optionLabel);
-      option.title = phase.title;
+      const specialTitle = specialOptions.get(phaseId);
+      if (!phase && !specialTitle) return;
+      const option = createOption(phaseId, optionLabel);
+      option.title = phase?.title || specialTitle;
       group.append(option);
-      renderedIds.add(phase.id);
+      if (phase) renderedIds.add(phase.id);
     });
 
     if (group.children.length) phaseSelect.append(group);
@@ -1083,6 +1096,9 @@ function renderPhaseOptions() {
     phaseSelect.append(otherGroup);
   }
 
+  phaseSelect.value = [...phaseSelect.options].some((option) => option.value === currentView)
+    ? currentView
+    : "topics";
   renderPhasePickerOptions();
 }
 
