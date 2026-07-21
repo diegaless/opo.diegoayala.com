@@ -1024,9 +1024,9 @@ function renderPhaseOptions() {
       label: "Primera prueba",
       options: [
         ["02_Primera_prueba_A_Practico", "Parte A · Prueba práctica"],
-        ["topics", "Parte B · Tema escrito"],
         ["97_Que_cae_mas", "Parte A · Qué cae más"],
         ["96_Practicos_soluciones_codex", "Parte A · Guías y soluciones propias"],
+        ["topics", "Parte B · Tema escrito"],
       ],
     },
     {
