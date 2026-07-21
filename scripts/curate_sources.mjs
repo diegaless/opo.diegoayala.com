@@ -6,6 +6,7 @@ const VERIFIED_AT = "2026-07-21";
 const PHASES_PATH = new URL("../data/phases.json", import.meta.url);
 const MATERIALS_PATH = new URL("../data/materials.json", import.meta.url);
 const PART_B_PHASE_ID = "01_Primera_prueba_B_Tema_escrito";
+const PROGRESS_BACKUP_FOLDER_ID = "1BNituvpf0rs0NT95JsoXIMYlwnWI_KGy";
 
 const BLOCK_EXAMPLE_DOCS = [
   {
@@ -335,11 +336,14 @@ function extractPublicationYear(resource) {
 }
 
 function extractExactTopics(resource) {
-  const text = `${resource.topic || ""} ${resource.title || ""}`;
-  const matches = [...text.matchAll(/\btema\s*0*(\d{1,2})\b/gi)]
-    .map((match) => Number(match[1]))
+  const topicLabel = String(resource.topic || "");
+  const topicMatches = /^temas?\b/i.test(topicLabel)
+    ? [...topicLabel.matchAll(/\b0*(\d{1,2})\b/g)].map((match) => Number(match[1]))
+    : [];
+  const titleMatches = [...String(resource.title || "").matchAll(/\btema\s*0*(\d{1,2})\b/gi)]
+    .map((match) => Number(match[1]));
+  return [...new Set([...topicMatches, ...titleMatches])]
     .filter((number) => number >= 1 && number <= 74);
-  return [...new Set(matches)];
 }
 
 function inferRelatedTopics(resource) {
@@ -563,7 +567,7 @@ async function main() {
   );
   writtenTopic.title = "Primera prueba - Parte B: Desarrollo por escrito de un tema";
   writtenTopic.description =
-    "La vista comienza con los 74 temas oficiales en formato compacto y termina con criterios, introducciones y esquemas que no están ya en el selector de academias.";
+    "La vista comienza con los 74 temas oficiales en formato compacto, integra las introducciones en sus temas relacionados y termina con criterios y esquemas generales.";
   writtenTopic.embeddedTopicCatalog = {
     source: "data/materials.json",
     position: "before-complements",
@@ -710,6 +714,10 @@ async function main() {
     ],
     scoringNote:
       "La puntuación personal de 0 a 10 se guarda solo en este navegador y sirve para comparar el tema con la rúbrica oficial.",
+    backupFolderId: PROGRESS_BACKUP_FOLDER_ID,
+    backupFolderUrl: `https://drive.google.com/drive/folders/${PROGRESS_BACKUP_FOLDER_ID}`,
+    backupAccess: "private-owner-only",
+    backupFileName: "progreso-oposicion-informatica.json",
   };
 
   for (const topic of Object.values(materialsData.topics || {})) {

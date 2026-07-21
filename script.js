@@ -29,6 +29,7 @@ const collapsedBlocksKey = "opo-collapsed-blocks-v1";
 const rubricExpandedKey = "opo-rubric-expanded-v1";
 const resourceFiltersKey = "opo-resource-filters-v1";
 const personalProgressKey = "opo-personal-progress-v1";
+const progressBackupStateKey = "opo-progress-backup-state-v1";
 const fallbackTopicTemplate = [
   {
     name: "Índice",
@@ -270,8 +271,28 @@ function createStudyKey(scope, type, ...parts) {
 function assignStaticStudyKeys() {
   topics.forEach((topic, index) => {
     const number = topic.querySelector(".topic-number")?.textContent.trim();
-    topic.dataset.studyKey = `topics:topic:${number || index + 1}`;
-    topic.querySelector(".topic-row > span:last-child")?.classList.add("searchable-title");
+    const topicKey = (number || String(index + 1)).padStart(2, "0");
+    topic.id = `tema-${topicKey}`;
+    topic.dataset.studyKey = `topics:topic:${topicKey}`;
+    const row = topic.querySelector(".topic-row");
+    row?.querySelector("span:last-of-type")?.classList.add("searchable-title");
+    row?.querySelector("[data-topic-direct-link]")?.remove();
+    const directLink = document.createElement("a");
+    directLink.className = "topic-direct-link";
+    directLink.dataset.topicDirectLink = "";
+    directLink.href = `#tema-${topicKey}`;
+    directLink.title = `Enlace directo al tema ${topicKey}`;
+    directLink.setAttribute("aria-label", `Abrir enlace directo al tema ${topicKey}`);
+    directLink.append(createIcon([
+      "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71",
+      "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71",
+    ]));
+    directLink.addEventListener("click", (event) => {
+      event.preventDefault();
+      history.pushState(null, "", `#tema-${topicKey}`);
+      openTopicByKey(topicKey, { smooth: true });
+    });
+    row?.append(directLink);
   });
   rubricItems.forEach((item, index) => {
     item.dataset.studyKey = `topics:rubric:${index + 1}`;
@@ -404,16 +425,26 @@ function updateCount(visible, type = "temas") {
   countOutput.textContent = visible === 1 ? `1 ${singular}` : `${visible} ${type}`;
 }
 
-function updatePartBCount(visibleTopics, visibleRubrics, visibleResources, hasQuery) {
+function updatePartBCount(
+  visibleTopics,
+  visibleRubrics,
+  visibleIntroductions,
+  visibleResources,
+  totalComplements,
+  hasQuery,
+) {
   if (!countOutput) return;
   if (!hasQuery) {
-    countOutput.textContent = `${visibleTopics} temas · ${visibleResources} complementos`;
+    countOutput.textContent = `${visibleTopics} temas · ${totalComplements} complementos`;
     return;
   }
 
   const parts = [];
   if (visibleTopics) parts.push(visibleTopics === 1 ? "1 tema" : `${visibleTopics} temas`);
   if (visibleRubrics) parts.push(visibleRubrics === 1 ? "1 criterio" : `${visibleRubrics} criterios`);
+  if (visibleIntroductions) {
+    parts.push(visibleIntroductions === 1 ? "1 introducción" : `${visibleIntroductions} introducciones`);
+  }
   if (visibleResources) parts.push(visibleResources === 1 ? "1 complemento" : `${visibleResources} complementos`);
   countOutput.textContent = parts.join(" · ") || "0 resultados";
 }
@@ -574,6 +605,30 @@ async function jumpToTopicBlock(block) {
   block.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+function getTopicKeyFromHash() {
+  const match = location.hash.match(/^#tema-(\d{1,2})$/i);
+  if (!match) return "";
+  const number = Number(match[1]);
+  return number >= 1 && number <= topics.length ? String(number).padStart(2, "0") : "";
+}
+
+async function openTopicByKey(topicKey, { smooth = false } = {}) {
+  const topic = topics.find((item) => getTopicKey(item) === topicKey);
+  if (!topic) return false;
+  currentView = "topics";
+  phaseSelect.value = "topics";
+  searchInput.value = "";
+  const block = topic.closest("[data-block]");
+  if (block) setBlockCollapsed(block, false);
+  renderCurrentView();
+  await afterNextPaint();
+  const top = topic.getBoundingClientRect().top + window.scrollY - getRestoreOffset(topic);
+  if (smooth) window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+  else scrollImmediately(top);
+  writeStudyState(topic);
+  return true;
+}
+
 async function jumpToPartBResources() {
   if (searchInput?.value) {
     searchInput.value = "";
@@ -653,7 +708,7 @@ function setupTopicNavigation() {
   resourcesIndexItem.dataset.indexPartBResources = "";
   resourcesIndexItem.append(
     createElement("span", "quick-index-item-label", "Complementos Parte B"),
-    createElement("strong", "", "Criterios, introducciones y esquemas"),
+    createElement("strong", "", "Criterios y esquemas generales"),
     createElement("span", "quick-index-item-range", "Recursos únicos"),
   );
   resourcesIndexItem.querySelector(".quick-index-item-range").dataset.partBResourceCount = "";
@@ -821,6 +876,61 @@ function buildMaterialControls(topic, topicData) {
   renderMaterialOptions();
 }
 
+function getPartBPhase() {
+  return phasesData?.phases?.find((phase) => phase.id === partBPhaseId);
+}
+
+function getPartBIntroductions() {
+  return (getPartBPhase()?.resources || []).filter((resource) => resource.type === "introduccion");
+}
+
+function buildTopicIntroductionControls() {
+  const introductions = getPartBIntroductions();
+  topics.forEach((topic) => {
+    topic.querySelector("[data-topic-introductions]")?.remove();
+    const topicNumber = Number(getTopicKey(topic));
+    const resources = introductions
+      .filter((resource) => (resource.relatedTopics || []).includes(topicNumber))
+      .sort((left, right) => (left.displayTitle || left.title).localeCompare(
+        right.displayTitle || right.title,
+        "es",
+      ));
+    if (!resources.length) return;
+
+    const panel = createElement("div", "topic-materials topic-introductions");
+    panel.dataset.topicIntroductions = "";
+    const label = createElement(
+      "span",
+      "topic-introductions-label",
+      resources.length === 1 ? "1 introducción" : `${resources.length} introducciones`,
+    );
+    const select = document.createElement("select");
+    select.className = "material-select";
+    select.setAttribute("aria-label", `Introducciones del tema ${String(topicNumber).padStart(2, "0")}`);
+    resources.forEach((resource, index) => {
+      select.append(createOption(String(index), resource.displayTitle || resource.title));
+    });
+
+    const openLink = document.createElement("a");
+    openLink.className = "material-link";
+    openLink.target = "_blank";
+    openLink.rel = "noopener noreferrer";
+
+    function renderIntroductionLink() {
+      const resource = resources[Number(select.value) || 0];
+      openLink.href = resource.url;
+      openLink.textContent = getOpenLinkText(resource);
+      openLink.title = resource.originalTitle || resource.title;
+      openLink.setAttribute("aria-label", `Abrir ${resource.displayTitle || resource.title}`);
+    }
+
+    select.addEventListener("change", renderIntroductionLink);
+    panel.append(label, select, openLink);
+    topic.append(panel);
+    renderIntroductionLink();
+  });
+}
+
 async function openPracticalsForTopic(topicKey) {
   const phaseId = "02_Primera_prueba_A_Practico";
   savePhaseResourceFilters(phaseId, { topic: topicKey });
@@ -899,6 +1009,7 @@ async function loadPhases() {
     if (!response.ok) throw new Error(`No se pudo cargar ${phasesUrl}`);
     phasesData = await response.json();
     renderPhaseOptions();
+    buildTopicIntroductionControls();
     buildTopicPracticeControls();
     if (currentView === "topics") renderCurrentView();
   } catch (error) {
@@ -1194,6 +1305,200 @@ function savePersonalTopicProgress(key, value) {
   writeStoredObject(personalProgressKey, personalProgress);
 }
 
+function getProgressBackupState() {
+  return readStoredObject(progressBackupStateKey);
+}
+
+function getProgressBackupFileName() {
+  return materialsData?.myTopicProgress?.backupFileName || "progreso-oposicion-informatica.json";
+}
+
+function buildProgressBackupFile() {
+  const payload = {
+    app: "opo-diegoayala",
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    personalProgress,
+  };
+  return new File(
+    [`${JSON.stringify(payload, null, 2)}\n`],
+    getProgressBackupFileName(),
+    { type: "application/json" },
+  );
+}
+
+function setProgressBackupStatus(kind, method = "") {
+  const state = {
+    ...getProgressBackupState(),
+    [kind]: new Date().toISOString(),
+  };
+  if (method) state.method = method;
+  writeStoredObject(progressBackupStateKey, state);
+  return state;
+}
+
+function formatProgressBackupStatus(state = getProgressBackupState()) {
+  const savedAt = Date.parse(state.savedAt || "");
+  const restoredAt = Date.parse(state.restoredAt || "");
+  if (Number.isFinite(restoredAt) && (!Number.isFinite(savedAt) || restoredAt > savedAt)) {
+    return `Restaurada ${formatDate(state.restoredAt)}`;
+  }
+  if (Number.isFinite(savedAt)) return `Última copia ${formatDate(state.savedAt)}`;
+  return "Sin copia registrada";
+}
+
+function downloadProgressBackup(file) {
+  const url = URL.createObjectURL(file);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = file.name;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+async function saveProgressBackup(statusOutput) {
+  const file = buildProgressBackupFile();
+  const isMobile = matchMedia("(max-width: 820px)").matches
+    || /Android|iPhone|iPad/i.test(navigator.userAgent);
+  let method = "download";
+
+  try {
+    if (isMobile && navigator.canShare?.({ files: [file] })) {
+      await navigator.share({
+        files: [file],
+        title: "Copia del progreso de la oposición",
+      });
+      method = "share";
+    } else if ("showSaveFilePicker" in window) {
+      const handle = await window.showSaveFilePicker({
+        suggestedName: file.name,
+        types: [{ description: "Copia de progreso", accept: { "application/json": [".json"] } }],
+      });
+      const writable = await handle.createWritable();
+      await writable.write(file);
+      await writable.close();
+      method = "file-picker";
+    } else if (navigator.canShare?.({ files: [file] })) {
+      await navigator.share({ files: [file], title: "Copia del progreso de la oposición" });
+      method = "share";
+    } else {
+      downloadProgressBackup(file);
+    }
+
+    const state = setProgressBackupStatus("savedAt", method);
+    statusOutput.textContent = formatProgressBackupStatus(state);
+  } catch (error) {
+    if (error?.name !== "AbortError") {
+      console.warn(error);
+      statusOutput.textContent = "No se pudo crear la copia";
+    }
+  }
+}
+
+function sanitizeProgressBackup(payload) {
+  if (payload?.app !== "opo-diegoayala" || payload?.version !== 1) {
+    throw new Error("Formato de copia no reconocido");
+  }
+  if (!payload.personalProgress || typeof payload.personalProgress !== "object") {
+    throw new Error("La copia no contiene progreso");
+  }
+
+  const validStatuses = new Set(getProgressStatusOptions().map((option) => option.value));
+  const validTopics = new Set(Object.keys(materialsData?.topics || {}));
+  const restored = {};
+  Object.entries(payload.personalProgress).forEach(([key, value]) => {
+    if (!validTopics.has(key) || !value || typeof value !== "object") return;
+    if (!validStatuses.has(value.status)) throw new Error(`Estado no válido en el tema ${key}`);
+    const hasScore = value.score !== null && value.score !== "" && value.score !== undefined;
+    const score = hasScore ? Number(value.score) : null;
+    if (score !== null && (!Number.isFinite(score) || score < 0 || score > 10)) {
+      throw new Error(`Nota no válida en el tema ${key}`);
+    }
+    restored[key] = { status: value.status, score };
+  });
+  return restored;
+}
+
+async function restoreProgressBackup(file, statusOutput) {
+  try {
+    if (!file || file.size > 1024 * 1024) throw new Error("La copia no es válida");
+    const restored = sanitizeProgressBackup(JSON.parse(await file.text()));
+    if (Object.keys(personalProgress).length && !window.confirm("¿Sustituir el progreso guardado en este navegador?")) {
+      return;
+    }
+    personalProgress = restored;
+    writeStoredObject(personalProgressKey, personalProgress);
+    setProgressBackupStatus("restoredAt");
+    renderCurrentView();
+    const nextStatus = phaseView?.querySelector("[data-backup-status]");
+    if (nextStatus) nextStatus.textContent = formatProgressBackupStatus();
+  } catch (error) {
+    console.warn(error);
+    statusOutput.textContent = error?.message || "No se pudo restaurar la copia";
+  }
+}
+
+function buildProgressBackupBand() {
+  const progress = materialsData?.myTopicProgress || {};
+  const band = createElement("section", "progress-backup-band");
+  band.dataset.studyKey = "progress:backup";
+  const copy = createElement("div", "progress-backup-copy");
+  const status = createElement("span", "progress-backup-status", formatProgressBackupStatus());
+  status.dataset.backupStatus = "";
+  status.setAttribute("aria-live", "polite");
+  copy.append(
+    createElement("p", "", "Copia privada"),
+    createElement("strong", "", "Progreso en Drive"),
+    status,
+  );
+
+  const actions = createElement("div", "progress-backup-actions");
+  const save = createElement("button", "backup-action");
+  save.type = "button";
+  save.dataset.backupSave = "";
+  save.title = "Guardar la copia en Drive o en una carpeta sincronizada";
+  save.append(
+    createIcon(["M12 3v12", "m7 10 5 5 5-5", "M5 21h14"]),
+    createElement("span", "", "Guardar en Drive"),
+  );
+  save.addEventListener("click", () => saveProgressBackup(status));
+
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = ".json,application/json";
+  input.hidden = true;
+  input.dataset.backupInput = "";
+  input.addEventListener("change", async () => {
+    await restoreProgressBackup(input.files?.[0], status);
+    input.value = "";
+  });
+
+  const restore = createElement("button", "backup-action");
+  restore.type = "button";
+  restore.dataset.backupRestore = "";
+  restore.title = "Restaurar una copia de progreso";
+  restore.append(
+    createIcon(["M12 21V9", "m17 14-5-5-5 5", "M5 3h14"]),
+    createElement("span", "", "Restaurar copia"),
+  );
+  restore.addEventListener("click", () => input.click());
+
+  const folder = document.createElement("a");
+  folder.className = "backup-action";
+  folder.href = progress.backupFolderUrl || "https://drive.google.com/drive/my-drive";
+  folder.target = "_blank";
+  folder.rel = "noopener noreferrer";
+  folder.title = "Abrir la carpeta privada de progreso";
+  folder.append(
+    createIcon(["M3 7h5l2 2h11v10H3z", "M14 5h7v7", "m14 12 7-7"]),
+    createElement("span", "", "Carpeta privada"),
+  );
+
+  actions.append(save, restore, folder, input);
+  band.append(copy, actions);
+  return band;
+}
+
 function getProgressStatusLabel(status) {
   return getProgressStatusOptions().find((option) => option.value === status)?.label || "Sin empezar";
 }
@@ -1453,6 +1758,7 @@ function renderProgressView() {
 
   const fragment = document.createDocumentFragment();
   fragment.append(buildProgressOverview(entries));
+  fragment.append(buildProgressBackupBand());
   fragment.append(buildTemplateGuide());
 
   if (!filteredEntries.length) {
@@ -2024,7 +2330,7 @@ function buildPartBResourcesHeading(resourceCount) {
   const copy = document.createElement("div");
   copy.append(
     createElement("p", "", "Parte B · Material complementario"),
-    createElement("h2", "", "Criterios, introducciones y esquemas"),
+    createElement("h2", "", "Criterios y esquemas generales"),
   );
   heading.append(copy, createElement("span", "", `${resourceCount} recursos únicos`));
   heading.dataset.studyKey = "topics:part-b-resources";
@@ -2044,7 +2350,10 @@ function renderResourcePhase(phase, { embeddedInPartB = false } = {}) {
     return 0;
   }
 
-  const allResources = phase.resources || [];
+  const sourceResources = phase.resources || [];
+  const allResources = embeddedInPartB
+    ? sourceResources.filter((resource) => resource.type !== "introduccion")
+    : sourceResources;
   const filters = embeddedInPartB ? {} : getPhaseResourceFilters(phase.id);
   const resources = allResources.filter(
     (resource) => resourceMatches(resource, query) && resourceMatchesFacetFilters(resource, filters),
@@ -2110,13 +2419,14 @@ function renderResourcePhase(phase, { embeddedInPartB = false } = {}) {
 }
 
 function renderPartBResources() {
-  const phase = phasesData?.phases?.find((item) => item.id === partBPhaseId);
+  const phase = getPartBPhase();
   if (!phase) {
     phaseView?.replaceChildren();
     return 0;
   }
+  const generalResourceCount = phase.resources.filter((resource) => resource.type !== "introduccion").length;
   const indexCount = indexList?.querySelector("[data-part-b-resource-count]");
-  if (indexCount) indexCount.textContent = `${phase.resources.length} recursos únicos`;
+  if (indexCount) indexCount.textContent = `${generalResourceCount} recursos generales`;
   return renderResourcePhase(phase, { embeddedInPartB: true });
 }
 
@@ -2160,15 +2470,23 @@ function renderCurrentView() {
     searchInput.placeholder = "Buscar tema, criterio o introducción...";
     const topicResult = filterTopics();
     const visibleResources = renderPartBResources();
+    const query = normalize(searchInput?.value.trim() || "");
+    const visibleIntroductions = topicResult.hasQuery
+      ? getPartBIntroductions().filter((resource) => resourceMatches(resource, query)).length
+      : 0;
+    const totalComplements = getPartBPhase()?.resources.length || visibleResources;
     updatePartBCount(
       topicResult.visibleTopics,
       topicResult.visibleRubrics,
+      visibleIntroductions,
       visibleResources,
+      totalComplements,
       topicResult.hasQuery,
     );
     if (emptyState) {
       emptyState.textContent = "No hay temas ni complementos que coincidan con la búsqueda.";
-      emptyState.hidden = topicResult.visibleTopics + topicResult.visibleRubrics + visibleResources !== 0;
+      emptyState.hidden = topicResult.visibleTopics + topicResult.visibleRubrics
+        + visibleIntroductions + visibleResources !== 0;
     }
     finalizeViewRender();
     return;
@@ -2208,7 +2526,13 @@ async function initializeStudyView() {
   renderPhasePickerOptions();
   renderCurrentView();
   await Promise.all([loadMaterials(), loadPhases()]);
-  await restoreStudyState();
+  const hashTopic = getTopicKeyFromHash();
+  if (hashTopic) {
+    isRestoringStudyState = false;
+    await openTopicByKey(hashTopic);
+  } else {
+    await restoreStudyState();
+  }
 }
 
 initializeStudyView();
@@ -2220,8 +2544,16 @@ rubricToggle?.addEventListener("click", () => {
 phaseSelect?.addEventListener("change", () => {
   lastExplicitStudyItem = null;
   currentView = phaseSelect.value;
+  if (currentView !== "topics" && getTopicKeyFromHash()) {
+    history.replaceState(null, "", `${location.pathname}${location.search}`);
+  }
   renderCurrentView();
   writeStudyState();
+});
+
+window.addEventListener("popstate", () => {
+  const topicKey = getTopicKeyFromHash();
+  if (topicKey) openTopicByKey(topicKey, { smooth: true });
 });
 
 phaseTrigger?.addEventListener("click", () => openPhasePicker());

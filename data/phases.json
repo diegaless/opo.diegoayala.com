@@ -1067,7 +1067,7 @@
       "label": "Parte B",
       "title": "Primera prueba - Parte B: Desarrollo por escrito de un tema",
       "legal": "Parte B de la primera prueba.",
-      "description": "La vista comienza con los 74 temas oficiales en formato compacto y termina con criterios, introducciones y esquemas que no están ya en el selector de academias.",
+      "description": "La vista comienza con los 74 temas oficiales en formato compacto, integra las introducciones en sus temas relacionados y termina con criterios y esquemas generales.",
       "resourceCount": 22,
       "publicLinkCount": 22,
       "sections": [
@@ -1377,7 +1377,8 @@
           "cataloguedAt": "2026-07-21",
           "hasSolution": false,
           "relatedTopics": [
-            1
+            1,
+            2
           ],
           "relationBasis": "exacta"
         },
@@ -1422,7 +1423,8 @@
           "cataloguedAt": "2026-07-21",
           "hasSolution": false,
           "relatedTopics": [
-            1
+            1,
+            13
           ],
           "relationBasis": "exacta"
         },
@@ -1444,7 +1446,8 @@
           "cataloguedAt": "2026-07-21",
           "hasSolution": false,
           "relatedTopics": [
-            1
+            1,
+            31
           ],
           "relationBasis": "exacta"
         },

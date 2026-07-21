@@ -472,7 +472,47 @@ def validate_part_b_compaction(
             f"{len(repeated)} resources already exist in the compact official syllabus",
         )
 
-    audit.stats["part_b_complements"] = len(phase.get("resources") or [])
+    resources = phase.get("resources") or []
+    introductions = [
+        resource
+        for resource in resources
+        if isinstance(resource, dict) and resource.get("type") == "introduccion"
+    ]
+    general_resources = [
+        resource
+        for resource in resources
+        if not isinstance(resource, dict) or resource.get("type") != "introduccion"
+    ]
+    audit.stats["part_b_complements"] = len(resources)
+    audit.stats["part_b_introductions"] = len(introductions)
+    audit.stats["part_b_general_resources"] = len(general_resources)
+    if len(introductions) != 17:
+        audit.error(
+            "part_b.introductions.count",
+            f"phases.{PART_B_PHASE_ID}.resources",
+            f"Expected 17 topic introductions, found {len(introductions)}",
+        )
+    if len(general_resources) != 5:
+        audit.error(
+            "part_b.general_resources.count",
+            f"phases.{PART_B_PHASE_ID}.resources",
+            f"Expected 5 general criteria and schemes, found {len(general_resources)}",
+        )
+    for introduction in introductions:
+        resource_index = resources.index(introduction)
+        related_topics = introduction.get("relatedTopics")
+        if not related_topics:
+            audit.error(
+                "part_b.introduction.unlinked",
+                f"phases.{PART_B_PHASE_ID}.resources[{resource_index}]",
+                "Every introduction must be linked to at least one exact BOE topic",
+            )
+        if introduction.get("relationBasis") != "exacta":
+            audit.error(
+                "part_b.introduction.inexact",
+                f"phases.{PART_B_PHASE_ID}.resources[{resource_index}]",
+                "Topic introductions must use an exact relationship",
+            )
     html = INDEX_HTML.read_text(encoding="utf-8") if INDEX_HTML.exists() else ""
     if "Parte B · Tema escrito" not in html or "Temario oficial" not in html:
         audit.error(
@@ -583,8 +623,39 @@ def validate_materials(materials: dict[str, Any], audit: Audit, expected_topics:
         audit,
         "data/materials.json.myTopicProgress",
         progress,
-        ["updatedAt", "statusOptions", "scoringNote"],
+        [
+            "updatedAt",
+            "statusOptions",
+            "scoringNote",
+            "backupFolderId",
+            "backupFolderUrl",
+            "backupAccess",
+            "backupFileName",
+        ],
     )
+    backup_folder_id = str(progress.get("backupFolderId") or "")
+    backup_folder_url = str(progress.get("backupFolderUrl") or "")
+    backup_url_ids = extract_drive_folder_ids(backup_folder_url)
+    if backup_url_ids != [backup_folder_id]:
+        audit.error(
+            "progress.backup.folder_mismatch",
+            "data/materials.json.myTopicProgress",
+            f"Backup folder URL and id do not match: {backup_folder_url!r} / {backup_folder_id!r}",
+        )
+    elif backup_folder_id:
+        audit.drive_refs[backup_folder_id].append("materials.myTopicProgress.backupFolderUrl")
+    if progress.get("backupAccess") != "private-owner-only":
+        audit.error(
+            "progress.backup.access",
+            "data/materials.json.myTopicProgress.backupAccess",
+            "The progress backup folder must be labelled private-owner-only",
+        )
+    if not str(progress.get("backupFileName") or "").endswith(".json"):
+        audit.error(
+            "progress.backup.filename",
+            "data/materials.json.myTopicProgress.backupFileName",
+            "The progress backup filename must use the .json extension",
+        )
     status_options = progress.get("statusOptions") or []
     status_values = {
         option.get("value")
@@ -1099,6 +1170,9 @@ def collect_folder_ids(materials: dict[str, Any], extra_ids: list[str]) -> list[
 
     add(materials.get("driveFolderId"))
     add(materials.get("driveRootUrl"))
+    progress = materials.get("myTopicProgress") or {}
+    add(progress.get("backupFolderId"))
+    add(progress.get("backupFolderUrl"))
 
     for topic in (materials.get("topics") or {}).values():
         for material in topic.get("materials", []):
@@ -1289,6 +1363,11 @@ def print_report(audit: Audit) -> None:
     print(f"- phases: {audit.stats['phases']}")
     print(f"- phase resources: {audit.stats['phase_resources']}")
     print(f"- Part B unique complements: {audit.stats['part_b_complements']}")
+    print(
+        "- Part B organization: "
+        f"{audit.stats['part_b_introductions']} introductions integrated by topic, "
+        f"{audit.stats['part_b_general_resources']} general resources"
+    )
     print(f"- practical solution guides: {audit.stats['practice_guides']}")
     print(
         "- sourced references: "

@@ -12,15 +12,23 @@ una guia curricular identificada expresamente como no oficial. Los documentos
 privados del preparador se muestran como material privado, sin atribuirles
 vigencia tecnica.
 
-La Parte B integra primero el temario oficial compacto de 74 temas y deja al
-final solo criterios, introducciones y esquemas que no estan ya en los
-selectores de academias. El resto de fases y el seguimiento personal se
-mantienen como vistas independientes. Las vistas con mucho
+La Parte B integra primero el temario oficial compacto de 74 temas. Las 17
+introducciones privadas aparecen dentro de los temas exactos a los que
+corresponden; al final quedan solo 3 documentos de criterios y 2 esquemas
+generales. El resto de fases y el seguimiento personal se mantienen como
+vistas independientes. Las vistas con mucho
 material incluyen filtros por area, tema relacionado, procedencia, tipo, caracter, ano
 y existencia de solucion. El estado de estudio, la nota personal, la ultima
-vista, los filtros y la posicion de lectura se guardan solo en `localStorage`.
+vista, los filtros y la posicion de lectura se guardan en `localStorage`.
 Las relaciones con el temario distinguen coincidencias exactas de asociaciones
 por bloque o area; no se presentan estas ultimas como ejercicios especificos.
+
+Cada tema tiene una URL directa con el formato `#tema-01` a `#tema-74`. El
+panel `Mi progreso` permite generar y restaurar una copia JSON sin documentos
+ni credenciales. En movil se comparte con la aplicacion de Drive; en
+escritorio se guarda con el selector de archivos en la carpeta privada
+`07_Mi_progreso` o en una carpeta sincronizada con Drive. La web estatica no
+escribe silenciosamente en Drive ni incorpora secretos OAuth.
 
 Hay un Google Doc privado de ejemplo completo para un tema representativo de
 cada bloque: 1, 15, 27, 40, 48 y 65. Los enlaces se registran de forma
@@ -50,8 +58,8 @@ misma vista, enlaces Drive no accesibles con `rclone`, enlaces externos rotos,
 fuentes sin procedencia o fecha de revision, material de otra comunidad en la
 vista normativa, titulos del temario distintos al BOE, metadatos de curacion
 incompletos, relaciones tematicas fuera del rango 1-74 o contadores
-descuadrados o archivos del temario reutilizados de forma redundante en otras
-vistas.
+descuadrados, introducciones sin tema exacto, una carpeta de respaldo no
+privada o archivos del temario reutilizados de forma redundante en otras vistas.
 
 En la comprobacion completa, `rclone` lee tambien los metadatos de permisos y
 falla si un archivo enlazado tiene acceso publico, de dominio o de otra cuenta:

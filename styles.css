@@ -967,6 +967,85 @@ p {
   align-content: start;
 }
 
+.progress-backup-band {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  border-block: 1px solid var(--line);
+  padding: 14px 0;
+}
+
+.progress-backup-copy {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.progress-backup-copy p,
+.progress-backup-copy strong,
+.progress-backup-status {
+  margin: 0;
+}
+
+.progress-backup-copy p {
+  color: var(--accent);
+  font-size: 0.66rem;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+.progress-backup-copy strong {
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 720;
+}
+
+.progress-backup-status {
+  color: var(--quiet);
+  font-size: 0.72rem;
+}
+
+.progress-backup-actions {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.backup-action {
+  display: inline-flex;
+  min-width: 0;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  padding: 0 11px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.backup-action:hover,
+.backup-action:focus-visible {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.backup-action .control-icon {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+}
+
 .progress-stat {
   display: grid;
   min-width: 132px;
@@ -1378,7 +1457,7 @@ p {
 .topic-row {
   display: grid;
   min-width: 0;
-  grid-template-columns: minmax(38px, max-content) minmax(0, 1fr);
+  grid-template-columns: minmax(38px, max-content) minmax(0, 1fr) auto;
   gap: 14px;
   min-height: 50px;
   align-items: center;
@@ -1393,9 +1472,31 @@ p {
   grid-template-columns: minmax(0, 1fr);
 }
 
-.topic-row > span:last-child {
+.topic-row > .searchable-title {
   min-width: 0;
   overflow-wrap: break-word;
+}
+
+.topic-direct-link {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: var(--quiet);
+  opacity: 0.72;
+}
+
+.topic-direct-link:hover,
+.topic-direct-link:focus-visible {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.topic-direct-link .control-icon {
+  width: 15px;
+  height: 15px;
 }
 
 .topic-number {
@@ -1432,6 +1533,20 @@ p {
 .topic-item.topic-item-no-marker .topic-materials {
   max-width: 100%;
   margin-left: 0;
+}
+
+.topic-introductions {
+  margin-top: -2px;
+  border-left: 2px solid color-mix(in srgb, var(--accent) 62%, var(--line));
+  padding-left: 10px;
+}
+
+.topic-introductions-label {
+  min-width: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 760;
+  overflow-wrap: anywhere;
 }
 
 .topic-related {
@@ -1866,7 +1981,7 @@ p {
   .summary-row p,
   .source-link,
   .block-header h2,
-  .topic-row > span:last-child {
+  .topic-row > .searchable-title {
     overflow-wrap: anywhere;
   }
 
@@ -1883,7 +1998,7 @@ p {
   }
 
   .topic-row {
-    grid-template-columns: minmax(32px, max-content) minmax(0, 1fr);
+    grid-template-columns: minmax(32px, max-content) minmax(0, 1fr) auto;
     gap: 10px;
     min-height: 46px;
     padding: 9px 0;
@@ -1893,6 +2008,20 @@ p {
     grid-template-columns: 1fr;
     margin-left: 42px;
     max-width: calc(100% - 42px);
+  }
+
+  .progress-backup-band {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .progress-backup-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .backup-action {
+    min-height: 40px;
   }
 
   .topic-related {
@@ -2002,7 +2131,7 @@ p {
   }
 
   .topic-row {
-    grid-template-columns: minmax(30px, max-content) minmax(0, 1fr);
+    grid-template-columns: minmax(30px, max-content) minmax(0, 1fr) auto;
     gap: 9px;
   }
 
