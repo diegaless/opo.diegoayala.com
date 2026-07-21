@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "sourceVerifiedAt": "2026-07-21",
+  "scope": "Inventario de documentos localizados para Informática 590107 en Murcia. Los archivos privados se cuentan aparte y no se presentan como pruebas oficiales.",
+  "summary": {
+    "years": 12,
+    "officialEvidenceYears": 6,
+    "officialExamYears": 3,
+    "privateSolutionYears": 5,
+    "openGaps": 36
+  },
+  "years": [
+    {
+      "year": 2025,
+      "sourceStatus": "official",
+      "sourceLabel": "Oficial Murcia",
+      "partA": {
+        "status": "official",
+        "label": "Enunciado oficial",
+        "officialCount": 1,
+        "privateCount": 0
+      },
+      "criteria": {
+        "status": "partial",
+        "label": "Solo Parte B",
+        "partACount": 0,
+        "partBCount": 2
+      },
+      "solutions": {
+        "status": "missing",
+        "label": "No localizada",
+        "count": 0
+      },
+      "tribunalCount": 4,
+      "missing": [
+        "Criterios Parte A",
+        "Solución identificada"
+      ],
+      "links": [
+        {
+          "label": "Enunciado A",
+          "title": "Murcia 2025 - Parte A: prueba práctica oficial 590107 Informática",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=Examen+590-107.pdf&IDCONTENIDO=201654&IDTIPO=60&RASTRO=c299%24m4332%2C74131%2C74558%2C74578%2C74579%2C74628"
+        },
+        {
+          "label": "Criterios B",
+          "title": "Murcia 2025 - Parte B: criterios oficiales para el desarrollo del tema",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosValoracion_INFORMATICA_01.pdf&IDCONTENIDO=199410&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501"
+        },
+        {
+          "label": "Actuación B",
+          "title": "Murcia 2025 - Parte B: normas oficiales de actuación",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CriteriosActuacion_INFORMATICA_01.pdf&IDCONTENIDO=199409&IDTIPO=60&RASTRO=c562%24m3977%2C74131%2C74447%2C74448%2C74501"
+        },
+        {
+          "label": "Portal tribunales",
+          "title": "Publicaciones de tribunales OPOSEC25 - seleccionar 590 / 107 Informática",
+          "url": "https://servicios.educarm.es/admin/index2.php?anyo=2025&aplicacion=PUBLICACIONES_TRIBUNALES&convocatoria=OPOSEC25&module=publicacionesTribunales"
+        },
+        {
+          "label": "Seleccionados",
+          "title": "Seleccionados 2025 - Secundaria y otros cuerpos tras oposición y concurso",
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=74933&IDTIPO=100&RASTRO=c798%24m3977%2C74131"
+        },
+        {
+          "label": "Valoración T02",
+          "title": "590107 Informática - criterios de valoración oficiales 2025 Tribunal 02",
+          "url": "https://servicios.educarm.es/neweb/resources/admin/File/publicacionesTribunales/OPOSEC25/CriteriosValoracion_INFORMATICA_02.pdf"
+        },
+        {
+          "label": "Actuación T02",
+          "title": "590107 Informática - criterios de actuación oficiales 2025 Tribunal 02",
+          "url": "https://servicios.educarm.es/neweb/resources/admin/File/publicacionesTribunales/OPOSEC25/CriteriosActuacion_INFORMATICA_02.pdf"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "sourceStatus": "official",
+      "sourceLabel": "Oficial Murcia",
+      "partA": {
+        "status": "official",
+        "label": "Enunciado oficial",
+        "officialCount": 1,
+        "privateCount": 0
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "missing",
+        "label": "No localizada",
+        "count": 0
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Criterios Parte A",
+        "Criterios Parte B",
+        "Solución identificada"
+      ],
+      "links": [
+        {
+          "label": "Enunciado A",
+          "title": "Murcia 2023 - prueba práctica oficial 590107 Informática",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+Inform%C3%A1tica1.pdf&IDCONTENIDO=196263&IDTIPO=60&RASTRO=c305%24m4332%2C71822%2C72632%2C72813%2C72814%2C74342"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "sourceStatus": "mixed",
+      "sourceLabel": "Oficial + archivo privado",
+      "partA": {
+        "status": "official",
+        "label": "Enunciado oficial",
+        "officialCount": 1,
+        "privateCount": 1
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "missing",
+        "label": "No localizada",
+        "count": 0
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Criterios Parte A",
+        "Criterios Parte B",
+        "Solución identificada"
+      ],
+      "links": [
+        {
+          "label": "Enunciado A",
+          "title": "Murcia 2021 - Parte A: prueba práctica oficial 0590107 Informática",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=590107+INFORM%C3%81TICA.pdf&IDCONTENIDO=173493&IDTIPO=60&RASTRO=c562%24m3977%2C69334%2C69959%2C70361%2C70362%2C70432"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "sourceStatus": "private",
+      "sourceLabel": "Archivo privado",
+      "partA": {
+        "status": "private",
+        "label": "Solo archivo privado",
+        "officialCount": 0,
+        "privateCount": 3
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "private",
+        "label": "2 privadas",
+        "count": 2
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Criterios Parte A",
+        "Criterios Parte B"
+      ],
+      "links": []
+    },
+    {
+      "year": 2015,
+      "sourceStatus": "official",
+      "sourceLabel": "Oficial Murcia",
+      "partA": {
+        "status": "missing",
+        "label": "No localizado",
+        "officialCount": 0,
+        "privateCount": 0
+      },
+      "criteria": {
+        "status": "official",
+        "label": "Partes A y B",
+        "partACount": 1,
+        "partBCount": 1
+      },
+      "solutions": {
+        "status": "missing",
+        "label": "No localizada",
+        "count": 0
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Solución identificada"
+      ],
+      "links": [
+        {
+          "label": "Criterios A",
+          "title": "Murcia 2015 - criterios oficiales primera prueba Informática (Parte A práctica)",
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288"
+        },
+        {
+          "label": "Criterios B",
+          "title": "Murcia 2015 - criterios oficiales primera prueba Informática (incluye Parte B tema)",
+          "url": "https://www.carm.es/web/descarga?ARCHIVO=PRIMERA%20PRUEBA%20INFORM%C3%81TICA%20_107_%20para%20publicar.pdf&ALIAS=ARCH&IDCONTENIDO=113996&IDTIPO=60&RASTRO=c798%24m3977%2C4332%2C50432%2C51287%2C51288"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "sourceStatus": "private",
+      "sourceLabel": "Archivo privado",
+      "partA": {
+        "status": "private",
+        "label": "Solo archivo privado",
+        "officialCount": 0,
+        "privateCount": 1
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "private",
+        "label": "1 privadas",
+        "count": 1
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Criterios Parte A",
+        "Criterios Parte B"
+      ],
+      "links": []
+    },
+    {
+      "year": 2010,
+      "sourceStatus": "official",
+      "sourceLabel": "Oficial Murcia",
+      "partA": {
+        "status": "missing",
+        "label": "No localizado",
+        "officialCount": 0,
+        "privateCount": 0
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "missing",
+        "label": "No localizada",
+        "count": 0
+      },
+      "tribunalCount": 2,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Criterios Parte A",
+        "Criterios Parte B",
+        "Solución identificada"
+      ],
+      "links": [
+        {
+          "label": "Tribunales",
+          "title": "Histórico 2010 - Informática 590/107: notas fase de oposición por tribunales",
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16713&IDTIPO=11&RASTRO=c798%24m3977%2C23539"
+        },
+        {
+          "label": "Tribunales",
+          "title": "Histórico 2010 - Informática 590/107: reclamaciones de méritos por tribunales",
+          "url": "https://www.carm.es/web/pagina?IDCONTENIDO=16754&IDTIPO=11&RASTRO=c798%24m3977%2C23539"
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "sourceStatus": "official",
+      "sourceLabel": "Oficial Murcia",
+      "partA": {
+        "status": "missing",
+        "label": "No localizado",
+        "officialCount": 0,
+        "privateCount": 0
+      },
+      "criteria": {
+        "status": "partial",
+        "label": "Solo Parte A",
+        "partACount": 2,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "missing",
+        "label": "No localizada",
+        "count": 0
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Criterios Parte B",
+        "Solución identificada"
+      ],
+      "links": [
+        {
+          "label": "Especificaciones A",
+          "title": "Murcia 2008 - requisitos oficiales de la prueba práctica Informática",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=PRUEBA+PR%C3%81CTICA.pdf&IDCONTENIDO=29018&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018"
+        },
+        {
+          "label": "Criterios A",
+          "title": "Murcia 2008 - criterios oficiales del ejercicio práctico Informática",
+          "url": "https://www.carm.es/web/descarga?ALIAS=ARCH&ARCHIVO=CRITERIOS+DE+VALORACI%C3%93N+LIBRES+Y+RESERVAS+DE+DISCAPACITADOS.pdf&IDCONTENIDO=29017&IDTIPO=60&RASTRO=c305%24m4332%2C5776%2C6971%2C6972%2C7018"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "sourceStatus": "private",
+      "sourceLabel": "Archivo privado",
+      "partA": {
+        "status": "private",
+        "label": "Solo archivo privado",
+        "officialCount": 0,
+        "privateCount": 1
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "private",
+        "label": "1 privadas",
+        "count": 1
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Criterios Parte A",
+        "Criterios Parte B"
+      ],
+      "links": []
+    },
+    {
+      "year": 2005,
+      "sourceStatus": "private",
+      "sourceLabel": "Archivo privado",
+      "partA": {
+        "status": "private",
+        "label": "Solo archivo privado",
+        "officialCount": 0,
+        "privateCount": 1
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "private",
+        "label": "1 privadas",
+        "count": 1
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Criterios Parte A",
+        "Criterios Parte B"
+      ],
+      "links": []
+    },
+    {
+      "year": 2004,
+      "sourceStatus": "private",
+      "sourceLabel": "Archivo privado",
+      "partA": {
+        "status": "private",
+        "label": "Solo archivo privado",
+        "officialCount": 0,
+        "privateCount": 5
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "private",
+        "label": "3 privadas",
+        "count": 3
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Criterios Parte A",
+        "Criterios Parte B"
+      ],
+      "links": []
+    },
+    {
+      "year": 2002,
+      "sourceStatus": "private",
+      "sourceLabel": "Archivo privado",
+      "partA": {
+        "status": "private",
+        "label": "Solo archivo privado",
+        "officialCount": 0,
+        "privateCount": 1
+      },
+      "criteria": {
+        "status": "missing",
+        "label": "No localizados",
+        "partACount": 0,
+        "partBCount": 0
+      },
+      "solutions": {
+        "status": "missing",
+        "label": "No localizada",
+        "count": 0
+      },
+      "tribunalCount": 0,
+      "missing": [
+        "Enunciado oficial Parte A",
+        "Criterios Parte A",
+        "Criterios Parte B",
+        "Solución identificada"
+      ],
+      "links": []
+    }
+  ]
+}

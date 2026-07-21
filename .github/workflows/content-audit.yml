@@ -12,8 +12,11 @@ on:
       - "script.js"
       - "styles.css"
       - "scripts/audit_data.py"
+      - "scripts/build_historical_coverage.py"
+      - "scripts/check_official_updates.py"
       - "scripts/curate_sources.mjs"
       - ".github/workflows/content-audit.yml"
+      - ".github/workflows/official-watch.yml"
 
 permissions:
   contents: read
@@ -26,5 +29,7 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Comprobar mapa histórico generado
+        run: python3 scripts/build_historical_coverage.py --check
       - name: Comprobar datos y vigencia
         run: python3 scripts/audit_data.py --check-http --http-timeout 20 --max-review-age 14 --fail-on-warning --strict-global-drive-ids

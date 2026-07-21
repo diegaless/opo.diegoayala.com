@@ -20,8 +20,21 @@ vistas independientes. Las vistas con mucho
 material incluyen filtros por area, tema relacionado, procedencia, tipo, caracter, ano
 y existencia de solucion. El estado de estudio, la nota personal, la ultima
 vista, los filtros y la posicion de lectura se guardan en `localStorage`.
+El selector identifica de forma visible que vistas corresponden a una prueba
+oficial, cuales son preparacion y cual es un inventario. La busqueda resalta la
+coincidencia tanto en los titulos como en las etiquetas y metadatos visibles.
 Las relaciones con el temario distinguen coincidencias exactas de asociaciones
 por bloque o area; no se presentan estas ultimas como ejercicios especificos.
+
+La vista `Cobertura historica` se genera desde `data/phases.json` y separa por
+ano enunciados oficiales, criterios, soluciones privadas y documentos aun no
+localizados. Un archivo privado nunca se cuenta como examen oficial. Para
+regenerarla o comprobar que no se ha quedado desactualizada:
+
+```bash
+python3 scripts/build_historical_coverage.py
+python3 scripts/build_historical_coverage.py --check
+```
 
 Cada tema tiene una URL directa con el formato `#tema-01` a `#tema-74`. El
 panel `Mi progreso` permite generar y restaurar una copia JSON sin documentos
@@ -68,6 +81,18 @@ solo se admite la cuenta propietaria configurada con `--drive-owner`.
 El workflow `.github/workflows/content-audit.yml` repite semanalmente la
 auditoria estricta y la comprobacion HTTP. Si pasan mas de 14 dias sin actualizar
 `verifiedAt`, falla deliberadamente para obligar a revisar CARM/BORM.
+
+El workflow `.github/workflows/official-watch.yml` consulta cada dia las
+fuentes configuradas de CARM y BORM. Conserva la ultima referencia
+valida si una administracion devuelve un bloqueo temporal, registra cualquier
+cambio como pendiente de revision y crea un aviso en GitHub. Una deteccion no
+se publica como convocatoria confirmada hasta revisarla. Puede ejecutarse
+localmente sin modificar el estado o actualizando el fichero visible en la web:
+
+```bash
+python3 scripts/check_official_updates.py --report /tmp/official-watch.json
+python3 scripts/check_official_updates.py --update --report /tmp/official-watch.json
+```
 
 ## Curacion de fuentes
 

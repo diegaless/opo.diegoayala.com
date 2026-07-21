@@ -33,6 +33,8 @@ from urllib.parse import urlparse
 REPO = Path(__file__).resolve().parents[1]
 MATERIALS_JSON = REPO / "data" / "materials.json"
 PHASES_JSON = REPO / "data" / "phases.json"
+HISTORICAL_COVERAGE_JSON = REPO / "data" / "historical-coverage.json"
+OFFICIAL_WATCH_JSON = REPO / "data" / "official-watch.json"
 INDEX_HTML = REPO / "index.html"
 
 DEFAULT_TOPIC_COUNT = 74
@@ -90,6 +92,12 @@ OTHER_CCAA_NAMES = {
     "melilla",
     "navarra",
     "pais vasco",
+}
+EXPECTED_WATCH_SOURCE_IDS = {
+    "borm-pes-selectivo",
+    "carm-oposiciones-docentes",
+    "carm-procedimiento-1895",
+    "carm-rrhh-feed",
 }
 
 
@@ -520,6 +528,199 @@ def validate_part_b_compaction(
             "index.html",
             "The main Part B view must identify the compact official syllabus",
         )
+
+
+def validate_historical_coverage(
+    coverage: dict[str, Any], phases_data: dict[str, Any], audit: Audit
+) -> None:
+    location = "data/historical-coverage.json"
+    if coverage.get("version") != 1:
+        audit.error("coverage.version", location, "Expected coverage schema version 1")
+    if coverage.get("sourceVerifiedAt") != phases_data.get("verifiedAt"):
+        audit.error(
+            "coverage.verification.mismatch",
+            location,
+            "Coverage sourceVerifiedAt must match data/phases.json",
+        )
+    if not str(coverage.get("scope") or "").strip():
+        audit.error("coverage.scope.missing", location, "Missing coverage scope statement")
+
+    rows = coverage.get("years")
+    if not isinstance(rows, list) or not rows:
+        audit.error("coverage.years.invalid", location, "years must be a non-empty list")
+        return
+
+    year_values = [row.get("year") for row in rows if isinstance(row, dict)]
+    if len(year_values) != len(rows) or not all(isinstance(year, int) for year in year_values):
+        audit.error("coverage.year.invalid", location, "Every coverage row must have an integer year")
+    if len(set(year_values)) != len(year_values):
+        audit.error("coverage.year.duplicate", location, "Coverage years must be unique")
+    if year_values != sorted(year_values, reverse=True):
+        audit.error("coverage.year.order", location, "Coverage years must use descending order")
+
+    for index, row in enumerate(rows):
+        row_location = f"{location}.years[{index}]"
+        if not isinstance(row, dict):
+            audit.error("coverage.row.invalid", row_location, "Coverage row must be an object")
+            continue
+        required_fields(
+            audit,
+            row_location,
+            row,
+            ["year", "sourceStatus", "sourceLabel", "partA", "criteria", "solutions", "missing", "links"],
+        )
+        if row.get("sourceStatus") not in {"official", "mixed", "private"}:
+            audit.error("coverage.source_status", row_location, "Invalid sourceStatus")
+
+        part_a = row.get("partA") or {}
+        criteria = row.get("criteria") or {}
+        solutions = row.get("solutions") or {}
+        if part_a.get("status") not in {"official", "private", "missing"}:
+            audit.error("coverage.part_a.status", row_location, "Invalid Parte A status")
+        if criteria.get("status") not in {"official", "partial", "missing"}:
+            audit.error("coverage.criteria.status", row_location, "Invalid criteria status")
+        if solutions.get("status") not in {"private", "missing"}:
+            audit.error("coverage.solutions.status", row_location, "Invalid solutions status")
+        if not isinstance(row.get("missing"), list):
+            audit.error("coverage.missing.invalid", row_location, "missing must be a list")
+
+        links = row.get("links") or []
+        if not isinstance(links, list):
+            audit.error("coverage.links.invalid", row_location, "links must be a list")
+            links = []
+        for link_index, link in enumerate(links):
+            link_location = f"{row_location}.links[{link_index}]"
+            if not isinstance(link, dict):
+                audit.error("coverage.link.invalid", link_location, "Coverage link must be an object")
+                continue
+            required_fields(audit, link_location, link, ["label", "title", "url"])
+            host = url_host(link.get("url"))
+            if not host_matches(host, MURCIA_OFFICIAL_HOSTS):
+                audit.error(
+                    "coverage.link.non_official",
+                    link_location,
+                    f"Coverage links must point to Murcia official sources, found {host or 'missing'}",
+                )
+            collect_reference_url(audit, f"{link_location}.url", link.get("url"))
+
+        if part_a.get("status") == "official":
+            if not isinstance(part_a.get("officialCount"), int) or part_a.get("officialCount", 0) < 1:
+                audit.error("coverage.part_a.count", row_location, "Official exam row has no official count")
+            if not any(link.get("label") == "Enunciado A" for link in links if isinstance(link, dict)):
+                audit.error("coverage.part_a.link", row_location, "Official exam row has no Enunciado A link")
+        if part_a.get("status") == "private" and part_a.get("officialCount"):
+            audit.error("coverage.private.overclaim", row_location, "Private row reports an official exam count")
+        if solutions.get("status") == "private" and solutions.get("count", 0) < 1:
+            audit.error("coverage.solutions.count", row_location, "Private solution status has a zero count")
+
+    calculated_summary = {
+        "years": len(rows),
+        "officialEvidenceYears": sum(row.get("sourceStatus") in {"official", "mixed"} for row in rows),
+        "officialExamYears": sum((row.get("partA") or {}).get("status") == "official" for row in rows),
+        "privateSolutionYears": sum((row.get("solutions") or {}).get("count", 0) > 0 for row in rows),
+        "openGaps": sum(len(row.get("missing") or []) for row in rows),
+    }
+    if coverage.get("summary") != calculated_summary:
+        audit.error(
+            "coverage.summary.mismatch",
+            f"{location}.summary",
+            f"Declared {coverage.get('summary')}, counted {calculated_summary}",
+        )
+    audit.stats["coverage_years"] = len(rows)
+    audit.stats["coverage_official_exam_years"] = calculated_summary["officialExamYears"]
+    audit.stats["coverage_open_gaps"] = calculated_summary["openGaps"]
+
+
+def validate_official_watch(watch: dict[str, Any], audit: Audit) -> None:
+    location = "data/official-watch.json"
+    if watch.get("version") != 1:
+        audit.error("watch.version", location, "Expected official watch schema version 1")
+    if watch.get("schedule") != "daily":
+        audit.error("watch.schedule", location, "Official source monitoring must run daily")
+    status = watch.get("status")
+    if status not in {"initializing", "partial", "monitoring"}:
+        audit.error("watch.status", location, f"Invalid monitor status: {status!r}")
+    for field in ("initializedAt", "updatedAt"):
+        value = str(watch.get(field) or "")
+        if parse_iso_date(value[:10]) is None:
+            audit.error("watch.date.invalid", f"{location}.{field}", "Expected an ISO date-time")
+
+    sources = watch.get("sources")
+    if not isinstance(sources, list):
+        audit.error("watch.sources.invalid", location, "sources must be a list")
+        return
+    source_ids = [source.get("id") for source in sources if isinstance(source, dict)]
+    valid_source_ids = [source_id for source_id in source_ids if isinstance(source_id, str)]
+    if len(valid_source_ids) != len(source_ids):
+        audit.error("watch.source.id", location, "Every monitor source needs a string id")
+    if len(valid_source_ids) != len(set(valid_source_ids)):
+        audit.error("watch.source.duplicate", location, "Monitor source ids must be unique")
+    if set(valid_source_ids) != EXPECTED_WATCH_SOURCE_IDS:
+        audit.error(
+            "watch.sources.mismatch",
+            location,
+            f"Expected {sorted(EXPECTED_WATCH_SOURCE_IDS)}, found {sorted(valid_source_ids)}",
+        )
+
+    active_count = 0
+    for index, source in enumerate(sources):
+        source_location = f"{location}.sources[{index}]"
+        if not isinstance(source, dict):
+            audit.error("watch.source.invalid", source_location, "Monitor source must be an object")
+            continue
+        required_fields(audit, source_location, source, ["id", "name", "url", "kind", "categories", "monitorStatus"])
+        host = url_host(source.get("url"))
+        if not host_matches(host, MURCIA_OFFICIAL_HOSTS):
+            audit.error("watch.source.host", source_location, f"Non-official monitor host: {host or 'missing'}")
+        collect_reference_url(audit, f"{source_location}.url", source.get("url"))
+        monitor_status = source.get("monitorStatus")
+        if monitor_status not in {"active", "pending"}:
+            audit.error("watch.source.status", source_location, f"Invalid monitorStatus: {monitor_status!r}")
+        if not isinstance(source.get("entries"), list) or source.get("entryCount") != len(source.get("entries") or []):
+            audit.error("watch.source.entries", source_location, "entryCount does not match entries")
+        if monitor_status == "active":
+            active_count += 1
+            if not source.get("checkedAt") or not source.get("fingerprint"):
+                audit.error("watch.source.baseline", source_location, "Active source has no checkedAt/fingerprint baseline")
+
+    if status == "monitoring" and active_count != len(sources):
+        audit.error("watch.status.overclaim", location, "Monitoring status requires all sources to be active")
+    if status == "partial" and not 0 < active_count < len(sources):
+        audit.error("watch.status.partial", location, "Partial status requires some, but not all, active sources")
+    if status == "initializing" and active_count:
+        audit.error("watch.status.initializing", location, "Initializing status cannot have active sources")
+
+    alerts = watch.get("alerts")
+    if not isinstance(alerts, list):
+        audit.error("watch.alerts.invalid", location, "alerts must be a list")
+        alerts = []
+    alert_ids: set[str] = set()
+    for index, alert in enumerate(alerts):
+        alert_location = f"{location}.alerts[{index}]"
+        if not isinstance(alert, dict):
+            audit.error("watch.alert.invalid", alert_location, "Alert must be an object")
+            continue
+        required_fields(
+            audit,
+            alert_location,
+            alert,
+            ["id", "detectedAt", "sourceId", "sourceName", "sourceUrl", "categories", "status", "title"],
+        )
+        if alert.get("id") in alert_ids:
+            audit.error("watch.alert.duplicate", alert_location, "Alert id is duplicated")
+        alert_ids.add(alert.get("id"))
+        if alert.get("sourceId") not in EXPECTED_WATCH_SOURCE_IDS:
+            audit.error("watch.alert.source", alert_location, "Alert refers to an unknown source")
+        if alert.get("status") != "review-required":
+            audit.error("watch.alert.status", alert_location, "Detected changes must require review")
+        if not host_matches(url_host(alert.get("sourceUrl")), MURCIA_OFFICIAL_HOSTS):
+            audit.error("watch.alert.host", alert_location, "Alert source must be an official Murcia host")
+        if not isinstance(alert.get("categories"), list) or not alert.get("categories"):
+            audit.error("watch.alert.categories", alert_location, "Alert categories must be non-empty")
+
+    audit.stats["watch_sources"] = len(sources)
+    audit.stats["watch_active_sources"] = active_count
+    audit.stats["watch_alerts"] = len(alerts)
 
 
 def extract_drive_file_id(url: str | None) -> str | None:
@@ -1370,6 +1571,17 @@ def print_report(audit: Audit) -> None:
     )
     print(f"- practical solution guides: {audit.stats['practice_guides']}")
     print(
+        "- historical coverage: "
+        f"{audit.stats['coverage_years']} years, "
+        f"{audit.stats['coverage_official_exam_years']} with an official Parte A exam, "
+        f"{audit.stats['coverage_open_gaps']} open document gaps"
+    )
+    print(
+        "- official monitor: "
+        f"{audit.stats['watch_active_sources']}/{audit.stats['watch_sources']} sources active, "
+        f"{audit.stats['watch_alerts']} alerts pending review"
+    )
+    print(
         "- sourced references: "
         f"{audit.stats['sourced_resources']} described, "
         f"{audit.stats['official_resources']} on official domains"
@@ -1447,6 +1659,8 @@ def main() -> int:
     audit = Audit(max_review_age=args.max_review_age)
     materials = load_json(args.materials, audit)
     phases = load_json(args.phases, audit)
+    historical_coverage = load_json(HISTORICAL_COVERAGE_JSON, audit)
+    official_watch = load_json(OFFICIAL_WATCH_JSON, audit)
 
     validate_materials(materials, audit, args.expected_topics)
     validate_phases(phases, audit)
@@ -1454,6 +1668,8 @@ def main() -> int:
     validate_revision_metadata(materials, phases, audit)
     validate_exam_and_module_metadata(phases, audit)
     validate_part_b_compaction(materials, phases, audit)
+    validate_historical_coverage(historical_coverage, phases, audit)
+    validate_official_watch(official_watch, audit)
     collect_index_urls(audit)
     validate_cross_view_duplicates(audit, strict=args.strict_global_drive_ids)
 

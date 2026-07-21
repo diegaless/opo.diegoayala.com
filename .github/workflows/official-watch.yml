@@ -1,0 +1,64 @@
+name: Monitor oficial CARM y BORM
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 6 * * *"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: official-source-watch
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Comparar fuentes oficiales
+        id: monitor
+        run: >-
+          python3 scripts/check_official_updates.py
+          --update
+          --report /tmp/official-watch-report.json
+      - name: Guardar informe de ejecución
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-watch-report
+          path: /tmp/official-watch-report.json
+          if-no-files-found: ignore
+          retention-days: 30
+      - name: Publicar cambios detectados
+        if: steps.monitor.outputs.updated == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/official-watch.json
+          git commit -m "Update official source monitor"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Crear aviso en GitHub
+        if: steps.monitor.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        continue-on-error: true
+        run: |
+          {
+            echo "El monitor diario ha detectado cambios en fuentes oficiales de CARM/BORM."
+            echo
+            echo "La web los muestra como pendientes de verificación; no se consideran convocatoria o criterio confirmado hasta revisarlos."
+            echo
+            jq -r '.changes[] | "## \(.title)\nFuente: [\(.sourceName)](\(.sourceUrl))\n\n" + ((.added // []) | map("- " + .) | join("\n"))' /tmp/official-watch-report.json
+          } > /tmp/official-watch-issue.md
+          gh issue create \
+            --title "Revisar cambio oficial CARM/BORM" \
+            --body-file /tmp/official-watch-issue.md

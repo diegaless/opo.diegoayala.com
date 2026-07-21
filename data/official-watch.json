@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "initializedAt": "2026-07-21T20:33:31Z",
+  "updatedAt": "2026-07-21T20:54:32Z",
+  "schedule": "daily",
+  "status": "partial",
+  "alerts": [],
+  "sources": [
+    {
+      "id": "carm-oposiciones-docentes",
+      "name": "CARM · Oposiciones docentes",
+      "url": "https://www.carm.es/web/pagina?IDCONTENIDO=3977&IDTIPO=100",
+      "kind": "html",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "checkedAt": null,
+      "monitorStatus": "pending",
+      "fingerprint": "",
+      "entryCount": 0,
+      "entries": []
+    },
+    {
+      "id": "carm-procedimiento-1895",
+      "name": "CARM · Procedimiento PES 1895",
+      "url": "https://sede.carm.es/web/pagina?IDCONTENIDO=1895&IDTIPO=240",
+      "kind": "html",
+      "categories": [
+        "convocatoria",
+        "instancia"
+      ],
+      "checkedAt": null,
+      "monitorStatus": "pending",
+      "fingerprint": "",
+      "entryCount": 0,
+      "entries": []
+    },
+    {
+      "id": "carm-rrhh-feed",
+      "name": "CARM RRHH · Novedades PES e Informática",
+      "url": "https://rrhheducacion.carm.es/feed/",
+      "kind": "rss",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "checkedAt": "2026-07-21T20:54:32Z",
+      "monitorStatus": "active",
+      "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "entryCount": 0,
+      "entries": []
+    },
+    {
+      "id": "borm-pes-selectivo",
+      "name": "BORM · Procesos selectivos PES",
+      "url": "https://www.borm.es/#/home/buscador",
+      "kind": "borm-search",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "checkedAt": null,
+      "monitorStatus": "pending",
+      "fingerprint": "",
+      "entryCount": 0,
+      "entries": []
+    }
+  ]
+}

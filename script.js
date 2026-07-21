@@ -23,6 +23,8 @@ const rubricItems = [...document.querySelectorAll("[data-rubric-item]")];
 const rubricToggle = document.querySelector("[data-rubric-toggle]");
 const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
+const historicalCoverageUrl = "data/historical-coverage.json";
+const officialWatchUrl = "data/official-watch.json";
 const partBPhaseId = "01_Primera_prueba_B_Tema_escrito";
 const studyStateKey = "opo-study-state-v1";
 const collapsedBlocksKey = "opo-collapsed-blocks-v1";
@@ -71,6 +73,8 @@ const fallbackTopicTemplate = [
 let currentView = "topics";
 let materialsData = null;
 let phasesData = null;
+let historicalCoverageData = null;
+let officialWatchData = null;
 let isRestoringStudyState = true;
 let scrollSaveTimer = null;
 let lastExplicitStudyItem = null;
@@ -176,13 +180,23 @@ function renderPhasePickerOptions() {
     group.append(groupLabel);
 
     options.forEach((sourceOption, optionIndex) => {
-      const option = createElement("button", "phase-option", sourceOption.textContent);
+      const option = createElement("button", "phase-option");
       option.type = "button";
       option.id = `phase-option-${groupIndex + 1}-${optionIndex + 1}`;
       option.dataset.phaseOption = sourceOption.value;
       option.dataset.phaseOptionText = normalize(`${sourceOption.textContent} ${sourceOption.title || ""}`);
       option.setAttribute("role", "option");
       option.setAttribute("aria-selected", String(sourceOption.selected));
+      const copy = createElement("span", "phase-option-copy");
+      copy.append(createElement("span", "phase-option-label", sourceOption.textContent));
+      if (sourceOption.dataset.phaseKindLabel) {
+        copy.append(createElement(
+          "span",
+          `phase-option-kind is-${sourceOption.dataset.phaseKind || "reference"}`,
+          sourceOption.dataset.phaseKindLabel,
+        ));
+      }
+      option.append(copy);
       option.addEventListener("click", () => choosePhase(sourceOption.value));
       option.addEventListener("keydown", (event) => {
         if (event.key === "ArrowDown") {
@@ -416,6 +430,7 @@ function updateCount(visible, type = "temas") {
   if (!countOutput) return;
   const singularByType = {
     áreas: "área",
+    años: "año",
     fichas: "ficha",
     novedades: "novedad",
     recursos: "recurso",
@@ -788,7 +803,7 @@ function highlightSearchText(element, query) {
 function applySearchHighlights() {
   const query = searchInput?.value.trim() || "";
   getActiveViewContainers().forEach((view) => {
-    view.querySelectorAll(".searchable-title").forEach((element) => {
+    view.querySelectorAll(".searchable-title, .searchable-meta").forEach((element) => {
       highlightSearchText(element, query);
     });
   });
@@ -1017,16 +1032,39 @@ async function loadPhases() {
   }
 }
 
+async function loadHistoricalCoverage() {
+  try {
+    const response = await fetch(historicalCoverageUrl, { cache: "no-store" });
+    if (!response.ok) throw new Error(`No se pudo cargar ${historicalCoverageUrl}`);
+    historicalCoverageData = await response.json();
+    if (currentView === "coverage") renderCurrentView();
+  } catch (error) {
+    console.warn(error);
+  }
+}
+
+async function loadOfficialWatch() {
+  try {
+    const response = await fetch(officialWatchUrl, { cache: "no-store" });
+    if (!response.ok) throw new Error(`No se pudo cargar ${officialWatchUrl}`);
+    officialWatchData = await response.json();
+    if (currentView === "98_Novedades_y_publicaciones") renderCurrentView();
+  } catch (error) {
+    console.warn(error);
+  }
+}
+
 function renderPhaseOptions() {
   if (!phaseSelect || !phasesData?.phases) return;
   const phaseGroups = [
     {
       label: "Primera prueba",
       options: [
-        ["02_Primera_prueba_A_Practico", "Parte A · Prueba práctica"],
-        ["97_Que_cae_mas", "Parte A · Qué cae más"],
-        ["96_Practicos_soluciones_codex", "Parte A · Guías y soluciones propias"],
-        ["topics", "Parte B · Tema escrito"],
+        ["02_Primera_prueba_A_Practico", "Parte A · Prueba práctica", "official"],
+        ["97_Que_cae_mas", "Parte A · Qué cae más", "preparation"],
+        ["96_Practicos_soluciones_codex", "Parte A · Guías y soluciones propias", "preparation"],
+        ["topics", "Parte B · Tema escrito", "official"],
+        ["coverage", "Cobertura histórica", "inventory"],
       ],
     },
     {
@@ -1067,7 +1105,13 @@ function renderPhaseOptions() {
   const specialOptions = new Map([
     ["topics", "Primera prueba - Parte B: Desarrollo por escrito de un tema"],
     ["progress", "Seguimiento personal del temario"],
+    ["coverage", "Mapa de documentos y ejercicios históricos"],
   ]);
+  const phaseKindLabels = {
+    official: "Prueba oficial",
+    preparation: "Preparación",
+    inventory: "Inventario",
+  };
   const renderedIds = new Set([partBPhaseId]);
   phaseSelect.replaceChildren();
 
@@ -1075,12 +1119,16 @@ function renderPhaseOptions() {
     const group = document.createElement("optgroup");
     group.label = phaseGroup.label;
 
-    phaseGroup.options.forEach(([phaseId, optionLabel]) => {
+    phaseGroup.options.forEach(([phaseId, optionLabel, phaseKind]) => {
       const phase = phasesById.get(phaseId);
       const specialTitle = specialOptions.get(phaseId);
       if (!phase && !specialTitle) return;
       const option = createOption(phaseId, optionLabel);
       option.title = phase?.title || specialTitle;
+      if (phaseKind) {
+        option.dataset.phaseKind = phaseKind;
+        option.dataset.phaseKindLabel = phaseKindLabels[phaseKind];
+      }
       group.append(option);
       if (phase) renderedIds.add(phase.id);
     });
@@ -1753,6 +1801,177 @@ function buildProgressItem(entry) {
   return item;
 }
 
+function coverageMatches(entry, query) {
+  if (!query) return true;
+  return normalize([
+    entry.year,
+    entry.sourceLabel,
+    entry.partA?.label,
+    entry.criteria?.label,
+    entry.solutions?.label,
+    ...(entry.missing || []),
+    ...(entry.links || []).flatMap((link) => [link.label, link.title]),
+  ].join(" ")).includes(query);
+}
+
+function buildCoverageOverview(data) {
+  const summary = data?.summary || {};
+  const block = createElement("article", "topic-block coverage-overview");
+  const header = createElement("header", "block-header");
+  header.append(
+    createElement("p", "", "Inventario histórico"),
+    createElement("h2", "", "Cobertura documental"),
+  );
+
+  const dashboard = createElement("div", "progress-dashboard coverage-dashboard");
+  [
+    ["Años inventariados", summary.years || 0],
+    ["Con evidencia oficial", summary.officialEvidenceYears || 0],
+    ["Con examen Parte A", summary.officialExamYears || 0],
+    ["Con solución privada", summary.privateSolutionYears || 0],
+    ["Documentos pendientes", summary.openGaps || 0],
+  ].forEach(([label, value]) => {
+    const stat = createElement("span", "progress-stat");
+    stat.append(
+      createElement("span", "progress-stat-label", label),
+      createElement("strong", "", value),
+    );
+    dashboard.append(stat);
+  });
+
+  const body = createElement("div", "coverage-overview-body");
+  body.append(dashboard);
+  block.append(header, body);
+  return block;
+}
+
+function buildCoverageScopeBand(data) {
+  const band = createElement("section", "coverage-scope-band");
+  band.dataset.studyKey = "coverage:scope";
+  const copy = createElement("div", "coverage-scope-copy");
+  copy.append(
+    createElement("p", "", "Cómo leer el mapa"),
+    createElement("strong", "", "Oficial y privado se contabilizan por separado"),
+    createElement("span", "", data?.scope || "Solo se identifica como oficial lo publicado por Murcia."),
+  );
+  const legend = createElement("span", "phase-meta coverage-legend");
+  [
+    ["Oficial Murcia", "is-doc-tag is-official-murcia"],
+    ["Archivo privado", "is-doc-tag is-private"],
+    ["No localizado", "is-doc-tag is-missing"],
+  ].forEach(([text, kind]) => {
+    legend.append(createElement("span", `phase-meta-chip ${kind}`, text));
+  });
+  band.append(copy, legend);
+  return band;
+}
+
+function openCoverageYear(year) {
+  savePhaseResourceFilters("02_Primera_prueba_A_Practico", { year: String(year) });
+  currentView = "02_Primera_prueba_A_Practico";
+  phaseSelect.value = currentView;
+  searchInput.value = "";
+  renderCurrentView();
+  writeStudyState();
+  requestAnimationFrame(() => {
+    phaseView?.querySelector(".resource-filter-band")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+
+function buildCoverageItem(entry, index) {
+  const item = createElement("li", "topic-item coverage-item");
+  item.dataset.studyKey = createStudyKey("coverage", "year", entry.year);
+  const row = createElement("span", "topic-row coverage-row");
+  row.append(
+    createElement("span", "topic-number searchable-meta", String(entry.year)),
+    createElement("span", "searchable-title", entry.sourceLabel),
+  );
+
+  const body = createElement("div", "coverage-item-body");
+  const facts = createElement("div", "coverage-facts");
+  [
+    ["Parte A", entry.partA?.label || "No localizado", entry.partA?.status || "missing"],
+    ["Criterios", entry.criteria?.label || "No localizados", entry.criteria?.status || "missing"],
+    ["Soluciones", entry.solutions?.label || "No localizada", entry.solutions?.status || "missing"],
+    [
+      "Pendiente",
+      entry.missing?.length ? entry.missing.join(" · ") : "Sin huecos identificados",
+      entry.missing?.length ? "missing" : "official",
+    ],
+  ].forEach(([label, value, status]) => {
+    const fact = createElement("span", `coverage-fact is-${status}`);
+    fact.append(
+      createElement("span", "coverage-fact-label", label),
+      createElement("strong", "searchable-meta", value),
+    );
+    facts.append(fact);
+  });
+
+  const actions = createElement("div", "coverage-actions");
+  const hasPartAMaterials = (entry.partA?.officialCount || 0) + (entry.partA?.privateCount || 0) > 0;
+  if (hasPartAMaterials) {
+    const viewButton = createElement("button", "material-link coverage-view-button", "Ver materiales");
+    viewButton.type = "button";
+    viewButton.setAttribute("aria-label", `Ver materiales de la Parte A de ${entry.year}`);
+    viewButton.addEventListener("click", () => openCoverageYear(entry.year));
+    actions.append(viewButton);
+  }
+
+  (entry.links || []).forEach((sourceLink) => {
+    const link = document.createElement("a");
+    link.className = "material-link coverage-source-link";
+    link.href = sourceLink.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = sourceLink.label;
+    link.title = sourceLink.title;
+    link.setAttribute("aria-label", `Abrir ${sourceLink.title}`);
+    actions.append(link);
+  });
+
+  if (!actions.children.length) {
+    actions.append(createElement("span", "coverage-no-links", "Sin documento oficial enlazado"));
+  }
+  body.append(facts, actions);
+  item.append(row, body);
+  return item;
+}
+
+function renderCoverageView() {
+  if (!phaseView) return;
+  const query = normalize(searchInput?.value.trim() || "");
+  const entries = historicalCoverageData?.years || [];
+  const filteredEntries = entries.filter((entry) => coverageMatches(entry, query));
+  const fragment = document.createDocumentFragment();
+  fragment.append(buildCoverageOverview(historicalCoverageData));
+  fragment.append(buildCoverageScopeBand(historicalCoverageData));
+
+  const block = createElement("article", "topic-block coverage-years-block");
+  const header = createElement("header", "block-header");
+  header.append(
+    createElement("p", "", "Murcia · Informática 590107"),
+    createElement("h2", "", "Años y documentos localizados"),
+  );
+  const list = createElement("ol", "topic-list coverage-list");
+  if (filteredEntries.length) {
+    filteredEntries.forEach((entry, index) => list.append(buildCoverageItem(entry, index)));
+  } else {
+    const item = createElement("li", "topic-item");
+    const row = createElement("span", "topic-row topic-row-no-marker");
+    row.append(createElement("span", "", entries.length ? "No hay años que coincidan." : "Cargando cobertura histórica..."));
+    item.append(row);
+    list.append(item);
+  }
+  block.append(header, list);
+  fragment.append(block);
+  phaseView.replaceChildren(fragment);
+  updateCount(filteredEntries.length, "años");
+  if (emptyState) emptyState.hidden = true;
+}
+
 function renderProgressView() {
   if (!phaseView) return;
 
@@ -1990,13 +2209,13 @@ function buildTrendItem(trend, index) {
     .filter(Boolean)
     .forEach((text, chipIndex) => {
       const kind = chipIndex === 0 ? "phase-meta-chip is-doc-tag is-official-murcia" : "phase-meta-chip";
-      meta.append(createElement("span", kind, text));
+      meta.append(createElement("span", `${kind} searchable-meta`, text));
     });
 
-  const focus = createElement("p", "trend-focus", (trend.focus || []).join(" · "));
+  const focus = createElement("p", "trend-focus searchable-meta", (trend.focus || []).join(" · "));
   const evidence = createElement("div", "trend-evidence");
-  (trend.evidence || []).forEach((line) => evidence.append(createElement("p", "", line)));
-  const action = createElement("p", "trend-action", trend.studyAction);
+  (trend.evidence || []).forEach((line) => evidence.append(createElement("p", "searchable-meta", line)));
+  const action = createElement("p", "trend-action searchable-meta", trend.studyAction);
 
   detail.append(meter, meta, focus, evidence, action);
   item.append(row, detail);
@@ -2021,7 +2240,7 @@ function buildTrendSources(phase) {
 
     const panel = createElement("div", "topic-materials phase-materials");
     const meta = createElement("span", "phase-meta");
-    meta.append(createElement("span", "phase-meta-chip is-doc-tag is-official-murcia", "Oficial Murcia"));
+    meta.append(createElement("span", "phase-meta-chip is-doc-tag is-official-murcia searchable-meta", "Oficial Murcia"));
     [
       { text: source.officialDate },
       { text: source.status, kind: source.statusKind ? ` is-${source.statusKind}` : "" },
@@ -2029,7 +2248,7 @@ function buildTrendSources(phase) {
     ]
       .filter(({ text }) => text)
       .forEach(({ text, kind = "" }) => {
-        meta.append(createElement("span", `phase-meta-chip${kind}`, text));
+        meta.append(createElement("span", `phase-meta-chip${kind} searchable-meta`, text));
       });
     const link = document.createElement("a");
     link.className = "material-link";
@@ -2141,7 +2360,7 @@ function buildPracticeTextSection(title, lines, className = "") {
     const row = createElement("p", "practice-line");
     row.append(
       createElement("span", "practice-line-number", String(index + 1).padStart(2, "0")),
-      createElement("span", "", line),
+      createElement("span", "searchable-meta", line),
     );
     content.append(row);
   });
@@ -2165,9 +2384,9 @@ function buildPracticeGuide(guide, index, query) {
   );
   const meta = createElement("span", "phase-meta practice-summary-meta");
   meta.append(
-    createElement("span", "phase-meta-chip is-doc-tag is-practical", guide.priority),
-    createElement("span", "phase-meta-chip", guide.frequency),
-    createElement("span", "phase-meta-chip is-current", "Solución Codex"),
+    createElement("span", "phase-meta-chip is-doc-tag is-practical searchable-meta", guide.priority),
+    createElement("span", "phase-meta-chip searchable-meta", guide.frequency),
+    createElement("span", "phase-meta-chip is-current searchable-meta", "Solución Codex"),
   );
   summary.append(row, meta);
 
@@ -2180,10 +2399,10 @@ function buildPracticeGuide(guide, index, query) {
 
   const example = createElement("section", "practice-section practice-example");
   example.append(createElement("h3", "", "Ejemplo resuelto"));
-  example.append(createElement("p", "practice-statement", guide.example?.statement || ""));
+  example.append(createElement("p", "practice-statement searchable-meta", guide.example?.statement || ""));
   const solution = createElement("pre", "practice-solution");
   solution.append(createElement("code", "", guide.example?.solution || ""));
-  example.append(solution, createElement("p", "practice-explanation", guide.example?.explanation || ""));
+  example.append(solution, createElement("p", "practice-explanation searchable-meta", guide.example?.explanation || ""));
 
   const signature = createElement(
     "p",
@@ -2250,7 +2469,11 @@ function buildResourceItem(resource) {
   const panel = createElement("div", "topic-materials phase-materials");
   const meta = createElement("span", "phase-meta");
   getResourceMetaItems(resource).forEach(({ text, kind }) => {
-    const chip = createElement("span", kind ? `phase-meta-chip ${kind}` : "phase-meta-chip", text);
+    const chip = createElement(
+      "span",
+      kind ? `phase-meta-chip ${kind} searchable-meta` : "phase-meta-chip searchable-meta",
+      text,
+    );
     meta.append(chip);
   });
 
@@ -2271,7 +2494,7 @@ function buildResourceItem(resource) {
 
   panel.append(meta, openLink);
   if (resource.note && resource.sourceKind !== "archive-private") {
-    panel.append(createElement("p", "phase-note", resource.note));
+    panel.append(createElement("p", "phase-note searchable-meta", resource.note));
   }
   item.append(row, panel);
   return item;
@@ -2304,7 +2527,7 @@ function buildFreshnessBand() {
       "",
       isStale
         ? "Contrasta CARM antes de tomar decisiones sobre plazos o instancia."
-        : "La web avisa automáticamente cuando esta revisión supera 14 días.",
+        : "Revisión editorial de enlaces, fechas y clasificación de las fuentes oficiales.",
     ),
   );
   const link = document.createElement("a");
@@ -2314,6 +2537,72 @@ function buildFreshnessBand() {
   link.rel = "noopener noreferrer";
   link.textContent = "CARM";
   band.append(copy, link);
+  return band;
+}
+
+function buildOfficialWatchBand() {
+  const data = officialWatchData || {};
+  const sources = data.sources || [];
+  const alerts = (data.alerts || []).filter((alert) => alert.status === "review-required");
+  const activeSources = sources.filter((source) => source.monitorStatus === "active").length;
+  const totalSources = sources.length || 4;
+  const isPartial = data.status === "partial" || data.status === "initializing";
+  const hasAlerts = alerts.length > 0;
+  const band = createElement(
+    "section",
+    `official-watch-band${hasAlerts ? " has-alerts" : ""}${isPartial ? " is-partial" : ""}`,
+  );
+  band.dataset.studyKey = "news:official-watch";
+
+  const copy = createElement("div", "official-watch-copy");
+  const headline = hasAlerts
+    ? `${alerts.length} ${alerts.length === 1 ? "cambio oficial detectado" : "cambios oficiales detectados"}`
+    : isPartial
+      ? "Lectura inicial incompleta"
+      : "Sin cambios nuevos pendientes";
+  const detail = hasAlerts
+    ? "Las detecciones quedan marcadas para revisión antes de incorporarlas como información confirmada."
+    : isPartial
+      ? `${activeSources} de ${totalSources} fuentes tienen una referencia válida; se reintenta automáticamente cada día.`
+      : `Última ejecución guardada: ${formatDate(data.updatedAt)}. Cualquier cambio se deja pendiente de verificación.`;
+  copy.append(
+    createElement("p", "", "Vigilancia automática diaria"),
+    createElement("strong", "", headline),
+    createElement("span", "", detail),
+  );
+
+  const aside = createElement("div", "official-watch-aside");
+  const metrics = createElement("span", "phase-meta official-watch-metrics");
+  metrics.append(
+    createElement("span", "phase-meta-chip", `${activeSources}/${totalSources} fuentes`),
+    createElement(
+      "span",
+      `phase-meta-chip ${hasAlerts ? "is-pending" : "is-current"}`,
+      `${alerts.length} ${alerts.length === 1 ? "aviso" : "avisos"}`,
+    ),
+  );
+  aside.append(metrics);
+
+  const linkedSources = hasAlerts
+    ? alerts.slice(0, 2).map((alert) => ({ name: "Revisar cambio", url: alert.sourceUrl }))
+    : sources
+      .filter((source) => source.id === "carm-oposiciones-docentes" || source.id === "borm-pes-selectivo")
+      .map((source) => ({
+        name: source.id.startsWith("borm") ? "BORM" : "CARM",
+        url: source.url,
+      }));
+  const links = createElement("span", "official-watch-links");
+  linkedSources.forEach((source) => {
+    const link = document.createElement("a");
+    link.className = "material-link official-watch-link";
+    link.href = source.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = source.name;
+    links.append(link);
+  });
+  aside.append(links);
+  band.append(copy, aside);
   return band;
 }
 
@@ -2393,7 +2682,9 @@ function renderResourcePhase(phase, { embeddedInPartB = false } = {}) {
 
   if (embeddedInPartB) fragment.append(buildPartBResourcesHeading(allResources.length));
 
-  if (phase.id === "98_Novedades_y_publicaciones") fragment.append(buildFreshnessBand());
+  if (phase.id === "98_Novedades_y_publicaciones") {
+    fragment.append(buildOfficialWatchBand(), buildFreshnessBand());
+  }
   if (phase.id === "00_Normativa_y_orden_legal") fragment.append(buildModuleContextBand());
 
   if (!embeddedInPartB && allResources.length >= 20) {
@@ -2519,6 +2810,15 @@ function renderCurrentView() {
     return;
   }
 
+  if (currentView === "coverage") {
+    topicView.hidden = true;
+    phaseView.hidden = false;
+    searchInput.placeholder = "Buscar año o documento...";
+    renderCoverageView();
+    finalizeViewRender();
+    return;
+  }
+
   topicView.hidden = true;
   phaseView.hidden = false;
   const phase = getSelectedPhase();
@@ -2541,7 +2841,12 @@ async function initializeStudyView() {
   setupTopicNavigation();
   renderPhasePickerOptions();
   renderCurrentView();
-  await Promise.all([loadMaterials(), loadPhases()]);
+  await Promise.all([
+    loadMaterials(),
+    loadPhases(),
+    loadHistoricalCoverage(),
+    loadOfficialWatch(),
+  ]);
   const hashTopic = getTopicKeyFromHash();
   if (hashTopic) {
     isRestoringStudyState = false;

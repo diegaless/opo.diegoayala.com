@@ -287,6 +287,9 @@ p {
   border-radius: 2px;
   background: var(--accent-soft);
   color: inherit;
+  padding: 0 0.08em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .filter-row {
@@ -504,6 +507,45 @@ p {
   cursor: pointer;
   font-size: 0.78rem;
   text-align: left;
+}
+
+.phase-option-copy {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 9px;
+}
+
+.phase-option-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.phase-option-kind {
+  display: inline-flex;
+  min-height: 20px;
+  flex: 0 0 auto;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, currentColor 34%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, currentColor 9%, transparent);
+  padding: 0 7px;
+  font-size: 0.58rem;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+.phase-option-kind.is-official {
+  color: var(--accent);
+}
+
+.phase-option-kind.is-preparation {
+  color: var(--accent-2);
+}
+
+.phase-option-kind.is-inventory {
+  color: var(--quiet);
 }
 
 .phase-option:hover,
@@ -753,6 +795,8 @@ p {
 
 .resource-filter-band,
 .freshness-band,
+.official-watch-band,
+.coverage-scope-band,
 .module-context-band {
   min-width: 0;
   scroll-margin-top: calc(var(--block-sticky-offset) + 12px);
@@ -762,7 +806,8 @@ p {
 }
 
 .resource-filter-heading,
-.freshness-band {
+.freshness-band,
+.official-watch-band {
   display: flex;
   min-width: 0;
   align-items: center;
@@ -775,7 +820,9 @@ p {
 }
 
 .resource-filter-heading-copy,
-.freshness-copy {
+.freshness-copy,
+.official-watch-copy,
+.coverage-scope-copy {
   display: grid;
   min-width: 0;
   gap: 3px;
@@ -783,6 +830,8 @@ p {
 
 .resource-filter-heading p,
 .freshness-copy p,
+.official-watch-copy p,
+.coverage-scope-copy p,
 .module-context-header p {
   margin: 0;
   color: var(--accent);
@@ -792,7 +841,9 @@ p {
 }
 
 .resource-filter-heading span,
-.freshness-copy span {
+.freshness-copy span,
+.official-watch-copy span,
+.coverage-scope-copy span {
   color: var(--quiet);
   font-size: 0.76rem;
   line-height: 1.4;
@@ -866,13 +917,146 @@ p {
   border-top-color: var(--accent-2);
 }
 
-.freshness-copy strong {
+.freshness-copy strong,
+.official-watch-copy strong,
+.coverage-scope-copy strong {
   color: var(--ink);
   font-size: 0.9rem;
 }
 
 .freshness-link {
   flex: 0 0 auto;
+}
+
+.official-watch-band.has-alerts {
+  border-color: var(--accent-2);
+}
+
+.official-watch-band.is-partial {
+  border-top-color: var(--quiet);
+}
+
+.official-watch-aside {
+  display: grid;
+  min-width: 0;
+  justify-items: end;
+  gap: 8px;
+}
+
+.official-watch-metrics,
+.coverage-legend {
+  min-height: 0;
+  justify-content: flex-end;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.official-watch-links {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.official-watch-link {
+  min-width: 76px;
+}
+
+.coverage-scope-band {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(240px, auto);
+  align-items: center;
+  gap: 16px 28px;
+}
+
+.coverage-overview-body {
+  min-width: 0;
+}
+
+.coverage-dashboard .progress-stat {
+  flex: 1 1 132px;
+}
+
+.coverage-row {
+  grid-template-columns: minmax(44px, max-content) minmax(0, 1fr);
+}
+
+.coverage-item-body {
+  min-width: 0;
+  max-width: calc(100% - 60px);
+  margin: 0 0 16px 60px;
+}
+
+.coverage-facts {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-block: 1px solid var(--line);
+}
+
+.coverage-fact {
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 5px;
+  border-left: 2px solid var(--line-strong);
+  padding: 10px 11px;
+}
+
+.coverage-fact.is-official {
+  border-left-color: var(--accent);
+}
+
+.coverage-fact.is-private {
+  border-left-color: var(--accent-2);
+}
+
+.coverage-fact.is-partial {
+  border-left-color: var(--ink);
+}
+
+.coverage-fact-label {
+  color: var(--quiet);
+  font-size: 0.62rem;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+.coverage-fact strong {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 640;
+  line-height: 1.38;
+  overflow-wrap: anywhere;
+}
+
+.coverage-fact.is-official strong {
+  color: var(--ink);
+}
+
+.coverage-actions {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.coverage-source-link,
+.coverage-view-button {
+  min-width: 0;
+}
+
+.coverage-view-button {
+  cursor: pointer;
+}
+
+.coverage-no-links {
+  color: var(--quiet);
+  font-size: 0.72rem;
 }
 
 .module-context-band {
@@ -2035,8 +2219,36 @@ p {
     min-height: 40px;
   }
 
-  .freshness-band {
+  .freshness-band,
+  .official-watch-band {
     align-items: flex-start;
+  }
+
+  .official-watch-aside {
+    justify-items: start;
+  }
+
+  .official-watch-metrics,
+  .official-watch-links {
+    justify-content: flex-start;
+  }
+
+  .coverage-scope-band {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .coverage-legend {
+    justify-content: flex-start;
+  }
+
+  .coverage-item-body {
+    max-width: calc(100% - 48px);
+    margin-left: 48px;
+  }
+
+  .coverage-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .module-context-band {
@@ -2157,12 +2369,33 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .freshness-band {
+  .freshness-band,
+  .official-watch-band {
     flex-direction: column;
   }
 
   .freshness-link {
     width: 100%;
+  }
+
+  .official-watch-aside,
+  .official-watch-links,
+  .official-watch-link {
+    width: 100%;
+  }
+
+  .official-watch-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coverage-item-body {
+    max-width: calc(100% - 43px);
+    margin-left: 43px;
+  }
+
+  .coverage-facts {
+    grid-template-columns: 1fr;
   }
 
   .rubric-detail {
