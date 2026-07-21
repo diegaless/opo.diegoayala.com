@@ -20,9 +20,8 @@ vistas independientes. Las vistas con mucho
 material incluyen filtros por area, tema relacionado, procedencia, tipo, caracter, ano
 y existencia de solucion. El estado de estudio, la nota personal, la ultima
 vista, los filtros y la posicion de lectura se guardan en `localStorage`.
-El selector identifica de forma visible que vistas corresponden a una prueba
-oficial, cuales son preparacion y cual es un inventario. La busqueda resalta la
-coincidencia tanto en los titulos como en las etiquetas y metadatos visibles.
+La busqueda resalta la coincidencia tanto en los titulos como en las etiquetas
+y metadatos visibles.
 Las relaciones con el temario distinguen coincidencias exactas de asociaciones
 por bloque o area; no se presentan estas ultimas como ejercicios especificos.
 

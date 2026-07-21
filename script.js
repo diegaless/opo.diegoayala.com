@@ -187,16 +187,7 @@ function renderPhasePickerOptions() {
       option.dataset.phaseOptionText = normalize(`${sourceOption.textContent} ${sourceOption.title || ""}`);
       option.setAttribute("role", "option");
       option.setAttribute("aria-selected", String(sourceOption.selected));
-      const copy = createElement("span", "phase-option-copy");
-      copy.append(createElement("span", "phase-option-label", sourceOption.textContent));
-      if (sourceOption.dataset.phaseKindLabel) {
-        copy.append(createElement(
-          "span",
-          `phase-option-kind is-${sourceOption.dataset.phaseKind || "reference"}`,
-          sourceOption.dataset.phaseKindLabel,
-        ));
-      }
-      option.append(copy);
+      option.append(createElement("span", "phase-option-label", sourceOption.textContent));
       option.addEventListener("click", () => choosePhase(sourceOption.value));
       option.addEventListener("keydown", (event) => {
         if (event.key === "ArrowDown") {
@@ -1060,11 +1051,11 @@ function renderPhaseOptions() {
     {
       label: "Primera prueba",
       options: [
-        ["02_Primera_prueba_A_Practico", "Parte A · Prueba práctica", "official"],
-        ["97_Que_cae_mas", "Parte A · Qué cae más", "preparation"],
-        ["96_Practicos_soluciones_codex", "Parte A · Guías y soluciones propias", "preparation"],
-        ["topics", "Parte B · Tema escrito", "official"],
-        ["coverage", "Cobertura histórica", "inventory"],
+        ["02_Primera_prueba_A_Practico", "Parte A · Prueba práctica"],
+        ["97_Que_cae_mas", "Parte A · Qué cae más"],
+        ["96_Practicos_soluciones_codex", "Parte A · Guías y soluciones propias"],
+        ["topics", "Parte B · Tema escrito"],
+        ["coverage", "Cobertura histórica"],
       ],
     },
     {
@@ -1107,11 +1098,6 @@ function renderPhaseOptions() {
     ["progress", "Seguimiento personal del temario"],
     ["coverage", "Mapa de documentos y ejercicios históricos"],
   ]);
-  const phaseKindLabels = {
-    official: "Prueba oficial",
-    preparation: "Preparación",
-    inventory: "Inventario",
-  };
   const renderedIds = new Set([partBPhaseId]);
   phaseSelect.replaceChildren();
 
@@ -1119,16 +1105,12 @@ function renderPhaseOptions() {
     const group = document.createElement("optgroup");
     group.label = phaseGroup.label;
 
-    phaseGroup.options.forEach(([phaseId, optionLabel, phaseKind]) => {
+    phaseGroup.options.forEach(([phaseId, optionLabel]) => {
       const phase = phasesById.get(phaseId);
       const specialTitle = specialOptions.get(phaseId);
       if (!phase && !specialTitle) return;
       const option = createOption(phaseId, optionLabel);
       option.title = phase?.title || specialTitle;
-      if (phaseKind) {
-        option.dataset.phaseKind = phaseKind;
-        option.dataset.phaseKindLabel = phaseKindLabels[phaseKind];
-      }
       group.append(option);
       if (phase) renderedIds.add(phase.id);
     });

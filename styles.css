@@ -509,43 +509,9 @@ p {
   text-align: left;
 }
 
-.phase-option-copy {
-  display: flex;
-  min-width: 0;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5px 9px;
-}
-
 .phase-option-label {
   min-width: 0;
   overflow-wrap: anywhere;
-}
-
-.phase-option-kind {
-  display: inline-flex;
-  min-height: 20px;
-  flex: 0 0 auto;
-  align-items: center;
-  border: 1px solid color-mix(in srgb, currentColor 34%, transparent);
-  border-radius: 999px;
-  background: color-mix(in srgb, currentColor 9%, transparent);
-  padding: 0 7px;
-  font-size: 0.58rem;
-  font-weight: 780;
-  text-transform: uppercase;
-}
-
-.phase-option-kind.is-official {
-  color: var(--accent);
-}
-
-.phase-option-kind.is-preparation {
-  color: var(--accent-2);
-}
-
-.phase-option-kind.is-inventory {
-  color: var(--quiet);
 }
 
 .phase-option:hover,
