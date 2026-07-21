@@ -13,15 +13,15 @@
       content="Consulta rápida del temario, prácticos y recursos por fase."
     >
     <meta property="og:type" content="website">
-    <meta name="last-reviewed" content="2026-07-12">
+    <meta name="last-reviewed" content="2026-07-21">
     <title>Oposición Informática Murcia | Diego Ayala</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <script>
       const savedTheme = localStorage.getItem("theme");
       document.documentElement.dataset.theme = savedTheme || "dark";
     </script>
-    <script src="script.js?v=20260716-navigation-v5" defer></script>
-    <link rel="stylesheet" href="styles.css?v=20260717-light-readability-v7">
+    <script src="script.js?v=20260721-content-tools-v8" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260721-content-tools-v8">
   </head>
   <body>
     <a class="skip-link" href="#content">Saltar al contenido</a>
@@ -78,7 +78,7 @@
               class="verification-stamp"
               title="Temario, criterios, convocatoria, enlaces y procedencia contrastados"
             >
-              Revisado 12/07/2026
+              Revisado 21/07/2026
             </span>
           </div>
         </div>
@@ -170,11 +170,26 @@
 
       <section class="syllabus" data-topic-view aria-label="Listado del temario">
         <article class="topic-block rubric-block" data-rubric-block>
-          <header class="block-header">
-            <p>Rúbrica oficial Murcia · 2025</p>
-            <h2>Parte B: Desarrollo por escrito de un tema</h2>
+          <header class="block-header rubric-header">
+            <div class="rubric-heading-copy">
+              <p>Rúbrica oficial Murcia · 2025</p>
+              <h2>Parte B: Desarrollo por escrito de un tema</h2>
+            </div>
+            <button
+              class="rubric-toggle"
+              type="button"
+              data-rubric-toggle
+              aria-controls="rubric-list"
+              aria-expanded="false"
+              title="Mostrar rúbrica"
+            >
+              <svg class="control-icon" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+              <span>Ver criterios</span>
+            </button>
           </header>
-          <ol class="topic-list rubric-list">
+          <ol id="rubric-list" class="topic-list rubric-list">
             <li class="topic-item rubric-item" data-rubric-item>
               <span class="topic-row">
                 <span class="topic-number">REV</span>
@@ -183,7 +198,7 @@
               <div class="rubric-detail">
                 <p>
                   Estas condiciones corresponden a la convocatoria de Murcia 2025 y fueron
-                  revisadas el 12/07/2026. Son la última referencia oficial localizada para
+                  revisadas el 21/07/2026. Son la última referencia oficial localizada para
                   Informática 590107, pero deben volver a comprobarse cuando se publique una
                   nueva convocatoria.
                 </p>

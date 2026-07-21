@@ -49,17 +49,20 @@ HTTP_OK = range(200, 400)
 CANONICAL_TOPIC_SHA256 = "1c36b01723937e2065a09c1a5b7db0c644b0f82e9a84b4ae0307ca940a9de913"
 CANONICAL_TOPIC_SOURCE = "BOE-A-1996-3102, suplemento del BOE n.º 38 de 13/02/1996"
 OFFICIAL_WRITTEN_TOPIC_TITLE = "Primera prueba - Parte B: Desarrollo por escrito de un tema"
-CURRENT_MODULE_REFERENCE_URL = (
+ORGANIZATIONAL_MODULE_REFERENCE_URL = (
     "https://www.llegarasalto.com/wp-content/uploads/2025/11/"
     "TABLAS-HORARIAS-GS-NOVIEMBRE_2025.pdf"
 )
+OFFICIAL_2026_MODULE_REFERENCE_URL = "https://www.borm.es/services/anuncio/841940/pdf"
 VALID_SOURCE_KINDS = {
     "archive-private",
     "official-murcia",
     "official-state",
+    "private-study",
     "regional-guide",
 }
 VALID_STATUS_KINDS = {"archive", "current", "done", "historical", "pending", "verified"}
+VALID_PROGRESS_STATUSES = {"not-started", "draft", "reviewed", "memorizable", "mock-ready"}
 OFFICIAL_HOSTS = {
     "boe.es",
     "borm.es",
@@ -98,11 +101,12 @@ class Finding:
 
 
 class Audit:
-    def __init__(self) -> None:
+    def __init__(self, max_review_age: int = 120) -> None:
         self.findings: list[Finding] = []
         self.stats: Counter[str] = Counter()
         self.drive_refs: dict[str, list[str]] = defaultdict(list)
         self.http_urls: dict[str, list[str]] = defaultdict(list)
+        self.max_review_age = max_review_age
 
     def error(self, code: str, location: str, message: str) -> None:
         self.findings.append(Finding("ERROR", code, location, message))
@@ -215,7 +219,7 @@ def validate_verified_date(audit: Audit, location: str, value: Any) -> None:
     age = (date.today() - verified).days
     if age < 0:
         audit.error("provenance.date.future", location, f"verifiedAt is {abs(age)} days in the future")
-    elif age > 120:
+    elif age > audit.max_review_age:
         audit.warning("provenance.date.stale", location, f"Verification is {age} days old")
 
 
@@ -363,6 +367,7 @@ def validate_exam_and_module_metadata(phases_data: dict[str, Any], audit: Audit)
         "code": "0373",
         "course": "1.º curso",
         "current_total_hours": "135 horas",
+        "planning_course": "2026/2027",
     }
     for key, expected in expected_module.items():
         if module.get(key) != expected:
@@ -377,17 +382,35 @@ def validate_exam_and_module_metadata(phases_data: dict[str, Any], audit: Audit)
             "data/phases.json.selectedModule.weekly_hours",
             "The November 2025 Murcia table assigns 4 weekly hours to module 0373",
         )
+    if "pendiente de confirmación" not in str(module.get("weekly_hours") or "").lower():
+        audit.error(
+            "module.weekly_hours.overclaim",
+            "data/phases.json.selectedModule.weekly_hours",
+            "The 4 weekly hours must be identified as pending confirmation for DAW 2026/2027",
+        )
+    if "no dato oficial confirmado" not in str(module.get("weekly_hours_status") or "").lower():
+        audit.error(
+            "module.weekly_hours.status",
+            "data/phases.json.selectedModule.weekly_hours_status",
+            "Missing the non-official status of the 2026/2027 weekly distribution",
+        )
 
     legal_urls = {
         source.get("url")
         for source in phases_data.get("legalSources") or []
         if isinstance(source, dict)
     }
-    if CURRENT_MODULE_REFERENCE_URL not in legal_urls:
+    if ORGANIZATIONAL_MODULE_REFERENCE_URL not in legal_urls:
         audit.error(
             "module.reference.missing",
             "data/phases.json.legalSources",
             "Missing the November 2025 Murcia timetable used for course and hours",
+        )
+    if OFFICIAL_2026_MODULE_REFERENCE_URL not in legal_urls:
+        audit.error(
+            "module.reference.2026.missing",
+            "data/phases.json.legalSources",
+            "Missing the official March 2026 BORM reference applicable from 2026/2027",
         )
     if not any("BOE-A-2024-10685" in str(url or "") for url in legal_urls):
         audit.error(
@@ -491,6 +514,27 @@ def validate_materials(materials: dict[str, Any], audit: Audit, expected_topics:
         )
 
     duplicate_ids: dict[str, list[str]] = defaultdict(list)
+    developed_example_topics: set[int] = set()
+    memory_sheet_count = 0
+    progress = materials.get("myTopicProgress") or {}
+    required_fields(
+        audit,
+        "data/materials.json.myTopicProgress",
+        progress,
+        ["updatedAt", "statusOptions", "scoringNote"],
+    )
+    status_options = progress.get("statusOptions") or []
+    status_values = {
+        option.get("value")
+        for option in status_options
+        if isinstance(option, dict) and option.get("value") and option.get("label")
+    }
+    if status_values != VALID_PROGRESS_STATUSES:
+        audit.error(
+            "progress.statuses.invalid",
+            "data/materials.json.myTopicProgress.statusOptions",
+            f"Expected {sorted(VALID_PROGRESS_STATUSES)}, found {sorted(status_values)}",
+        )
 
     for topic_key, topic in sorted(topics.items()):
         location = f"materials.topics.{topic_key}"
@@ -556,6 +600,42 @@ def validate_materials(materials: dict[str, Any], audit: Audit, expected_topics:
                     audit.error("materials.my_topic.mode", item_location, "My topic must open in Google Docs edit mode")
                 if material.get("access") != "private-owner-only":
                     audit.error("materials.my_topic.access", item_location, "My topic must be labelled private-owner-only")
+                if material.get("initialStudyStatus") not in VALID_PROGRESS_STATUSES:
+                    audit.error(
+                        "materials.my_topic.progress",
+                        item_location,
+                        "My topic has no valid initialStudyStatus",
+                    )
+            if material.get("academy") == "Ejemplos míos":
+                if material.get("urlMode") != "google-doc-edit":
+                    audit.error(
+                        "materials.my_example.mode",
+                        item_location,
+                        "My example must open in Google Docs edit mode",
+                    )
+                if material.get("access") != "private-owner-only":
+                    audit.error(
+                        "materials.my_example.access",
+                        item_location,
+                        "My example must be labelled private-owner-only",
+                    )
+                variant = material.get("variant")
+                if variant == "tema-desarrollado":
+                    developed_example_topics.add(int(topic_key))
+                    if "codex" not in str(material.get("authorship") or "").lower():
+                        audit.error(
+                            "materials.my_example.authorship",
+                            item_location,
+                            "Developed examples must disclose Codex authorship",
+                        )
+                    if not material.get("sourceReferences"):
+                        audit.error(
+                            "materials.my_example.sources",
+                            item_location,
+                            "Developed examples must declare sourceReferences",
+                        )
+                elif variant == "memorizacion":
+                    memory_sheet_count += 1
 
     for drive_id, locations in duplicate_ids.items():
         if len(locations) > 1:
@@ -569,9 +649,80 @@ def validate_materials(materials: dict[str, Any], audit: Audit, expected_topics:
             f"Declared {declared}, counted {audit.stats['materials']}",
         )
 
+    example_blocks = [(1, 14), (15, 22), (23, 33), (34, 47), (48, 60), (61, 74)]
+    for start, end in example_blocks:
+        if not any(start <= topic_number <= end for topic_number in developed_example_topics):
+            audit.error(
+                "materials.my_example.block_missing",
+                "data/materials.json.myTopicProgress",
+                f"Missing a developed example for the topic block {start}-{end}",
+            )
+
+    declared_example_topics = progress.get("exampleTopics")
+    actual_example_topics = sorted(developed_example_topics)
+    if declared_example_topics != actual_example_topics:
+        audit.error(
+            "progress.example_topics.invalid",
+            "data/materials.json.myTopicProgress.exampleTopics",
+            f"Declared {declared_example_topics}, found {actual_example_topics}",
+        )
+    if progress.get("examplesAvailable") != len(actual_example_topics):
+        audit.error(
+            "progress.example_count.invalid",
+            "data/materials.json.myTopicProgress.examplesAvailable",
+            f"Declared {progress.get('examplesAvailable')}, found {len(actual_example_topics)}",
+        )
+    if progress.get("memorySheetsAvailable") != memory_sheet_count:
+        audit.error(
+            "progress.memory_count.invalid",
+            "data/materials.json.myTopicProgress.memorySheetsAvailable",
+            f"Declared {progress.get('memorySheetsAvailable')}, found {memory_sheet_count}",
+        )
+
 
 def count_by(items: list[dict[str, Any]], key: str, default: str = "General") -> Counter[str]:
     return Counter(str(item.get(key) or default) for item in items)
+
+
+def validate_resource_curation(audit: Audit, location: str, resource: dict[str, Any]) -> None:
+    source_kind = resource.get("sourceKind")
+    if source_kind not in VALID_SOURCE_KINDS:
+        audit.error("resource.source_kind.invalid", location, f"Invalid or missing sourceKind: {source_kind!r}")
+
+    display_title = str(resource.get("displayTitle") or "").strip()
+    if not display_title:
+        audit.error("resource.display_title.missing", location, "Missing curated displayTitle")
+    elif re.search(r"\.(?:pdf|docx?|odt|rtf|html?|xlsx?|pptx?|jpe?g|png|zip|rar)$", display_title, re.I):
+        audit.error("resource.display_title.extension", location, f"Display title keeps a file extension: {display_title!r}")
+    elif "__" in display_title or re.search(r"\s\([1-9]\d?\)$", display_title):
+        audit.error("resource.display_title.copy_suffix", location, f"Display title keeps a copy suffix: {display_title!r}")
+
+    if not isinstance(resource.get("hasSolution"), bool):
+        audit.error("resource.solution_flag.invalid", location, "hasSolution must be boolean")
+
+    related_topics = resource.get("relatedTopics")
+    if not isinstance(related_topics, list):
+        audit.error("resource.related_topics.invalid", location, "relatedTopics must be a list")
+    else:
+        invalid_topics = [topic for topic in related_topics if not isinstance(topic, int) or not 1 <= topic <= 74]
+        if invalid_topics:
+            audit.error(
+                "resource.related_topics.range",
+                location,
+                f"Invalid related topic values: {invalid_topics}",
+            )
+
+    publication_year = resource.get("publicationYear")
+    if publication_year is not None and (
+        not isinstance(publication_year, int) or not 1900 <= publication_year <= date.today().year
+    ):
+        audit.error("resource.publication_year.invalid", location, f"Invalid publicationYear: {publication_year!r}")
+
+    if source_kind == "private-study":
+        required_fields(audit, location, resource, ["contentStatus", "cataloguedAt"])
+        validate_verified_date(audit, f"{location}.cataloguedAt", resource.get("cataloguedAt"))
+        if not is_drive_url(resource.get("url")):
+            audit.error("resource.private.not_drive", location, "Private study material must use a Drive URL")
 
 
 def validate_count_list(
@@ -696,6 +847,7 @@ def validate_phases(phases_data: dict[str, Any], audit: Audit) -> None:
                     collect_reference_url(audit, f"{source_location}.url", source.get("url"))
 
         duplicate_ids: dict[str, list[str]] = defaultdict(list)
+        display_titles: dict[tuple[str, str], list[str]] = defaultdict(list)
         public_count = 0
         for resource_index, resource in enumerate(resources):
             item_location = f"{location}.resources[{resource_index}]"
@@ -709,6 +861,18 @@ def validate_phases(phases_data: dict[str, Any], audit: Audit) -> None:
                 resource,
                 ["title", "phase", "section", "type", "academy", "topic", "area", "url", "urlMode"],
             )
+            validate_resource_curation(audit, item_location, resource)
+            if (
+                phase_id == "02_Primera_prueba_A_Practico"
+                and resource.get("sourceKind") == "private-study"
+                and normalize_ascii_lower(resource.get("area")) != "general"
+                and not resource.get("relatedTopics")
+            ):
+                audit.error(
+                    "resource.practical.unlinked",
+                    item_location,
+                    "Area-specific practical material must be linked to BOE topics",
+                )
             if resource.get("phase") != phase_id:
                 audit.error("phase.resource.phase_mismatch", item_location, "Resource phase does not match parent phase")
             if resource.get("hasPublicLink") is not True:
@@ -775,6 +939,11 @@ def validate_phases(phases_data: dict[str, Any], audit: Audit) -> None:
             drive_id = resource.get("driveFileId")
             if drive_id:
                 duplicate_ids[drive_id].append(item_location)
+            display_key = (
+                normalize_ascii_lower(resource.get("section")),
+                normalize_ascii_lower(resource.get("displayTitle")),
+            )
+            display_titles[display_key].append(item_location)
 
         total_resources += len(resources)
         total_public += public_count
@@ -799,6 +968,13 @@ def validate_phases(phases_data: dict[str, Any], audit: Audit) -> None:
         for drive_id, locations in duplicate_ids.items():
             if len(locations) > 1:
                 audit.error("drive.id.duplicate.phase", locations[0], f"Duplicate phase Drive id {drive_id}: {locations}")
+        for (_, display_title), locations in display_titles.items():
+            if display_title and len(locations) > 1:
+                audit.error(
+                    "resource.display_title.duplicate",
+                    locations[0],
+                    f"Duplicate curated title within a section: {locations}",
+                )
 
     if phases_data.get("totalResources") != total_resources:
         audit.error(
@@ -1102,6 +1278,17 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--http-timeout", type=float, default=12.0)
     parser.add_argument(
+        "--max-review-age",
+        type=int,
+        default=120,
+        help="Warn when a verification date is older than this number of days.",
+    )
+    parser.add_argument(
+        "--fail-on-warning",
+        action="store_true",
+        help="Return a failing exit code when the audit emits warnings.",
+    )
+    parser.add_argument(
         "--strict-global-drive-ids",
         action="store_true",
         help="Fail when a Drive id is reused across materials and phase views.",
@@ -1115,7 +1302,7 @@ def main() -> int:
         args.check_drive = True
         args.check_http = True
 
-    audit = Audit()
+    audit = Audit(max_review_age=args.max_review_age)
     materials = load_json(args.materials, audit)
     phases = load_json(args.phases, audit)
 
@@ -1133,7 +1320,8 @@ def main() -> int:
         check_http(audit, args.http_timeout)
 
     print_report(audit)
-    return 1 if audit.errors else 0
+    has_warnings = any(finding.level == "WARN" for finding in audit.findings)
+    return 1 if audit.errors or (args.fail_on_warning and has_warnings) else 0
 
 
 if __name__ == "__main__":

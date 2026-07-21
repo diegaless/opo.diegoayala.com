@@ -2,8 +2,48 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 
-const VERIFIED_AT = "2026-07-12";
+const VERIFIED_AT = "2026-07-21";
 const PHASES_PATH = new URL("../data/phases.json", import.meta.url);
+const MATERIALS_PATH = new URL("../data/materials.json", import.meta.url);
+
+const BLOCK_EXAMPLE_DOCS = [
+  {
+    topic: "01",
+    title: "Representación y comunicación de la información",
+    driveFileId: "14tVf7Dtv4C427r6p58fDtLufvStsjBJlJyrjj14P9hU",
+    sourceReferences: ["BOE 1996", "Unicode 17.0.0", "RFC 3629 UTF-8", "W3C Character Model"],
+  },
+  {
+    topic: "15",
+    title: "Sistemas operativos. Componentes, estructura, funciones y tipos",
+    driveFileId: "1d_GcMkBOL7phLaQlRgWeTthIIoHwMFtxOcFMnWb51MA",
+    sourceReferences: ["BOE 1996", "POSIX.1-2024", "Operating System Concepts", "Linux Kernel documentation"],
+  },
+  {
+    topic: "27",
+    title: "Programación orientada a objetos",
+    driveFileId: "1YLnk6KDw6JQPVvM4LVRVQ8XBn5yi2xdmUCe0UxmYRJg",
+    sourceReferences: ["BOE 1996", "Java Language Specification SE 26", "ISO/IEC 25010:2023"],
+  },
+  {
+    topic: "40",
+    title: "Diseño de bases de datos relacionales",
+    driveFileId: "1_bZgCI7g5_4FfnbTCnVUh2_KiwGy8dbfgQL2j9ZOwyg",
+    sourceReferences: ["BOE 1996", "ISO/IEC 9075 SQL", "PostgreSQL documentation"],
+  },
+  {
+    topic: "48",
+    title: "Ingeniería del software, ciclos y metodologías de desarrollo",
+    driveFileId: "1HXBF-hDWkyrIgeF9BuE5BhItWiE2WntK-mbQDZgByQE",
+    sourceReferences: ["BOE 1996", "ISO/IEC/IEEE 12207:2017", "ISO/IEC 25010:2023", "European Interoperability Framework"],
+  },
+  {
+    topic: "65",
+    title: "Nivel de red y transporte",
+    driveFileId: "1V_AQTRvZjpEZ4KSiDxiOl26N-B__96HFsBjDAgDl5JI",
+    sourceReferences: ["BOE 1996", "RFC 8200", "RFC 9293", "RFC 9000"],
+  },
+];
 
 const OUT_OF_SCOPE_DRIVE_IDS = new Set([
   // Andalucía curricula, calls and school documents that do not apply in Murcia.
@@ -44,10 +84,10 @@ const legalSources = [
     nivel: "Estado actual de convocatoria",
     norma: "Portal oficial de oposiciones docentes de la CARM",
     relevancia:
-      "A 12/07/2026, el portal oficial muestra convocatorias 2026 para Maestros y Catedráticos de Música, pero no una nueva convocatoria de PES/Informática. La última localizada para 590107 sigue siendo la de 2025.",
+      "A 21/07/2026, el portal oficial muestra convocatorias 2026 para Maestros y Catedráticos de Música, pero no una nueva convocatoria de PES/Informática. La última localizada para 590107 sigue siendo la de 2025.",
     url: "https://www.carm.es/web/pagina?IDCONTENIDO=3977&IDTIPO=100&RASTRO=c798%24m",
     sourceKind: "official-murcia",
-    officialDate: "Revisado 12/07/2026",
+    officialDate: "Revisado 21/07/2026",
     status: "Sin nueva convocatoria PES publicada",
     statusKind: "verified",
   },
@@ -79,7 +119,7 @@ const legalSources = [
     relevancia: "Marco estatal de ingreso, accesos y adquisición de nuevas especialidades docentes.",
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-4372",
     sourceKind: "official-state",
-    officialDate: "Texto consolidado consultado 12/07/2026",
+    officialDate: "Texto consolidado consultado 21/07/2026",
     status: "Marco estatal",
     statusKind: "verified",
   },
@@ -101,7 +141,7 @@ const legalSources = [
       "Marco estatal del sistema de Formación Profesional para contextualizar resultados de aprendizaje, evaluación y formación en empresa.",
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2023-16889",
     sourceKind: "official-state",
-    officialDate: "Texto consolidado consultado 12/07/2026",
+    officialDate: "Texto consolidado consultado 21/07/2026",
     status: "Marco estatal",
     statusKind: "verified",
   },
@@ -157,13 +197,24 @@ const legalSources = [
     statusKind: "verified",
   },
   {
+    nivel: "Referencia oficial FP Murcia 2026/2027",
+    norma: "Resolución de 10 de marzo de 2026, BORM n.º 67",
+    relevancia:
+      "Produce efectos académicos desde 2026/2027, incluye DAW entre los ciclos susceptibles de modalidad virtual y refleja 135 horas de currículo para el módulo compartido 0373 en la tabla de Informática. No fija la distribución semanal presencial de DAW.",
+    url: "https://www.borm.es/services/anuncio/841940/pdf",
+    sourceKind: "official-murcia",
+    officialDate: "Publicado 23/03/2026",
+    status: "Aplicable desde 2026/2027",
+    statusKind: "current",
+  },
+  {
     nivel: "Organización curricular Murcia - DAW 2025/2026",
     norma: "Tablas horarias de Grado Superior - versión noviembre de 2025",
     relevancia:
       "La tabla de organización de FP de Murcia sitúa 0373 en 1.º de DAW, con 135 horas totales y 4 horas semanales. Es una referencia organizativa de 2025/2026, no una norma publicada en BORM, y debe revisarse para el curso aplicable.",
     url: "https://www.llegarasalto.com/wp-content/uploads/2025/11/TABLAS-HORARIAS-GS-NOVIEMBRE_2025.pdf",
     sourceKind: "regional-guide",
-    officialDate: "Versión noviembre 2025 · revisado 12/07/2026",
+    officialDate: "Versión noviembre 2025 · revisado 21/07/2026",
     status: "Referencia organizativa 2025/2026",
     statusKind: "historical",
   },
@@ -226,6 +277,156 @@ function inferOfficialSource(url = "") {
   return null;
 }
 
+const TITLE_WORD_FIXES = new Map([
+  ["correccion", "corrección"],
+  ["diseno", "diseño"],
+  ["disposicion", "disposición"],
+  ["especializacion", "especialización"],
+  ["introduccion", "introducción"],
+  ["interes", "interés"],
+  ["oposicion", "oposición"],
+  ["ordenacion", "ordenación"],
+  ["programacion", "programación"],
+  ["practico", "práctico"],
+  ["resolucion", "resolución"],
+  ["solucion", "solución"],
+  ["teoria", "teoría"],
+  ["tecnicas", "técnicas"],
+]);
+
+const AREA_TOPIC_RELATIONS = new Map([
+  ["bases de datos", Array.from({ length: 11 }, (_, index) => index + 34)],
+  ["circuitos digitales", [9]],
+  ["ingenieria software", Array.from({ length: 12 }, (_, index) => index + 48)],
+  ["programacion", Array.from({ length: 11 }, (_, index) => index + 23)],
+  ["redes", Array.from({ length: 13 }, (_, index) => index + 61)],
+  ["sistemas operativos", Array.from({ length: 8 }, (_, index) => index + 15)],
+  ["web xml scripts", [23, 24, 25, 26, 27, 29, 30, 34, 35, 36, 39, 41, 45, 46, 47, 61, 62, 66]],
+]);
+
+function normalizePlainText(value = "") {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+function cleanDisplayTitle(title = "") {
+  let value = title.normalize("NFC").trim();
+  value = value.replace(/\.(?:pdf|docx?|odt|rtf|html?|xlsx?|pptx?|jpe?g|png|zip|rar)$/i, "");
+  value = value.replace(/__+(\d+)$/i, " · versión $1");
+  value = value.replace(/\s+\(([1-9]\d?)\)$/i, " · versión $1");
+  value = value.replace(/_+/g, " ").replace(/\s+/g, " ").trim();
+  value = value.replace(/^TEMA\b/, "Tema");
+
+  for (const [plain, corrected] of TITLE_WORD_FIXES) {
+    value = value.replace(new RegExp(`\\b${plain}\\b`, "gi"), corrected);
+  }
+
+  return value;
+}
+
+function extractPublicationYear(resource) {
+  const official = String(resource.officialDate || "").match(/(?:19|20)\d{2}/g);
+  if (official?.length) return Number(official.at(-1));
+  const title = String(resource.title || "").match(/(?:19|20)\d{2}/g);
+  return title?.length ? Number(title.at(-1)) : null;
+}
+
+function extractExactTopics(resource) {
+  const text = `${resource.topic || ""} ${resource.title || ""}`;
+  const matches = [...text.matchAll(/\btema\s*0*(\d{1,2})\b/gi)]
+    .map((match) => Number(match[1]))
+    .filter((number) => number >= 1 && number <= 74);
+  return [...new Set(matches)];
+}
+
+function inferRelatedTopics(resource) {
+  const exact = extractExactTopics(resource);
+  if (exact.length) return { topics: exact, basis: "exacta" };
+  const area = normalizePlainText(resource.area || "");
+  const related = AREA_TOPIC_RELATIONS.get(area) || [];
+  return related.length
+    ? { topics: related, basis: area === "web xml scripts" ? "transversal" : "área" }
+    : { topics: [], basis: "" };
+}
+
+function hasIdentifiedSolution(resource) {
+  const text = normalizePlainText(`${resource.type || ""} ${resource.title || ""}`);
+  return /correccion|corregid|resuelt|solucion/.test(text);
+}
+
+function enrichResource(resource, phaseId) {
+  resource.displayTitle = cleanDisplayTitle(resource.title);
+  if (resource.displayTitle !== resource.title) resource.originalTitle = resource.title;
+
+  if (!resource.sourceKind && resource.driveFileId) {
+    resource.sourceKind = phaseId === "00_Normativa_y_orden_legal"
+      ? "archive-private"
+      : "private-study";
+  }
+  if (resource.sourceKind === "private-study") {
+    resource.contentStatus = "Material privado; vigencia técnica no verificada.";
+    resource.cataloguedAt = VERIFIED_AT;
+  }
+
+  const publicationYear = extractPublicationYear(resource);
+  if (publicationYear) resource.publicationYear = publicationYear;
+  else delete resource.publicationYear;
+
+  resource.hasSolution = hasIdentifiedSolution(resource);
+  const relation = inferRelatedTopics(resource);
+  resource.relatedTopics = relation.topics;
+  if (relation.basis) resource.relationBasis = relation.basis;
+  else delete resource.relationBasis;
+}
+
+function blockExampleMaterial(example, folderUrl) {
+  const topicNumber = String(Number(example.topic)).padStart(2, "0");
+  const driveFileName = `Tema ${topicNumber} - Ejemplo completo - ${example.title}`;
+  return {
+    academy: "Ejemplos míos",
+    label: "Tema completo desarrollado · elaborado con Codex",
+    type: "ejemplo",
+    variant: "tema-desarrollado",
+    fileName: `${driveFileName}.gdoc`,
+    extension: ".gdoc",
+    url: `https://docs.google.com/document/d/${example.driveFileId}/edit`,
+    driveFileName,
+    driveFolderUrl: folderUrl,
+    urlMode: "google-doc-edit",
+    clickLabel: "Leer",
+    driveFileId: example.driveFileId,
+    access: "private-owner-only",
+    authorship: "Ejemplo propio elaborado con Codex y revisado para esta web.",
+    sourceReferences: example.sourceReferences,
+  };
+}
+
+function upsertBlockExamples(materialsData) {
+  for (const example of BLOCK_EXAMPLE_DOCS) {
+    const topic = materialsData.topics?.[example.topic];
+    if (!topic) throw new Error(`No existe el tema ${example.topic} para registrar su ejemplo`);
+
+    const material = blockExampleMaterial(example, materialsData.myExamplesFolderUrl);
+    const existingIndex = (topic.materials || []).findIndex(
+      (item) => item.academy === "Ejemplos míos" && item.variant === "tema-desarrollado",
+    );
+    if (existingIndex >= 0) topic.materials[existingIndex] = material;
+    else topic.materials.push(material);
+  }
+}
+
+function makeDisplayTitlesUnique(phase) {
+  const seen = new Map();
+  for (const resource of phase.resources || []) {
+    const key = normalizePlainText(`${resource.section}|${resource.displayTitle}`);
+    const occurrence = (seen.get(key) || 0) + 1;
+    seen.set(key, occurrence);
+    if (occurrence > 1) resource.displayTitle = `${resource.displayTitle} · variante ${occurrence}`;
+  }
+}
+
 function normalizeHistoricalStatus(resource) {
   if (resource.sourceKind === "archive-private") return;
 
@@ -268,11 +469,11 @@ function updateNewsResource(resource) {
     resource.status = "Histórico del proceso 2025";
     resource.statusKind = "historical";
   } else if (/fase de prácticas 2025/i.test(title)) {
-    resource.officialDate = "Revisado 12/07/2026";
+    resource.officialDate = "Revisado 21/07/2026";
     resource.status = "Sin resolución final localizada";
     resource.statusKind = "pending";
     resource.note =
-      "La página oficial conserva nombramientos e informes de la fase de prácticas 2025/2026, pero no muestra una resolución final de aptos a fecha 12/07/2026.";
+      "La página oficial conserva nombramientos e informes de la fase de prácticas 2025/2026, pero no muestra una resolución final de aptos a fecha 21/07/2026.";
   } else if (/página oficial de criterios, turno y documentos/i.test(title)) {
     resource.status = "Archivo oficial 2025";
     resource.statusKind = "historical";
@@ -301,6 +502,7 @@ function refreshPhaseCounts(phase) {
 
 async function main() {
   const phasesData = JSON.parse(await readFile(PHASES_PATH, "utf8"));
+  const materialsData = JSON.parse(await readFile(MATERIALS_PATH, "utf8"));
 
   phasesData.generatedAt = `${VERIFIED_AT} 00:00:00`;
   phasesData.verifiedAt = VERIFIED_AT;
@@ -317,11 +519,16 @@ async function main() {
 
   Object.assign(phasesData.selectedModule, {
     course: "1.º curso",
-    weekly_hours: "4 horas semanales, según las tablas horarias de Murcia de noviembre de 2025.",
+    planning_course: "2026/2027",
+    current_total_hours_source:
+      "La Resolución de 10/03/2026 refleja 135 horas para el módulo 0373 compartido dentro de la familia de Informática y produce efectos desde 2026/2027.",
+    weekly_hours:
+      "4 horas semanales en la referencia organizativa de noviembre de 2025; pendiente de confirmación específica para DAW 2026/2027.",
+    weekly_hours_status: "Referencia secundaria 2025/2026, no dato oficial confirmado para 2026/2027.",
     old_curriculum_hours:
       "125 horas y 6 horas semanales en 2.º curso en el Anexo III de la Orden de 12/03/2013",
     hours_note:
-      "Para una programación contextualizada en 2025/2026, usar 1.º curso, 135 horas y 4 horas semanales, citando la tabla organizativa de noviembre de 2025. Volver a comprobar la distribución al publicarse las instrucciones del curso aplicable.",
+      "Para 2026/2027 pueden sostenerse oficialmente el currículo actualizado del módulo 0373 y sus 135 horas. Las 4 horas semanales proceden todavía de una tabla organizativa secundaria de 2025/2026 y deben confirmarse antes de cerrar la programación.",
   });
 
   const normativa = phasesData.phases.find((phase) => phase.id === "00_Normativa_y_orden_legal");
@@ -356,6 +563,13 @@ async function main() {
   writtenTopic.title = "Primera prueba - Parte B: Desarrollo por escrito de un tema";
 
   const trends = phasesData.phases.find((phase) => phase.id === "97_Que_cae_mas");
+  trends.analysisScope = {
+    sampleSize: 3,
+    years: [2021, 2023, 2025],
+    confidence: "Orientativa",
+    note:
+      "La frecuencia describe únicamente los tres prácticos oficiales de Murcia localizados. Sirve para priorizar el estudio, no para predecir el siguiente examen.",
+  };
   for (const source of trends.sourceYears || []) {
     const isLatest = source.year === "2025";
     Object.assign(source, {
@@ -395,11 +609,11 @@ async function main() {
     academy: "CARM/BORM",
     topic: "General",
     area: "PES 590 · Informática 107",
-    officialDate: "Revisado 12/07/2026",
+    officialDate: "Revisado 21/07/2026",
     status: "Sin plazo de instancia abierto",
     statusKind: "verified",
     note:
-      "El portal oficial de oposiciones de Murcia muestra en 2026 Maestros y Catedráticos de Música, pero no una nueva convocatoria de PES/Informática. La última localizada para 590107 es la de 2025; esto no predice la fecha de la siguiente.",
+      "El portal oficial de oposiciones de Murcia muestra a 21/07/2026 convocatorias de Maestros y Catedráticos de Música, pero no una nueva convocatoria de PES/Informática. La última localizada para 590107 es la de 2025; esto no predice la fecha de la siguiente.",
     sourceKind: "official-murcia",
     verifiedAt: VERIFIED_AT,
     hasPublicLink: true,
@@ -415,11 +629,11 @@ async function main() {
   if (finalPracticeResolution) {
     Object.assign(finalPracticeResolution, {
       title: "Seguimiento de la resolución final de la fase de prácticas 2025/2026",
-      officialDate: "Revisado 12/07/2026",
+      officialDate: "Revisado 21/07/2026",
       status: "Sin resolución final localizada",
       statusKind: "pending",
       note:
-        "La sección oficial consultada conserva nombramientos e informes, pero no muestra una resolución final de aptos a fecha 12/07/2026.",
+        "La sección oficial consultada conserva nombramientos e informes, pero no muestra una resolución final de aptos a fecha 21/07/2026.",
     });
   }
 
@@ -431,7 +645,9 @@ async function main() {
         resource.verifiedAt = VERIFIED_AT;
       }
       normalizeHistoricalStatus(resource);
+      enrichResource(resource, phase.id);
     }
+    makeDisplayTitlesUnique(phase);
     refreshPhaseCounts(phase);
   }
 
@@ -444,7 +660,51 @@ async function main() {
     0,
   );
 
+  materialsData.generatedAt = `${VERIFIED_AT}T00:00:00.000Z`;
+  materialsData.verifiedAt = VERIFIED_AT;
+  upsertBlockExamples(materialsData);
+
+  const allMaterials = Object.values(materialsData.topics || {}).flatMap(
+    (topic) => topic.materials || [],
+  );
+  const developedExampleTopics = Object.entries(materialsData.topics || {})
+    .filter(([, topic]) =>
+      (topic.materials || []).some(
+        (material) => material.academy === "Ejemplos míos" && material.variant === "tema-desarrollado",
+      ),
+    )
+    .map(([topicNumber]) => Number(topicNumber))
+    .sort((first, second) => first - second);
+  materialsData.materialCount = allMaterials.length;
+  materialsData.myTopicProgress = {
+    ...materialsData.myTopicProgress,
+    updatedAt: `${VERIFIED_AT}T00:00:00.000Z`,
+    examplesAvailable: developedExampleTopics.length,
+    exampleTopics: developedExampleTopics,
+    memorySheetsAvailable: allMaterials.filter(
+      (material) => material.academy === "Ejemplos míos" && material.variant === "memorizacion",
+    ).length,
+    statusOptions: [
+      { value: "not-started", label: "Sin empezar" },
+      { value: "draft", label: "Borrador" },
+      { value: "reviewed", label: "Revisado" },
+      { value: "memorizable", label: "Memorizable" },
+      { value: "mock-ready", label: "Probado en simulacro" },
+    ],
+    scoringNote:
+      "La puntuación personal de 0 a 10 se guarda solo en este navegador y sirve para comparar el tema con la rúbrica oficial.",
+  };
+
+  for (const topic of Object.values(materialsData.topics || {})) {
+    for (const material of topic.materials || []) {
+      if (material.academy === "Mi temario") {
+        material.initialStudyStatus = material.initialStudyStatus || "not-started";
+      }
+    }
+  }
+
   await writeFile(PHASES_PATH, `${JSON.stringify(phasesData, null, 2)}\n`);
+  await writeFile(MATERIALS_PATH, `${JSON.stringify(materialsData, null, 2)}\n`);
 }
 
 await main();

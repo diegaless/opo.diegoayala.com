@@ -21,10 +21,14 @@ const blocks = [...document.querySelectorAll("[data-block]")];
 const topics = [...document.querySelectorAll("[data-topic]")];
 const rubricBlock = document.querySelector("[data-rubric-block]");
 const rubricItems = [...document.querySelectorAll("[data-rubric-item]")];
+const rubricToggle = document.querySelector("[data-rubric-toggle]");
 const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
 const studyStateKey = "opo-study-state-v1";
 const collapsedBlocksKey = "opo-collapsed-blocks-v1";
+const rubricExpandedKey = "opo-rubric-expanded-v1";
+const resourceFiltersKey = "opo-resource-filters-v1";
+const personalProgressKey = "opo-personal-progress-v1";
 const fallbackTopicTemplate = [
   {
     name: "Índice",
@@ -70,6 +74,9 @@ let isRestoringStudyState = true;
 let scrollSaveTimer = null;
 let lastExplicitStudyItem = null;
 let readingPositionFrame = null;
+let resourceFilters = readStoredObject(resourceFiltersKey);
+let personalProgress = readStoredObject(personalProgressKey);
+let rubricExpandedSession = null;
 
 function setTheme(theme) {
   root.dataset.theme = theme;
@@ -85,6 +92,23 @@ function normalize(value) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
+}
+
+function readStoredObject(key) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key) || "{}");
+    return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+  } catch {
+    return {};
+  }
+}
+
+function writeStoredObject(key, value) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    // The interface remains usable when storage is unavailable.
+  }
 }
 
 function showModal(dialog) {
@@ -506,6 +530,45 @@ function setBlockCollapsed(block, collapsed) {
   scheduleReadingPositionUpdate();
 }
 
+function isRubricExpanded() {
+  if (rubricExpandedSession !== null) return rubricExpandedSession;
+  try {
+    return localStorage.getItem(rubricExpandedKey) === "true";
+  } catch {
+    return false;
+  }
+}
+
+function updateRubricCollapseState() {
+  if (!rubricBlock || !rubricToggle) return;
+  const expanded = Boolean(searchInput?.value.trim()) || isRubricExpanded();
+  rubricBlock.classList.toggle("is-collapsed", !expanded);
+  rubricToggle.setAttribute("aria-expanded", String(expanded));
+  rubricToggle.title = expanded ? "Ocultar rúbrica" : "Mostrar rúbrica";
+  const label = rubricToggle.querySelector("span");
+  if (label) label.textContent = expanded ? "Ocultar criterios" : "Ver criterios";
+}
+
+function setRubricExpanded(expanded) {
+  rubricExpandedSession = expanded;
+  try {
+    localStorage.setItem(rubricExpandedKey, String(expanded));
+  } catch {
+    // The control still works for the current render when storage is unavailable.
+  }
+  updateRubricCollapseState();
+  scheduleReadingPositionUpdate();
+}
+
+async function jumpToRubric() {
+  if (searchInput?.value) searchInput.value = "";
+  setRubricExpanded(true);
+  renderCurrentView();
+  closeModal(indexDialog);
+  await afterNextPaint();
+  rubricBlock?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 async function jumpToTopicBlock(block) {
   if (searchInput?.value) {
     searchInput.value = "";
@@ -522,6 +585,19 @@ function setupTopicNavigation() {
   if (!indexList) return;
   const collapsed = readCollapsedBlocks();
   const fragment = document.createDocumentFragment();
+
+  if (rubricBlock) {
+    const rubricIndexItem = createElement("button", "quick-index-item");
+    rubricIndexItem.type = "button";
+    rubricIndexItem.dataset.indexRubric = "";
+    rubricIndexItem.append(
+      createElement("span", "quick-index-item-label", "Criterios 2025"),
+      createElement("strong", "", "Rúbrica oficial del tema escrito"),
+      createElement("span", "quick-index-item-range", "10 apartados"),
+    );
+    rubricIndexItem.addEventListener("click", jumpToRubric);
+    fragment.append(rubricIndexItem);
+  }
 
   blocks.forEach((block, index) => {
     const header = block.querySelector(":scope > .block-header");
@@ -570,6 +646,7 @@ function setupTopicNavigation() {
 
   indexList.replaceChildren(fragment);
   applyBlockCollapseState();
+  updateRubricCollapseState();
 }
 
 function getReadingTopic() {
@@ -644,6 +721,7 @@ function finalizeViewRender() {
   syncPhasePicker();
   applySearchHighlights();
   applyBlockCollapseState();
+  updateRubricCollapseState();
   scheduleReadingPositionUpdate();
 }
 
@@ -719,6 +797,60 @@ function buildMaterialControls(topic, topicData) {
   renderMaterialOptions();
 }
 
+async function openPracticalsForTopic(topicKey) {
+  const phaseId = "02_Primera_prueba_A_Practico";
+  savePhaseResourceFilters(phaseId, { topic: topicKey });
+  searchInput.value = "";
+  currentView = phaseId;
+  phaseSelect.value = phaseId;
+  renderCurrentView();
+  writeStudyState();
+  await afterNextPaint();
+  phaseView?.querySelector(".resource-filter-band")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function buildTopicPracticeControls() {
+  const practicalPhase = phasesData?.phases?.find(
+    (phase) => phase.id === "02_Primera_prueba_A_Practico",
+  );
+  if (!practicalPhase) return;
+
+  topics.forEach((topic) => {
+    topic.querySelector("[data-topic-practicals]")?.remove();
+    const topicKey = getTopicKey(topic);
+    const topicNumber = Number(topicKey);
+    const resources = (practicalPhase.resources || []).filter(
+      (resource) => (resource.relatedTopics || []).includes(topicNumber),
+    );
+    if (!resources.length) return;
+
+    const exactCount = resources.filter((resource) => resource.relationBasis === "exacta").length;
+    const areaCount = resources.length - exactCount;
+    const solutionCount = resources.filter((resource) => resource.hasSolution).length;
+    const bar = createElement("div", "topic-related");
+    bar.dataset.topicPracticals = "";
+    const button = createElement(
+      "button",
+      "topic-related-link",
+      `Prácticos relacionados (${resources.length})`,
+    );
+    button.type = "button";
+    button.title = `Abrir la Parte A con recursos relacionados con el tema ${topicKey}`;
+    button.addEventListener("click", () => openPracticalsForTopic(topicKey));
+    const relationParts = [];
+    if (exactCount) relationParts.push(`${exactCount} específicos`);
+    if (areaCount) relationParts.push(`${areaCount} del bloque`);
+    if (solutionCount) relationParts.push(`${solutionCount} con solución`);
+    const context = createElement(
+      "span",
+      "topic-related-context",
+      relationParts.join(" · "),
+    );
+    bar.append(button, context);
+    topic.append(bar);
+  });
+}
+
 async function loadMaterials() {
   try {
     const response = await fetch(materialsUrl, { cache: "no-store" });
@@ -743,6 +875,7 @@ async function loadPhases() {
     if (!response.ok) throw new Error(`No se pudo cargar ${phasesUrl}`);
     phasesData = await response.json();
     renderPhaseOptions();
+    buildTopicPracticeControls();
   } catch (error) {
     console.warn(error);
   }
@@ -828,6 +961,7 @@ function resourceMatches(resource, query) {
   if (!query) return true;
   return normalize(
     [
+      resource.displayTitle,
       resource.title,
       resource.section,
       resource.type,
@@ -838,6 +972,9 @@ function resourceMatches(resource, query) {
       resource.status,
       resource.officialDate,
       resource.note,
+      resource.contentStatus,
+      resource.publicationYear,
+      ...(resource.relatedTopics || []).map((topic) => `tema ${topic}`),
     ].join(" "),
   ).includes(query);
 }
@@ -865,6 +1002,123 @@ function getOrderedSectionGroups(phase, groups) {
   );
 }
 
+const sourceFacetLabels = {
+  "archive-private": "Archivo privado",
+  "official-murcia": "Oficial Murcia",
+  "official-state": "Oficial estatal",
+  "private-study": "Material privado",
+  "regional-guide": "Guía curricular",
+};
+
+function getPhaseResourceFilters(phaseId) {
+  const stored = resourceFilters[phaseId];
+  return stored && typeof stored === "object" ? stored : {};
+}
+
+function savePhaseResourceFilters(phaseId, filters) {
+  const compact = Object.fromEntries(
+    Object.entries(filters).filter(([, value]) => value !== "" && value !== null && value !== undefined),
+  );
+  if (Object.keys(compact).length) resourceFilters[phaseId] = compact;
+  else delete resourceFilters[phaseId];
+  writeStoredObject(resourceFiltersKey, resourceFilters);
+}
+
+function getResourceFacetValues(resource, key) {
+  if (key === "source") return resource.sourceKind ? [resource.sourceKind] : [];
+  if (key === "year") return resource.publicationYear ? [String(resource.publicationYear)] : [];
+  if (key === "solution") return [resource.hasSolution ? "yes" : "no"];
+  if (key === "topic") return (resource.relatedTopics || []).map((topic) => String(topic).padStart(2, "0"));
+  return resource[key] ? [String(resource[key])] : [];
+}
+
+function resourceMatchesFacetFilters(resource, filters) {
+  return Object.entries(filters).every(([key, selected]) => {
+    if (!selected) return true;
+    return getResourceFacetValues(resource, key).includes(String(selected));
+  });
+}
+
+function getFacetOptionLabel(key, value) {
+  if (key === "source") return sourceFacetLabels[value] || value;
+  if (key === "solution") return value === "yes" ? "Con solución o corrección" : "Sin solución identificada";
+  if (key === "year") return value;
+  if (key === "topic") {
+    const topic = materialsData?.topics?.[value];
+    return topic ? `Tema ${value} · ${topic.title}` : `Tema ${value}`;
+  }
+  return formatSectionName(value);
+}
+
+function getFacetOptions(resources, key) {
+  const values = new Set();
+  resources.forEach((resource) => {
+    getResourceFacetValues(resource, key).forEach((value) => values.add(value));
+  });
+  return [...values].sort((left, right) => {
+    if (key === "year" || key === "topic") return Number(left) - Number(right);
+    return getFacetOptionLabel(key, left).localeCompare(getFacetOptionLabel(key, right), "es");
+  });
+}
+
+function buildResourceFilterBand(phase, allResources, visibleCount) {
+  const filters = getPhaseResourceFilters(phase.id);
+  const definitions = [
+    { key: "area", label: "Área" },
+    { key: "topic", label: "Tema relacionado" },
+    { key: "academy", label: "Procedencia" },
+    { key: "type", label: "Tipo" },
+    { key: "source", label: "Carácter" },
+    { key: "year", label: "Año" },
+    { key: "solution", label: "Solución" },
+  ]
+    .map((definition) => ({ ...definition, options: getFacetOptions(allResources, definition.key) }))
+    .filter((definition) => definition.options.length > 1 || filters[definition.key]);
+
+  const band = createElement("section", "resource-filter-band");
+  band.dataset.studyKey = `${phase.id}:filters`;
+  band.setAttribute("aria-label", "Filtros de recursos");
+
+  const heading = createElement("div", "resource-filter-heading");
+  const headingCopy = createElement("div", "resource-filter-heading-copy");
+  headingCopy.append(
+    createElement("p", "", "Filtrar materiales"),
+    createElement("span", "", `${visibleCount} de ${allResources.length}`),
+  );
+  const clear = createElement("button", "resource-filter-clear", "Limpiar");
+  clear.type = "button";
+  clear.disabled = Object.keys(filters).length === 0;
+  clear.addEventListener("click", () => {
+    savePhaseResourceFilters(phase.id, {});
+    renderCurrentView();
+    writeStudyState();
+  });
+  heading.append(headingCopy, clear);
+
+  const controls = createElement("div", "resource-filter-grid");
+  definitions.forEach(({ key, label, options }) => {
+    const wrapper = createElement("label", "resource-filter-control");
+    wrapper.append(createElement("span", "", label));
+    const select = document.createElement("select");
+    select.className = "resource-filter-select";
+    select.dataset.resourceFilter = key;
+    select.append(createOption("", `Todo · ${label.toLowerCase()}`));
+    options.forEach((value) => select.append(createOption(value, getFacetOptionLabel(key, value))));
+    select.value = filters[key] || "";
+    select.addEventListener("change", () => {
+      const next = { ...getPhaseResourceFilters(phase.id), [key]: select.value };
+      savePhaseResourceFilters(phase.id, next);
+      renderCurrentView();
+      writeStudyState();
+    });
+    wrapper.append(select);
+    controls.append(wrapper);
+  });
+
+  band.append(heading, controls);
+  return band;
+}
+
 function getTopicEntries() {
   return Object.entries(materialsData?.topics || {})
     .map(([key, topic]) => ({ key, topic }))
@@ -889,6 +1143,59 @@ function getProgressState(topic) {
   };
 }
 
+function getProgressStatusOptions() {
+  return materialsData?.myTopicProgress?.statusOptions || [
+    { value: "not-started", label: "Sin empezar" },
+    { value: "draft", label: "Borrador" },
+    { value: "reviewed", label: "Revisado" },
+    { value: "memorizable", label: "Memorizable" },
+    { value: "mock-ready", label: "Probado en simulacro" },
+  ];
+}
+
+function getPersonalTopicProgress(key, topic) {
+  const saved = personalProgress[key] || {};
+  const initial = getProgressState(topic).myTopic?.initialStudyStatus || "not-started";
+  const validStatuses = getProgressStatusOptions().map((option) => option.value);
+  const hasScore = saved.score !== "" && saved.score !== null && saved.score !== undefined;
+  const score = Number(saved.score);
+  return {
+    status: validStatuses.includes(saved.status) ? saved.status : initial,
+    score: hasScore && Number.isFinite(score) ? Math.max(0, Math.min(10, score)) : null,
+  };
+}
+
+function savePersonalTopicProgress(key, value) {
+  personalProgress[key] = value;
+  writeStoredObject(personalProgressKey, personalProgress);
+}
+
+function getProgressStatusLabel(status) {
+  return getProgressStatusOptions().find((option) => option.value === status)?.label || "Sin empezar";
+}
+
+function getProgressMetrics(entries) {
+  const order = getProgressStatusOptions().map((option) => option.value);
+  const values = entries.map(({ key, topic }) => getPersonalTopicProgress(key, topic));
+  const scores = values.map(({ score }) => score).filter((score) => score !== null);
+  return {
+    started: values.filter(({ status }) => status !== "not-started").length,
+    reviewed: values.filter(({ status }) => order.indexOf(status) >= order.indexOf("reviewed")).length,
+    mockReady: values.filter(({ status }) => status === "mock-ready").length,
+    average: scores.length
+      ? `${(scores.reduce((total, score) => total + score, 0) / scores.length).toFixed(1)}/10`
+      : "Sin notas",
+  };
+}
+
+function updateProgressOverviewStats() {
+  const metrics = getProgressMetrics(getTopicEntries());
+  Object.entries(metrics).forEach(([key, value]) => {
+    const target = phaseView?.querySelector(`[data-progress-stat="${key}"]`);
+    if (target) target.textContent = value;
+  });
+}
+
 function getTopicTemplateSections() {
   return materialsData?.myTopicProgress?.templateStructure || fallbackTopicTemplate;
 }
@@ -899,6 +1206,7 @@ function progressTopicMatches(entry, query) {
   const templateText = getTopicTemplateSections()
     .map((section) => [section.name, section.goal, section.check].join(" "))
     .join(" ");
+  const personal = getPersonalTopicProgress(entry.key, entry.topic);
   return normalize(
     [
       entry.key,
@@ -907,6 +1215,8 @@ function progressTopicMatches(entry, query) {
       state.myTopic?.progressLabel,
       state.fullExample?.label,
       state.memorySheet?.label,
+      getProgressStatusLabel(personal.status),
+      personal.score,
       templateText,
     ].join(" "),
   ).includes(query);
@@ -919,6 +1229,7 @@ function buildProgressOverview(entries) {
   const memoryReady = progress.memorySheetsAvailable ?? entries.filter(({ topic }) => getProgressState(topic).memorySheet).length;
   const total = progress.totalTopics ?? entries.length;
   const templateSections = getTopicTemplateSections();
+  const metrics = getProgressMetrics(entries);
 
   const block = createElement("article", "topic-block progress-overview");
   const header = createElement("header", "block-header");
@@ -926,15 +1237,19 @@ function buildProgressOverview(entries) {
 
   const dashboard = createElement("div", "progress-dashboard");
   [
-    ["Plantillas", `${templatesReady}/${total}`],
-    ["Estructura", `${templateSections.length} apartados`],
-    ["Mis versiones", `${progress.myVersionsComplete || 0} completas`],
-    ["Ejemplos", `${examplesReady} disponibles`],
-    ["Repasos", `${memoryReady} disponibles`],
-    ["Revisión", formatDate(progress.updatedAt)],
-  ].forEach(([label, value]) => {
+    ["Plantillas", `${templatesReady}/${total}`, "templates"],
+    ["Empezados", metrics.started, "started"],
+    ["Revisados", metrics.reviewed, "reviewed"],
+    ["Simulacros", metrics.mockReady, "mockReady"],
+    ["Nota media", metrics.average, "average"],
+    ["Ejemplos", `${examplesReady} · ${memoryReady} repasos`, "examples"],
+    ["Estructura", `${templateSections.length} apartados`, "structure"],
+    ["Revisión", formatDate(progress.updatedAt), "revision"],
+  ].forEach(([label, value, key]) => {
     const stat = createElement("span", "progress-stat");
-    stat.append(createElement("span", "progress-stat-label", label), createElement("strong", "", value));
+    const strong = createElement("strong", "", value);
+    strong.dataset.progressStat = key;
+    stat.append(createElement("span", "progress-stat-label", label), strong);
     dashboard.append(stat);
   });
 
@@ -976,6 +1291,7 @@ function buildTemplateGuide() {
 function buildProgressItem(entry) {
   const { key, topic } = entry;
   const state = getProgressState(topic);
+  const personal = getPersonalTopicProgress(key, topic);
   const item = createElement("li", "topic-item progress-item");
   item.dataset.studyKey = `progress:topic:${key}`;
 
@@ -993,13 +1309,23 @@ function buildProgressItem(entry) {
     kind: state.myTopic ? "is-done" : "is-pending",
     text: state.myTopic?.progressLabel || "Sin plantilla",
   });
-  chips.push({ kind: "is-pending", text: "Mi versión pendiente" });
+  chips.push({
+    kind: personal.status === "not-started" ? "is-pending" : "is-current",
+    text: getProgressStatusLabel(personal.status),
+    progress: true,
+  });
+  if (personal.score !== null) {
+    chips.push({ kind: "is-current", text: `${personal.score}/10`, score: true });
+  }
   if (state.fullExample) chips.push({ kind: "is-done", text: "Ejemplo completo" });
   if (state.memorySheet) chips.push({ kind: "is-done", text: "Repaso listo" });
   if (state.updatedAt) chips.push({ text: `Rev. ${formatDate(state.updatedAt)}` });
 
-  chips.forEach(({ text, kind }) => {
-    meta.append(createElement("span", kind ? `phase-meta-chip ${kind}` : "phase-meta-chip", text));
+  chips.forEach(({ text, kind, progress: isProgress, score: isScore }) => {
+    const chip = createElement("span", kind ? `phase-meta-chip ${kind}` : "phase-meta-chip", text);
+    if (isProgress) chip.dataset.progressStatusChip = "";
+    if (isScore) chip.dataset.progressScoreChip = "";
+    meta.append(chip);
   });
 
   const actions = createElement("span", "progress-actions");
@@ -1019,7 +1345,65 @@ function buildProgressItem(entry) {
     actions.append(link);
   });
 
-  panel.append(meta, actions);
+  const controls = createElement("span", "progress-controls");
+  const statusLabel = createElement("label", "progress-control");
+  statusLabel.append(createElement("span", "", "Estado"));
+  const statusSelect = document.createElement("select");
+  statusSelect.className = "progress-status-select";
+  statusSelect.setAttribute("aria-label", `Estado del tema ${key}`);
+  getProgressStatusOptions().forEach(({ value, label }) => {
+    statusSelect.append(createOption(value, label));
+  });
+  statusSelect.value = personal.status;
+  statusLabel.append(statusSelect);
+
+  const scoreLabel = createElement("label", "progress-control progress-score-control");
+  scoreLabel.append(createElement("span", "", "Nota /10"));
+  const scoreInput = document.createElement("input");
+  scoreInput.className = "progress-score-input";
+  scoreInput.type = "number";
+  scoreInput.min = "0";
+  scoreInput.max = "10";
+  scoreInput.step = "0.1";
+  scoreInput.inputMode = "decimal";
+  scoreInput.placeholder = "—";
+  scoreInput.value = personal.score ?? "";
+  scoreInput.setAttribute("aria-label", `Nota personal del tema ${key} sobre 10`);
+  scoreLabel.append(scoreInput);
+  controls.append(statusLabel, scoreLabel);
+
+  function persistProgress() {
+    const numericScore = scoreInput.value === "" ? null : Math.max(0, Math.min(10, Number(scoreInput.value)));
+    const savedScore = Number.isFinite(numericScore) ? numericScore : null;
+    savePersonalTopicProgress(key, {
+      status: statusSelect.value,
+      score: savedScore,
+    });
+    const statusChip = meta.querySelector("[data-progress-status-chip]");
+    if (statusChip) {
+      statusChip.textContent = getProgressStatusLabel(statusSelect.value);
+      statusChip.className = `phase-meta-chip ${statusSelect.value === "not-started" ? "is-pending" : "is-current"}`;
+    }
+    let scoreChip = meta.querySelector("[data-progress-score-chip]");
+    if (savedScore === null) {
+      scoreChip?.remove();
+    } else {
+      scoreInput.value = String(savedScore);
+      if (!scoreChip) {
+        scoreChip = createElement("span", "phase-meta-chip is-current");
+        scoreChip.dataset.progressScoreChip = "";
+        statusChip?.after(scoreChip);
+      }
+      scoreChip.textContent = `${savedScore}/10`;
+    }
+    updateProgressOverviewStats();
+    writeStudyState(item);
+  }
+
+  statusSelect.addEventListener("change", persistProgress);
+  scoreInput.addEventListener("change", persistProgress);
+
+  panel.append(meta, controls, actions);
   item.append(row, panel);
   return item;
 }
@@ -1086,8 +1470,21 @@ function getResourceMarker(resource) {
   return `T${themeNumbers.map((number) => number.padStart(2, "0")).join("/")}`;
 }
 
+function formatRelatedTopics(values) {
+  const topics = [...new Set((values || []).map(Number).filter(Boolean))].sort((a, b) => a - b);
+  if (!topics.length) return "";
+  if (topics.length === 1) return `Tema ${String(topics[0]).padStart(2, "0")}`;
+  const contiguous = topics.every((topic, index) => index === 0 || topic === topics[index - 1] + 1);
+  if (contiguous) {
+    return `Temas ${String(topics[0]).padStart(2, "0")}–${String(topics.at(-1)).padStart(2, "0")}`;
+  }
+  if (topics.length <= 4) return `Temas ${topics.map((topic) => String(topic).padStart(2, "0")).join(", ")}`;
+  return `${topics.length} temas relacionados`;
+}
+
 function getResourceDocumentTags(resource) {
   const rawText = [
+    resource.displayTitle,
     resource.title,
     resource.section,
     resource.type,
@@ -1114,6 +1511,7 @@ function getResourceDocumentTags(resource) {
     resource.sourceKind === "official-state" || text.includes("boe.es");
   const isRegionalGuide = resource.sourceKind === "regional-guide";
   const isArchive = resource.sourceKind === "archive-private";
+  const isPrivateStudy = resource.sourceKind === "private-study";
 
   if (isOfficialOtherRegion) {
     tags.push({ text: "Oficial otra CCAA", kind: "is-doc-tag is-official-other" });
@@ -1125,6 +1523,8 @@ function getResourceDocumentTags(resource) {
     tags.push({ text: "Guía curricular", kind: "is-doc-tag is-regional-guide" });
   } else if (isArchive) {
     tags.push({ text: "Archivo", kind: "is-doc-tag is-archive" });
+  } else if (isPrivateStudy) {
+    tags.push({ text: "Material privado", kind: "is-doc-tag is-private" });
   }
 
   const isRubric = text.includes("rubrica") || text.includes("criterios de valoracion");
@@ -1144,7 +1544,7 @@ function getResourceDocumentTags(resource) {
   if (isPractical) tags.push({ text: "Práctico", kind: "is-doc-tag is-practical" });
   if (isCriteria) tags.push({ text: "Criterios", kind: "is-doc-tag is-criteria" });
 
-  if (!isRubric && !isPractical && !isCriteria && !isArchive) {
+  if (!isRubric && !isPractical && !isCriteria && !isArchive && !isPrivateStudy) {
     tags.push({ text: "Referencia", kind: "is-doc-tag is-reference" });
   }
 
@@ -1153,11 +1553,14 @@ function getResourceDocumentTags(resource) {
 
 function getResourceMetaItems(resource) {
   const items = [...getResourceDocumentTags(resource)];
+  const relatedTopicLabel = formatRelatedTopics(resource.relatedTopics);
+  if (relatedTopicLabel) items.push({ text: relatedTopicLabel, kind: "is-related" });
   if (resource.topic && resource.topic !== "General") items.push({ text: resource.topic });
   if (resource.academy) items.push({ text: resource.academy });
   if (resource.type) items.push({ text: resource.type });
   if (resource.area) items.push({ text: resource.area });
   if (resource.officialDate) items.push({ text: resource.officialDate });
+  else if (resource.publicationYear) items.push({ text: String(resource.publicationYear) });
   if (resource.status) {
     items.push({
       text: resource.status,
@@ -1185,6 +1588,7 @@ function buildTrendOverview(phase, trends) {
   const sources = phase.sourceYears || [];
   const totalYears = new Set(sources.map((source) => source.year)).size;
   const maxScore = Math.max(...trends.map((trend) => trend.score || 0), 0);
+  const scope = phase.analysisScope || {};
 
   const block = createElement("article", "topic-block trend-overview");
   const header = createElement("header", "block-header");
@@ -1192,10 +1596,11 @@ function buildTrendOverview(phase, trends) {
 
   const dashboard = createElement("div", "progress-dashboard trend-dashboard");
   [
-    ["Años oficiales", totalYears],
+    ["Muestra oficial", `${scope.sampleSize || totalYears} convocatorias`],
+    ["Años", (scope.years || [...new Set(sources.map((source) => source.year))]).join(" · ")],
+    ["Confianza", scope.confidence || "Orientativa"],
     ["Áreas críticas", trends.filter((trend) => trend.priority?.includes("Muy alta")).length],
     ["Máxima frecuencia", `${maxScore} evidencias`],
-    ["Otras CCAA", "0"],
   ].forEach(([label, value]) => {
     const stat = createElement("span", "progress-stat");
     stat.append(createElement("span", "progress-stat-label", label), createElement("strong", "", value));
@@ -1205,7 +1610,7 @@ function buildTrendOverview(phase, trends) {
   const note = createElement(
     "p",
     "trend-note",
-    phase.description || "Cruce de prácticos oficiales localizados.",
+    scope.note || phase.description || "Cruce de prácticos oficiales localizados.",
   );
   const body = createElement("div", "trend-overview-body");
   body.append(dashboard, note);
@@ -1490,7 +1895,9 @@ function buildResourceItem(resource) {
   if (!marker) item.classList.add("topic-item-no-marker");
   const number = marker ? createElement("span", "topic-number phase-marker", marker) : null;
   if (number && resource.topic && resource.topic !== "General") number.title = resource.topic;
-  const title = createElement("span", "searchable-title", resource.title);
+  const displayTitle = resource.displayTitle || resource.title;
+  const title = createElement("span", "searchable-title", displayTitle);
+  if (resource.originalTitle) title.title = `Archivo original: ${resource.originalTitle}`;
   if (number) row.append(number);
   row.append(title);
 
@@ -1509,8 +1916,8 @@ function buildResourceItem(resource) {
   if (resource.hasPublicLink && resource.url) {
     openLink.href = resource.url;
     openLink.textContent = getOpenLinkText(resource);
-    openLink.title = resource.title;
-    openLink.setAttribute("aria-label", `Abrir ${resource.title}`);
+    openLink.title = resource.originalTitle || resource.title;
+    openLink.setAttribute("aria-label", `Abrir ${displayTitle}`);
   } else {
     openLink.textContent = "Pendiente";
     openLink.setAttribute("aria-disabled", "true");
@@ -1522,6 +1929,70 @@ function buildResourceItem(resource) {
   }
   item.append(row, panel);
   return item;
+}
+
+function daysSince(value) {
+  const date = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return null;
+  return Math.floor((Date.now() - date.getTime()) / 86400000);
+}
+
+function buildFreshnessBand() {
+  const verifiedAt = phasesData?.verifiedAt;
+  const age = daysSince(verifiedAt);
+  const isStale = age !== null && age > 14;
+  const band = createElement("section", `freshness-band${isStale ? " is-stale" : ""}`);
+  band.dataset.studyKey = "news:freshness";
+  const copy = createElement("div", "freshness-copy");
+  copy.append(
+    createElement("p", "", isStale ? "Revisión pendiente" : "Seguimiento al día"),
+    createElement(
+      "strong",
+      "",
+      isStale
+        ? `Han pasado ${age} días desde la comprobación oficial`
+        : `Comprobado el ${formatDate(verifiedAt)}`,
+    ),
+    createElement(
+      "span",
+      "",
+      isStale
+        ? "Contrasta CARM antes de tomar decisiones sobre plazos o instancia."
+        : "La web avisa automáticamente cuando esta revisión supera 14 días.",
+    ),
+  );
+  const link = document.createElement("a");
+  link.className = "material-link freshness-link";
+  link.href = "https://www.carm.es/web/pagina?IDCONTENIDO=3977&IDTIPO=100&RASTRO=c798%24m";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = "CARM";
+  band.append(copy, link);
+  return band;
+}
+
+function buildModuleContextBand() {
+  const module = phasesData?.selectedModule || {};
+  const band = createElement("section", "module-context-band");
+  band.dataset.studyKey = "normativa:module-context";
+  const header = createElement("div", "module-context-header");
+  header.append(
+    createElement("p", "", `Contexto ${module.planning_course || "2026/2027"}`),
+    createElement("h2", "", `DAW · ${module.code || "0373"} · ${module.module || "Lenguajes de marcas"}`),
+  );
+  const facts = createElement("div", "module-context-facts");
+  [
+    ["Curso", module.course],
+    ["Carga oficial", module.current_total_hours],
+    ["Plan semanal", "4 h · por confirmar"],
+  ].forEach(([label, value]) => {
+    const fact = createElement("span", "module-context-fact");
+    fact.append(createElement("span", "", label), createElement("strong", "", value));
+    facts.append(fact);
+  });
+  const note = createElement("p", "module-context-note", module.hours_note || "");
+  band.append(header, facts, note);
+  return band;
 }
 
 function renderSelectedPhase() {
@@ -1539,9 +2010,20 @@ function renderSelectedPhase() {
     return;
   }
 
-  const resources = (phase.resources || []).filter((resource) => resourceMatches(resource, query));
+  const allResources = phase.resources || [];
+  const filters = getPhaseResourceFilters(phase.id);
+  const resources = allResources.filter(
+    (resource) => resourceMatches(resource, query) && resourceMatchesFacetFilters(resource, filters),
+  );
   const groups = groupResourcesBySection(resources);
   const fragment = document.createDocumentFragment();
+
+  if (phase.id === "98_Novedades_y_publicaciones") fragment.append(buildFreshnessBand());
+  if (phase.id === "00_Normativa_y_orden_legal") fragment.append(buildModuleContextBand());
+
+  if (allResources.length >= 20) {
+    fragment.append(buildResourceFilterBand(phase, allResources, resources.length));
+  }
 
   if (!resources.length) {
     const block = createElement("article", "topic-block");
@@ -1600,7 +2082,7 @@ function filterTopics() {
 
   if (rubricBlock) rubricBlock.hidden = visibleRubrics === 0;
 
-  updateTopicCount(visibleTopics, visibleRubrics);
+  updateTopicCount(visibleTopics, query ? visibleRubrics : 0);
   if (emptyState) emptyState.hidden = visibleTopics !== 0 || visibleRubrics !== 0;
 }
 
@@ -1655,6 +2137,10 @@ initializeStudyView();
 themeToggle?.addEventListener("click", () => {
   const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
   setTheme(nextTheme);
+});
+
+rubricToggle?.addEventListener("click", () => {
+  setRubricExpanded(rubricToggle.getAttribute("aria-expanded") !== "true");
 });
 
 phaseSelect?.addEventListener("change", () => {
