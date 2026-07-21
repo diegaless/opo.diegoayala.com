@@ -12,7 +12,10 @@ una guia curricular identificada expresamente como no oficial. Los documentos
 privados del preparador se muestran como material privado, sin atribuirles
 vigencia tecnica.
 
-La interfaz separa temario, fases y seguimiento personal. Las vistas con mucho
+La Parte B integra primero el temario oficial compacto de 74 temas y deja al
+final solo criterios, introducciones y esquemas que no estan ya en los
+selectores de academias. El resto de fases y el seguimiento personal se
+mantienen como vistas independientes. Las vistas con mucho
 material incluyen filtros por area, tema relacionado, procedencia, tipo, caracter, ano
 y existencia de solucion. El estado de estudio, la nota personal, la ultima
 vista, los filtros y la posicion de lectura se guardan solo en `localStorage`.
@@ -33,13 +36,13 @@ Dominio previsto:
 Comprobacion local estricta, incluida la antiguedad de la revision oficial:
 
 ```bash
-python3 scripts/audit_data.py --max-review-age 14 --fail-on-warning
+python3 scripts/audit_data.py --max-review-age 14 --fail-on-warning --strict-global-drive-ids
 ```
 
 Comprobacion completa de enlaces y permisos de Drive:
 
 ```bash
-python3 scripts/audit_data.py --check-links --http-timeout 20 --max-review-age 14 --fail-on-warning
+python3 scripts/audit_data.py --check-links --http-timeout 20 --max-review-age 14 --fail-on-warning --strict-global-drive-ids
 ```
 
 La auditoria falla si hay recursos pendientes, IDs duplicados dentro de una
@@ -47,8 +50,8 @@ misma vista, enlaces Drive no accesibles con `rclone`, enlaces externos rotos,
 fuentes sin procedencia o fecha de revision, material de otra comunidad en la
 vista normativa, titulos del temario distintos al BOE, metadatos de curacion
 incompletos, relaciones tematicas fuera del rango 1-74 o contadores
-descuadrados. Un mismo archivo puede aparecer de forma intencionada en varias
-vistas; esa reutilizacion se informa, pero no se considera un duplicado.
+descuadrados o archivos del temario reutilizados de forma redundante en otras
+vistas.
 
 En la comprobacion completa, `rclone` lee tambien los metadatos de permisos y
 falla si un archivo enlazado tiene acceso publico, de dominio o de otra cuenta:

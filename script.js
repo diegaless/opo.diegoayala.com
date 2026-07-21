@@ -23,6 +23,7 @@ const rubricItems = [...document.querySelectorAll("[data-rubric-item]")];
 const rubricToggle = document.querySelector("[data-rubric-toggle]");
 const materialsUrl = "data/materials.json";
 const phasesUrl = "data/phases.json";
+const partBPhaseId = "01_Primera_prueba_B_Tema_escrito";
 const studyStateKey = "opo-study-state-v1";
 const collapsedBlocksKey = "opo-collapsed-blocks-v1";
 const rubricExpandedKey = "opo-rubric-expanded-v1";
@@ -287,10 +288,13 @@ function readStudyState() {
   }
 }
 
+function getActiveViewContainers() {
+  const views = currentView === "topics" ? [topicView, phaseView] : [phaseView];
+  return views.filter((view) => view && !view.hidden);
+}
+
 function getVisibleStudyItems() {
-  const view = currentView === "topics" ? topicView : phaseView;
-  if (!view || view.hidden) return [];
-  return [...view.querySelectorAll("[data-study-key]")].filter((item) => {
+  return getActiveViewContainers().flatMap((view) => [...view.querySelectorAll("[data-study-key]")]).filter((item) => {
     const rect = item.getBoundingClientRect();
     return !item.hidden && rect.width > 0 && rect.height > 0;
   });
@@ -357,11 +361,12 @@ function scrollImmediately(top) {
 
 async function restoreStudyState() {
   const state = readStudyState();
-  const hasView = state?.view && [...phaseSelect.options].some((option) => option.value === state.view);
+  const savedView = state?.view === partBPhaseId ? "topics" : state?.view;
+  const hasView = savedView && [...phaseSelect.options].some((option) => option.value === savedView);
   let restoredItem = null;
 
   if (hasView) {
-    currentView = state.view;
+    currentView = savedView;
     phaseSelect.value = currentView;
     searchInput.value = typeof state.search === "string" ? state.search : "";
     renderCurrentView();
@@ -399,20 +404,18 @@ function updateCount(visible, type = "temas") {
   countOutput.textContent = visible === 1 ? `1 ${singular}` : `${visible} ${type}`;
 }
 
-function updateTopicCount(visibleTopics, visibleRubrics) {
+function updatePartBCount(visibleTopics, visibleRubrics, visibleResources, hasQuery) {
   if (!countOutput) return;
-
-  if (visibleRubrics > 0 && visibleTopics > 0) {
-    countOutput.textContent = `${visibleTopics} temas · ${visibleRubrics} rúbricas`;
+  if (!hasQuery) {
+    countOutput.textContent = `${visibleTopics} temas · ${visibleResources} complementos`;
     return;
   }
 
-  if (visibleRubrics > 0) {
-    countOutput.textContent = visibleRubrics === 1 ? "1 rúbrica" : `${visibleRubrics} rúbricas`;
-    return;
-  }
-
-  updateCount(visibleTopics);
+  const parts = [];
+  if (visibleTopics) parts.push(visibleTopics === 1 ? "1 tema" : `${visibleTopics} temas`);
+  if (visibleRubrics) parts.push(visibleRubrics === 1 ? "1 criterio" : `${visibleRubrics} criterios`);
+  if (visibleResources) parts.push(visibleResources === 1 ? "1 complemento" : `${visibleResources} complementos`);
+  countOutput.textContent = parts.join(" · ") || "0 resultados";
 }
 
 function getTopicKey(topic) {
@@ -571,6 +574,17 @@ async function jumpToTopicBlock(block) {
   block.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+async function jumpToPartBResources() {
+  if (searchInput?.value) {
+    searchInput.value = "";
+    renderCurrentView();
+    writeStudyState();
+  }
+  closeModal(indexDialog);
+  await afterNextPaint();
+  phaseView?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function setupTopicNavigation() {
   if (!indexList) return;
   const collapsed = readCollapsedBlocks();
@@ -634,6 +648,18 @@ function setupTopicNavigation() {
     fragment.append(indexItem);
   });
 
+  const resourcesIndexItem = createElement("button", "quick-index-item");
+  resourcesIndexItem.type = "button";
+  resourcesIndexItem.dataset.indexPartBResources = "";
+  resourcesIndexItem.append(
+    createElement("span", "quick-index-item-label", "Complementos Parte B"),
+    createElement("strong", "", "Criterios, introducciones y esquemas"),
+    createElement("span", "quick-index-item-range", "Recursos únicos"),
+  );
+  resourcesIndexItem.querySelector(".quick-index-item-range").dataset.partBResourceCount = "";
+  resourcesIndexItem.addEventListener("click", jumpToPartBResources);
+  fragment.append(resourcesIndexItem);
+
   indexList.replaceChildren(fragment);
   applyBlockCollapseState();
   updateRubricCollapseState();
@@ -657,6 +683,13 @@ function updateReadingPosition() {
   blocks.forEach((block) => block.querySelector(".block-header")?.classList.remove("is-current"));
   indexList?.querySelectorAll("[aria-current]").forEach((item) => item.removeAttribute("aria-current"));
   if (currentView !== "topics") return;
+
+  const readingLine = Math.min(window.innerHeight * 0.42, 360);
+  const resourcesRect = phaseView?.getBoundingClientRect();
+  if (resourcesRect && !phaseView.hidden && resourcesRect.top <= readingLine && resourcesRect.bottom > readingLine) {
+    indexList?.querySelector("[data-index-part-b-resources]")?.setAttribute("aria-current", "true");
+    return;
+  }
 
   const topic = getReadingTopic();
   const block = topic?.closest("[data-block]");
@@ -699,9 +732,10 @@ function highlightSearchText(element, query) {
 
 function applySearchHighlights() {
   const query = searchInput?.value.trim() || "";
-  const view = currentView === "topics" ? topicView : phaseView;
-  view?.querySelectorAll(".searchable-title").forEach((element) => {
-    highlightSearchText(element, query);
+  getActiveViewContainers().forEach((view) => {
+    view.querySelectorAll(".searchable-title").forEach((element) => {
+      highlightSearchText(element, query);
+    });
   });
 }
 
@@ -866,6 +900,7 @@ async function loadPhases() {
     phasesData = await response.json();
     renderPhaseOptions();
     buildTopicPracticeControls();
+    if (currentView === "topics") renderCurrentView();
   } catch (error) {
     console.warn(error);
   }
@@ -887,7 +922,6 @@ function renderPhaseOptions() {
         ["02_Primera_prueba_A_Practico", "Parte A · Prueba práctica"],
         ["97_Que_cae_mas", "Parte A · Qué cae más"],
         ["96_Practicos_soluciones_codex", "Parte A · Guías y soluciones propias"],
-        ["01_Primera_prueba_B_Tema_escrito", "Parte B · Tema escrito"],
       ],
     },
     {
@@ -912,7 +946,7 @@ function renderPhaseOptions() {
     },
   ];
   const phasesById = new Map(phasesData.phases.map((phase) => [phase.id, phase]));
-  const renderedIds = new Set();
+  const renderedIds = new Set([partBPhaseId]);
 
   phaseGroups.forEach((phaseGroup) => {
     const group = document.createElement("optgroup");
@@ -1985,33 +2019,59 @@ function buildModuleContextBand() {
   return band;
 }
 
-function renderSelectedPhase() {
-  if (!phaseView) return;
-  const phase = getSelectedPhase();
-  if (!phase) return;
+function buildPartBResourcesHeading(resourceCount) {
+  const heading = createElement("header", "view-section-heading part-b-resources-heading");
+  const copy = document.createElement("div");
+  copy.append(
+    createElement("p", "", "Parte B · Material complementario"),
+    createElement("h2", "", "Criterios, introducciones y esquemas"),
+  );
+  heading.append(copy, createElement("span", "", `${resourceCount} recursos únicos`));
+  heading.dataset.studyKey = "topics:part-b-resources";
+  return heading;
+}
+
+function renderResourcePhase(phase, { embeddedInPartB = false } = {}) {
+  if (!phaseView || !phase) return 0;
 
   const query = normalize(searchInput?.value.trim() || "");
-  if (phase.trendAreas) {
+  if (!embeddedInPartB && phase.trendAreas) {
     renderTrendView(phase, query);
-    return;
+    return 0;
   }
-  if (phase.practiceGuides) {
+  if (!embeddedInPartB && phase.practiceGuides) {
     renderPracticeGuides(phase, query);
-    return;
+    return 0;
   }
 
   const allResources = phase.resources || [];
-  const filters = getPhaseResourceFilters(phase.id);
+  const filters = embeddedInPartB ? {} : getPhaseResourceFilters(phase.id);
   const resources = allResources.filter(
     (resource) => resourceMatches(resource, query) && resourceMatchesFacetFilters(resource, filters),
   );
   const groups = groupResourcesBySection(resources);
   const fragment = document.createDocumentFragment();
 
+  phaseView.classList.toggle("part-b-supplements", embeddedInPartB);
+  phaseView.setAttribute(
+    "aria-label",
+    embeddedInPartB ? "Material complementario de la Parte B" : "Recursos por fase",
+  );
+
+  if (embeddedInPartB && query && !resources.length) {
+    phaseView.replaceChildren();
+    phaseView.hidden = true;
+    return 0;
+  }
+
+  phaseView.hidden = false;
+
+  if (embeddedInPartB) fragment.append(buildPartBResourcesHeading(allResources.length));
+
   if (phase.id === "98_Novedades_y_publicaciones") fragment.append(buildFreshnessBand());
   if (phase.id === "00_Normativa_y_orden_legal") fragment.append(buildModuleContextBand());
 
-  if (allResources.length >= 20) {
+  if (!embeddedInPartB && allResources.length >= 20) {
     fragment.append(buildResourceFilterBand(phase, allResources, resources.length));
   }
 
@@ -2042,8 +2102,26 @@ function renderSelectedPhase() {
   }
 
   phaseView.replaceChildren(fragment);
-  updateCount(resources.length, phase.id === "98_Novedades_y_publicaciones" ? "novedades" : "recursos");
-  if (emptyState) emptyState.hidden = true;
+  if (!embeddedInPartB) {
+    updateCount(resources.length, phase.id === "98_Novedades_y_publicaciones" ? "novedades" : "recursos");
+    if (emptyState) emptyState.hidden = true;
+  }
+  return resources.length;
+}
+
+function renderPartBResources() {
+  const phase = phasesData?.phases?.find((item) => item.id === partBPhaseId);
+  if (!phase) {
+    phaseView?.replaceChildren();
+    return 0;
+  }
+  const indexCount = indexList?.querySelector("[data-part-b-resource-count]");
+  if (indexCount) indexCount.textContent = `${phase.resources.length} recursos únicos`;
+  return renderResourcePhase(phase, { embeddedInPartB: true });
+}
+
+function renderSelectedPhase() {
+  return renderResourcePhase(getSelectedPhase());
 }
 
 function filterTopics() {
@@ -2071,21 +2149,33 @@ function filterTopics() {
   });
 
   if (rubricBlock) rubricBlock.hidden = visibleRubrics === 0;
-
-  updateTopicCount(visibleTopics, query ? visibleRubrics : 0);
-  if (emptyState) emptyState.hidden = visibleTopics !== 0 || visibleRubrics !== 0;
+  topicView.hidden = Boolean(query) && visibleTopics === 0 && visibleRubrics === 0;
+  return { visibleTopics, visibleRubrics: query ? visibleRubrics : 0, hasQuery: Boolean(query) };
 }
 
 function renderCurrentView() {
   if (currentView === "topics") {
     topicView.hidden = false;
-    phaseView.hidden = true;
-    searchInput.placeholder = "Buscar tema...";
-    filterTopics();
+    phaseView.hidden = false;
+    searchInput.placeholder = "Buscar tema, criterio o introducción...";
+    const topicResult = filterTopics();
+    const visibleResources = renderPartBResources();
+    updatePartBCount(
+      topicResult.visibleTopics,
+      topicResult.visibleRubrics,
+      visibleResources,
+      topicResult.hasQuery,
+    );
+    if (emptyState) {
+      emptyState.textContent = "No hay temas ni complementos que coincidan con la búsqueda.";
+      emptyState.hidden = topicResult.visibleTopics + topicResult.visibleRubrics + visibleResources !== 0;
+    }
     finalizeViewRender();
     return;
   }
 
+  phaseView.classList.remove("part-b-supplements");
+  phaseView.setAttribute("aria-label", "Recursos por fase");
   if (currentView === "progress") {
     topicView.hidden = true;
     phaseView.hidden = false;

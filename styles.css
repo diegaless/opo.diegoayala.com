@@ -700,6 +700,57 @@ p {
   font-weight: 700;
 }
 
+.view-section-heading {
+  display: flex;
+  min-width: 0;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px 24px;
+  border-bottom: 1px solid var(--line);
+  padding: 2px 0 18px;
+}
+
+.view-section-heading > div {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+}
+
+.view-section-heading p,
+.view-section-heading h2,
+.view-section-heading > span {
+  margin: 0;
+}
+
+.view-section-heading p {
+  color: var(--accent);
+  font-size: 0.66rem;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+.view-section-heading h2 {
+  color: var(--ink);
+  font-size: 1.5rem;
+  font-weight: 360;
+  line-height: 1.15;
+}
+
+.view-section-heading > span {
+  flex: 0 0 auto;
+  color: var(--quiet);
+  font-size: 0.7rem;
+  font-weight: 740;
+  text-transform: uppercase;
+}
+
+.part-b-supplements {
+  margin-top: 56px;
+  scroll-margin-top: calc(var(--block-sticky-offset) + 12px);
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+
 .resource-filter-band,
 .freshness-band,
 .module-context-band {
@@ -1675,6 +1726,25 @@ p {
 
   .summary-links {
     justify-content: flex-start;
+  }
+
+  .view-section-heading {
+    display: grid;
+    align-items: start;
+    padding-bottom: 14px;
+  }
+
+  .view-section-heading h2 {
+    font-size: 1.28rem;
+  }
+
+  .view-section-heading > span {
+    justify-self: start;
+  }
+
+  .part-b-supplements {
+    margin-top: 36px;
+    padding-top: 18px;
   }
 
   .search-panel {

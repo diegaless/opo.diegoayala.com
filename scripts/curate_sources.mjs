@@ -5,6 +5,7 @@ import { readFile, writeFile } from "node:fs/promises";
 const VERIFIED_AT = "2026-07-21";
 const PHASES_PATH = new URL("../data/phases.json", import.meta.url);
 const MATERIALS_PATH = new URL("../data/materials.json", import.meta.url);
+const PART_B_PHASE_ID = "01_Primera_prueba_B_Tema_escrito";
 
 const BLOCK_EXAMPLE_DOCS = [
   {
@@ -558,9 +559,25 @@ async function main() {
   normativa.resources = [...legalSources.map(sourceResource), ...archiveResources];
 
   const writtenTopic = phasesData.phases.find(
-    (phase) => phase.id === "01_Primera_prueba_B_Tema_escrito",
+    (phase) => phase.id === PART_B_PHASE_ID,
   );
   writtenTopic.title = "Primera prueba - Parte B: Desarrollo por escrito de un tema";
+  writtenTopic.description =
+    "La vista comienza con los 74 temas oficiales en formato compacto y termina con criterios, introducciones y esquemas que no están ya en el selector de academias.";
+  writtenTopic.embeddedTopicCatalog = {
+    source: "data/materials.json",
+    position: "before-complements",
+    topicCount: Object.keys(materialsData.topics || {}).length,
+  };
+  const compactTopicDriveIds = new Set(
+    Object.values(materialsData.topics || {})
+      .flatMap((topic) => topic.materials || [])
+      .map((material) => material.driveFileId)
+      .filter(Boolean),
+  );
+  writtenTopic.resources = (writtenTopic.resources || []).filter(
+    (resource) => !resource.driveFileId || !compactTopicDriveIds.has(resource.driveFileId),
+  );
 
   const trends = phasesData.phases.find((phase) => phase.id === "97_Que_cae_mas");
   trends.analysisScope = {

@@ -49,6 +49,7 @@ HTTP_OK = range(200, 400)
 CANONICAL_TOPIC_SHA256 = "1c36b01723937e2065a09c1a5b7db0c644b0f82e9a84b4ae0307ca940a9de913"
 CANONICAL_TOPIC_SOURCE = "BOE-A-1996-3102, suplemento del BOE n.º 38 de 13/02/1996"
 OFFICIAL_WRITTEN_TOPIC_TITLE = "Primera prueba - Parte B: Desarrollo por escrito de un tema"
+PART_B_PHASE_ID = "01_Primera_prueba_B_Tema_escrito"
 ORGANIZATIONAL_MODULE_REFERENCE_URL = (
     "https://www.llegarasalto.com/wp-content/uploads/2025/11/"
     "TABLAS-HORARIAS-GS-NOVIEMBRE_2025.pdf"
@@ -417,6 +418,67 @@ def validate_exam_and_module_metadata(phases_data: dict[str, Any], audit: Audit)
             "module.attribution.missing",
             "data/phases.json.legalSources",
             "Missing RD 500/2024, which assigns module 0373 to Informática",
+        )
+
+
+def validate_part_b_compaction(
+    materials_data: dict[str, Any], phases_data: dict[str, Any], audit: Audit
+) -> None:
+    topics = materials_data.get("topics") or {}
+    phase = next(
+        (
+            item
+            for item in phases_data.get("phases") or []
+            if isinstance(item, dict) and item.get("id") == PART_B_PHASE_ID
+        ),
+        {},
+    )
+    catalog = phase.get("embeddedTopicCatalog") or {}
+    if catalog.get("source") != "data/materials.json":
+        audit.error(
+            "part_b.catalog.source",
+            f"phases.{PART_B_PHASE_ID}.embeddedTopicCatalog",
+            "Part B must use data/materials.json as its compact topic catalog",
+        )
+    if catalog.get("position") != "before-complements":
+        audit.error(
+            "part_b.catalog.position",
+            f"phases.{PART_B_PHASE_ID}.embeddedTopicCatalog",
+            "The compact official syllabus must appear before complementary resources",
+        )
+    if catalog.get("topicCount") != len(topics):
+        audit.error(
+            "part_b.catalog.count",
+            f"phases.{PART_B_PHASE_ID}.embeddedTopicCatalog",
+            f"Expected {len(topics)} embedded topics, found {catalog.get('topicCount')}",
+        )
+
+    material_drive_ids = {
+        material.get("driveFileId")
+        for topic in topics.values()
+        if isinstance(topic, dict)
+        for material in topic.get("materials") or []
+        if isinstance(material, dict) and material.get("driveFileId")
+    }
+    repeated = []
+    for index, resource in enumerate(phase.get("resources") or []):
+        drive_id = resource.get("driveFileId") if isinstance(resource, dict) else None
+        if drive_id and drive_id in material_drive_ids:
+            repeated.append((index, drive_id))
+    if repeated:
+        audit.error(
+            "part_b.resource.redundant",
+            f"phases.{PART_B_PHASE_ID}.resources",
+            f"{len(repeated)} resources already exist in the compact official syllabus",
+        )
+
+    audit.stats["part_b_complements"] = len(phase.get("resources") or [])
+    html = INDEX_HTML.read_text(encoding="utf-8") if INDEX_HTML.exists() else ""
+    if "Parte B · Tema escrito" not in html or "Temario oficial" not in html:
+        audit.error(
+            "part_b.view.missing",
+            "index.html",
+            "The main Part B view must identify the compact official syllabus",
         )
 
 
@@ -1226,6 +1288,7 @@ def print_report(audit: Audit) -> None:
     )
     print(f"- phases: {audit.stats['phases']}")
     print(f"- phase resources: {audit.stats['phase_resources']}")
+    print(f"- Part B unique complements: {audit.stats['part_b_complements']}")
     print(f"- practical solution guides: {audit.stats['practice_guides']}")
     print(
         "- sourced references: "
@@ -1311,6 +1374,7 @@ def main() -> int:
     validate_index_topics(materials, audit, args.expected_topics)
     validate_revision_metadata(materials, phases, audit)
     validate_exam_and_module_metadata(phases, audit)
+    validate_part_b_compaction(materials, phases, audit)
     collect_index_urls(audit)
     validate_cross_view_duplicates(audit, strict=args.strict_global_drive_ids)
 
