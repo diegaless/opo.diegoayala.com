@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#050607">
     <meta
       name="description"
       content="Temario y recursos por fase de la oposición de Informática en Murcia."
@@ -16,40 +18,13 @@
     <meta name="last-reviewed" content="2026-07-21">
     <title>Oposición Informática Murcia | Diego Ayala</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <script>
-      const savedTheme = localStorage.getItem("theme");
-      document.documentElement.dataset.theme = savedTheme || "dark";
-    </script>
-    <script src="script.js?v=20260721-content-tools-v8" defer></script>
-    <link rel="stylesheet" href="styles.css?v=20260721-content-tools-v8">
+    <script src="script.js?v=20260721-dark-only-v9" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260721-dark-only-v9">
   </head>
   <body>
     <a class="skip-link" href="#content">Saltar al contenido</a>
     <header class="site-header">
       <a class="site-name" href="./" aria-label="Inicio">Diego Ayala</a>
-      <button
-        class="theme-toggle"
-        type="button"
-        data-theme-toggle
-        aria-label="Activar modo claro"
-        aria-pressed="true"
-        title="Cambiar tema"
-      >
-        <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
-          <path d="M20.4 15.8A8.5 8.5 0 0 1 8.2 3.6 8.5 8.5 0 1 0 20.4 15.8z"></path>
-        </svg>
-        <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2"></path>
-          <path d="M12 20v2"></path>
-          <path d="M4.93 4.93 6.34 6.34"></path>
-          <path d="M17.66 17.66 19.07 19.07"></path>
-          <path d="M2 12h2"></path>
-          <path d="M20 12h2"></path>
-          <path d="M6.34 17.66 4.93 19.07"></path>
-          <path d="M19.07 4.93 17.66 6.34"></path>
-        </svg>
-      </button>
     </header>
 
     <main id="content" class="page-main" aria-labelledby="page-title">

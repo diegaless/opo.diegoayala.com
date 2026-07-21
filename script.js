@@ -1,5 +1,4 @@
 const root = document.documentElement;
-const themeToggle = document.querySelector("[data-theme-toggle]");
 const searchInput = document.querySelector("[data-search]");
 const searchClear = document.querySelector("[data-search-clear]");
 const countOutput = document.querySelector("[data-count]");
@@ -77,15 +76,6 @@ let readingPositionFrame = null;
 let resourceFilters = readStoredObject(resourceFiltersKey);
 let personalProgress = readStoredObject(personalProgressKey);
 let rubricExpandedSession = null;
-
-function setTheme(theme) {
-  root.dataset.theme = theme;
-  localStorage.setItem("theme", theme);
-
-  const isDark = theme === "dark";
-  themeToggle?.setAttribute("aria-label", isDark ? "Activar modo claro" : "Activar modo oscuro");
-  themeToggle?.setAttribute("aria-pressed", String(isDark));
-}
 
 function normalize(value) {
   return value
@@ -2131,13 +2121,7 @@ async function initializeStudyView() {
   await restoreStudyState();
 }
 
-setTheme(root.dataset.theme || "dark");
 initializeStudyView();
-
-themeToggle?.addEventListener("click", () => {
-  const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-  setTheme(nextTheme);
-});
 
 rubricToggle?.addEventListener("click", () => {
   setRubricExpanded(rubricToggle.getAttribute("aria-expanded") !== "true");
