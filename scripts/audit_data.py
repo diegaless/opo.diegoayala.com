@@ -1598,13 +1598,50 @@ def check_one_http_url(url: str, timeout: float, attempts: int = 2) -> tuple[boo
     return False, last
 
 
+def is_known_automation_block(url: str, detail: str) -> bool:
+    """Separate anti-bot/network blocks from definitive broken-link responses."""
+    host = url_host(url)
+    normalized_detail = detail.lower()
+    if host_matches(host, {"linkedin.com"}):
+        return detail in {"HTTP 403", "HTTP 429", "HTTP 999"}
+    if host_matches(host, {"boe.es"}):
+        return any(
+            marker in normalized_detail
+            for marker in (
+                "timed out",
+                "timeouterror",
+                "connection reset",
+                "temporary failure",
+            )
+        )
+    return False
+
+
 def check_http(audit: Audit, timeout: float) -> None:
     urls = sorted(url for url in audit.http_urls if url.startswith(("http://", "https://")))
     audit.stats["http_urls_checked"] = len(urls)
+    blocked_hosts: set[str] = set()
     for url in urls:
-        ok, detail = check_one_http_url(url, timeout)
+        host = url_host(url)
+        if host in blocked_hosts:
+            audit.stats["http_urls_inconclusive"] += 1
+            continue
+        automation_prone = host_matches(host, {"boe.es", "linkedin.com"})
+        ok, detail = check_one_http_url(
+            url,
+            min(timeout, 8) if automation_prone else timeout,
+            attempts=1 if automation_prone else 2,
+        )
         if not ok:
-            audit.error("http.url.broken", audit.http_urls[url][0], f"{url} failed: {detail}")
+            if is_known_automation_block(url, detail):
+                audit.stats["http_urls_inconclusive"] += 1
+                blocked_hosts.add(host)
+            else:
+                audit.error(
+                    "http.url.broken",
+                    audit.http_urls[url][0],
+                    f"{url} failed: {detail}",
+                )
 
 
 def print_report(audit: Audit) -> None:
@@ -1660,7 +1697,11 @@ def print_report(audit: Audit) -> None:
             f"{audit.stats['drive_folders_checked']} folders listed"
         )
     if audit.stats["http_urls_checked"]:
-        print(f"- HTTP check: {audit.stats['http_urls_checked']} non-Drive URLs checked")
+        print(
+            "- HTTP check: "
+            f"{audit.stats['http_urls_checked']} non-Drive URLs checked, "
+            f"{audit.stats['http_urls_inconclusive']} automation-blocked"
+        )
 
     if audit.findings:
         print()
