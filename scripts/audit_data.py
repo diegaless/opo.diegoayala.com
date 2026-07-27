@@ -67,6 +67,10 @@ VALID_SOURCE_KINDS = {
 }
 VALID_STATUS_KINDS = {"archive", "current", "done", "historical", "pending", "verified"}
 VALID_PROGRESS_STATUSES = {"not-started", "draft", "reviewed", "memorizable", "mock-ready"}
+PRO_EXAMPLE_FORMATS = {
+    "tema-pro-pdf": (".pdf", "drive-pdf-preview"),
+    "tema-pro-word": (".docx", "drive-file-view"),
+}
 OFFICIAL_HOSTS = {
     "boe.es",
     "borm.es",
@@ -901,6 +905,7 @@ def validate_materials(materials: dict[str, Any], audit: Audit, expected_topics:
                 f"Expected one private editable topic, found {academy_counts['Mi temario']}",
             )
 
+        pro_example_counts: Counter[str] = Counter()
         for index, material in enumerate(materials_list):
             item_location = f"{location}.materials[{index}]"
             if not isinstance(material, dict):
@@ -942,12 +947,6 @@ def validate_materials(materials: dict[str, Any], audit: Audit, expected_topics:
                         "My topic has no valid initialStudyStatus",
                     )
             if material.get("academy") == "Ejemplos míos":
-                if material.get("urlMode") != "google-doc-edit":
-                    audit.error(
-                        "materials.my_example.mode",
-                        item_location,
-                        "My example must open in Google Docs edit mode",
-                    )
                 if material.get("access") != "private-owner-only":
                     audit.error(
                         "materials.my_example.access",
@@ -955,6 +954,44 @@ def validate_materials(materials: dict[str, Any], audit: Audit, expected_topics:
                         "My example must be labelled private-owner-only",
                     )
                 variant = material.get("variant")
+                if variant in PRO_EXAMPLE_FORMATS:
+                    pro_example_counts[variant] += 1
+                    expected_extension, expected_mode = PRO_EXAMPLE_FORMATS[variant]
+                    if (
+                        material.get("extension") != expected_extension
+                        or material.get("urlMode") != expected_mode
+                    ):
+                        audit.error(
+                            "materials.my_example.pro_format",
+                            item_location,
+                            f"{variant} must use {expected_extension} and {expected_mode}",
+                        )
+                    expected_thread = f"Tema {int(topic_key)} - Pro"
+                    if material.get("sourceThreadTitle") != expected_thread:
+                        audit.error(
+                            "materials.my_example.pro_thread",
+                            item_location,
+                            f"Expected sourceThreadTitle {expected_thread!r}",
+                        )
+                    if "codex" not in str(material.get("authorship") or "").lower():
+                        audit.error(
+                            "materials.my_example.authorship",
+                            item_location,
+                            "Pro examples must disclose Codex authorship",
+                        )
+                    if not parse_iso_date(material.get("publishedAt")):
+                        audit.error(
+                            "materials.my_example.published_at",
+                            item_location,
+                            "Pro examples must declare a valid publishedAt date",
+                        )
+                else:
+                    if material.get("urlMode") != "google-doc-edit":
+                        audit.error(
+                            "materials.my_example.mode",
+                            item_location,
+                            "Non-Pro examples must open in Google Docs edit mode",
+                        )
                 if variant == "tema-desarrollado":
                     developed_example_topics.add(int(topic_key))
                     if "codex" not in str(material.get("authorship") or "").lower():
@@ -971,6 +1008,20 @@ def validate_materials(materials: dict[str, Any], audit: Audit, expected_topics:
                         )
                 elif variant == "memorizacion":
                     memory_sheet_count += 1
+
+        if pro_example_counts:
+            expected_pro_counts = Counter(
+                {"tema-pro-pdf": 1, "tema-pro-word": 1}
+            )
+            if pro_example_counts != expected_pro_counts:
+                audit.error(
+                    "materials.my_example.pro_pair",
+                    location,
+                    "A Pro topic must contain exactly one PDF and one Word file; "
+                    f"found {dict(pro_example_counts)}",
+                )
+            else:
+                audit.stats["pro_topics"] += 1
 
     for drive_id, locations in duplicate_ids.items():
         if len(locations) > 1:
@@ -1570,6 +1621,7 @@ def print_report(audit: Audit) -> None:
         f"{audit.stats['materials_preview']} Drive preview, "
         f"{audit.stats['materials_pending']} pending"
     )
+    print(f"- Pro topics: {audit.stats['pro_topics']} complete PDF/Word pairs")
     print(f"- phases: {audit.stats['phases']}")
     print(f"- phase resources: {audit.stats['phase_resources']}")
     print(f"- Part B unique complements: {audit.stats['part_b_complements']}")

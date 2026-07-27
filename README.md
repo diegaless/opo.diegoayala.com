@@ -47,6 +47,12 @@ cada bloque: 1, 15, 27, 40, 48 y 65. Los enlaces se registran de forma
 reproducible en `scripts/curate_sources.mjs` y siguen siendo accesibles solo
 para la cuenta propietaria de Drive.
 
+Además, los 28 temas desarrollados en tareas `Tema X - Pro` se ofrecen como
+pares privados PDF/Word dentro de `Ejemplos míos`. El PDF se abre en el visor
+de Drive y el Word conserva el archivo editable; la auditoría exige ambos
+formatos, autoría Codex declarada y permisos exclusivos de la cuenta
+propietaria.
+
 Dominio previsto:
 
 - https://opo.diegoayala.com/
