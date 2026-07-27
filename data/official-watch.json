@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-07-21T21:02:03Z",
+  "updatedAt": "2026-07-27T10:27:20Z",
   "schedule": "daily",
   "status": "monitoring",
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "7551af0cf6d6",
+      "detectedAt": "2026-07-27T10:27:20Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria",
+      "added": [
+        "Mon, 27 Jul 2026 09:30:30 +0000 · 27/07/2026-Nota informativa Servicio de Personal Docente-Ampliación del plazo de presentación de instancias -Acto telemático de adjudicación de Cuerpos de Profesores de Enseñanza Secundaria y Otros | https://rrhheducacion.carm.es/27-07-2026-nota-informativa-servicio-de-personal-docente-ampliacion-del-plazo-de-presentacion-de-instancias-acto-telematico-de-adjudicacion-de-cuerpos-de-profesores-de-ensenanza-secundaria-y-otros/"
+      ],
+      "removedCount": 0
+    }
+  ],
   "sources": [
     {
       "id": "carm-oposiciones-docentes",
@@ -15,7 +32,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-07-21T21:02:03Z",
+      "checkedAt": "2026-07-27T10:27:20Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -30,7 +47,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-07-21T21:02:03Z",
+      "checkedAt": "2026-07-27T10:27:20Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -59,11 +76,13 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-07-21T21:02:03Z",
+      "checkedAt": "2026-07-27T10:27:20Z",
       "monitorStatus": "active",
-      "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "entryCount": 0,
-      "entries": []
+      "fingerprint": "47b80d1fe98caabb8b4cf3af3bd7fe605cb7072aca120e8b758a6e9a049f4d10",
+      "entryCount": 1,
+      "entries": [
+        "Mon, 27 Jul 2026 09:30:30 +0000 · 27/07/2026-Nota informativa Servicio de Personal Docente-Ampliación del plazo de presentación de instancias -Acto telemático de adjudicación de Cuerpos de Profesores de Enseñanza Secundaria y Otros | https://rrhheducacion.carm.es/27-07-2026-nota-informativa-servicio-de-personal-docente-ampliacion-del-plazo-de-presentacion-de-instancias-acto-telematico-de-adjudicacion-de-cuerpos-de-profesores-de-ensenanza-secundaria-y-otros/"
+      ]
     },
     {
       "id": "borm-pes-selectivo",
@@ -74,7 +93,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-07-21T21:02:03Z",
+      "checkedAt": "2026-07-27T10:27:20Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
