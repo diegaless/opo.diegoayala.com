@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-07-27T10:27:20Z",
+  "updatedAt": "2026-09-01T11:56:19Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "e2480e807d6a",
+      "detectedAt": "2026-09-01T11:56:19Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Mon, 31 Aug 2026 21:59:36 +0000 · CCOO INFORMA: ELECCIÓN DE GRUPOS (SECUNDARIA Y OTROS CUERPOS) | https://rrhheducacion.carm.es/ccoo-informa-eleccion-de-grupos-secundaria-y-otros-cuerpos/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "7551af0cf6d6",
       "detectedAt": "2026-07-27T10:27:20Z",
@@ -32,7 +49,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-07-27T10:27:20Z",
+      "checkedAt": "2026-09-01T11:56:19Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -47,7 +64,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-07-27T10:27:20Z",
+      "checkedAt": "2026-09-01T11:56:19Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -76,12 +93,13 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-07-27T10:27:20Z",
+      "checkedAt": "2026-09-01T11:56:19Z",
       "monitorStatus": "active",
-      "fingerprint": "47b80d1fe98caabb8b4cf3af3bd7fe605cb7072aca120e8b758a6e9a049f4d10",
-      "entryCount": 1,
+      "fingerprint": "e5d3913c2a330888d552cc9756e5d73ba50b55a9385e9d2af381ce40d7c7deca",
+      "entryCount": 2,
       "entries": [
-        "Mon, 27 Jul 2026 09:30:30 +0000 · 27/07/2026-Nota informativa Servicio de Personal Docente-Ampliación del plazo de presentación de instancias -Acto telemático de adjudicación de Cuerpos de Profesores de Enseñanza Secundaria y Otros | https://rrhheducacion.carm.es/27-07-2026-nota-informativa-servicio-de-personal-docente-ampliacion-del-plazo-de-presentacion-de-instancias-acto-telematico-de-adjudicacion-de-cuerpos-de-profesores-de-ensenanza-secundaria-y-otros/"
+        "Mon, 27 Jul 2026 09:30:30 +0000 · 27/07/2026-Nota informativa Servicio de Personal Docente-Ampliación del plazo de presentación de instancias -Acto telemático de adjudicación de Cuerpos de Profesores de Enseñanza Secundaria y Otros | https://rrhheducacion.carm.es/27-07-2026-nota-informativa-servicio-de-personal-docente-ampliacion-del-plazo-de-presentacion-de-instancias-acto-telematico-de-adjudicacion-de-cuerpos-de-profesores-de-ensenanza-secundaria-y-otros/",
+        "Mon, 31 Aug 2026 21:59:36 +0000 · CCOO INFORMA: ELECCIÓN DE GRUPOS (SECUNDARIA Y OTROS CUERPOS) | https://rrhheducacion.carm.es/ccoo-informa-eleccion-de-grupos-secundaria-y-otros-cuerpos/"
       ]
     },
     {
@@ -93,7 +111,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-07-27T10:27:20Z",
+      "checkedAt": "2026-09-01T11:56:19Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
