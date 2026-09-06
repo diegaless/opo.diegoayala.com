@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-09-02T11:37:35Z",
+  "updatedAt": "2026-09-06T11:16:06Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
@@ -67,7 +67,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-02T11:37:35Z",
+      "checkedAt": "2026-09-06T11:16:06Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -82,7 +82,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-09-02T11:37:35Z",
+      "checkedAt": "2026-09-06T11:16:06Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -111,12 +111,11 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-02T11:37:35Z",
+      "checkedAt": "2026-09-06T11:16:06Z",
       "monitorStatus": "active",
-      "fingerprint": "b3fc85c2606d7c8822538c7692309aca80a7d8120612ee1b2a946c92708d10ed",
-      "entryCount": 3,
+      "fingerprint": "23542a3c03ad070ffa610f6b1da32ba4a9fc0e52327def28d711a68660e75ed0",
+      "entryCount": 2,
       "entries": [
-        "Mon, 31 Aug 2026 21:59:36 +0000 · CCOO INFORMA: ELECCIÓN DE GRUPOS (SECUNDARIA Y OTROS CUERPOS) | https://rrhheducacion.carm.es/ccoo-informa-eleccion-de-grupos-secundaria-y-otros-cuerpos/",
         "Tue, 01 Sep 2026 21:58:30 +0000 · CCOO INFORMA: ELECCIÓN DE GRUPOS (SECUNDARIA Y OTROS CUERPOS) | https://rrhheducacion.carm.es/ccoo-informa-eleccion-de-grupos-secundaria-y-otros-cuerpos-2/",
         "Tue, 01 Sep 2026 22:10:23 +0000 · ANPE MURCIA INFORMA: ELECCIÓN HORARIOS EN SECUNDARIA Y OTROS CUERPOS | https://rrhheducacion.carm.es/anpe-murcia-informa-eleccion-horarios-en-secundaria-y-otros-cuerpos/"
       ]
@@ -130,7 +129,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-02T11:37:35Z",
+      "checkedAt": "2026-09-06T11:16:06Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
