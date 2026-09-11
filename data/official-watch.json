@@ -1,10 +1,33 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-09-09T11:45:23Z",
+  "updatedAt": "2026-09-11T11:43:21Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "e10f760e3059",
+      "detectedAt": "2026-09-11T11:43:21Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria",
+      "added": [
+        "Fri, 11 Sep 2026 11:28:03 +0000 · Convocatoria urgente de interinos de la especialidad de Matemáticas/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-matematicas-ingles/",
+        "Fri, 11 Sep 2026 11:28:50 +0000 · Convocatoria urgente de interinos de la especialidad de Matemáticas/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-matematicas-frances/",
+        "Fri, 11 Sep 2026 11:29:18 +0000 · Convocatoria urgente de interinos de la especialidad de Geografía e Historia/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-geografia-e-historia-frances/",
+        "Fri, 11 Sep 2026 11:29:47 +0000 · Convocatoria urgente de interinos de la especialidad de Física y Química/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-fisica-y-quimica-ingles/",
+        "Fri, 11 Sep 2026 11:30:14 +0000 · Convocatoria urgente de interinos de la especialidad de Física y Química/Alemán | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-fisica-y-quimica-aleman/",
+        "Fri, 11 Sep 2026 11:30:55 +0000 · Convocatoria urgente de interinos de la especialidad de Educación Física/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-educacion-fisica-ingles/",
+        "Fri, 11 Sep 2026 11:31:23 +0000 · Convocatoria urgente de interinos de la especialidad de Educación Física/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-educacion-fisica-frances/",
+        "Fri, 11 Sep 2026 11:32:02 +0000 · Convocatoria urgente de interinos de la especialidad de Dibujo/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-dibujo-ingles/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "46bfe753652c",
       "detectedAt": "2026-09-02T11:37:35Z",
@@ -67,7 +90,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-09T11:45:23Z",
+      "checkedAt": "2026-09-11T11:43:21Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -82,7 +105,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-09-09T11:45:23Z",
+      "checkedAt": "2026-09-11T11:43:21Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -111,11 +134,22 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-09T11:45:23Z",
+      "checkedAt": "2026-09-11T11:43:21Z",
       "monitorStatus": "active",
-      "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "entryCount": 0,
-      "entries": []
+      "fingerprint": "8fc8adbe8f2e38f777b344fa06966c1be1a87d732b04608f9a8c0ab057a6daa9",
+      "entryCount": 10,
+      "entries": [
+        "Fri, 11 Sep 2026 11:28:03 +0000 · Convocatoria urgente de interinos de la especialidad de Matemáticas/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-matematicas-ingles/",
+        "Fri, 11 Sep 2026 11:28:50 +0000 · Convocatoria urgente de interinos de la especialidad de Matemáticas/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-matematicas-frances/",
+        "Fri, 11 Sep 2026 11:29:18 +0000 · Convocatoria urgente de interinos de la especialidad de Geografía e Historia/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-geografia-e-historia-frances/",
+        "Fri, 11 Sep 2026 11:29:47 +0000 · Convocatoria urgente de interinos de la especialidad de Física y Química/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-fisica-y-quimica-ingles/",
+        "Fri, 11 Sep 2026 11:30:14 +0000 · Convocatoria urgente de interinos de la especialidad de Física y Química/Alemán | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-fisica-y-quimica-aleman/",
+        "Fri, 11 Sep 2026 11:30:55 +0000 · Convocatoria urgente de interinos de la especialidad de Educación Física/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-educacion-fisica-ingles/",
+        "Fri, 11 Sep 2026 11:31:23 +0000 · Convocatoria urgente de interinos de la especialidad de Educación Física/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-educacion-fisica-frances/",
+        "Fri, 11 Sep 2026 11:32:02 +0000 · Convocatoria urgente de interinos de la especialidad de Dibujo/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-dibujo-ingles/",
+        "Fri, 11 Sep 2026 11:32:27 +0000 · Convocatoria urgente de interinos de la especialidad de Dibujo/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-dibujo-frances/",
+        "Fri, 11 Sep 2026 11:32:59 +0000 · Convocatoria urgente de interinos de la especialidad de Biología y Geología/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-biologia-y-geologia-frances/"
+      ]
     },
     {
       "id": "borm-pes-selectivo",
@@ -126,7 +160,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-09T11:45:23Z",
+      "checkedAt": "2026-09-11T11:43:21Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
