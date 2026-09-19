@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-09-18T11:40:07Z",
+  "updatedAt": "2026-09-19T11:22:57Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "5cbe630416cd",
+      "detectedAt": "2026-09-19T11:22:57Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Fri, 18 Sep 2026 12:28:10 +0000 · Listas abiertas de las especialidades de Matemáticas/Francés, Tecnología/Inglés, Educación Física/Inglés, Dibujo/Inglés, Música/Inglés, Geografía e Historia/Francés y Física y Química/Alemán | https://rrhheducacion.carm.es/listas-abiertas-de-las-especialidades-de-matematicas-frances-tecnologia-ingles-educacion-fisica-ingles-dibujo-ingles-musica-ingles-geografia-e-historia-frances-y-fisica-y-quimica-aleman/"
+      ],
+      "removedCount": 3
+    },
     {
       "id": "e10f760e3059",
       "detectedAt": "2026-09-11T11:43:21Z",
@@ -90,7 +107,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-18T11:40:07Z",
+      "checkedAt": "2026-09-19T11:22:57Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -105,7 +122,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-09-18T11:40:07Z",
+      "checkedAt": "2026-09-19T11:22:57Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -134,16 +151,14 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-18T11:40:07Z",
+      "checkedAt": "2026-09-19T11:22:57Z",
       "monitorStatus": "active",
-      "fingerprint": "1dde77f0ce38311340c9e2b8323ed4c5475af52e0c89eddab16194bc306295e2",
-      "entryCount": 5,
+      "fingerprint": "f646aba1832b6ff2c68abd8080c96e1674af8825a3356ce7d0c45a9cef9a287b",
+      "entryCount": 3,
       "entries": [
-        "Fri, 11 Sep 2026 11:30:55 +0000 · Convocatoria urgente de interinos de la especialidad de Educación Física/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-educacion-fisica-ingles/",
-        "Fri, 11 Sep 2026 11:31:23 +0000 · Convocatoria urgente de interinos de la especialidad de Educación Física/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-educacion-fisica-frances/",
-        "Fri, 11 Sep 2026 11:32:02 +0000 · Convocatoria urgente de interinos de la especialidad de Dibujo/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-dibujo-ingles/",
         "Fri, 11 Sep 2026 11:32:27 +0000 · Convocatoria urgente de interinos de la especialidad de Dibujo/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-dibujo-frances/",
-        "Fri, 11 Sep 2026 11:32:59 +0000 · Convocatoria urgente de interinos de la especialidad de Biología y Geología/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-biologia-y-geologia-frances/"
+        "Fri, 11 Sep 2026 11:32:59 +0000 · Convocatoria urgente de interinos de la especialidad de Biología y Geología/Francés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-biologia-y-geologia-frances/",
+        "Fri, 18 Sep 2026 12:28:10 +0000 · Listas abiertas de las especialidades de Matemáticas/Francés, Tecnología/Inglés, Educación Física/Inglés, Dibujo/Inglés, Música/Inglés, Geografía e Historia/Francés y Física y Química/Alemán | https://rrhheducacion.carm.es/listas-abiertas-de-las-especialidades-de-matematicas-frances-tecnologia-ingles-educacion-fisica-ingles-dibujo-ingles-musica-ingles-geografia-e-historia-frances-y-fisica-y-quimica-aleman/"
       ]
     },
     {
@@ -155,7 +170,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-18T11:40:07Z",
+      "checkedAt": "2026-09-19T11:22:57Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
