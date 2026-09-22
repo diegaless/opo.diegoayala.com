@@ -1,10 +1,29 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-09-21T13:12:51Z",
+  "updatedAt": "2026-09-22T11:59:10Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "5ad1b68341aa",
+      "detectedAt": "2026-09-22T11:59:10Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria",
+      "added": [
+        "Mon, 21 Sep 2026 15:36:08 +0000 · Convocatoria urgente de interinos de la especialidad de Sistemas y Aplicaciones Informáticas | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-sistemas-y-aplicaciones-informaticas/",
+        "Mon, 21 Sep 2026 15:36:25 +0000 · Convocatoria urgente de interinos de la especialidad de Informática | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-informatica/",
+        "Mon, 21 Sep 2026 15:36:46 +0000 · Convocatoria urgente de interinos de la especialidad de Latín | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-latin/",
+        "Mon, 21 Sep 2026 15:37:03 +0000 · Convocatoria urgente de interinos de la especialidad de Griego | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-griego/"
+      ],
+      "removedCount": 2
+    },
     {
       "id": "0cd26a55b2a1",
       "detectedAt": "2026-09-21T13:12:51Z",
@@ -124,7 +143,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-21T13:12:51Z",
+      "checkedAt": "2026-09-22T11:59:10Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -139,7 +158,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-09-21T13:12:51Z",
+      "checkedAt": "2026-09-22T11:59:10Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -168,13 +187,15 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-21T13:12:51Z",
+      "checkedAt": "2026-09-22T11:59:10Z",
       "monitorStatus": "active",
-      "fingerprint": "94b8afc63ae19480a834e846332c89228d5c0bb2ee18fa4a6047f75df5b19955",
-      "entryCount": 2,
+      "fingerprint": "1d258796fbaeff9fe06c03fe018b20eb5633065f640c10d11d442eff4ba0ecf8",
+      "entryCount": 4,
       "entries": [
-        "Fri, 18 Sep 2026 12:28:10 +0000 · Listas abiertas de las especialidades de Matemáticas/Francés, Tecnología/Inglés, Educación Física/Inglés, Dibujo/Inglés, Música/Inglés, Geografía e Historia/Francés y Física y Química/Alemán | https://rrhheducacion.carm.es/listas-abiertas-de-las-especialidades-de-matematicas-frances-tecnologia-ingles-educacion-fisica-ingles-dibujo-ingles-musica-ingles-geografia-e-historia-frances-y-fisica-y-quimica-aleman/",
-        "Mon, 21 Sep 2026 05:52:36 +0000 · 21/09/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/21-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
+        "Mon, 21 Sep 2026 15:36:08 +0000 · Convocatoria urgente de interinos de la especialidad de Sistemas y Aplicaciones Informáticas | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-sistemas-y-aplicaciones-informaticas/",
+        "Mon, 21 Sep 2026 15:36:25 +0000 · Convocatoria urgente de interinos de la especialidad de Informática | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-informatica/",
+        "Mon, 21 Sep 2026 15:36:46 +0000 · Convocatoria urgente de interinos de la especialidad de Latín | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-latin/",
+        "Mon, 21 Sep 2026 15:37:03 +0000 · Convocatoria urgente de interinos de la especialidad de Griego | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-griego/"
       ]
     },
     {
@@ -186,7 +207,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-21T13:12:51Z",
+      "checkedAt": "2026-09-22T11:59:10Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
