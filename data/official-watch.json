@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-09-23T12:00:07Z",
+  "updatedAt": "2026-09-24T12:06:01Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
@@ -165,7 +165,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-23T12:00:07Z",
+      "checkedAt": "2026-09-24T12:06:01Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -180,7 +180,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-09-23T12:00:07Z",
+      "checkedAt": "2026-09-24T12:06:01Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -209,12 +209,11 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-23T12:00:07Z",
+      "checkedAt": "2026-09-24T12:06:01Z",
       "monitorStatus": "active",
-      "fingerprint": "e4b141ab51b8c423976120efc5028df7ec8f344aa0db2e8962de6b68ec4db914",
-      "entryCount": 7,
+      "fingerprint": "8809a2aaf41b97adfb5e9c0c3cd47b313695c08cdc8be61e8039d7cc896e4e2a",
+      "entryCount": 6,
       "entries": [
-        "Wed, 23 Sep 2026 11:09:16 +0000 · Convocatoria de la especialidad de Sistemas Electrotécnicos y Automáticos | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-sistemas-electrotecnicos-y-automaticos/",
         "Wed, 23 Sep 2026 11:09:33 +0000 · Convocatoria de la especialidad de Procesos y Medios de Comunicación | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-procesos-y-medios-de-comunicacion/",
         "Wed, 23 Sep 2026 11:10:29 +0000 · Convocatoria de la especialidad de Equipos Electrónicos | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-equipos-electronicos/",
         "Wed, 23 Sep 2026 11:10:45 +0000 · Convocatoria de la especialidad de Operaciones de Procesos | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-operaciones-de-procesos/",
@@ -232,7 +231,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-23T12:00:07Z",
+      "checkedAt": "2026-09-24T12:06:01Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
