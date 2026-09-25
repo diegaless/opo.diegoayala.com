@@ -1,10 +1,28 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-09-24T12:06:01Z",
+  "updatedAt": "2026-09-25T12:06:09Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "c3fe79ec7ec2",
+      "detectedAt": "2026-09-25T12:06:09Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Fri, 25 Sep 2026 08:25:02 +0000 · 25/09/2026-Relación de vacantes sin cubrir- Secundaria y otros cuerpos | https://rrhheducacion.carm.es/25-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/",
+        "Fri, 25 Sep 2026 08:32:29 +0000 · 23/09/2026. Acto de adjudicación telemático voluntario con especialidades de participación obligatoria. Se convoca a todos los aspirantes a interinidad de los Cuerpos de Secundaria y otros cuerpos, candidatos seleccionados en los procedimientos de urgencia y candidatos seleccionados de listas abiertas | https://rrhheducacion.carm.es/23-09-2026-acto-de-adjudicacion-telematico-voluntario-con-especialidades-de-participacion-obligatoria-se-convoca-a-todos-los-aspirantes-a-interinidad-de-los-cuerpos-de-secundaria-y-otros-cuerpos-ca/"
+      ],
+      "removedCount": 3
+    },
     {
       "id": "d6a0646a3287",
       "detectedAt": "2026-09-23T12:00:07Z",
@@ -165,7 +183,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-24T12:06:01Z",
+      "checkedAt": "2026-09-25T12:06:09Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -180,7 +198,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-09-24T12:06:01Z",
+      "checkedAt": "2026-09-25T12:06:09Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -209,14 +227,13 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-24T12:06:01Z",
+      "checkedAt": "2026-09-25T12:06:09Z",
       "monitorStatus": "active",
-      "fingerprint": "8809a2aaf41b97adfb5e9c0c3cd47b313695c08cdc8be61e8039d7cc896e4e2a",
-      "entryCount": 6,
+      "fingerprint": "ea10f549dae2b205fc2cdae66759ef659a4cfe2a65dda4031582e294caf2ae18",
+      "entryCount": 5,
       "entries": [
-        "Wed, 23 Sep 2026 11:09:33 +0000 · Convocatoria de la especialidad de Procesos y Medios de Comunicación | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-procesos-y-medios-de-comunicacion/",
-        "Wed, 23 Sep 2026 11:10:29 +0000 · Convocatoria de la especialidad de Equipos Electrónicos | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-equipos-electronicos/",
-        "Wed, 23 Sep 2026 11:10:45 +0000 · Convocatoria de la especialidad de Operaciones de Procesos | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-operaciones-de-procesos/",
+        "Fri, 25 Sep 2026 08:25:02 +0000 · 25/09/2026-Relación de vacantes sin cubrir- Secundaria y otros cuerpos | https://rrhheducacion.carm.es/25-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/",
+        "Fri, 25 Sep 2026 08:32:29 +0000 · 23/09/2026. Acto de adjudicación telemático voluntario con especialidades de participación obligatoria. Se convoca a todos los aspirantes a interinidad de los Cuerpos de Secundaria y otros cuerpos, candidatos seleccionados en los procedimientos de urgencia y candidatos seleccionados de listas abiertas | https://rrhheducacion.carm.es/23-09-2026-acto-de-adjudicacion-telematico-voluntario-con-especialidades-de-participacion-obligatoria-se-convoca-a-todos-los-aspirantes-a-interinidad-de-los-cuerpos-de-secundaria-y-otros-cuerpos-ca/",
         "Wed, 23 Sep 2026 11:11:58 +0000 · Convocatoria de la especialidad de Instalaciones Electrotécnicas | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-instalaciones-electrotecnicas/",
         "Wed, 23 Sep 2026 11:12:24 +0000 · Convocatoria de la especialidad de Sistemas y Aplicaciones Informáticas | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-sistemas-y-aplicaciones-informaticas/",
         "Wed, 23 Sep 2026 11:12:46 +0000 · Convocatoria de la especialiad de Informática | https://rrhheducacion.carm.es/convocatoria-de-la-especialiad-de-informatica/"
@@ -231,7 +248,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-24T12:06:01Z",
+      "checkedAt": "2026-09-25T12:06:09Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
