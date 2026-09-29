@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-09-28T14:21:39Z",
+  "updatedAt": "2026-09-29T13:14:12Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
@@ -201,7 +201,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-28T14:21:39Z",
+      "checkedAt": "2026-09-29T13:14:12Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -216,7 +216,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-09-28T14:21:39Z",
+      "checkedAt": "2026-09-29T13:14:12Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -245,14 +245,11 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-28T14:21:39Z",
+      "checkedAt": "2026-09-29T13:14:12Z",
       "monitorStatus": "active",
-      "fingerprint": "ac8a7651db2c82fe1c5c20d9b87d8a8a090dd821770a01a77792ddf6536b97a8",
-      "entryCount": 2,
-      "entries": [
-        "Mon, 28 Sep 2026 12:32:31 +0000 · Listado provisional de admitidos y excluidos de la convocatoria urgente de Latín | https://rrhheducacion.carm.es/listado-provisional-de-admitidos-y-excluidos-de-la-convocatoria-urgente-de-latin/",
-        "Mon, 28 Sep 2026 12:32:52 +0000 · Listado provisional de admitidos y excluidos de la convocatoria urgente de Griego | https://rrhheducacion.carm.es/listado-provisional-de-admitidos-y-excluidos-de-la-convocatoria-urgente-de-griego/"
-      ]
+      "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "entryCount": 0,
+      "entries": []
     },
     {
       "id": "borm-pes-selectivo",
@@ -263,7 +260,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-28T14:21:39Z",
+      "checkedAt": "2026-09-29T13:14:12Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
