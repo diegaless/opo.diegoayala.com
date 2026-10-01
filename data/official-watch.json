@@ -1,10 +1,28 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-09-29T13:14:12Z",
+  "updatedAt": "2026-10-01T13:46:39Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "42a5e12f73ee",
+      "detectedAt": "2026-10-01T13:46:39Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria",
+      "added": [
+        "Wed, 30 Sep 2026 14:45:42 +0000 · 30/09/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/30-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/",
+        "Wed, 30 Sep 2026 17:05:22 +0000 · Convocatoria urgente de interinos para cubrir vacantes de la especialidad de Máquinas, Servicios y Producción | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-vacantes-de-la-especialidad-de-maquinas-servicios-y-produccion/",
+        "Wed, 30 Sep 2026 17:05:49 +0000 · Convocatoria urgente de interinos para cubrir vacantes de la especialidad de Navegación e Instalaciones Marinas | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-vacantes-de-la-especialidad-de-navegacion-e-instalaciones-marinas/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "983803f854e8",
       "detectedAt": "2026-09-28T14:21:39Z",
@@ -201,7 +219,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-29T13:14:12Z",
+      "checkedAt": "2026-10-01T13:46:39Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -216,7 +234,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-09-29T13:14:12Z",
+      "checkedAt": "2026-10-01T13:46:39Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -245,11 +263,15 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-29T13:14:12Z",
+      "checkedAt": "2026-10-01T13:46:39Z",
       "monitorStatus": "active",
-      "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "entryCount": 0,
-      "entries": []
+      "fingerprint": "072bdff620993acff401471abb5fa6badae7bc6a0e72d61959a920fa6cb31f80",
+      "entryCount": 3,
+      "entries": [
+        "Wed, 30 Sep 2026 14:45:42 +0000 · 30/09/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/30-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/",
+        "Wed, 30 Sep 2026 17:05:22 +0000 · Convocatoria urgente de interinos para cubrir vacantes de la especialidad de Máquinas, Servicios y Producción | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-vacantes-de-la-especialidad-de-maquinas-servicios-y-produccion/",
+        "Wed, 30 Sep 2026 17:05:49 +0000 · Convocatoria urgente de interinos para cubrir vacantes de la especialidad de Navegación e Instalaciones Marinas | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-vacantes-de-la-especialidad-de-navegacion-e-instalaciones-marinas/"
+      ]
     },
     {
       "id": "borm-pes-selectivo",
@@ -260,7 +282,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-09-29T13:14:12Z",
+      "checkedAt": "2026-10-01T13:46:39Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
