@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-10-01T13:46:39Z",
+  "updatedAt": "2026-10-02T13:03:11Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "15f173804b32",
+      "detectedAt": "2026-10-02T13:03:11Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Fri, 02 Oct 2026 06:51:00 +0000 · Listas abiertas para determinadas especialidades | https://rrhheducacion.carm.es/listas-abiertas-para-determinadas-especialidades/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "42a5e12f73ee",
       "detectedAt": "2026-10-01T13:46:39Z",
@@ -219,7 +236,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-01T13:46:39Z",
+      "checkedAt": "2026-10-02T13:03:11Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -234,7 +251,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-10-01T13:46:39Z",
+      "checkedAt": "2026-10-02T13:03:11Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -263,11 +280,12 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-01T13:46:39Z",
+      "checkedAt": "2026-10-02T13:03:11Z",
       "monitorStatus": "active",
-      "fingerprint": "072bdff620993acff401471abb5fa6badae7bc6a0e72d61959a920fa6cb31f80",
-      "entryCount": 3,
+      "fingerprint": "08a88634f2e5683e51c3d6d94b10414d816d2ff2440cdcf22860f7b68f2333fc",
+      "entryCount": 4,
       "entries": [
+        "Fri, 02 Oct 2026 06:51:00 +0000 · Listas abiertas para determinadas especialidades | https://rrhheducacion.carm.es/listas-abiertas-para-determinadas-especialidades/",
         "Wed, 30 Sep 2026 14:45:42 +0000 · 30/09/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/30-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/",
         "Wed, 30 Sep 2026 17:05:22 +0000 · Convocatoria urgente de interinos para cubrir vacantes de la especialidad de Máquinas, Servicios y Producción | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-vacantes-de-la-especialidad-de-maquinas-servicios-y-produccion/",
         "Wed, 30 Sep 2026 17:05:49 +0000 · Convocatoria urgente de interinos para cubrir vacantes de la especialidad de Navegación e Instalaciones Marinas | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-vacantes-de-la-especialidad-de-navegacion-e-instalaciones-marinas/"
@@ -282,7 +300,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-01T13:46:39Z",
+      "checkedAt": "2026-10-02T13:03:11Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
