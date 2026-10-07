@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-10-06T13:31:58Z",
+  "updatedAt": "2026-10-07T13:46:02Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "4da65e7f59a8",
+      "detectedAt": "2026-10-07T13:46:02Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Wed, 07 Oct 2026 12:57:01 +0000 · 07/10/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/07-10-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
+      ],
+      "removedCount": 1
+    },
     {
       "id": "392f07265b88",
       "detectedAt": "2026-10-06T13:31:58Z",
@@ -253,7 +270,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-06T13:31:58Z",
+      "checkedAt": "2026-10-07T13:46:02Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -268,7 +285,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-10-06T13:31:58Z",
+      "checkedAt": "2026-10-07T13:46:02Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -297,12 +314,12 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-06T13:31:58Z",
+      "checkedAt": "2026-10-07T13:46:02Z",
       "monitorStatus": "active",
-      "fingerprint": "a4c8b4c402e94de6e30d71e646b7f60050ccc3dc859bb5783402e793b14fb586",
+      "fingerprint": "d55a0e9a1de918070d6e5226294d4605dc34b8be2e9a6f6da6aceece66802d87",
       "entryCount": 1,
       "entries": [
-        "Mon, 05 Oct 2026 16:50:14 +0000 · Listas abiertas de Navegación e Instalaciones Marinas/Inglés y Máquinas, Servicios y Producción | https://rrhheducacion.carm.es/listas-abiertas-de-navegacion-e-instalaciones-marinas-ingles-y-maquinas-servicios-y-produccion/"
+        "Wed, 07 Oct 2026 12:57:01 +0000 · 07/10/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/07-10-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
       ]
     },
     {
@@ -314,7 +331,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-06T13:31:58Z",
+      "checkedAt": "2026-10-07T13:46:02Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
