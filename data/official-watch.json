@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-10-21T12:13:39Z",
+  "updatedAt": "2026-10-22T12:16:14Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "c78f23dd90b9",
+      "detectedAt": "2026-10-22T12:16:14Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Wed, 21 Oct 2026 14:14:38 +0000 · 21/10/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/21-10-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
+      ],
+      "removedCount": 1
+    },
     {
       "id": "75c73fe53ca2",
       "detectedAt": "2026-10-21T12:13:39Z",
@@ -321,7 +338,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-21T12:13:39Z",
+      "checkedAt": "2026-10-22T12:16:14Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -336,7 +353,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-10-21T12:13:39Z",
+      "checkedAt": "2026-10-22T12:16:14Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -365,12 +382,12 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-21T12:13:39Z",
+      "checkedAt": "2026-10-22T12:16:14Z",
       "monitorStatus": "active",
-      "fingerprint": "ca96eef809fbb91bf07bfc4ccaab706123b4fed9196b3fe3d74cc5a0a6cebeb4",
+      "fingerprint": "7aa52209b295d490fe9721c7d7b9c17d512c0be093b7ed6860b5f72f1571d022",
       "entryCount": 1,
       "entries": [
-        "Tue, 20 Oct 2026 12:32:39 +0000 · 20/10/2026 Acto de adjudicación telemático voluntario con especialidades de participación obligatoria Secundaria y otros cuerpos | https://rrhheducacion.carm.es/20-10-2026-acto-de-adjudicacion-telematico-voluntario-con-especialidades-de-participacion-obligatoria-secundaria-y-otros-cuerpos/"
+        "Wed, 21 Oct 2026 14:14:38 +0000 · 21/10/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/21-10-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
       ]
     },
     {
@@ -382,7 +399,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-21T12:13:39Z",
+      "checkedAt": "2026-10-22T12:16:14Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
