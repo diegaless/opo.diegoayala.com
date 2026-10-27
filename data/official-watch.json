@@ -1,10 +1,28 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-10-23T11:57:40Z",
+  "updatedAt": "2026-10-27T12:35:12Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "a9d245691b36",
+      "detectedAt": "2026-10-27T12:35:12Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria",
+      "added": [
+        "Mon, 26 Oct 2026 17:59:47 +0000 · Convocatoria de la especialidad de Análisis y Química Industrial | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-analisis-y-quimica-industrial/",
+        "Mon, 26 Oct 2026 18:00:10 +0000 · Convocatoria de la especialidad de Procesos en la Industria Alimentaria | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-procesos-en-la-industria-alimentaria/",
+        "Mon, 26 Oct 2026 18:00:58 +0000 · Convocatoria de la especialidad de Alemán | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-aleman/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "c78f23dd90b9",
       "detectedAt": "2026-10-22T12:16:14Z",
@@ -338,7 +356,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-23T11:57:40Z",
+      "checkedAt": "2026-10-27T12:35:12Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -353,7 +371,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-10-23T11:57:40Z",
+      "checkedAt": "2026-10-27T12:35:12Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -382,11 +400,15 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-23T11:57:40Z",
+      "checkedAt": "2026-10-27T12:35:12Z",
       "monitorStatus": "active",
-      "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "entryCount": 0,
-      "entries": []
+      "fingerprint": "dac349cf0bc32f9d2fb06b10e32add6e9fbfce3d90386d7510f5bf21c2d2acaa",
+      "entryCount": 3,
+      "entries": [
+        "Mon, 26 Oct 2026 17:59:47 +0000 · Convocatoria de la especialidad de Análisis y Química Industrial | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-analisis-y-quimica-industrial/",
+        "Mon, 26 Oct 2026 18:00:10 +0000 · Convocatoria de la especialidad de Procesos en la Industria Alimentaria | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-procesos-en-la-industria-alimentaria/",
+        "Mon, 26 Oct 2026 18:00:58 +0000 · Convocatoria de la especialidad de Alemán | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-aleman/"
+      ]
     },
     {
       "id": "borm-pes-selectivo",
@@ -397,7 +419,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-23T11:57:40Z",
+      "checkedAt": "2026-10-27T12:35:12Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
