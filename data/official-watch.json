@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-10-27T12:35:12Z",
+  "updatedAt": "2026-10-28T13:24:59Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "010c2c35146d",
+      "detectedAt": "2026-10-28T13:24:59Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Wed, 28 Oct 2026 13:20:22 +0000 · 28/10/2026 Acto de adjudicación telemático Secundaria y otros cuerpos | https://rrhheducacion.carm.es/28-10-2026-acto-de-adjudicacion-telematico-secundaria-y-otros-cuerpos/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "a9d245691b36",
       "detectedAt": "2026-10-27T12:35:12Z",
@@ -356,7 +373,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-27T12:35:12Z",
+      "checkedAt": "2026-10-28T13:24:59Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -371,7 +388,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-10-27T12:35:12Z",
+      "checkedAt": "2026-10-28T13:24:59Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -400,14 +417,15 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-27T12:35:12Z",
+      "checkedAt": "2026-10-28T13:24:59Z",
       "monitorStatus": "active",
-      "fingerprint": "dac349cf0bc32f9d2fb06b10e32add6e9fbfce3d90386d7510f5bf21c2d2acaa",
-      "entryCount": 3,
+      "fingerprint": "2b667accdc8761484945719f4fa73c6580e2b60b144716e3c7aee983c18cd601",
+      "entryCount": 4,
       "entries": [
         "Mon, 26 Oct 2026 17:59:47 +0000 · Convocatoria de la especialidad de Análisis y Química Industrial | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-analisis-y-quimica-industrial/",
         "Mon, 26 Oct 2026 18:00:10 +0000 · Convocatoria de la especialidad de Procesos en la Industria Alimentaria | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-procesos-en-la-industria-alimentaria/",
-        "Mon, 26 Oct 2026 18:00:58 +0000 · Convocatoria de la especialidad de Alemán | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-aleman/"
+        "Mon, 26 Oct 2026 18:00:58 +0000 · Convocatoria de la especialidad de Alemán | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-aleman/",
+        "Wed, 28 Oct 2026 13:20:22 +0000 · 28/10/2026 Acto de adjudicación telemático Secundaria y otros cuerpos | https://rrhheducacion.carm.es/28-10-2026-acto-de-adjudicacion-telematico-secundaria-y-otros-cuerpos/"
       ]
     },
     {
@@ -419,7 +437,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-27T12:35:12Z",
+      "checkedAt": "2026-10-28T13:24:59Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
