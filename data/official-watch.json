@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-10-28T13:24:59Z",
+  "updatedAt": "2026-10-29T13:33:17Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "52519ff96339",
+      "detectedAt": "2026-10-29T13:33:17Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Wed, 28 Oct 2026 15:00:47 +0000 · 28/10/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/28-10-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
+      ],
+      "removedCount": 4
+    },
     {
       "id": "010c2c35146d",
       "detectedAt": "2026-10-28T13:24:59Z",
@@ -345,22 +362,6 @@
         "Mon, 31 Aug 2026 21:59:36 +0000 · CCOO INFORMA: ELECCIÓN DE GRUPOS (SECUNDARIA Y OTROS CUERPOS) | https://rrhheducacion.carm.es/ccoo-informa-eleccion-de-grupos-secundaria-y-otros-cuerpos/"
       ],
       "removedCount": 0
-    },
-    {
-      "id": "7551af0cf6d6",
-      "detectedAt": "2026-07-27T10:27:20Z",
-      "sourceId": "carm-rrhh-feed",
-      "sourceName": "CARM RRHH · Novedades PES e Informática",
-      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
-      "categories": [
-        "convocatoria"
-      ],
-      "status": "review-required",
-      "title": "Cambio oficial detectado: convocatoria",
-      "added": [
-        "Mon, 27 Jul 2026 09:30:30 +0000 · 27/07/2026-Nota informativa Servicio de Personal Docente-Ampliación del plazo de presentación de instancias -Acto telemático de adjudicación de Cuerpos de Profesores de Enseñanza Secundaria y Otros | https://rrhheducacion.carm.es/27-07-2026-nota-informativa-servicio-de-personal-docente-ampliacion-del-plazo-de-presentacion-de-instancias-acto-telematico-de-adjudicacion-de-cuerpos-de-profesores-de-ensenanza-secundaria-y-otros/"
-      ],
-      "removedCount": 0
     }
   ],
   "sources": [
@@ -373,7 +374,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-28T13:24:59Z",
+      "checkedAt": "2026-10-29T13:33:17Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -388,7 +389,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-10-28T13:24:59Z",
+      "checkedAt": "2026-10-29T13:33:17Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -417,15 +418,12 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-28T13:24:59Z",
+      "checkedAt": "2026-10-29T13:33:17Z",
       "monitorStatus": "active",
-      "fingerprint": "2b667accdc8761484945719f4fa73c6580e2b60b144716e3c7aee983c18cd601",
-      "entryCount": 4,
+      "fingerprint": "3d49e8edf8b940a7a45784f7abf430482ca660b7fbb972d2d7aff5a9e3add12b",
+      "entryCount": 1,
       "entries": [
-        "Mon, 26 Oct 2026 17:59:47 +0000 · Convocatoria de la especialidad de Análisis y Química Industrial | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-analisis-y-quimica-industrial/",
-        "Mon, 26 Oct 2026 18:00:10 +0000 · Convocatoria de la especialidad de Procesos en la Industria Alimentaria | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-procesos-en-la-industria-alimentaria/",
-        "Mon, 26 Oct 2026 18:00:58 +0000 · Convocatoria de la especialidad de Alemán | https://rrhheducacion.carm.es/convocatoria-de-la-especialidad-de-aleman/",
-        "Wed, 28 Oct 2026 13:20:22 +0000 · 28/10/2026 Acto de adjudicación telemático Secundaria y otros cuerpos | https://rrhheducacion.carm.es/28-10-2026-acto-de-adjudicacion-telematico-secundaria-y-otros-cuerpos/"
+        "Wed, 28 Oct 2026 15:00:47 +0000 · 28/10/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/28-10-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
       ]
     },
     {
@@ -437,7 +435,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-28T13:24:59Z",
+      "checkedAt": "2026-10-29T13:33:17Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
