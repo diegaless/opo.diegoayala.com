@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-10-30T13:23:34Z",
+  "updatedAt": "2026-10-31T12:57:47Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "4424136c5084",
+      "detectedAt": "2026-10-31T12:57:47Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Fri, 30 Oct 2026 22:23:09 +0000 · STERM – Presión para el grupo de trabajo de oposiciones de secundaria y otros cuerpos | https://rrhheducacion.carm.es/sterm-como-es-la-escuela-oficial-de-idiomas-en-la-que-queremos-ensenar/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "52519ff96339",
       "detectedAt": "2026-10-29T13:33:17Z",
@@ -345,23 +362,6 @@
         "Tue, 01 Sep 2026 22:10:23 +0000 · ANPE MURCIA INFORMA: ELECCIÓN HORARIOS EN SECUNDARIA Y OTROS CUERPOS | https://rrhheducacion.carm.es/anpe-murcia-informa-eleccion-horarios-en-secundaria-y-otros-cuerpos/"
       ],
       "removedCount": 1
-    },
-    {
-      "id": "e2480e807d6a",
-      "detectedAt": "2026-09-01T11:56:19Z",
-      "sourceId": "carm-rrhh-feed",
-      "sourceName": "CARM RRHH · Novedades PES e Informática",
-      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
-      "categories": [
-        "convocatoria",
-        "publicaciones"
-      ],
-      "status": "review-required",
-      "title": "Cambio oficial detectado: convocatoria, publicaciones",
-      "added": [
-        "Mon, 31 Aug 2026 21:59:36 +0000 · CCOO INFORMA: ELECCIÓN DE GRUPOS (SECUNDARIA Y OTROS CUERPOS) | https://rrhheducacion.carm.es/ccoo-informa-eleccion-de-grupos-secundaria-y-otros-cuerpos/"
-      ],
-      "removedCount": 0
     }
   ],
   "sources": [
@@ -374,7 +374,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-30T13:23:34Z",
+      "checkedAt": "2026-10-31T12:57:47Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -389,7 +389,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-10-30T13:23:34Z",
+      "checkedAt": "2026-10-31T12:57:47Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -418,11 +418,13 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-30T13:23:34Z",
+      "checkedAt": "2026-10-31T12:57:47Z",
       "monitorStatus": "active",
-      "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "entryCount": 0,
-      "entries": []
+      "fingerprint": "67ad491096a8eb13bbea7bb9172ab13ef0775fd2cf76b3ff8be4f59ac599ea29",
+      "entryCount": 1,
+      "entries": [
+        "Fri, 30 Oct 2026 22:23:09 +0000 · STERM – Presión para el grupo de trabajo de oposiciones de secundaria y otros cuerpos | https://rrhheducacion.carm.es/sterm-como-es-la-escuela-oficial-de-idiomas-en-la-que-queremos-ensenar/"
+      ]
     },
     {
       "id": "borm-pes-selectivo",
@@ -433,7 +435,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-30T13:23:34Z",
+      "checkedAt": "2026-10-31T12:57:47Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
