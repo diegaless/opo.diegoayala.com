@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-10-31T12:57:47Z",
+  "updatedAt": "2026-11-02T16:28:05Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "eab2eb2f10af",
+      "detectedAt": "2026-11-02T16:28:05Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Mon, 02 Nov 2026 09:48:10 +0000 · Listas abiertas de Sistemas Electrónicos | https://rrhheducacion.carm.es/listas-abiertas-de-sistemas-electronicos/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "4424136c5084",
       "detectedAt": "2026-10-31T12:57:47Z",
@@ -344,24 +361,6 @@
         "Fri, 11 Sep 2026 11:32:02 +0000 · Convocatoria urgente de interinos de la especialidad de Dibujo/Inglés | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-dibujo-ingles/"
       ],
       "removedCount": 0
-    },
-    {
-      "id": "46bfe753652c",
-      "detectedAt": "2026-09-02T11:37:35Z",
-      "sourceId": "carm-rrhh-feed",
-      "sourceName": "CARM RRHH · Novedades PES e Informática",
-      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
-      "categories": [
-        "convocatoria",
-        "publicaciones"
-      ],
-      "status": "review-required",
-      "title": "Cambio oficial detectado: convocatoria, publicaciones",
-      "added": [
-        "Tue, 01 Sep 2026 21:58:30 +0000 · CCOO INFORMA: ELECCIÓN DE GRUPOS (SECUNDARIA Y OTROS CUERPOS) | https://rrhheducacion.carm.es/ccoo-informa-eleccion-de-grupos-secundaria-y-otros-cuerpos-2/",
-        "Tue, 01 Sep 2026 22:10:23 +0000 · ANPE MURCIA INFORMA: ELECCIÓN HORARIOS EN SECUNDARIA Y OTROS CUERPOS | https://rrhheducacion.carm.es/anpe-murcia-informa-eleccion-horarios-en-secundaria-y-otros-cuerpos/"
-      ],
-      "removedCount": 1
     }
   ],
   "sources": [
@@ -374,7 +373,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-31T12:57:47Z",
+      "checkedAt": "2026-11-02T16:28:05Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -389,7 +388,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-10-31T12:57:47Z",
+      "checkedAt": "2026-11-02T16:28:05Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -418,12 +417,13 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-31T12:57:47Z",
+      "checkedAt": "2026-11-02T16:28:05Z",
       "monitorStatus": "active",
-      "fingerprint": "67ad491096a8eb13bbea7bb9172ab13ef0775fd2cf76b3ff8be4f59ac599ea29",
-      "entryCount": 1,
+      "fingerprint": "9bf6d4c57f22dee22ab1c327bc331eb1611d135dc22306a89f51ab89915970ea",
+      "entryCount": 2,
       "entries": [
-        "Fri, 30 Oct 2026 22:23:09 +0000 · STERM – Presión para el grupo de trabajo de oposiciones de secundaria y otros cuerpos | https://rrhheducacion.carm.es/sterm-como-es-la-escuela-oficial-de-idiomas-en-la-que-queremos-ensenar/"
+        "Fri, 30 Oct 2026 22:23:09 +0000 · STERM – Presión para el grupo de trabajo de oposiciones de secundaria y otros cuerpos | https://rrhheducacion.carm.es/sterm-como-es-la-escuela-oficial-de-idiomas-en-la-que-queremos-ensenar/",
+        "Mon, 02 Nov 2026 09:48:10 +0000 · Listas abiertas de Sistemas Electrónicos | https://rrhheducacion.carm.es/listas-abiertas-de-sistemas-electronicos/"
       ]
     },
     {
@@ -435,7 +435,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-10-31T12:57:47Z",
+      "checkedAt": "2026-11-02T16:28:05Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
