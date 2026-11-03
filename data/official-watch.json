@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-11-02T16:28:05Z",
+  "updatedAt": "2026-11-03T14:33:28Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
@@ -373,7 +373,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-02T16:28:05Z",
+      "checkedAt": "2026-11-03T14:33:28Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -388,7 +388,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-11-02T16:28:05Z",
+      "checkedAt": "2026-11-03T14:33:28Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -417,12 +417,11 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-02T16:28:05Z",
+      "checkedAt": "2026-11-03T14:33:28Z",
       "monitorStatus": "active",
-      "fingerprint": "9bf6d4c57f22dee22ab1c327bc331eb1611d135dc22306a89f51ab89915970ea",
-      "entryCount": 2,
+      "fingerprint": "53fcaf2dc26729a1cf5d75da65193bffe939146e91de226e85ffef10814b69b5",
+      "entryCount": 1,
       "entries": [
-        "Fri, 30 Oct 2026 22:23:09 +0000 · STERM – Presión para el grupo de trabajo de oposiciones de secundaria y otros cuerpos | https://rrhheducacion.carm.es/sterm-como-es-la-escuela-oficial-de-idiomas-en-la-que-queremos-ensenar/",
         "Mon, 02 Nov 2026 09:48:10 +0000 · Listas abiertas de Sistemas Electrónicos | https://rrhheducacion.carm.es/listas-abiertas-de-sistemas-electronicos/"
       ]
     },
@@ -435,7 +434,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-02T16:28:05Z",
+      "checkedAt": "2026-11-03T14:33:28Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
