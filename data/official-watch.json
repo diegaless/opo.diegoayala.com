@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-11-05T14:53:06Z",
+  "updatedAt": "2026-11-06T14:30:36Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "26ef6af796aa",
+      "detectedAt": "2026-11-06T14:30:36Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Thu, 05 Nov 2026 22:59:03 +0000 · UGT: ¿Qué saber del concurso de traslados? | https://rrhheducacion.carm.es/ugt-que-saber-del-concurso-de-traslados/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "73ea927c80b9",
       "detectedAt": "2026-11-05T14:53:06Z",
@@ -338,23 +355,6 @@
         "Mon, 21 Sep 2026 05:52:36 +0000 · 21/09/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/21-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
       ],
       "removedCount": 2
-    },
-    {
-      "id": "5cbe630416cd",
-      "detectedAt": "2026-09-19T11:22:57Z",
-      "sourceId": "carm-rrhh-feed",
-      "sourceName": "CARM RRHH · Novedades PES e Informática",
-      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
-      "categories": [
-        "convocatoria",
-        "publicaciones"
-      ],
-      "status": "review-required",
-      "title": "Cambio oficial detectado: convocatoria, publicaciones",
-      "added": [
-        "Fri, 18 Sep 2026 12:28:10 +0000 · Listas abiertas de las especialidades de Matemáticas/Francés, Tecnología/Inglés, Educación Física/Inglés, Dibujo/Inglés, Música/Inglés, Geografía e Historia/Francés y Física y Química/Alemán | https://rrhheducacion.carm.es/listas-abiertas-de-las-especialidades-de-matematicas-frances-tecnologia-ingles-educacion-fisica-ingles-dibujo-ingles-musica-ingles-geografia-e-historia-frances-y-fisica-y-quimica-aleman/"
-      ],
-      "removedCount": 3
     }
   ],
   "sources": [
@@ -367,7 +367,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-05T14:53:06Z",
+      "checkedAt": "2026-11-06T14:30:36Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -382,7 +382,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-11-05T14:53:06Z",
+      "checkedAt": "2026-11-06T14:30:36Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -411,13 +411,14 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-05T14:53:06Z",
+      "checkedAt": "2026-11-06T14:30:36Z",
       "monitorStatus": "active",
-      "fingerprint": "537152bb166df246da3d29ebd2ad4df2d7cb95e2a05c77df2cfd416cd7e34d96",
-      "entryCount": 2,
+      "fingerprint": "a75514b1229a26580407518a4f834de246371b9f4b3aea1557987b27dba2d7af",
+      "entryCount": 3,
       "entries": [
         "Thu, 05 Nov 2026 09:02:34 +0000 · 05/11/2026-Relación vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/05-11-2026-relacion-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/",
-        "Thu, 05 Nov 2026 13:35:39 +0000 · Convocatoria urgente de interinos para cubrir puestos vacantes de Matemáticas | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-puestos-vacantes-de-matematicas/"
+        "Thu, 05 Nov 2026 13:35:39 +0000 · Convocatoria urgente de interinos para cubrir puestos vacantes de Matemáticas | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-puestos-vacantes-de-matematicas/",
+        "Thu, 05 Nov 2026 22:59:03 +0000 · UGT: ¿Qué saber del concurso de traslados? | https://rrhheducacion.carm.es/ugt-que-saber-del-concurso-de-traslados/"
       ]
     },
     {
@@ -429,7 +430,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-05T14:53:06Z",
+      "checkedAt": "2026-11-06T14:30:36Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
