@@ -1,10 +1,26 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-11-08T13:46:34Z",
+  "updatedAt": "2026-11-10T15:09:32Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "f81e250bf959",
+      "detectedAt": "2026-11-10T15:09:32Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria",
+      "added": [
+        "Tue, 10 Nov 2026 09:39:20 +0000 · Convocatoria urgente de interinos para ocupar puestos de la especialidad de Tecnología | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-ocupar-puestos-de-la-especialidad-de-tecnologia/"
+      ],
+      "removedCount": 1
+    },
     {
       "id": "26ef6af796aa",
       "detectedAt": "2026-11-06T14:30:36Z",
@@ -338,23 +354,6 @@
         "Mon, 21 Sep 2026 15:37:03 +0000 · Convocatoria urgente de interinos de la especialidad de Griego | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-de-la-especialidad-de-griego/"
       ],
       "removedCount": 2
-    },
-    {
-      "id": "0cd26a55b2a1",
-      "detectedAt": "2026-09-21T13:12:51Z",
-      "sourceId": "carm-rrhh-feed",
-      "sourceName": "CARM RRHH · Novedades PES e Informática",
-      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
-      "categories": [
-        "convocatoria",
-        "publicaciones"
-      ],
-      "status": "review-required",
-      "title": "Cambio oficial detectado: convocatoria, publicaciones",
-      "added": [
-        "Mon, 21 Sep 2026 05:52:36 +0000 · 21/09/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/21-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
-      ],
-      "removedCount": 2
     }
   ],
   "sources": [
@@ -367,7 +366,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-08T13:46:34Z",
+      "checkedAt": "2026-11-10T15:09:32Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -382,7 +381,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-11-08T13:46:34Z",
+      "checkedAt": "2026-11-10T15:09:32Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -411,12 +410,12 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-08T13:46:34Z",
+      "checkedAt": "2026-11-10T15:09:32Z",
       "monitorStatus": "active",
-      "fingerprint": "58b6882e5c7811a479e8be79fde054ada74e207e6cf8b38a721f3856b5bba2bc",
+      "fingerprint": "432a65d7f121d052ab7e7c787931997caad0357e4c5dec249b0e646a12afc305",
       "entryCount": 1,
       "entries": [
-        "Thu, 05 Nov 2026 22:59:03 +0000 · UGT: ¿Qué saber del concurso de traslados? | https://rrhheducacion.carm.es/ugt-que-saber-del-concurso-de-traslados/"
+        "Tue, 10 Nov 2026 09:39:20 +0000 · Convocatoria urgente de interinos para ocupar puestos de la especialidad de Tecnología | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-ocupar-puestos-de-la-especialidad-de-tecnologia/"
       ]
     },
     {
@@ -428,7 +427,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-08T13:46:34Z",
+      "checkedAt": "2026-11-10T15:09:32Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
