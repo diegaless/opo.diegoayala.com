@@ -1,10 +1,27 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-11-17T16:22:56Z",
+  "updatedAt": "2026-11-19T15:58:47Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "e6fc1a8d90e5",
+      "detectedAt": "2026-11-19T15:58:47Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria",
+        "publicaciones"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria, publicaciones",
+      "added": [
+        "Thu, 19 Nov 2026 07:07:21 +0000 · 19/11/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/19-11-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
+      ],
+      "removedCount": 0
+    },
     {
       "id": "34a7fa9510c5",
       "detectedAt": "2026-11-16T16:18:13Z",
@@ -327,24 +344,6 @@
         "Mon, 28 Sep 2026 12:32:52 +0000 · Listado provisional de admitidos y excluidos de la convocatoria urgente de Griego | https://rrhheducacion.carm.es/listado-provisional-de-admitidos-y-excluidos-de-la-convocatoria-urgente-de-griego/"
       ],
       "removedCount": 5
-    },
-    {
-      "id": "c3fe79ec7ec2",
-      "detectedAt": "2026-09-25T12:06:09Z",
-      "sourceId": "carm-rrhh-feed",
-      "sourceName": "CARM RRHH · Novedades PES e Informática",
-      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
-      "categories": [
-        "convocatoria",
-        "publicaciones"
-      ],
-      "status": "review-required",
-      "title": "Cambio oficial detectado: convocatoria, publicaciones",
-      "added": [
-        "Fri, 25 Sep 2026 08:25:02 +0000 · 25/09/2026-Relación de vacantes sin cubrir- Secundaria y otros cuerpos | https://rrhheducacion.carm.es/25-09-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/",
-        "Fri, 25 Sep 2026 08:32:29 +0000 · 23/09/2026. Acto de adjudicación telemático voluntario con especialidades de participación obligatoria. Se convoca a todos los aspirantes a interinidad de los Cuerpos de Secundaria y otros cuerpos, candidatos seleccionados en los procedimientos de urgencia y candidatos seleccionados de listas abiertas | https://rrhheducacion.carm.es/23-09-2026-acto-de-adjudicacion-telematico-voluntario-con-especialidades-de-participacion-obligatoria-se-convoca-a-todos-los-aspirantes-a-interinidad-de-los-cuerpos-de-secundaria-y-otros-cuerpos-ca/"
-      ],
-      "removedCount": 3
     }
   ],
   "sources": [
@@ -357,7 +356,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-17T16:22:56Z",
+      "checkedAt": "2026-11-19T15:58:47Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -372,7 +371,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-11-17T16:22:56Z",
+      "checkedAt": "2026-11-19T15:58:47Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -401,11 +400,13 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-17T16:22:56Z",
+      "checkedAt": "2026-11-19T15:58:47Z",
       "monitorStatus": "active",
-      "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "entryCount": 0,
-      "entries": []
+      "fingerprint": "a90574261f80698a1b71cee1d0fc334e5c0c3bbbdcba6f22934fe4595258a4be",
+      "entryCount": 1,
+      "entries": [
+        "Thu, 19 Nov 2026 07:07:21 +0000 · 19/11/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/19-11-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
+      ]
     },
     {
       "id": "borm-pes-selectivo",
@@ -416,7 +417,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-17T16:22:56Z",
+      "checkedAt": "2026-11-19T15:58:47Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
