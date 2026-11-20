@@ -1,10 +1,26 @@
 {
   "version": 1,
   "initializedAt": "2026-07-21T20:33:31Z",
-  "updatedAt": "2026-11-19T15:58:47Z",
+  "updatedAt": "2026-11-20T15:41:45Z",
   "schedule": "daily",
   "status": "monitoring",
   "alerts": [
+    {
+      "id": "aad2fd9b3e65",
+      "detectedAt": "2026-11-20T15:41:45Z",
+      "sourceId": "carm-rrhh-feed",
+      "sourceName": "CARM RRHH · Novedades PES e Informática",
+      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
+      "categories": [
+        "convocatoria"
+      ],
+      "status": "review-required",
+      "title": "Cambio oficial detectado: convocatoria",
+      "added": [
+        "Fri, 20 Nov 2026 07:55:14 +0000 · Convocatoria de acto presencial para la cobertura de un puesto de la especialidad de Procesos de Diagnósticos Clínicos y Productos Ortoprotésicos en el IES Ingeniero de la Cierav | https://rrhheducacion.carm.es/convocatoria-de-acto-presencial-para-la-cobertura-de-un-puesto-de-la-especialidad-de-procesos-de-diagnosticos-clinicos-y-productos-ortoprotesicos-en-el-ies-ingeniero-de-la-cierav/"
+      ],
+      "removedCount": 1
+    },
     {
       "id": "e6fc1a8d90e5",
       "detectedAt": "2026-11-19T15:58:47Z",
@@ -326,24 +342,6 @@
         "Wed, 30 Sep 2026 17:05:49 +0000 · Convocatoria urgente de interinos para cubrir vacantes de la especialidad de Navegación e Instalaciones Marinas | https://rrhheducacion.carm.es/convocatoria-urgente-de-interinos-para-cubrir-vacantes-de-la-especialidad-de-navegacion-e-instalaciones-marinas/"
       ],
       "removedCount": 0
-    },
-    {
-      "id": "983803f854e8",
-      "detectedAt": "2026-09-28T14:21:39Z",
-      "sourceId": "carm-rrhh-feed",
-      "sourceName": "CARM RRHH · Novedades PES e Informática",
-      "sourceUrl": "https://rrhheducacion.carm.es/feed/",
-      "categories": [
-        "convocatoria",
-        "publicaciones"
-      ],
-      "status": "review-required",
-      "title": "Cambio oficial detectado: convocatoria, publicaciones",
-      "added": [
-        "Mon, 28 Sep 2026 12:32:31 +0000 · Listado provisional de admitidos y excluidos de la convocatoria urgente de Latín | https://rrhheducacion.carm.es/listado-provisional-de-admitidos-y-excluidos-de-la-convocatoria-urgente-de-latin/",
-        "Mon, 28 Sep 2026 12:32:52 +0000 · Listado provisional de admitidos y excluidos de la convocatoria urgente de Griego | https://rrhheducacion.carm.es/listado-provisional-de-admitidos-y-excluidos-de-la-convocatoria-urgente-de-griego/"
-      ],
-      "removedCount": 5
     }
   ],
   "sources": [
@@ -356,7 +354,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-19T15:58:47Z",
+      "checkedAt": "2026-11-20T15:41:45Z",
       "monitorStatus": "active",
       "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "entryCount": 0,
@@ -371,7 +369,7 @@
         "convocatoria",
         "instancia"
       ],
-      "checkedAt": "2026-11-19T15:58:47Z",
+      "checkedAt": "2026-11-20T15:41:45Z",
       "monitorStatus": "active",
       "fingerprint": "78839c62d2cf30eb2ddd27a2c3bb8d1669d2b436f81affbd8702bdb538bfe077",
       "entryCount": 13,
@@ -400,12 +398,12 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-19T15:58:47Z",
+      "checkedAt": "2026-11-20T15:41:45Z",
       "monitorStatus": "active",
-      "fingerprint": "a90574261f80698a1b71cee1d0fc334e5c0c3bbbdcba6f22934fe4595258a4be",
+      "fingerprint": "3738b502b54f05acd14c5b28a5e297cf775150b2315ffeb58591154e6a0db7c0",
       "entryCount": 1,
       "entries": [
-        "Thu, 19 Nov 2026 07:07:21 +0000 · 19/11/2026-Relación de vacantes sin cubrir Secundaria y otros cuerpos | https://rrhheducacion.carm.es/19-11-2026-relacion-de-vacantes-sin-cubrir-secundaria-y-otros-cuerpos/"
+        "Fri, 20 Nov 2026 07:55:14 +0000 · Convocatoria de acto presencial para la cobertura de un puesto de la especialidad de Procesos de Diagnósticos Clínicos y Productos Ortoprotésicos en el IES Ingeniero de la Cierav | https://rrhheducacion.carm.es/convocatoria-de-acto-presencial-para-la-cobertura-de-un-puesto-de-la-especialidad-de-procesos-de-diagnosticos-clinicos-y-productos-ortoprotesicos-en-el-ies-ingeniero-de-la-cierav/"
       ]
     },
     {
@@ -417,7 +415,7 @@
         "convocatoria",
         "publicaciones"
       ],
-      "checkedAt": "2026-11-19T15:58:47Z",
+      "checkedAt": "2026-11-20T15:41:45Z",
       "monitorStatus": "active",
       "fingerprint": "9b3c079f5f4cfee1fb0cfd163f837d86c61a2916b891b2565f66cb66e055688c",
       "entryCount": 9,
